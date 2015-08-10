@@ -10,7 +10,7 @@ class RatingObject:
     def __init__(self, line):
 
         s = line.split(';')
-        self.id = s[0]
+        self.nsf_id = to_int(s[0])
         self.full_name = str(s[1])
         self.surname = s[1].split(' ')[0]
         self.first_name = ' '.join(s[1].split(' ')[1:])
@@ -19,9 +19,9 @@ class RatingObject:
         self.elo = to_int(s[4])
         self.number_of_games = to_int(s[5])
         self.GP_class = s[6]
-        self.year_of_birth = int(s[7])
-        self.fide_id = s[8]
-        self.last_membership_nsf = s[9]
+        self.year_of_birth = to_int(s[7])
+        self.fide_id = to_int(s[8])
+        self.last_membership_nsf = to_int(s[9])
 
 url = urllib2.unquote("http://www.sjakk.no/rating/siste.txt")
 
