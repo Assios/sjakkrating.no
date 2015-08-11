@@ -61,4 +61,5 @@ p[date] = [player.__dict__ for player in players]
 response = json.dumps(p, indent=4, ensure_ascii=False)
 
 if __name__=="__main__":
-    print response
+    with open('rating.json', 'w') as out:
+        out.write(response)
