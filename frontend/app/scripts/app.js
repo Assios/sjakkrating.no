@@ -15,7 +15,7 @@ var TodoApp = React.createClass({
   render: function() {
     return (
       <div>
-        Test <TopList url="http://assios.no/rating.json" />
+        Test <TopList url="http://assios.no:8888" />
       </div>
     );
   }

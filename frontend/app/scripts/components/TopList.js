@@ -1,11 +1,9 @@
 var React = require('react');
 
-var data = [
-  {test: "Test1"},
-  {test: "Test2"}
-];
-
 var TopList = React.createClass({
+  getInitialState: function() {
+      return {data: []};
+    },
   componentDidMount: function() {
     $.ajax({
       url: this.props.url,
@@ -21,7 +19,7 @@ var TopList = React.createClass({
   },
   render: function() {
     return (
-      <div>Yo {this.props.url}</div>
+      <div>{this.state.data}</div>
     );
   }
 });
