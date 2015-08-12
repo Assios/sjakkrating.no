@@ -51,14 +51,12 @@ lines = [''.join([i if ord(i)<128 else swap(i) for i in line]).\
         decode('utf-8').encode('latin-1') for line in urllib2.urlopen(url)]
 
 date = ''.join(lines.pop(0).split())
-players = []
 
 players = [RatingObject(line) for line in lines]
+p = sorted(players, key=lambda x: x.elo, reverse=True)
 
-p = {}
-p[date] = [player.__dict__ for player in players]
-
-response = json.dumps(p, indent=4, ensure_ascii=False)
+response = {}
+response[date] = [a.__dict__ for a in p]
 
 if __name__=="__main__":
     print response

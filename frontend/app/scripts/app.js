@@ -1,6 +1,6 @@
 
 var React = window.React = require('react'),
-    TopList = require("./components/TopList"),
+    List = require("./components/List"),
     mountNode = document.getElementById("app");
 
 var TodoList = React.createClass({
@@ -15,7 +15,7 @@ var TodoApp = React.createClass({
   render: function() {
     return (
       <div>
-        Test <TopList url="http://assios.no:8888" />
+        Test <List url="http://assios.no:8888" />
       </div>
     );
   }

@@ -1,6 +1,6 @@
 var React = require('react');
 
-var TopList = React.createClass({
+var List = React.createClass({
   getInitialState: function() {
       return {data: []};
     },
@@ -24,4 +24,4 @@ var TopList = React.createClass({
   }
 });
 
-module.exports = TopList;
+module.exports = List;
