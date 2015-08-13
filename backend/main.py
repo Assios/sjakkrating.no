@@ -20,10 +20,17 @@ class TopHandler(tornado.web.RequestHandler):
         self.set_header('Access-Control-Allow-Origin', '*')
         self.set_header('Content-Type', 'application/json')
 
+        limit = self.get_argument('limit', 10, False)
+
+        if not limit.isdigit():
+            limit = 10
+        else:
+            limit = int(limit)
+
         p = sorted(players, key=lambda x: x.elo, reverse=True)
 
         response = {}
-        response[date] = [player.__dict__ for player in p]
+        response[date] = [player.__dict__ for player in p][:limit]
 
         self.write(json.dumps(response, indent=4, ensure_ascii=False))
 
