@@ -21,13 +21,14 @@ class TopHandler(tornado.web.RequestHandler):
         self.set_header('Content-Type', 'application/json')
 
         limit = self.get_argument('limit', 10, False)
+        arg = self.get_argument('arg', 'elo', False)
 
         if not limit.isdigit():
             limit = 10
         else:
             limit = int(limit)
 
-        p = sorted(players, key=lambda x: x.elo, reverse=True)
+        p = sorted(players, key=lambda x: getattr(x, arg), reverse=True)
 
         response = {}
         response[date] = [player.__dict__ for player in p][:limit]
@@ -43,4 +44,3 @@ application = tornado.web.Application([
 if __name__ == "__main__":
     application.listen(8888)
     tornado.ioloop.IOLoop.instance().start()
-
