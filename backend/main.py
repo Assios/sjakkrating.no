@@ -20,7 +20,7 @@ class TopHandler(tornado.web.RequestHandler):
         self.set_header('Access-Control-Allow-Origin', '*')
         self.set_header('Content-Type', 'application/json')
 
-        limit = self.get_argument('limit', 10, False)
+        limit = self.get_argument('limit', '10', False)
         arg = self.get_argument('arg', 'elo', False)
         order = self.get_argument('order', 'top', False)
 
