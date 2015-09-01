@@ -14,5 +14,6 @@ Template.topList.onRendered(function() {
 Template.topList.helpers({
 	top: function() {
 		return Session.get('topList');
-	}
+	},
+
 });
