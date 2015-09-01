@@ -42,6 +42,7 @@ class TopHandler(tornado.web.RequestHandler):
         self.write(json.dumps(response, indent=4, ensure_ascii=False))
 
 
+
 application = tornado.web.Application([
     (r"/", PostHandler),
     (r"/top/?", TopHandler),
