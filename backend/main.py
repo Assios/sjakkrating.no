@@ -22,13 +22,19 @@ class TopHandler(tornado.web.RequestHandler):
 
         limit = self.get_argument('limit', 10, False)
         arg = self.get_argument('arg', 'elo', False)
+        order = self.get_argument('order', 'top', False)
+
+        if order == 'top':
+            order = True
+        else:
+            order = False
 
         if not limit.isdigit():
             limit = 10
         else:
             limit = int(limit)
 
-        p = sorted(players, key=lambda x: getattr(x, arg), reverse=True)
+        p = sorted(players, key=lambda x: getattr(x, arg), reverse=order)
 
         response = {}
         response[date] = [player.__dict__ for player in p][:limit]
