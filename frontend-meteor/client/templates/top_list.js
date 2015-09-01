@@ -4,16 +4,15 @@ Template.topList.onRendered(function() {
 		if(err) {
 			console.log("An error occurred retrieving data", err );
 		} else {
-			console.log(_.values(response)[0]);
-			Session.set("top_list", response);
+			list = _.values(response)[0];
+			console.log(list);
+			Session.set('topList', list);
 		}
 	});
 });
 
 Template.topList.helpers({
-	getTop: function() {
-		HTTP.get(Meteor.absoluteUrl("http://vg.no"), function(err,result) {
-    		console.log(result.data);
-		});
+	top: function() {
+		return Session.get('topList');
 	}
 });
