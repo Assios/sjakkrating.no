@@ -15,19 +15,16 @@ Template.player.helpers({
 	},
 
 	getImage: function(fide_id) {
-		var img = new Image();
+			var img = new Image();
 
 			img.src = 'https://ratings.fide.com/card.php?code=' + fide_id;
 
 			console.log(img.width);
 			console.log(img.height);
 
-			return img.src;
-
+			if (img.width!=0)
+				return 'https://ratings.fide.com/card.php?code=' + fide_id;
+			else
+				return 'https://secure.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536';
 		}
-
-
-
-
-
 });
