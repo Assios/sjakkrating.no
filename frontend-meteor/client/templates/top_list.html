@@ -7,7 +7,7 @@
 	  <ul class="list-group">
 
 		{{#each top}}
-	    	<li class="list-group-item">{{name}}: <b>{{elo}}</b></li>
+	    	<li class="list-group-item"><a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a>: <b>{{elo}}</b></li>
 	    {{/each}}
 
 	  </ul>
