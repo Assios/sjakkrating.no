@@ -12,5 +12,22 @@ Template.player.onRendered(function() {
 Template.player.helpers({
 	playerInfo: function() {
 		return Session.get('playerInfo');
-	}
+	},
+
+	getImage: function(fide_id) {
+		var img = new Image();
+
+			img.src = 'https://ratings.fide.com/card.php?code=' + fide_id;
+
+			console.log(img.width);
+			console.log(img.height);
+
+			return img.src;
+
+		}
+
+
+
+
+
 });
