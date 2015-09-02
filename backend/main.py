@@ -6,6 +6,9 @@ import tornado.ioloop
 import tornado.web
 from parsing import *
 import collections
+import memcache
+
+mc = memcache.Client(['127.0.0.1:11211'], debug=1)
 
 class PostHandler(tornado.web.RequestHandler):
     def get(self):
@@ -43,28 +46,34 @@ class TopHandler(tornado.web.RequestHandler):
         self.set_header('Access-Control-Allow-Origin', '*')
         self.set_header('Content-Type', 'application/json')
 
-        limit = self.get_argument('limit', None, False)
+        limit = self.get_argument('limit', '', False)
         arg = self.get_argument('arg', 'elo', False)
         order = self.get_argument('order', 'top', False)
 
-        if order == 'top':
-            order = True
-        else:
-            order = False
+        mc_key = limit + arg + order
+        response = mc.get(mc_key)
 
-        if limit:
-            if limit.isdigit():
-                limit = int(limit)
+        if not response:
+            if order == 'top':
+                order = True
             else:
-                limit = 10
+                order = False
 
-        p = sorted(players, key=lambda x: getattr(x, arg), reverse=order)
+            if limit:
+                if limit.isdigit():
+                    limit = int(limit)
+                else:
+                    limit = 10
 
-        response = {}
-        response[date] = [player.__dict__ for player in p]
+            p = sorted(players, key=lambda x: getattr(x, arg), reverse=order)
 
-        if limit:
-            response[date] = response[date][:limit]
+            response = {}
+            response[date] = [player.__dict__ for player in p]
+
+            if limit:
+                response[date] = response[date][:limit]
+
+            mc.set(mc_key, response, 120)
 
         self.write(json.dumps(response, indent=4, ensure_ascii=False))
 

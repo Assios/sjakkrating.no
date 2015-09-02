@@ -4,7 +4,7 @@ Meteor.methods({
 	getTop: function() {
 		var url = URL_PREFIX + "/top";
 
-		var result = Meteor.http.get(url, {timeout:30000});
+		var result = Meteor.http.get(url, {timeout:3000});
 			if(result.statusCode==200) {
 				var response = JSON.parse(result.content);
 				console.log("response received.");
@@ -19,7 +19,7 @@ Meteor.methods({
 	getDate: function() {
 		var url = URL_PREFIX + "/date";
 
-		var result = Meteor.http.get(url, {timeout:30000});
+		var result = Meteor.http.get(url, {timeout:3000});
 			if(result.statusCode==200) {
 				var response = JSON.parse(result.content);
 				console.log("response received.");
@@ -34,7 +34,7 @@ Meteor.methods({
 	getPlayer: function(nsf_id) {
 		var url = URL_PREFIX + "/player/" + nsf_id;
 
-		var result = Meteor.http.get(url, {timeout:30000});
+		var result = Meteor.http.get(url, {timeout:3000});
 			if(result.statusCode==200) {
 				var response = JSON.parse(result.content);
 				console.log("response received.");
