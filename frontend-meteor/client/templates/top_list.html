@@ -1,16 +1,33 @@
 <template name="topList">
-<div class="top-box">
-	<div class="panel panel-default">
-	  <!-- Default panel contents -->
-	  <div class="panel-heading">Topp {{top.length}} spillere</div>
 
-	  <ul class="list-group">
+	<div class="col-sm-3">
+		<div class="panel panel-default">
+		  <!-- Default panel contents -->
+		  <div class="panel-heading">Topp {{topElo.length}} spillere</div>
 
-		{{#each top}}
-	    	<li class="list-group-item"><a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a> <span class="badge">{{elo}}</span></li>
-	    {{/each}}
+		  <ul class="list-group">
 
-	  </ul>
+			{{#each topElo}}
+		    	<li class="list-group-item"><a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a> <span class="badge">{{elo}}</span></li>
+		    {{/each}}
+
+		  </ul>
+		</div>
 	</div>
-</div>
+
+	<div class="col-sm-3">
+		<div class="panel panel-default">
+		  <!-- Default panel contents -->
+		  <div class="panel-heading">Flest spilte partier</div>
+
+		  <ul class="list-group">
+
+			{{#each topGames}}
+		    	<li class="list-group-item"><a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a> <span class="badge">{{number_of_games}}</span></li>
+		    {{/each}}
+
+		  </ul>
+		</div>
+	</div>
+
 </template>

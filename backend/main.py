@@ -39,7 +39,7 @@ class PlayerHandler(tornado.web.RequestHandler):
         player = next((x for x in response if x["nsf_id"] == _id), None)
 
         self.write(json.dumps(player, indent=4, ensure_ascii=False))
- 
+
 
 class TopHandler(tornado.web.RequestHandler):
     def get(self):
@@ -68,7 +68,7 @@ class TopHandler(tornado.web.RequestHandler):
             p = sorted(players, key=lambda x: getattr(x, arg), reverse=order)
 
             response = {}
-            response[date] = [player.__dict__ for player in p if player.elo!=0]
+            response[date] = [player.__dict__ for player in p if player.elo!=0 and player.number_of_games!=0]
 
             if limit:
                 response[date] = response[date][:limit]
