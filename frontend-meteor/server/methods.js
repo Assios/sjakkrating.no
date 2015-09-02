@@ -1,9 +1,9 @@
 var URL_PREFIX = "http://localhost:8888"
 
 Meteor.methods({
-	getTop: function(argument) {
+	getTop: function(argument, gender) {
 		// argument could e.g. be elo or number_of_games
-		var url = URL_PREFIX + "/top?arg=" + argument;
+		var url = URL_PREFIX + "/top?arg=" + argument + "&gender=" + gender;
 
 		var result = Meteor.http.get(url, {timeout:3000});
 			if(result.statusCode==200) {

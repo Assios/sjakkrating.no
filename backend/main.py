@@ -69,7 +69,7 @@ class TopHandler(tornado.web.RequestHandler):
             p = sorted(players, key=lambda x: getattr(x, arg), reverse=order)
 
             response = {}
-            response[date] = [player.__dict__ for player in p if player.elo!=0 and player.number_of_games!=0 and player.gender not in player_gender]
+            response[date] = [player.__dict__ for player in p if player.elo!=0 and player.number_of_games!=0 and player.gender in player_gender]
 
             if limit:
                 response[date] = response[date][:limit]

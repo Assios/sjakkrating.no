@@ -30,4 +30,30 @@
 		</div>
 	</div>
 
+	<div class="col-sm-3">
+		<div class="panel panel-default">
+		  <!-- Default panel contents -->
+		  <div class="panel-heading">Beste kvinnelige spillere</div>
+
+		  <ul class="list-group">
+
+			{{#each topWomen}}
+		    	<li class="list-group-item"><a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a> <span class="badge">{{elo}}</span></li>
+		    {{/each}}
+
+		  </ul>
+		</div>
+	</div>
+
+	<div class="col-sm-3">
+		<div class="panel panel-default">
+		  <!-- Default panel contents -->
+		  <div class="panel-heading">Annen statistikk</div>
+
+		  <ul class="list-group">
+		    	<li class="list-group-item">yo</li>
+		  </ul>
+		</div>
+	</div>
+
 </template>
