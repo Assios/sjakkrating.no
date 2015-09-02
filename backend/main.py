@@ -17,6 +17,30 @@ class PostHandler(tornado.web.RequestHandler):
 
         self.write(json.dumps(response, indent=4, ensure_ascii=False))
 
+class StatsHandler(tornado.web.RequestHandler):
+    def get(self):
+        self.set_header('Access-Control-Allow-Origin', '*')
+        self.set_header('Content-Type', 'application/json')
+
+        players = [player for player in p if player.elo!=0 and player.number_of_games!=0]
+
+        ratings = [player.elo for player in players]
+        games = [player.number_of_games for player in players]
+
+        ages = [pl.year_of_birth for pl in sorted(players, key=lambda x: getattr(x, "year_of_birth"), reverse=True)]
+
+        average_rating = sum(ratings)/len(ratings)
+        average_number_of_games = sum(games)/len(games)
+
+        response = {
+            "average_rating": average_rating,
+            "average_number_of_games": average_number_of_games,
+            "youngest_player": ages[0],
+            "oldest_player": ages[-1],
+        }
+
+        self.write(json.dumps(response, indent=4, ensure_ascii=False))
+
 class DateHandler(tornado.web.RequestHandler):
     def get(self):
         self.set_header('Access-Control-Allow-Origin', '*')
@@ -84,6 +108,7 @@ application = tornado.web.Application([
     (r"/top/?", TopHandler),
     (r"/player/(\d+)/?", PlayerHandler),
     (r"/date/?", DateHandler),
+    (r"/stats/?", StatsHandler),
 ])
 
 def format_date(date):
