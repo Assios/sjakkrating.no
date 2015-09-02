@@ -46,4 +46,19 @@ Meteor.methods({
 				throw new Meteor.Error(result.statusCode, errorJson.error);
 			}
 	},
+
+	getStats: function() {
+		var url = URL_PREFIX + "/stats";
+
+		var result = Meteor.http.get(url, {timeout:3000});
+			if(result.statusCode==200) {
+				var response = JSON.parse(result.content);
+				console.log("response received.");
+				return response;
+			} else {
+				console.log("Response issue: ", result.statusCode);
+				var errorJson = JSON.parse(result.content);
+				throw new Meteor.Error(result.statusCode, errorJson.error);
+			}
+	},
 });

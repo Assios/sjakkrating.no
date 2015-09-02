@@ -26,6 +26,14 @@ Template.topList.onRendered(function() {
 			Session.set('femaleTopElo', list);
 		}
 	});
+
+	Meteor.call('getStats', 'stats', function(err, response) {
+		if(err) {
+			console.log("An error occurred retrieving data", err );
+		} else {
+			Session.set('stats', response);
+		}
+	});
 });
 
 Template.topList.helpers({
@@ -39,6 +47,9 @@ Template.topList.helpers({
 
 	topWomen: function() {
 		return Session.get('femaleTopElo');
-	}
+	},
 
+	stats: function() {
+		return Session.get('stats');
+	}
 });

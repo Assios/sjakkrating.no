@@ -3,7 +3,7 @@
 	<div class="col-sm-3">
 		<div class="panel panel-default">
 		  <!-- Default panel contents -->
-		  <div class="panel-heading">Topp {{topElo.length}} spillere</div>
+		  <div class="panel-heading"><b>Topp {{topElo.length}} spillere</b></div>
 
 		  <ul class="list-group">
 
@@ -18,7 +18,7 @@
 	<div class="col-sm-3">
 		<div class="panel panel-default">
 		  <!-- Default panel contents -->
-		  <div class="panel-heading">Flest spilte partier</div>
+		  <div class="panel-heading"><b>Flest spilte partier</b></div>
 
 		  <ul class="list-group">
 
@@ -33,7 +33,7 @@
 	<div class="col-sm-3">
 		<div class="panel panel-default">
 		  <!-- Default panel contents -->
-		  <div class="panel-heading">Beste kvinnelige spillere</div>
+		  <div class="panel-heading"><b>Beste kvinnelige spillere</b></div>
 
 		  <ul class="list-group">
 
@@ -48,10 +48,13 @@
 	<div class="col-sm-3">
 		<div class="panel panel-default">
 		  <!-- Default panel contents -->
-		  <div class="panel-heading">Annen statistikk</div>
+		  <div class="panel-heading"><b>Annen statistikk</b></div>
 
 		  <ul class="list-group">
-		    	<li class="list-group-item">yo</li>
+		    	<li class="list-group-item">Gjennomsnittsrating: {{stats.average_rating}}</li>
+		    	<li class="list-group-item">Gjennomsnittlig antall partier: {{stats.average_number_of_games}}</li>
+		    	<li class="list-group-item">Eldste spiller født i {{stats.oldest_player}}</li>
+		    	<li class="list-group-item">Yngste spiller født i {{stats.youngest_player}}</li>
 		  </ul>
 		</div>
 	</div>
