@@ -5,7 +5,6 @@ Template.topList.onRendered(function() {
 			console.log("An error occurred retrieving data", err );
 		} else {
 			list = _.values(response)[0];
-			console.log(list);
 			Session.set('topList', list);
 		}
 	});
