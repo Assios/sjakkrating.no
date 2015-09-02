@@ -13,3 +13,4 @@ http
 iron:router
 sacha:spin
 gaelan:each-with-index
+meteorhacks:search-source

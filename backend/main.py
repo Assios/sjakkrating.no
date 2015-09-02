@@ -49,8 +49,9 @@ class TopHandler(tornado.web.RequestHandler):
         limit = self.get_argument('limit', '', False)
         arg = self.get_argument('arg', 'elo', False)
         order = self.get_argument('order', 'top', False)
+        player_gender = self.get_argument('gender', 'MF', False)
 
-        mc_key = limit + arg + order
+        mc_key = limit + arg + order + player_gender
         response = mc.get(mc_key)
 
         if not response:
@@ -68,7 +69,7 @@ class TopHandler(tornado.web.RequestHandler):
             p = sorted(players, key=lambda x: getattr(x, arg), reverse=order)
 
             response = {}
-            response[date] = [player.__dict__ for player in p if player.elo!=0 and player.number_of_games!=0]
+            response[date] = [player.__dict__ for player in p if player.elo!=0 and player.number_of_games!=0 and player.gender not in player_gender]
 
             if limit:
                 response[date] = response[date][:limit]

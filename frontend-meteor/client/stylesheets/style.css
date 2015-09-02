@@ -19,3 +19,30 @@
 	font-style: italic;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
+
+.image-wrapper {
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    width: 100px;
+    height: 100px;
+	position:absolute;
+	top:0;
+	left:0;
+	margin-left: 220px;
+	margin-bottom: 50px;
+	z-index:10;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+.image-wrapper img {
+    width: 100%;
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    right: -9999px;
+    bottom: -9999px;
+    margin: auto;
+}
