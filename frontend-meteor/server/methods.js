@@ -45,6 +45,5 @@ Meteor.methods({
 				var errorJson = JSON.parse(result.content);
 				throw new Meteor.Error(result.statusCode, errorJson.error);
 			}
-
-	}
+	},
 });

@@ -1,4 +1,5 @@
 <template name="player">
+	{{loadImage playerInfo.fide_id}}
 	<div class="col-md-6">
 		<div class="panel panel-default well">
 		  <div class="panel-heading">
@@ -10,7 +11,7 @@
 		  </div>
 		  <div class="panel-body">
 		  	<div class="image-wrapper">
-    			<img src="{{getImage playerInfo.fide_id}}">
+		  		<img src="{{getImage}}">
 			</div>
 			<ul class="list-group">
 			    <li class="list-group-item">Rating: {{playerInfo.elo}}</li>
