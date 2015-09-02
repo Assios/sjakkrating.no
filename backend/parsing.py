@@ -48,8 +48,7 @@ def swap(char):
 
     return swap.get(ord(char)) or ''
 
-lines = [''.join([i if ord(i)<128 else swap(i) for i in line]).\
-        decode('utf-8').encode('latin-1') for line in urllib2.urlopen(url)]
+lines = [''.join([i if ord(i)<128 else swap(i) for i in line]) for line in urllib2.urlopen(url)]
 
 date = ''.join(lines.pop(0).split())
 
@@ -57,7 +56,7 @@ players = [RatingObject(line) for line in lines]
 p = sorted(players, key=lambda x: x.elo, reverse=True)
 
 response = {}
-response[date] = [a.__dict__ for a in p]
+response[date] = [a.__dict__ for a in p if a.elo!=0]
 
 if __name__=="__main__":
     print response
