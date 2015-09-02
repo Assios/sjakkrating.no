@@ -68,12 +68,12 @@ class TopHandler(tornado.web.RequestHandler):
             p = sorted(players, key=lambda x: getattr(x, arg), reverse=order)
 
             response = {}
-            response[date] = [player.__dict__ for player in p]
+            response[date] = [player.__dict__ for player in p if player.elo!=0]
 
             if limit:
                 response[date] = response[date][:limit]
 
-            mc.set(mc_key, response, 120)
+            mc.set(mc_key, response, 1)
 
         self.write(json.dumps(response, indent=4, ensure_ascii=False))
 
