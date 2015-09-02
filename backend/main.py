@@ -14,6 +14,14 @@ class PostHandler(tornado.web.RequestHandler):
 
         self.write(json.dumps(response, indent=4, ensure_ascii=False))
 
+class DateHandler(tornado.web.RequestHandler):
+    def get(self):
+        self.set_header('Access-Control-Allow-Origin', '*')
+        self.set_header('Content-Type', 'application/json')
+
+        r = {"date": date, "format_date": format_date(date)}
+
+        self.write(json.dumps(r, indent=4, ensure_ascii=False))        
 
 class PlayerHandler(tornado.web.RequestHandler):
     def get(self, _id):
@@ -61,12 +69,36 @@ class TopHandler(tornado.web.RequestHandler):
         self.write(json.dumps(response, indent=4, ensure_ascii=False))
 
 
-
 application = tornado.web.Application([
     (r"/", PostHandler),
     (r"/top/?", TopHandler),
     (r"/player/(\d+)/?", PlayerHandler),
+    (r"/date/?", DateHandler),
 ])
+
+def format_date(date):
+    months = {
+        "01": "januar",
+        "02": "februar",
+        "03": "mars",
+        "04": "april",
+        "05": "mai",
+        "06": "juni",
+        "07": "juli",
+        "08": "august",
+        "09": "september",
+        "10": "oktober",
+        "11": "november",
+        "12": "desember"
+    }
+
+    day, month, year = date.split("/")
+
+    day = str(int(day)) + "."
+    month = months[month]
+    year = "20" + year
+
+    return day + " " + month + " " + year
 
 if __name__ == "__main__":
     application.listen(8888)
