@@ -5,6 +5,11 @@ Template.topList.onRendered(function() {
 			console.log("An error occurred retrieving data", err );
 		} else {
 			list = _.values(response)[0];
+
+			for(var i = 0; i<list.length; i++) {
+				list[i].place = i+1;
+			}
+			
 			Session.set('topElo', list);
 		}
 	});
@@ -14,6 +19,11 @@ Template.topList.onRendered(function() {
 			console.log("An error occurred retrieving data", err );
 		} else {
 			list = _.values(response)[0];
+
+			for(var i = 0; i<list.length; i++) {
+				list[i].place = i+1;
+			}
+
 			Session.set('topGames', list);
 		}
 	});
@@ -23,6 +33,11 @@ Template.topList.onRendered(function() {
 			console.log("An error occurred retrieving data", err );
 		} else {
 			list = _.values(response)[0];
+
+			for(var i = 0; i<list.length; i++) {
+				list[i].place = i+1;
+			}
+
 			Session.set('femaleTopElo', list);
 		}
 	});
