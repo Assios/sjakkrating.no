@@ -66,9 +66,17 @@ class PlayerHandler(tornado.web.RequestHandler):
                 player = x
                 break
 
-        fide_rating = get_fide_rating(player["fide_id"])
+        mc_key = str(player["fide_id"])
+        fide_info = mc.get(mc_key)
 
-        player["fide_rating"] = fide_rating
+        if not fide_info:
+            print "Not found in memcache. Fetching from FIDE..."
+            fide_info = get_fide_rating(player["fide_id"])
+            player["fide_rating"] = fide_info[0]
+            player["fide_title"] = fide_info[1]
+            mc.set(mc_key, fide_info, 3600*24*7)
+        else:
+            print "Found in memcache."
 
         self.write(json.dumps(player, indent=4, ensure_ascii=False))
 
@@ -144,12 +152,32 @@ def format_date(date):
     return day + " " + month + " " + year
 
 def get_fide_rating(fide_id):
+    title_mapping = {
+        "None</t": "",
+        "Woman I": "WIM",
+        "Woman G": "WGM",
+        "Woman F": "WFM",
+        "Candida": "CM",
+        "FIDE Ma": "FM",
+        "Interna": "IM",
+        "Grand M": "GM",
+    }
+
     try:
         f = urlopen('https://ratings.fide.com/card.phtml?event=' + str(fide_id)).read()
         s = f.find('std.</small><br>')
-        return int(f[s+16:s+20])
+        fide_rating = int(f[s+16:s+20])
+
+        t = f.find('FIDE title</td><td colspan=3 bgcolor=#efefef>&nbsp;')
+
+        fide_title = f[t+51:t+58].strip()
+
+        fide_title = title_mapping[fide_title]
+
+        return [fide_rating, fide_title]
+
     except:
-        return 0
+        return [0, ""]
 
 if __name__ == "__main__":
     application.listen(8888)
