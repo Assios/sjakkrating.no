@@ -74,7 +74,7 @@ class PlayerHandler(tornado.web.RequestHandler):
             fide_info = get_fide_rating(player["fide_id"])
             player["fide_rating"] = fide_info[0]
             player["fide_title"] = fide_info[1]
-            mc.set(mc_key, fide_info, 3600*24*7)
+            mc.set(mc_key, fide_info, 3600*24*30)
         else:
             print "Found in memcache."
 
