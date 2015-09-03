@@ -7,6 +7,7 @@ import tornado.web
 from parsing import *
 import collections
 import memcache
+from urllib import urlopen
 
 mc = memcache.Client(['127.0.0.1:11211'], debug=1)
 
@@ -60,7 +61,14 @@ class PlayerHandler(tornado.web.RequestHandler):
 
         response = [player.__dict__ for player in p]
 
-        player = next((x for x in response if x["nsf_id"] == _id), None)
+        for x in response:
+            if x["nsf_id"] == _id:
+                player = x
+                break
+
+        fide_rating = get_fide_rating(player["fide_id"])
+
+        player["fide_rating"] = fide_rating
 
         self.write(json.dumps(player, indent=4, ensure_ascii=False))
 
@@ -134,6 +142,14 @@ def format_date(date):
     year = "20" + year
 
     return day + " " + month + " " + year
+
+def get_fide_rating(fide_id):
+    try:
+        f = urlopen('https://ratings.fide.com/card.phtml?event=' + str(fide_id)).read()
+        s = f.find('std.</small><br>')
+        return int(f[s+16:s+20])
+    except:
+        return 0
 
 if __name__ == "__main__":
     application.listen(8888)
