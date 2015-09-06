@@ -3,11 +3,10 @@
 	<div class="col-sm-3">
 		<div class="panel panel-default">
 		  <!-- Default panel contents -->
-		  <div class="panel-heading"><b>Topp {{topElo.length}} spillere</b></div>
+		  <div class="panel-heading"><b>Topplisten</b></div>
 
 		  <ul class="list-group">
-
-			{{#each topElo}}
+			{{#each topElo 100}}
 		    	<li class="list-group-item">{{place}}. <a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a> <span class="badge">{{elo}}</span></li>
 		    {{/each}}
 
@@ -22,7 +21,7 @@
 
 		  <ul class="list-group">
 
-			{{#each topGames}}
+			{{#each topGames 100}}
 		    	<li class="list-group-item">{{place}}. <a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a> <span class="badge">{{number_of_games}}</span></li>
 		    {{/each}}
 

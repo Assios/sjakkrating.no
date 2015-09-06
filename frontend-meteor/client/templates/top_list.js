@@ -52,12 +52,12 @@ Template.topList.onRendered(function() {
 });
 
 Template.topList.helpers({
-	topElo: function() {
-		return Session.get('topElo');
+	topElo: function(number) {
+		return Session.get('topElo').slice(0, number);
 	},
 
-	topGames: function() {
-		return Session.get('topGames');
+	topGames: function(number) {
+		return Session.get('topGames').slice(0, number);
 	},
 
 	topWomen: function() {
