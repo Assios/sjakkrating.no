@@ -10,12 +10,12 @@ Template.topList.onRendered(function() {
 });
 
 Template.topList.helpers({
-	topElo: function() {
-		return Players.find({}, {sort: {elo: -1}});
+	topElo: function(l) {
+		return Players.find({}, {sort: {elo: -1}, limit: l});
 	},
 
-	topGames: function(number) {
-		return Players.find({}, {sort: {number_of_games: -1}});
+	topGames: function(l) {
+		return Players.find({}, {sort: {number_of_games: -1}, limit: l});
 	},
 
 	topWomen: function() {
