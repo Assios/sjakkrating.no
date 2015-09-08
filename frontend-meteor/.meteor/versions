@@ -6,6 +6,8 @@ blaze-tools@1.0.3
 boilerplate-generator@1.0.3
 callback-hook@1.0.3
 check@1.0.5
+coffeescript@1.0.6
+dandv:caret-position@2.1.1
 ddp@1.1.0
 deps@1.0.7
 ejson@1.0.6
@@ -37,6 +39,7 @@ meteorhacks:picker@1.0.3
 meteorhacks:search-source@1.4.0
 minifiers@1.1.5
 minimongo@1.0.8
+mizzao:autocomplete@0.5.1
 mobile-status-bar@1.0.3
 mongo@1.1.0
 observe-sequence@1.0.6

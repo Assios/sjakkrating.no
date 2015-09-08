@@ -5,12 +5,9 @@
         <a class="navbar-brand" href="/"><span class="glyphicon glyphicon glyphicon-knight"> Ratinglisten</span></a>
         <div class="right">Sist oppdatert {{getDate}}</div>
       </div>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Søk etter spiller">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
+
+      {{> auto}}
+
     </header>
     <div id="main">
       {{> yield}}
