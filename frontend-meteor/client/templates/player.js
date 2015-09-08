@@ -2,18 +2,9 @@ Template.player.onRendered(function() {
 
 	Session.set('img_url', '/images/mysteryman.png');
 
-	var nsf_id = Router.current().params['_id'];
-
-    Meteor.call('getPlayer', nsf_id, function(err, response) {
-        Session.set('playerInfo', response);
-    });
-
 });
 
 Template.player.helpers({
-	playerInfo: function() {
-		return Session.get('playerInfo');
-	},
 
 	loadImage: function(fide_id) {
 	  var img = new Image();
