@@ -5,7 +5,7 @@ function getAllPlayers() {
 	var result = Meteor.http.get(url, {timeout:3000});
 		if(result.statusCode==200) {
 			var response = JSON.parse(result.content);
-			console.log("response received.");
+			console.log("Got all players.");
 			return response;
 		} else {
 			console.log("Response issue: ", result.statusCode);

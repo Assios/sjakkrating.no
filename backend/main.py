@@ -16,6 +16,10 @@ class PostHandler(tornado.web.RequestHandler):
         self.set_header('Access-Control-Allow-Origin', '*')
         self.set_header('Content-Type', 'application/json')
 
+        for element in response[date]:
+            ratings = [{"dato": date, "rating": element["elo"]}]
+            element["ratings"] = ratings
+
         self.write(json.dumps(response, indent=4, ensure_ascii=False))
 
 class StatsHandler(tornado.web.RequestHandler):
@@ -47,7 +51,7 @@ class DateHandler(tornado.web.RequestHandler):
         self.set_header('Access-Control-Allow-Origin', '*')
         self.set_header('Content-Type', 'application/json')
 
-        r = {"date": date, "format_date": format_date(date)}
+        r = {"date": date, "format_date": "Sist oppdatert " + format_date(date)}
 
         self.write(json.dumps(r, indent=4, ensure_ascii=False))        
 
@@ -123,6 +127,10 @@ class TopHandler(tornado.web.RequestHandler):
 
             response = {}
             response[date] = [player.__dict__ for player in p if player.elo!=0 and player.number_of_games!=0 and player.gender in player_gender]
+
+            for element in response[date]:
+                ratings = [{"dato": date, "rating": element["elo"]}]
+                element["ratings"] = ratings
 
             if limit:
                 response[date] = response[date][:limit]
