@@ -1,6 +1,7 @@
 Router.configure({
 	layoutTemplate: 'layout',
-	loadingTemplate: 'loading'
+	loadingTemplate: 'loading',
+	waitOn: function() { return Meteor.subscribe('players'); }
 });
 
 Router.route('/', {name: 'frontPage'});

@@ -21,8 +21,4 @@ Template.topList.helpers({
 	topWomen: function() {
 		return Players.find({ gender: "F" }, {sort: {elo: -1}});
 	},
-
-	stats: function() {
-		return Session.get('stats');
-	}
 });
