@@ -80,6 +80,19 @@ class PlayerHandler(tornado.web.RequestHandler):
 
         self.write(json.dumps(player, indent=4, ensure_ascii=False))
 
+class FideHandler(tornado.web.RequestHandler):
+    def get(self, fide_id):
+        self.set_header('Access-Control-Allow-Origin', '*')
+        self.set_header('Content-Type', 'application/json')
+
+        fide_info = get_fide_rating(fide_id)
+
+        player = {}
+
+        player["fide_rating"] = fide_info[0]
+        player["fide_title"] = fide_info[1]
+
+        self.write(json.dumps(player, indent=4, ensure_ascii=False))
 
 class TopHandler(tornado.web.RequestHandler):
     def get(self):
@@ -125,6 +138,7 @@ application = tornado.web.Application([
     (r"/player/(\d+)/?", PlayerHandler),
     (r"/date/?", DateHandler),
     (r"/stats/?", StatsHandler),
+    (r"/fide/(\d+)/?", FideHandler),
 ])
 
 def format_date(date):
