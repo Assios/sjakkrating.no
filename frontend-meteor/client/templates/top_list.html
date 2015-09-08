@@ -47,11 +47,16 @@
 	<div class="col-sm-3">
 		<div class="panel panel-default">
 		  <!-- Default panel contents -->
-		  <div class="panel-heading"><b>Annen statistikk</b></div>
-
+		  <div class="panel-heading"><b>Sjakklubber</b></div>
+		  	{{#each listClubs}}
+			  	{{#if website}}
+			  		<li class="list-group-item"><a href="{{website}}" target="_blank">{{club_name}}</a></li>
+			  	{{else}}
+			  		<li class="list-group-item">{{club_name}}</li>
+			  	{{/if}}
+		  	{{/each}}
 		  <ul class="list-group">
 		  </ul>
 		</div>
 	</div>
-
 </template>

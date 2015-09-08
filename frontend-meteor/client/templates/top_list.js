@@ -21,12 +21,27 @@ Template.topList.helpers({
 		return Players.find({}, {sort: {number_of_games: -1}, limit: l}).map(function(player, index) {
 			player.place = index+1;
 			return player;
-		});	},
+		});
+	},
 
 	topWomen: function() {
 		return Players.find({ gender: "F" }, {sort: {elo: -1}}).map(function(player, index) {
 			player.place = index+1;
 			return player;
-		});	},
+		});
+	},
 
+	distinctClubs: function() {
+		var distinctEntries = _.uniq(Players.find({}, {
+		    sort: {club: 1}, fields: {club: true}
+		}).fetch().map(function(x) {
+		    return x.club;
+		}), true);
+
+		return distinctEntries;
+	},
+
+	listClubs: function() {
+		return chess_clubs;
+	}
 });
