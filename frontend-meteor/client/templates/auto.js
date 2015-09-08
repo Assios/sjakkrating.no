@@ -9,6 +9,7 @@ Template.auto.helpers({
           field: "name",
           matchAll: true,
           template: Template.autoCompletePlayers,
+          noMatchTemplate: Template.noMatch,
         }
       ]
     };
