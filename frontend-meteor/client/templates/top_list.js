@@ -42,6 +42,6 @@ Template.topList.helpers({
 	},
 
 	listClubs: function() {
-		return chess_clubs;
+		return Clubs.find({});
 	}
 });
