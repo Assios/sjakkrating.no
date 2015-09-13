@@ -32,11 +32,11 @@
 	<div class="col-sm-3">
 		<div class="panel panel-default">
 		  <!-- Default panel contents -->
-		  <div class="panel-heading"><b>Beste kvinnelige spillere</b></div>
+		  <div class="panel-heading"><b>Beste 50 kvinnelige spillere</b></div>
 
 		  <ul class="list-group">
 
-			{{#each topWomen}}
+			{{#each topWomen 50}}
 		    	<li class="list-group-item">{{place}}. <a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a> <span class="badge">{{elo}}</span></li>
 		    {{/each}}
 		  </ul>

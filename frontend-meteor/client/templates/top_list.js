@@ -24,8 +24,8 @@ Template.topList.helpers({
 		});
 	},
 
-	topWomen: function() {
-		return Players.find({ gender: "F" }, {sort: {elo: -1}}).map(function(player, index) {
+	topWomen: function(l) {
+		return Players.find({ gender: "F" }, {sort: {elo: -1}, limit: l}).map(function(player, index) {
 			player.place = index+1;
 			return player;
 		});
