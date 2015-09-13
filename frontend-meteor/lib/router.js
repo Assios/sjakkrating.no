@@ -13,5 +13,5 @@ Router.route('spiller/:_id', {
 
 Router.route('klubb/:_id', {
     name: 'clubPage',
-    data: function() { return Clubs.findOne(this.params._id); }
+    data: function() { return Clubs.findOne({club_name: this.params._id}); }
 });
