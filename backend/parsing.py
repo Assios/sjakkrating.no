@@ -56,7 +56,7 @@ players = [RatingObject(line) for line in lines]
 p = sorted(players, key=lambda x: x.elo, reverse=True)
 
 response = {}
-response[date] = [a.__dict__ for a in p if a.elo!=0 and a.number_of_games!=0]
+response[date] = [a.__dict__ for a in p]
 
 if __name__=="__main__":
     print response
