@@ -1,5 +1,4 @@
 <template name="clubPage">
-	<div class="row">
 		<div class="col-md-6">
 			<div class="panel panel-default well">
 			  <div class="panel-heading">
@@ -17,9 +16,11 @@
 				</ul>
 			  </div>
 			</div>
+			{{>disqus disqus_id=club_name}}
 		</div>
 
-		<div class="col-sm-3">
+	<div class="row">
+		<div class="col-md-6">
 			<div class="panel panel-default">
 			  <!-- Default panel contents -->
 			  <div class="panel-heading"><b>Klubbens spillere</b></div>
@@ -28,12 +29,6 @@
 			  <ul class="list-group">
 			  </ul>
 			</div>
-		</div>
-	</div>
-
-	<div class="row disqus-club">
-		<div class="col-md-6">
-			{{>disqus disqus_id=club_name}}
 		</div>
 	</div>
 
