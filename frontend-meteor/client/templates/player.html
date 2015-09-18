@@ -22,4 +22,19 @@
 		  </div>
 		</div>
 	</div>
+
+	<div class="col-md-6">
+		<div class="panel panel-default well">
+			<div class="panel-heading">
+				<h3 class="panel-title"><b>Partier med {{name}}</b></h3>
+			</div>
+			<div class="panel-body">
+				<ul class="list-group">
+				    <li class="list-group-item"><a href="http://norbase.sjakk.biz/index.php?page=base&header=0&subpage=search&action=view&white={{surname}},+{{first_name}}&nocolor=on&headline=Partier+med+{{name}}" target="_blank">Partier fra NorBase</a></li>
+				    <li class="list-group-item"><a href="http://www.chessgames.com/perl/chess.pl?yearcomp=exactly&year=&playercomp=either&pid=&player={{surname}}, {{first_name}}&pid2=&player2=&movescomp=exactly&moves=&opening=&eco=&result=" target="_blank">Partier fra chessgames.com</a></li>
+				    <li class="list-group-item"><a href="http://www.365chess.com/search_result.php?wlname={{surname}}&wname={{first_name}}&open=&blname=&bname=&eco=&nocolor=on&yeari=&yeare=&sply=1&ply=&res=&submit_search=1" target="_blank">Partier fra 365chess.com</a></li>
+				</ul>
+			</div>
+		</div>		
+	</div>	
 </template>
