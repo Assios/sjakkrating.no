@@ -21,3 +21,11 @@ dictplayer["elos"] = {}
 dictplayer["elos"][rating_files[0]] = dictplayer["temp_elo"]
 
 print dictplayer
+
+def get_ratings_by_name(full_name):
+  for date in rating_files:
+    file_name = "ratingtall/" + rating_files[date] + ".txt"
+
+    f = open(file_name)
+
+    
