@@ -11,7 +11,7 @@ class RatingGraphObject:
     def __init__(self, line):
         self.full_name = line[6:32].strip()
         self.club = line[32:54].strip()
-        self.temp_elo = line[54:59].strip()
+        self.temp_elo = line[54:61].strip().split(' ')[0]
 
 player = RatingGraphObject(f.readlines()[5])
 
@@ -23,6 +23,7 @@ dictplayer["elos"][rating_files[0]] = dictplayer["temp_elo"]
 
 def get_ratings_by_name(full_name):
   elo_dict = {}
+  elo_dict["elos"] = {}
 
   for date in rating_files:
     file_name = "ratingtall/" + date + ".txt"
@@ -40,16 +41,6 @@ def get_ratings_by_name(full_name):
 
       dictplayer = player.__dict__
 
-      if not "elos" in elo_dict:
-        elo_dict["elos"] = {}
-
       elo_dict["elos"][date] = dictplayer["temp_elo"]
 
-  return elo_dict
-
-print get_ratings_by_name("Carlsen Magnus")
-
-
-
-
-
+  return elo_dict["elos"]

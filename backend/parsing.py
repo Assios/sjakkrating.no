@@ -5,6 +5,7 @@ import json
 import urllib2
 import unicodedata
 import codecs
+from rating import *
 
 class RatingObject:
     def __init__(self, line):
@@ -22,7 +23,10 @@ class RatingObject:
         self.year_of_birth = to_int(s[7])
         self.fide_id = to_int(s[8])
         self.last_membership_nsf = to_int(s[9])
+        self.elos = get_ratings_by_name(self.full_name)
+
 	self.name = self.first_name + ' ' + self.surname
+
 
 url = urllib2.unquote("http://www.sjakk.no/rating/siste.txt")
 
