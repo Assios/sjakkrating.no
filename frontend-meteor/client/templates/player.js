@@ -21,38 +21,38 @@ Template.player.helpers({
 
 	getImage: function() {
 		return Session.get('img_url');
+	},
+
+	topGenresChart: function() {
+	    return {
+	        title: {
+	            text: "Ratinggraf",
+	            x: -20 //center
+	        },
+	        xAxis: {
+	            categories: this.nsf_categories
+	        },
+	        yAxis: {
+	            title: {
+	                text: 'Elo'
+	            },
+	            plotLines: [{
+	                value: 0,
+	                width: 1,
+	                color: '#808080'
+	            }]
+	        },
+	        legend: {
+	            layout: 'vertical',
+	            align: 'right',
+	            verticalAlign: 'middle',
+	            borderWidth: 0
+	        },
+	        series: [{
+	            name: 'Norsk elo',
+	            data: this.nsf_elos
+	        }],
+	        credits: false,
+	    };
 	}
 });
-
-Template.player.topGenresChart = function() {
-    return {
-        title: {
-            text: 'Ratinggraf',
-            x: -20 //center
-        },
-        xAxis: {
-            categories: ['Jan 2014', 'Apr 2014', 'Jun 2014', 'Sep 2014', 'Jan 2015', 'Apr 2015', 'Jun 2015', 'Sep 2015']
-        },
-        yAxis: {
-            title: {
-                text: 'Elo'
-            },
-            plotLines: [{
-                value: 0,
-                width: 1,
-                color: '#808080'
-            }]
-        },
-        legend: {
-            layout: 'vertical',
-            align: 'right',
-            verticalAlign: 'middle',
-            borderWidth: 0
-        },
-        series: [{
-            name: 'Offisiell elo',
-            data: [2874, 2894, 2887, 2849, 2849, 2854, 2854, 2849]
-        }],
-        credits: false,
-    };
-};

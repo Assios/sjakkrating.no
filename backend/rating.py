@@ -23,7 +23,8 @@ dictplayer["elos"][rating_files[0]] = dictplayer["temp_elo"]
 
 def get_ratings_by_name(full_name):
   elo_dict = {}
-  elo_dict["elos"] = {}
+  elo_dict["elos"] = []
+  elo_dict["categories"] = []
 
   for date in rating_files:
     file_name = "ratingtall/" + date + ".txt"
@@ -41,6 +42,7 @@ def get_ratings_by_name(full_name):
 
       dictplayer = player.__dict__
 
-      elo_dict["elos"][date] = dictplayer["temp_elo"]
+      elo_dict["categories"].append(date)
+      elo_dict["elos"].append(int(dictplayer['temp_elo']))
 
-  return elo_dict["elos"]
+  return elo_dict["categories"], elo_dict["elos"]
