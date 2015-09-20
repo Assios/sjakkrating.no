@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-rating_files = ["2014jan", "2014apr", "2014jun", "2014sep", "2015jan", "2015apr", "2015jun"]
+rating_files = ["2012jan", "2012apr", "2012jun", "2012sep", "2013jan", "2013apr", "2013jun", "2013sep", "2014jan", "2014apr", "2014jun", "2014sep", "2015jan", "2015apr", "2015jun"]
 
 file_name = "ratingtall/" + rating_files[0] + ".txt"
 
