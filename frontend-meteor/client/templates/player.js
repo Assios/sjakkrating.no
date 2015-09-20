@@ -25,6 +25,9 @@ Template.player.helpers({
 
 	topGenresChart: function() {
 	    return {
+	    		chart: {
+	    			zoomType: 'xy'
+	    		},
 	        title: {
 	            text: "Ratinggraf",
 	            x: -20 //center
@@ -49,7 +52,7 @@ Template.player.helpers({
 	            borderWidth: 0
 	        },
 	        series: [{
-	            name: 'Norsk elo',
+	            name: 'Norsk elo (Offisiell)',
 	            data: this.nsf_elos
 	        }],
 	        credits: false,
