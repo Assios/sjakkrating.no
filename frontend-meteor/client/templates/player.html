@@ -17,7 +17,7 @@
 				<ul class="list-group">
 				    <li class="list-group-item">Uoffisiell rating: {{elo}}</li>
 				    <li class="list-group-item">Klubb: <a href="{{pathFor 'clubPage' _id=this.club}}">{{club}}</a></li>
-				    <li class="list-group-item">GP-klasse: {{GP_class}}</li>
+				    <li class="list-group-item">Klasse: {{GP_class}}</li>
 				    <li class="list-group-item">Antall spilte partier: {{number_of_games}}</li>
 				</ul>
 			  </div>
@@ -41,7 +41,7 @@
 
 	<div class="row">
 		<div class="col-md-12">
-			{{> highchartsHelper chartId="test" chartWidth="100%" charHeight="100%" chartObject=ratingChart}}
+			{{> highchartsHelper chartId=_id chartWidth="100%" charHeight="100%" chartObject=ratingChart}}
 		</div>
 	</div>
 </template>

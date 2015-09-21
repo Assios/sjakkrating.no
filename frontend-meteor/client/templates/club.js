@@ -1,29 +1,62 @@
 Template.clubPage.helpers({
-	club_players: function(c_name) {
-		return Players.find({club: c_name}, {sort: {elo: -1}}).map(function(player, index) {
+	club_players: function() {
+		return Players.find({club: this.club_name}, {sort: {elo: -1}}).map(function(player, index) {
 			player.place = index+1;
 			return player;
 		});
 	},
 
-	number_of_players: function(c_name) {
-		return Players.find({club: c_name}).count();
+	number_of_players: function() {
+		return Players.find({club: this.club_name}).count();
 	},
 
-	average_rating: function(c_name) {
+	average_rating: function() {
 		total = 0
 
-		Players.find({club: c_name}).map(function(p) {
+		Players.find({club: this.club_name}).map(function(p) {
 		  total += p.elo;
 		});
 
-		return Math.round(total/Players.find({club: c_name}).count());
+		return Math.round(total/Players.find({club: this.club_name}).count());
 	},
 
-	gender_ratio: function(c_name) {
-		male = Players.find({club: c_name, gender: 'M'}).count();
-		female = Players.find({club: c_name, gender: 'F'}).count();
+	genderRatio: function() {
+			male = Players.find({club: this.club_name, gender: 'M'}).count();
+			female = Players.find({club: this.club_name, gender: 'F'}).count();
 
-		return (female/male*100).toFixed(2);
+	    return {
+	    		credits: false,
+	        chart: {
+	            plotBorderWidth: null,
+	            plotShadow: false
+	        },
+	        title: {
+	        	text: null
+	        },
+	        tooltip: {
+	            pointFormat: '<b>{point.y}</b>'
+	        },
+	        plotOptions: {
+	            pie: {
+	                cursor: 'pointer',
+	                dataLabels: {
+	                    enabled: true,
+	                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+	                    style: {
+	                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+	                    },
+	                    connectorColor: 'silver'
+	                }
+	            }
+	        },
+	        series: [{
+	            type: 'pie',
+	            name: 'Kjønn',
+	            data: [
+	                {name: 'Menn', y: male},
+	                {name: 'Kvinner', y: female}
+	            ]
+	        }]
+	    };
 	}
 });
