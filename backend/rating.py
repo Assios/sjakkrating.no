@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-rating_files = ["2012jan", "2012apr", "2012jun", "2012sep", "2013jan", "2013apr", "2013jun", "2013sep", "2014jan", "2014apr", "2014jun", "2014sep", "2015jan", "2015apr", "2015jun"]
+rating_files = ["2012jan", "2012apr", "2012jun", "2012sep", "2013jan", "2013apr", "2013jun", "2013sep", "2014jan", "2014apr", "2014jun", "2014sep", "2015jan", "2015apr", "2015jun", "2015sep"]
 
 file_name = "ratingtall/" + rating_files[0] + ".txt"
 
@@ -12,6 +12,7 @@ class RatingGraphObject:
         self.full_name = line[6:32].strip()
         self.club = line[32:54].strip()
         self.temp_elo = line[54:61].strip().split(' ')[0]
+        self.fide_elo = line[64:69].strip()
 
 player = RatingGraphObject(f.readlines()[5])
 
@@ -25,6 +26,7 @@ def get_ratings_by_name(full_name):
   elo_dict = {}
   elo_dict["elos"] = []
   elo_dict["categories"] = []
+  elo_dict["fide_elos"] = []
 
   for date in rating_files:
     file_name = "ratingtall/" + date + ".txt"
@@ -36,6 +38,7 @@ def get_ratings_by_name(full_name):
     for l in f.readlines():
       if full_name in l:
         line = l
+        break
 
     if line:
       player = RatingGraphObject(line)
@@ -43,6 +46,6 @@ def get_ratings_by_name(full_name):
       dictplayer = player.__dict__
 
       elo_dict["categories"].append(date)
-      elo_dict["elos"].append(int(dictplayer['temp_elo']))
+      elo_dict["elos"].append(int(dictplayer['temp_elo']))      
 
   return elo_dict["categories"], elo_dict["elos"]
