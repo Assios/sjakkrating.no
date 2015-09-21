@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-rating_files = ["2012jan", "2012apr", "2012jun", "2012sep", "2013jan", "2013apr", "2013jun", "2013sep", "2014jan", "2014apr", "2014jun", "2014sep", "2015jan", "2015apr", "2015jun", "2015sep"]
+rating_files = ["2006jan", "2006apr", "2006jun", "2006okt", "2007jan", "2007mar", "2007jun", "2007sep", "2008jan", "2008apr", "2008jun", "2008sep", "2009jan", "2009apr", "2009jun", "2009sep", "2010jan", "2010apr", "2010jun", "2010sep", "2011jan", "2011apr", "2011jun", "2011sep", "2012jan", "2012apr", "2012jun", "2012sep", "2013jan", "2013apr", "2013jun", "2013sep", "2014jan", "2014apr", "2014jun", "2014sep", "2015jan", "2015apr", "2015jun", "2015sep"]
 
 file_name = "ratingtall/" + rating_files[0] + ".txt"
 
@@ -41,12 +41,15 @@ def get_ratings_by_name(full_name):
         break
 
     if line:
+      line = line.replace(')', ' ')
+
       player = RatingGraphObject(line)
 
       dictplayer = player.__dict__
 
       elo_dict["categories"].append(date)
       elo_dict["elos"].append(int(dictplayer['temp_elo']))
+
       if not dictplayer['fide_elo'].isdigit():
         elo_dict["fide_elos"].append(None) 
       else:

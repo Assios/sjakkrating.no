@@ -1,0 +1,2052 @@
+   Nr Navn                      Klubb                  Elo #par Fide Hurt Lyn
+   1: Aboukhalil Mostafa        (Tidl. Akademisk)     1640   15
+   2: Abrahamsen Knut Ø         Nordstrand            1204   66
+   3: Abrahamsson Roaul         1911                  1933  347
+   4: Abusdal Gunnar            (Tidl. Nordstrand)    1240  145
+   5: Adam Gyula                Drammen               1471   93
+   6: Adamsen Tore W.           Fredriksstad           943  121
+   7: Agdestein Einar Døving    Asker                 1438  187
+   8: Agdestein Emil Døving     Trondheimstud         2150  507
+   9: Agdestein Espen           Oslo Vest             2420  735
+  10: Agdestein Fredrik         Steinkjer             1353   17
+  11: Agdestein Peter           (Tidl. NTG)            711   52
+  12: Agdestein Pål             Asker                 1737   96
+  13: Agdestein Simen           NTG                   2606 1190
+  14: Agdestein Sjur            Steinkjer             1728   32
+  15: Agustsson Hafsteinn       Nordnes               1757  288
+  16: Akali Mark                Kampen                1482   31
+  17: Aksnes Aleksander Eikenes Trondheimstud         1440   84
+  18: Aleksandersen Richard     Stavanger             1050  114
+  19: Aleksandersen Simen       Sevland                889   18
+  20: Ali Karim                 Fribonden             1575  146
+  21: Alikhani Afshin           Sotra                 1478  177
+  22: Alne Sture Magne          Trondheimstud         1609  334
+  23: Alnes Jan H.              Tromsø                1703  118
+  24: Alshamari Ayad            Narvik                1571   25
+  25: Alsos Ulv G.              Tromsø                1081  148
+  26: Amarapala Sherington      Lørenskog              751   79
+  27: Anda Andreas Kanages      Stavanger              714   59
+  28: Anda Vegard Kanages       Stavanger              518   57
+  29: Anderl Christoph          Stjernen              1572   82
+  30: Andersen Alf Roger        Follo                 2184  515
+  31: Andersen Andre            Skjervøy              1309   11
+  32: Andersen Arild            Larvik                 962   18
+  33: Andersen Benjamin Mjelde  Moss                   762   71
+  34: Andersen Bjørn            Sarpsborg             1574  565
+  35: Andersen Dag              Indre Østfold         1787  863
+  36: Andersen Frode            Stjernen              1459   48
+  37: Andersen Guttorm          Stjernen              1459  253
+  38: Andersen Harry            Fredriksstad          1756 1542
+  39: Andersen Ivar             Kristiansand          1772   14
+  40: Andersen Jonatan M        Moss                  1497  280
+  41: Andersen Jørgen M.        Strømmen              1875  182
+  42: Andersen Lars Even        Black Knights         2220  581
+  43: Andersen Odd              Moss                  1657  904
+  44: Andersen Per O            SOSS                  2016  375
+  45: Andersen Pål              Sevland               1127   45
+  46: Andersen Reidar           Sotra                 1206  172
+  47: Andersen Richard          Moss                  1065   78
+  48: Andersen Rune T.          SOSS                  1710  251
+  49: Andersen Steffen          Arendal               1200   48
+  50: Andersen Viggo            Stjernen              1523  648
+  51: Andersen Øystein R.       Black Knights         1871  494
+  52: Andersson Øivind          Drammen               1153   79
+  53: Andreasen Hans B.         Horg                  1180  139
+  54: Andreassen Børre          Namsos                1384   28
+  55: Andreassen Emil           (Tidl. Fredriksstad)   776   47
+  56: Andreassen Lars M         Samisk                2179  405
+  57: Andreassen Leif           Øksfjord              1214  345
+  58: Andreassen Pål            SOSS                  1988  470
+  59: Andreassen Tor Herman     Tønsberg              1595   87
+  60: Angeltveit Andreas Rossin Porsgrunn             1105  244
+  61: Anthony-Pillai Seelan     Tønsberg               910   13
+  62: Antonsen Andreas          Steinkjer             1004   14
+  63: Antonsen Helge            Moss                  1341   65
+  64: Antonsen Øyvind           Aalesund              1868  432
+  65: Archer Cedric             Tønsberg              1124   95
+  66: Arentz Roald              Trondheim             1647  655
+  67: Argento Tor Haakon B.     Svartlamon            1190   22
+  68: Arild Steinar             Alta                  1195  311
+  69: Arnesveen Tom             Ottestad               677   21
+  70: Arvola Benjamin           Tromsø                2006  166
+  71: Asbjørnsen Øyvind         1911                   868   26
+  72: Asghar Akil               Follo                  797   46
+  73: Asghar Faisal             Follo                  892   49
+  74: Askeland Andreas          OSS                   1406   17
+  75: Astrup Håkon              OSS                   1740  306
+  76: Astrup Kim Chr.           SOSS                  2035  179
+  77: Aubert Carsten            Tønsberg              1831  211
+  78: Auke Erik J.              Konnerud               592   71
+  79: Auke Morthen              Konnerud               918   83
+  80: Aulin-Jansson Jøran       Asker                 2281 1586
+  81: Aune Finn Roar            Strømmen              1656  273
+  82: Austrheim Terje           Voss                   591   16
+  83: Bae Torstein              1911                  2385 1104
+  84: Bakke Jan Gunnar          Alta                  1211  147
+  85: Bakke Olav                OSS                   1202   30
+  86: Bakken Erik               Trondheimstud         1336   11
+  87: Bakken Svein-Erik         Follo                 1277  302
+  88: Balas Georg               1911                  1255   18
+  89: Barane Simon              Sandnes               1201  103
+  90: Barker Daniel             Trondheimstud         1478   54
+  91: Barstad Thoralf N         Nordstrand            1545  454
+  92: Barton Zdenek             Lillestrøm            1629  313
+  93: Bay Anders Preben         Asker                 1289  171
+  94: Becher Adrian             (Tidl. Konnerud)      1071   14
+  95: Becirbegovic Mirsad       Kristiansand          1536   67
+  96: Beck Anders Knudsen       Tønsberg              1417  222
+  97: Beck-Andersen Geir        (Tidl. Alta)          1156   47
+  98: Beg Waseem                Stjernen              1471   55
+  99: Bekkelien Glenn Lewi      Black Knights         1678  306
+ 100: Bekkelund Gunnar M        Gambit                1031   44
+ 101: Bekkesletten Cato         1911                  1603  199
+ 102: Bekkesletten Erlend       1911                   606   20
+ 103: Belstad Bjørn E           Fredriksstad          1424   95
+ 104: Benjaminsen Bjørn         Masfjorden            1128   84
+ 105: Benn Neil                 Asker                 1547  184
+ 106: Bentsen Håkon             Molde                 2090  787
+ 107: Bentsen Øyvind            1911                  2040  649
+ 108: Berezkin Alexander        Trondheim             1294  122
+ 109: Berg Kurt Magnus          Harstad               1775  310
+ 110: Berg Tom                  Harstad               1163  224
+ 111: Berge Fredrik Lange       1911                   850   28
+ 112: Bergersen Bjørn           Gjøvik                1471  487
+ 113: Bergersen Kjetil J        Gjøvik                1895  352
+ 114: Bergersen Per A           Bærum                 1469   37
+ 115: Bergersen Robert          Tromsø                1546   18
+ 116: Berg-Jensen Joachim       Porsgrunn             2091  506
+ 117: Berg-Jensen Per M         OSS                   1599   61
+ 118: Berglund Jan S.           Tromsø                1977 1083
+ 119: Bergquist Rune            Tønsberg              1297  422
+ 120: Bergstrøm Hans            Gambit                1131   11
+ 121: Bergvoll Mats             Tromsø                1901  316
+ 122: Bern Ivar                 Bergens               2298 1283
+ 123: Berntsen Eivind Sæteren   Nordstrand             877   44
+ 124: Berntsen Mathias          (Tidl. Akademisk)     1168   56
+ 125: Berntsen Ola Sæteren      Nordstrand             711   36
+ 126: Berntsen-Øybø Bendik      1911                  1295   99
+ 127: Berntzen Stein            Tromsø                1581  142
+ 128: Berstad Jørund            Førde                 1691  319
+ 129: Bie Hans Petter           Nordstrand            1474  531
+ 130: Birkeland John Olav       Egersund              1396  103
+ 131: Birkeland Ole             Kristiansand           860  685
+ 132: Birkestrand Odd           Masfjorden            1707  470
+ 133: Birkestrand Odd H         Masfjorden            1428  367
+ 134: Birkic Vid                (Tidl. Sarpsborg)     1483  236
+ 135: Bjeglerud Jarle           Kongsberg             1737  126
+ 136: Bjelland Nils Inge        OSS                   1254   55
+ 137: Bjerke Richard            OSS                   2102  968
+ 138: Bjerke Silje              1911                  2151  936
+ 139: Bjerklund Steinar         Alta                   500   17
+ 140: Bjerring Dennis A. J.     Alta                  1015   62
+ 141: Bjordal Arne N            (Tidl. Sandnes)        991  312
+ 142: Bjornes Leif              Kristiansand          1841  194
+ 143: Bjurholt Ingeborg         Bærum                  931   73
+ 144: Bjørgum Endre             Orkdal                 757  171
+ 145: Bjørgvik Jan Arne         Verdal                1705 1438
+ 146: Bjørgvik Josef            Verdal                1088  105
+ 147: Bjørkhaug Kenneth         Kristiansand          1080   13
+ 148: Bjørklund Marco           (Tidl. Lenvik)         789   10
+ 149: Bjørn Knut Arild          (Tidl. Lyngen)        1331   17
+ 150: Bjørnland Svein           Fredriksstad          1843  782
+ 151: Bjørnstad Leif            Kirkenes              1488  868
+ 152: Bjørnstrøm Frank          Komsa                  910   17
+ 153: Bjørnstrøm Øystein        Bodø                  1434   40
+ 154: Bjørnø Ole Kr.            Modum                 1907  696
+ 155: Bjørseth Ole Petter       SMPOAÅ                1445   56
+ 156: Bjørseth Rune             Stjørdal              1648   51
+ 157: Blakar Håkon              (Tidl. Lillehammer)   1002   51
+ 158: Blekken Kjell Ove         Verdal                1711  285
+ 159: Blikra Per                Stavanger             1620  293
+ 160: Blom Erlend R             Fana                  1534  158
+ 161: Blom Geir                 Sotra                 1328  329
+ 162: Blomkvist Vemund          Akademisk             1482   96
+ 163: Bodal Lars Fredrik        (Tidl. Indre Østfold)  926   26
+ 164: Boger Raymond             Randaberg             1789  922
+ 165: Bolme Magne O.            NSSF                   978   48
+ 166: Bolstad Henning           Bergens               1554   14
+ 167: Bolsø Gunnar              Aalesund              1573  539
+ 168: Bonsaksen Tore            Modum                 1414  230
+ 169: Borchgrevink Harald B     Bergens               2312  814
+ 170: Borgen Stian              (Tidl. Masfjorden)     921   10
+ 171: Bossum Petter Tømmerås    Fredriksstad           766   82
+ 172: Botheim Erik              1911                   896  107
+ 173: Botheim Tor               1911                  1699  215
+ 174: Boultaev Sherip           Stavanger             1440  107
+ 175: Brandt Eivind             1911                  1339  143
+ 176: Brandt Jan-Erik           1911                   980   37
+ 177: Brantzeg Pål              Drammen               1565  535
+ 178: Brasøy Aksel              Alta                  1914  317
+ 179: Bratbak Anita             Bergens               1096   42
+ 180: Bratland Egil Ronald      Drammen               1071  136
+ 181: Bratsberg Lars Ivar       Drammen               1122   38
+ 182: Bratteberg Per Bjørnar    Ørsta                 1132   22
+ 183: Brattetveit Kenneth       Sotra                 1651  417
+ 184: Braude Marthin            Moss                  1591   70
+ 185: Bredesen Odd-Ivar         (Tidl. Risør)          869   37
+ 186: Breivik Lars              Drammen               2241  264
+ 187: Breivik Rolv              Akademisk             1583  280
+ 188: Brekke John Ivar          Trondheim             1356  378
+ 189: Brekke Jorunn Marie       OSS                   1810  480
+ 190: Brekke Tore               SK 96                 1871  640
+ 191: Brekke Øystein            Modum                 1936  606
+ 192: Bremar Arne               Gambit                1153   43
+ 193: Brenden Bjørn             Elverum               1351  638
+ 194: Brenden Torbjørn          (Tidl. Nordstrand)    1377   68
+ 195: Briseid Håkon             Akademisk             1710  154
+ 196: Brix Jan                  Caissa                1406  723
+ 197: Brobakken Geir            Hamar                 1654  841
+ 198: Brobakken Sindre          Hamar                  728   19
+ 199: Brodshaug Martin Enerud   Aurskog-Høland         877   43
+ 200: Brokke Dag                Nordstrand            1530  319
+ 201: Brokke Otto               Drammen               1369  200
+ 202: Brokvam Roy               Lillestrøm            1379  233
+ 203: Bru Stein K.              Randaberg             1692  193
+ 204: Bruland Jan               Førde                 1200   47
+ 205: Brun Nicolai              Tønsberg              1400   53
+ 206: Brunes Kjell              Bodø                  1250  316
+ 207: Brustad Kåre André        (Tidl. Strømmen)      1203   36
+ 208: Bruun Frank Olav          Strømmen              1446  170
+ 209: Bruvoll Philip J          Akademisk             1158   22
+ 210: Bryn Askild               Lillehammer           1891  392
+ 211: Bryn Steinar              Lillehammer           1554  107
+ 212: Bryn Thomas               Molde                 1942  813
+ 213: Bråthen Rune Vidar        Nordstrand            1286   40
+ 214: Braathen Sigurd           Sarpsborg             1269  181
+ 215: Braathen Trond V          Moss                  1100  206
+ 216: Bråthen Werner            Strømmen              1074  120
+ 217: Bue Gunnar                Tønsberg              1567 2304
+ 218: Buffelen Valter           Lørenskog             1525   22
+ 219: Bulajic Dusan             (Tidl. Indre Østfold) 1391   69
+ 220: Bull Bendik               Trondheimstud         1306   11
+ 221: Bull Håkon                Tønsberg              1702  189
+ 222: Burchard Ingar            (Tidl. Tromsø)        1574   22
+ 223: By Jon Birger             Verdal                1144   79
+ 224: Byklum Bjørnar            SOSS                  2293  665
+ 225: Bækken Ole                Elverum               1366  354
+ 226: Bø Jon Bjarne             Sandnes                774   46
+ 227: Bø Kolbjørn               NSSF                   982  156
+ 228: Bø Odd                    Randaberg             1623  340
+ 229: Bø Trond Hellem           Bergens               1421   74
+ 230: Bøe Arne Hugo             Lørenskog             1736  687
+ 231: Bøe Per Gunnar            Ørsta                  960   20
+ 232: Bøe Timmy                 (Tidl. Fredriksstad)  1563  130
+ 233: Bøhler Johannes Høva      1911                  1048   60
+ 234: Bølstad Fredrik           Harstad               1207   67
+ 235: Børresen Georg S.         Black Knights         2169  602
+ 236: Børresen Håvard           OSS                   1072   31
+ 237: Børstad Thomas Kr.        (Tidl. OSS)           1814  270
+ 238: Bårdsen Bård              Gambit                1694   21
+ 239: Baastø Espen Peder        Nordstrand            1576  103
+ 240: Carding Nicholas          Kragerø               1664  146
+ 241: Carlsen Christian         (Tidl. Drammen)       2004  255
+ 242: Carlsen Ellen Øen         NTG                   1711  317
+ 243: Carlsen Henrik            Bærum                 1946  276
+ 244: Carlsen Ingrid Øen        NTG                   1269  119
+ 245: Carlsen Kjell Arne        Harstad               1141  314
+ 246: Carlsen Magnus            NTG                   2750  910
+ 247: Carstensen Øivind         Nordstrand            1433  758
+ 248: Cerkezovic Emir           (Tidl. Lillehammer)   1381   87
+ 249: Chikwati Elvis            Akademisk             1183   45
+ 250: Christensen Jim           MO                    1771  876
+ 251: Christensen Kjeld         Fredriksstad          1799  336
+ 252: Christensen Oddbjørn      Tønsberg              1449  228
+ 253: Christensen Roger         Tønsberg              1354   38
+ 254: Christenson Bjørn A       (Tidl. Nordstrand)    1785   54
+ 255: Christenson Flemming      Nordstrand            2270  649
+ 256: Christenson Thor          Nordstrand            1304 1265
+ 257: Christiansen Rolf         Asker                 1490  629
+ 258: Christiansen Steinar      Tempo                 1178   16
+ 259: Christoffersen Odd        Bergens               1551  152
+ 260: Christoffersen Terje      Follo                 1534   68
+ 261: Claes Karl                1911                  1102   50
+ 262: Clausen Kaj Konrad        1911                  1096   23
+ 263: Dagsvold Trond            Hammerfest            1233   42
+ 264: Dahl Jan Henrik           Stjørdal              1173  124
+ 265: Dahl Lasse                Moss                  1346  213
+ 266: Dahl Torbjørn             Stjørdal              1588  545
+ 267: Dahle Harald M.           Sandnes               1067  262
+ 268: Dahlen Ole Henrik         Kristiansund          1180   10
+ 269: Dahll Gustav              Halden                1285  171
+ 270: Dalheim Even              (Tidl. Bergens)       1822  220
+ 271: Dalseth Ulrich            Kristiansand          1269  111
+ 272: Damjanovic Nenad          Lillehammer           1432   14
+ 273: Danielsen Arne            Nordstrand            2012  434
+ 274: Danielsen Johnny Kr.      Nordstrand            1513   18
+ 275: Danielsen Kjetil B        Nordstrand             737   70
+ 276: Danielsen Magnus          Lillehammer           1988  323
+ 277: Dannevig Øystein          OSS                   2349 1204
+ 278: David Edwin               Trondheim             2155  768
+ 279: David Eldin               1911                  1972  623
+ 280: Davidsen Trond            Direkte               1167   96
+ 281: Dawar Emal                (Tidl. Vadsø)         1442   14
+ 282: Delphin Nils Håkon        Akademisk             1258  169
+ 283: DeMac Elias               Bergens               1790  254
+ 284: Diesen Bruce              Asker                 2138  422
+ 285: Digernes Magnus           Nittedal              1775  206
+ 286: Dillan Ivar               (Tidl. Verdal)         763   19
+ 287: Djerdj Zeljko             Sandnes               1412   14
+ 288: Djurhuus Rune             Akademisk             2443 2031
+ 289: Doan Trinh Anh Dan        Ottestad              1630   93
+ 290: Dogani Auduraim           (Tidl. Fredriksstad)  1772  125
+ 291: Dokka Arild               Kongsberg             1283   26
+ 292: Dokmo Eric Roar           Kristiansand          1585   38
+ 293: Dramdal Rolf              Tempo                 1007   67
+ 294: Drevvatn Ketil            Mosjøen               1220   72
+ 295: Dybvik Bjørn Noralf       Aalesund              1161  141
+ 296: Dybvik Edvin              SMPOAÅ                1594  310
+ 297: Dybvik Sara               SMPOAÅ                1001   46
+ 298: Dybvik Truls              SMPOAÅ                1074   42
+ 299: Dyrdal Arnbjørn           Hønefoss              1932  614
+ 300: Dyrdal Idar               OSS                   1494  515
+ 301: Dyrhovden Ingvild B.      (Tidl. Masfjorden)     659   16
+ 302: Dyrnes Jussi              Nordstrand            1626  414
+ 303: Eckhardt Lars             Nordstrand            1975  548
+ 304: Edakina Anastasia         OSS                   1265   39
+ 305: Edakina Maria             Harstad               1325   66
+ 306: Edvardsen Ingar           Drammen               1757  438
+ 307: Edvardsen Lars            Moss                  1142   70
+ 308: Edvardsen Leif            Drammen               1109  801
+ 309: Edvardsen Magnus          Kongsberg             1642  521
+ 310: Edvardsen Ragnar          Drammen               1874 1729
+ 311: Edvardsen Tore            Hønefoss              1506  563
+ 312: Edvardsen Trond           Løten                 1443  336
+ 313: Edvardsen Vidar           Stavanger             1204   32
+ 314: Edvardsen Øystein         Drammen               1486  413
+ 315: Egeberg Sebastian         Lørenskog              896   20
+ 316: Egede-Nissen Bjørn        Drammen               1902  706
+ 317: Egeland Arvid             Sandnes               1043   54
+ 318: Egeland Finn              Stjernen              1952  399
+ 319: Egeland Marte             Sandnes               1862  430
+ 320: Egeland Stig              Sandnes               1261   33
+ 321: Egeli Per Ove             Randaberg             2266 1001
+ 322: Eggerud Frank             Porsgrunn             1358  129
+ 323: Eian Per Ivar             Trondheim             1033   79
+ 324: Eide Anders               Trondheimstud         1090   30
+ 325: Eide Christer             Harstad               1202   28
+ 326: Eide Joachim              Akademisk             1229   89
+ 327: Eidem Frode               Strømmen              1752  425
+ 328: Eidså Edvin               (Tidl. OSS)           1252  381
+ 329: Eigum Knut Olav           Asker                  993   95
+ 330: Eikeland Erik             Bergens               1737  300
+ 331: Eikeland Trond            Fana                  1930  377
+ 332: Eikevik Arvid             Stjernen               934  227
+ 333: Eikseth Egil              Trondheim             1567  440
+ 334: Eikås Daniel              Sandnes               1147   34
+ 335: Eilertsen Jens            SMPOAÅ                2089  835
+ 336: Einan Knut Arne           Direkte               1234   70
+ 337: Einarsen Kenneth          Akademisk             1757  213
+ 338: Einvik Gunnar             Strømmen              1875  649
+ 339: Ekeberg Carl Fr.          Asker                 2358  794
+ 340: Ekeberg Øivind            Bærum                 1258  123
+ 341: Ekornmyr Arne             Moss                  1064   19
+ 342: Eliassen Erik             (Tidl. Hauge)         1788  583
+ 343: Eliassen Øyvind Stokkenes Direkte                860   54
+ 344: Elka Pærviz               Tromsø                1366  330
+ 345: Ellingsen Bjørn M.        Stavanger             1454  267
+ 346: Ellingsen Martin L        (Tidl. Tromsø)         861   46
+ 347: Ellingsrud Bjørn          Nordstrand            1307  234
+ 348: Ellingsrud Eivind         (Tidl. Nordstrand)    1163  101
+ 349: Elphinstone Patrick       Nittedal               793   32
+ 350: Elseth Roar               Asker                 2247 1028
+ 351: Elsness Frode             Moss                  2410  813
+ 352: Elstad Daniel             Trondheim              687   13
+ 353: Eltvik Arne               Molde                 1522   10
+ 354: Elvebakk Jan              Trondheim             1799  460
+ 355: Emberland Even            Sandnes               1321   56
+ 356: Endresen Ole              (Tidl. Stavanger)      976   12
+ 357: Endresen Svein H          (Tidl. Brønnøysund)   1534  415
+ 358: Enge Finn                 Ørsta                 1149   29
+ 359: Engebretsen Lasse         Nordstrand            1300  193
+ 360: Engebretsen Terje U.      Fredriksstad          1105  191
+ 361: Engebretsen Tor           Nordstrand             889  169
+ 362: Engen Roar                Aurskog-Høland        1685   29
+ 363: Engeset Bjarte            Larvik                1643  115
+ 364: Engevik Bjarne J.         Strømmen              1601  677
+ 365: Engevik Sissel M.         Strømmen               519  140
+ 366: Engh Erling               Stavanger              755   70
+ 367: Engli Knut                Stjernen              1685  245
+ 368: Enoksen Christer          (Tidl. Tromsø)         730   50
+ 369: Erbe Jonas                SMPOAÅ                 969   24
+ 370: Eriksen Bjarne            Førde                 1955   25
+ 371: Eriksen Dag               OSS                   1565  347
+ 372: Eriksen Geir-Arne         Moss                  1092   53
+ 373: Eriksen Jan Hugo          Stjernen              1301   56
+ 374: Eriksen Magnus            MO                    1371   19
+ 375: Eriksen Marius            Nord-Odal              629   29
+ 376: Eriksen Marius            Orkdal                1073   64
+ 377: Eriksen Matts             Orkdal                1521  355
+ 378: Eriksen Svend T           Fredriksstad           755   97
+ 379: Eriksen Terje             Drammen               2076  583
+ 380: Eriksen Tom               Sotra                 1614  173
+ 381: Erikstad Olav             Akademisk             1610  635
+ 382: Erlandsen Hege            Tromsø                1051  125
+ 383: Erlandsen Vidar           Caissa                1822  655
+ 384: Erlendson Audun           Asker                 1290   17
+ 385: Ershadi Mojtaba           (Tidl. 1911)          1680   38
+ 386: Ervik Sindre              Ørsta                  786   15
+ 387: Esbensen Andreas          Vadsø                 2023  479
+ 388: Esbensen Arnt             Vadsø                 2108   97
+ 389: Esbensen Hans Fredrik     Vadsø                 1443  523
+ 390: Esbensen Kai Inge         1911                  1593  203
+ 391: Espeland Nikolai          Sandnes                649   20
+ 392: Evensen Jahn              Ottestad              1353   49
+ 393: Evensen Mats              Stjørdal               934   59
+ 394: Evensen Roy               Harstad               1790  600
+ 395: Evensen Tom R             Trondheim             1961  686
+ 396: Faber Håkon S             SMPOAÅ                1241   88
+ 397: Fadnes Bård               Bergens               1368  218
+ 398: Fagerjord Erlend          Trondheim             1478   20
+ 399: Falao Rune Rugland        Hønefoss              1541  167
+ 400: Falsen Ivan               Akademisk             1316  167
+ 401: Fanghol Eric              Molde                 1643   37
+ 402: Farmen Pål                Caissa                1779  556
+ 403: Farstad Gudmund           Molde                 1811  337
+ 404: Feragen Erik              Hamar                 1481  108
+ 405: Feraget Sadik             Indre Østfold         1591  222
+ 406: Fergestad Petter          Drammen               1346   34
+ 407: Ferkingstad Sjur          Sevland               2139  967
+ 408: Fernandes Richardson Dayv Orkdal                 968   20
+ 409: Fesche Rolf A             Asker                 1532  581
+ 410: Feyling Thor-Kenneth      Egersund              1340  204
+ 411: Fikstvedt Daniel          (Tidl. Stavanger)      819   25
+ 412: Filipovic Ferid           Elverum                980  109
+ 413: Findreng Astrid           Trondheim             1277   88
+ 414: Finjord Ingjald           Bergens               1522  369
+ 415: Fintland Kjartan Aa.      Randaberg             1586   84
+ 416: Fjeldberg Åge             (Tidl. Sørum)         1586  257
+ 417: Fjeldheim Egil Aarstad    Nordstrand            1049   34
+ 418: Fjeldstad Kay-Ove         Sotra                 1240  123
+ 419: Fjellengen Bård           Sarpsborg             1699 1072
+ 420: Fjellestad Helge          1911                  1375  198
+ 421: Fjellheim Marius          Tromsø                1400  169
+ 422: Fjære Stine               Konnerud              1042   66
+ 423: Fjørtoft Guttorm          Svartlamon            1361   36
+ 424: Flemsæter Egil            Konnerud              1042   26
+ 425: Flensborg Egil            Løten                  985  287
+ 426: Flermoen Peter            Harstad               1669   75
+ 427: Flo Jørgen                Nordstrand            1515  140
+ 428: Flo Steinar               Nordstrand            1330  398
+ 429: Floer Malin               Tromsø                1006   66
+ 430: Floer Stig-Ove            Tromsø                1243   48
+ 431: Flores Richard            Nittedal              1488  141
+ 432: Floten Åsmund             Akademisk             1219   97
+ 433: Fløtten Erling            Vadsø                 1603  363
+ 434: Flaa Eirik                Stjernen              1396  107
+ 435: Flaata Alexander R.       Black Knights         1932  559
+ 436: Fomin Nikolai             Bergens               1077   69
+ 437: Forberg Anders            SOSS                  2006  470
+ 438: Forfang Åsmund            Orkdal                1361  192
+ 439: Forsberg Jan              Sarpsborg             1592  472
+ 440: Forselv Edmund            Gambit                1767  204
+ 441: Forså Elise               Tromsø                1130  174
+ 442: Forså Espen               Tromsø                2262  491
+ 443: Fosdahl Bjørn W           Stjernen              1731  469
+ 444: Fossan Erik               Bergens               2316 1039
+ 445: Fossan Petter             Randaberg             2169  894
+ 446: Fossheim Øyvind           Fribonden             1519  153
+ 447: Fossum Atle Bøyum         Drammen               1959  356
+ 448: Fossum Øystein Bøyum      Trondheimstud         2175  565
+ 449: Fotland Hans Chr          OSS                   1832  159
+ 450: Fotland Petter            Bergens               1295   78
+ 451: Fredriksen Frank          Fredriksstad          1360  302
+ 452: Fredriksen Jan Gunnar     Akademisk             1786  384
+ 453: Fredriksen Johnny         Sortland              1454   30
+ 454: Fredriksen Olav K.        1911                  1614  101
+ 455: Friberg Reid Erik         Porsgrunn             1183  116
+ 456: Friestad Joachim          Hønefoss              1433  157
+ 457: Friis Jon                 Hønefoss              1242   74
+ 458: Frimanslund Berge         Sotra                 1241  257
+ 459: Frisch Harald             (Tidl. Kirkegata)     1304   84
+ 460: Frisvold Ole Emil         Bergens               1243  101
+ 461: Frydendal Odd             Ottestad              1360  728
+ 462: Frydenlund Arve           Hønefoss              1421  187
+ 463: Frøland Benoni            Sandnes               1393  120
+ 464: Frøland Kai E.            Bergens               1287   10
+ 465: Fuglerud Sverre           NSSF                  1574   15
+ 466: Furnes Torstein           Follo                 1544  543
+ 467: Furuknap Tommy            Lillehammer            948   76
+ 468: Furulund Rolf             (Tidl. Ottestad)      1077  112
+ 469: Fyllingen Roy H           Bergens               2409  597
+ 470: Fürst Jan Christian       Modum                  674   25
+ 471: Fürst Thomas              Modum                  752   19
+ 472: Fystro Odd Ivar           1911                  1358  615
+ 473: Færder Øystein F          Akademisk              848   21
+ 474: Færevaag Evy              Masfjorden            1448  211
+ 475: Førland Tor Egil          SOSS                  1832  487
+ 476: Førrisdahl Ole Kr         Sarpsborg             1765  613
+ 477: Gabrielsen Stig           Oslo Vest             2287  692
+ 478: Gabrielsen Trond          Oslo Vest             2285  597
+ 479: Gabrielsen Øyvind         Trondheim             1445  179
+ 480: Galaasen Lars             Hønefoss              1354  303
+ 481: Gandrud Harald            Hønefoss               915   46
+ 482: Gandrud Vegar Koi         Hønefoss              1838  275
+ 483: Garmannslund Vidar        Sotra                 1609  261
+ 484: Garmark Vegard            Follo                 1047   28
+ 485: Garnås Eirik              1911                  1090  108
+ 486: Gatland Erling            (Tidl. Bergens)       1560  955
+ 487: Gaudernack Henrik         1911                  1157  239
+ 488: Gaup Mikkel Isak          Alta                   693   10
+ 489: Gausdal Stein Tore        Sandnes               1496  533
+ 490: Gausel Einar J            OSS                   2475 2309
+ 491: Gaustad Oluf              Bodø                  1426   14
+ 492: Gedde Oddgeir Hidle       Aurskog-Høland         677   20
+ 493: Getz Nicolai              OSS                   2012  462
+ 494: Gilberg Einar B.          Trondheim             1386  101
+ 495: Gisnås Gunnar             Orkdal                1181  115
+ 496: Gisnås Hallvar            Orkdal                1545   55
+ 497: Gjerdrum Olaf             Våler                 1518  196
+ 498: Gjertsen Erik             (Tidl. Modum)          738   81
+ 499: Gjertsen Petter           Arendal               1102   49
+ 500: Gjone Aage                Larvik                1347  304
+ 501: Gjørvad Bjarne            Gjøvik                1387  330
+ 502: Gjøs Freddy               Fredriksstad           922   45
+ 503: Glesnes Ivar Magne        Sotra                  798  122
+ 504: Glomsås Guttorm           Bergens                797   53
+ 505: Godal Arne                Indre Østfold         1639  127
+ 506: Goertz Alf Gustav Erik    (Tidl. Stjernen)      1364   92
+ 507: Govatsmark Konstantin     Akademisk             1385  143
+ 508: Grande Jakob Olafsen      1911                   907  116
+ 509: Grande Olav               1911                  1122   71
+ 510: Grande Roar               Kongsberg             1593  245
+ 511: Granum Roger              Hønefoss              1407  839
+ 512: Grebstad Kjell Børre      Asker                 1702  123
+ 513: Gregersen Olav            Caissa                1027  161
+ 514: Grendahl Tron Helge       Førde                 1644   36
+ 515: Grimstad Svanhild B.      Moss                  1520   70
+ 516: Grong Kjell               Lillestrøm            1147  295
+ 517: Groot Peter               Fredriksstad          1511  149
+ 518: Gruben Tronn              Kirkegata             1405  206
+ 519: Grundekjøn Christian      Tromsø                1313   95
+ 520: Grundstad Øyvind          (Tidl. Mosjøen)       1138   38
+ 521: Grunnsund Chris Willy     Kristiansand           894   32
+ 522: Grunnsund Kjetil          Porsgrunn             1031   14
+ 523: Grønli Frank              Sarpsborg             1206  308
+ 524: Grønn Atle                OSS                   2419 1001
+ 525: Grønn Eskil Ekeland       OSS                    633   27
+ 526: Grønnestad Anita          Bergens               1867  704
+ 527: Grønning Åge              Hamar                 1090   95
+ 528: Grønsleth Morten L.       Svartlamon             934   53
+ 529: Grønstad Jon Arne         Elverum               1440  208
+ 530: Grønvik Svenn-Håvard      Halden                 912   97
+ 531: Grøtnes Endre             Nordstrand            1217   91
+ 532: Grøtnes Even Andreas      Nordstrand             966   40
+ 533: Gudbrandsen Gustav        Akademisk             2180  841
+ 534: Gudbrandsen Haakon        (Tidl. Nordnes)        927   52
+ 535: Gudbrandsen Magnus        Nordstrand             825   10
+ 536: Guddahl Viggo             OSS                   1986  777
+ 537: Gulbrandsen Håkon         Nordstrand             983  111
+ 538: Gulbrandsen Tor           Nordstrand            1912 1002
+ 539: Guldhav Alf               Gambit                1360   28
+ 540: Gullaksen Eirik           Bergens               2379 1242
+ 541: Gulliksen Finn M.         (Tidl. Caissa)        1745  216
+ 542: Gulliksen Leif            Stjernen              1310 1249
+ 543: Gundersen Arvid           Hønefoss              1447  378
+ 544: Gundersen Frode           Kristiansand          1246  196
+ 545: Gundersen Helge           Randaberg             2168  619
+ 546: Gundersen Vegard          Akademisk             1208   74
+ 547: Gunnesdal Lars            Asker                 1957  458
+ 548: Gunnufsen Morten          SMPOAÅ                1312   71
+ 549: Gupta Sudhir              Sevland               1365  260
+ 550: Gusland Thorleif          Larvik                1514  300
+ 551: Guttulsrud Odd Martin     1911                  1714  151
+ 552: Gvein Kenneth             1911                  2187  368
+ 553: Gyland Magne              Bergens               1268   35
+ 554: Gyldenås Ole Jørn         Nordstrand            1971  972
+ 555: Gaarder Hans K.           Nordstrand            1334  168
+ 556: Gaasland Glenn            Follo                 1971  342
+ 557: Habberstad Odd            OSS                   1643   34
+ 558: Hadland Kjell             Sandnes               1265   42
+ 559: Haga Halvor               Black Knights         1811  308
+ 560: Haga Morten               Fredriksstad           986   97
+ 561: Hagberg Bjørn             Komsa                  653   17
+ 562: Hagberg Øivind            Stovner               1136  247
+ 563: Hagen Anders G            Moss                  2034  364
+ 564: Hagen Brede               Trondheimstud         1921  512
+ 565: Hagen Egil R              Randaberg             1027  132
+ 566: Hagen Gaute               (Tidl. NTG)            539   42
+ 567: Hagen Halvor              Lørenskog             1101  170
+ 568: Hagen Lars Erik           1911                  1725  401
+ 569: Hagen Oddbjørn            Sotra                 1488  259
+ 570: Hagen Per Anders          Verdal                1350   73
+ 571: Hagen Thorolf             Kristiansand          1130   22
+ 572: Hagesæther Arne           (Tidl. Hauge)         2116  653
+ 573: Hagesæther Ellen          Akademisk             2218  945
+ 574: Hagesæther Halvard        Bergens               2223  681
+ 575: Haglund Magne             Hønefoss              1752   19
+ 576: Hajdu Josef               Caissa                1426   40
+ 577: Hall Torstein             Asker                 1785  635
+ 578: Hallsjø Arne              Sevland               1179  257
+ 579: Halvorsen Erlend          Sarpsborg             1340  217
+ 580: Halvorsen Håvard          Sarpsborg              831  125
+ 581: Halås Torleif             Molde                 1630  226
+ 582: Hammari Jan Arnt          Komsa                 1499  531
+ 583: Hammer Jon Ludvig         OSS                   2443  751
+ 584: Hammerstad Åsmund         Asker                 2185  559
+ 585: Hammerø Per S             Aalesund              1684  313
+ 586: Hamre Einar               Drammen               1735  775
+ 587: Hamre Kenneth             Sarpsborg             1499  165
+ 588: Hansen Erik               Kristiansand          1230   20
+ 589: Hansen Erle Andrea Marki  Kristiansand          1208   61
+ 590: Hansen Fredrik            Caissa                 786   67
+ 591: Hansen Harald             (Tidl. Sørum)         1275  455
+ 592: Hansen Harald             Akademisk              987  178
+ 593: Hansen Jan Terje          Kristiansand          1871  545
+ 594: Hansen Johnny             NSSF                  1117   69
+ 595: Hansen Kjetil Lund        Moss                  1803  429
+ 596: Hansen Knut Are           Kristiansand          1161  277
+ 597: Hansen Linda Marie        Trondheimstud         1531  325
+ 598: Hansen Marius             (Tidl. Orkdal)         875   87
+ 599: Hansen Ola                Narvik                1551  496
+ 600: Hansen Per Kr.            Kampen                1773   21
+ 601: Hansen Pål Andreas        Verdal                1741  190
+ 602: Hansen Rune               Caissa                1792  551
+ 603: Hansen Svein              Larvik                1435  329
+ 604: Hansen Sverre Juul        Trondheimstud         1447   51
+ 605: Hansen Tom                Halden                1279   36
+ 606: Hansen Tommy              OSS                   1153   94
+ 607: Hansen Torbjørn R.        1911                  2366 1076
+ 608: Hansen Trond Inge         Kampen                1053   45
+ 609: Hansen Victor             1911                  2046  838
+ 610: Hansen Vidar              Verdal                 569   26
+ 611: Hanssen Gunnar B.         Tromsø                2229 1151
+ 612: Hanssen John Christian    Drammen               1319  213
+ 613: Hanssen Johnny            Trondheim             1531   33
+ 614: Hanssen Lasse P           Hamar                 1014   12
+ 615: Hardersen Steinar         Komsa                 1449  445
+ 616: Harestad Andreas          Stavanger              717   19
+ 617: Harestad Hans K           SOSS                  2221  873
+ 618: Harestad Ove H            Randaberg             1582  441
+ 619: Harestad Thor Geir        Randaberg             2140  950
+ 620: Harkestad Thomas          Sotra                  961   36
+ 621: Harstad Christian         OSS                   1865  626
+ 622: Hartvig Kim H.            (Tidl. Stjernen)      1322  129
+ 623: Hartvigsen Terje          Porsgrunn             1378  306
+ 624: Hauan Tore                Trondheimstud         1245   76
+ 625: Haug Finn                 (Tidl. Alta)          1947  420
+ 626: Haug Johannes             Nordstrand             770   17
+ 627: Haug Kjell M              Stjernen              1756  887
+ 628: Haug Marianne Wold        1911                  1672  269
+ 629: Haug Rolf                 OSS                   1308  327
+ 630: Haug Rune                 Frosta                1648  313
+ 631: Haug Svein M.             Stavanger             1442  299
+ 632: Haug Sverre               Gjøvik                1672  654
+ 633: Haug Thor Otto            (Tidl. Direkte)       1058   11
+ 634: Haugan Kristoffer         Tønsberg              1276  761
+ 635: Hauge Eivind Riise        Fana                  1449   67
+ 636: Hauge Erik Petter         Nordnes               1794  410
+ 637: Hauge Thomas R            Stjernen              1738  461
+ 638: Hauge Tor Arne            1911                  1971  663
+ 639: Haugen Arild              Randaberg             1719  422
+ 640: Haugjord Sverre           Drammen               1383  980
+ 641: Haugland Sindre           (Tidl. Bergens)        737   27
+ 642: Haugli Petter             Moss                  2174 1345
+ 643: Haugsdal Arn Tore         Masfjorden            1930  618
+ 644: Haugsdal Sigve            Masfjorden            1044   65
+ 645: Haugsdal Vebjørn          Masfjorden             923   53
+ 646: Haugsrud Håkon            Trondheimstud         1772  509
+ 647: Haugstad Espen            Sandnes               1924  231
+ 648: Haugsvær Lisbeth          Masfjorden            1081   59
+ 649: Haveland Bjørn            Arendal               1747  781
+ 650: Havik Victor              Stavanger             1897  264
+ 651: Havskjær Peder            Ørsta                 1631  291
+ 652: Heesbråten Erik           Nord-Odal             1056   69
+ 653: Hegelund Bernhard         Trondheim              972   16
+ 654: Hegelund Ole              Trondheim              871   71
+ 655: Hegelund Ole Jakob        Trondheim             1188  161
+ 656: Heggelund Fredrik         Sevland               1154  142
+ 657: Heggum Tore               Lillestrøm            1340   11
+ 658: Hegvik Leif Trygve        Arendal               1410   90
+ 659: Heim Sverre               OSS                   2282  261
+ 660: Heimreid Ken-Ivar         (Tidl. Porsgrunn)     1826   24
+ 661: Heitun Odd Gunnar         (Tidl. 1911)          1273  413
+ 662: Helberg Harald            Kongsvinger           1409  124
+ 663: Heldahl Håvard Bernhard   Bodø                  1541   23
+ 664: Helgesen Jack             Sarpsborg             1113  373
+ 665: Helleland Lars            Sandnes                712   14
+ 666: Hellesøy Anton            Bergens               1420   23
+ 667: Helling Torstein          Nordstrand            1321   60
+ 668: Hellum Jens Haude         (Tidl. Sørum)         1147   88
+ 669: Hellum Jon                OSS                   1069   14
+ 670: Helmersen Geir            Larvik                1768  720
+ 671: Hemmingby Henrik          Strømmen              1043  538
+ 672: Hemmingby Jan             Nordstrand            1130   24
+ 673: Hennelund Egon            (Tidl. Sørum)         1415  380
+ 674: Henriksen Espen           (Tidl. Lørenskog)      773   20
+ 675: Henriksen Geir I          Drammen               2146 1069
+ 676: Henriksen Ivar            Alta                  1047   46
+ 677: Henriksen Jan Tore        1911                  1568   11
+ 678: Henriksen Morgan          Hamar                 1371  128
+ 679: Henriksen Tor             Stjernen              1829  336
+ 680: Henriksen Torbjørn        Moss                  1393  155
+ 681: Henriksen Trond           Modum                 1467  112
+ 682: Henriksen Ulf Vidar       Drammen               1932  599
+ 683: Hercigonja Vladimir       Lørenskog             1502   18
+ 684: Hermansen Henning W       Stjernen              1916  675
+ 685: Hermansen Olav            Brønnøysund           1566  235
+ 686: Herregården Bjørn Erik    Drammen               1440  167
+ 687: Herregården Magnus        Lillehammer            998  125
+ 688: Herskedal Svenn           Trondheim             1506  674
+ 689: Hersvik Daniel            SK 96                 2095  950
+ 690: Hesstvedt Amund Valmot    OSS                    605   21
+ 691: Hestad Bent               Trondheim             1129  117
+ 692: Hestad Jan H              Sandnes               1736   38
+ 693: Hestsveen Magnus          (Tidl. Follo)         1070   47
+ 694: Hestvik Johan             Alta                   762   13
+ 695: Hestvik Petter Martin     (Tidl. Nordstrand)     759   28
+ 696: Hillestad Øystein         (Tidl. Sørum)          770   30
+ 697: Hilton David              SK 96                 1770  322
+ 698: Hindenes Andreas K.       Masfjorden            1607  180
+ 699: Hinman Chris              Stavanger             1431  355
+ 700: Hjelle Øyvind             Bodø                  1353   86
+ 701: Hjelmås Lars              Drammen               2189  958
+ 702: Hjertenes Øystein         Førde                 1989  559
+ 703: Hjertnes Stig N           Fana                  1692  300
+ 704: Hjort Jens L              (Tidl. OSS)           1963  656
+ 705: Hjortås Olav              Nord-Odal             1286  167
+ 706: Hjulstad Per              Kristiansund          1566   11
+ 707: Hjulstad Roger            Lørenskog             1283   91
+ 708: Hjørnevik Asbjørn         Sandnes                900   75
+ 709: Hjørnevik Knut J          Sandnes               1635  469
+ 710: Hobber Anders             Porsgrunn             1847  412
+ 711: Hoel Håkon                Molde                 1578  329
+ 712: Hoel Jørgen               Bergens               1326  124
+ 713: Hoel Ole                  Ottestad              1719  108
+ 714: Hoem Audun                Kristiansund           772   23
+ 715: Hoem Per Erik             Kristiansund          1389   67
+ 716: Hoem Robin                Kristiansund          1375   56
+ 717: Hoem Tor Wetle            Molde                 1724  497
+ 718: Hoen Ragnar Harald        OSS                   2314  783
+ 719: Hoff Kjell                Fredriksstad          1239  215
+ 720: Hoftaniska Tor E          Vadsø                 1684   44
+ 721: Hojem Roger               Kristiansund          1484  385
+ 722: Holder Håvard             Sotra                 1978  466
+ 723: Holdhus Geir              Asker                 1671   96
+ 724: Hole Vegard               Asker                 1350  305
+ 725: Hole Øystein              Akademisk             2360 1119
+ 726: Holen Line                (Tidl. Sørum)         1472  208
+ 727: Holen Torgeir             Oslo Vest             1929   25
+ 728: Holler Ole-Jakob          Asker                 1248  331
+ 729: Hollås Roar               Trondheim             1565  110
+ 730: Holm Kristian Stuvik      Hamar                 1305   22
+ 731: Holm Ragnar               Hamar                 2034  708
+ 732: Holmboe Jan Raymond       Caissa                1700  326
+ 733: Holmen Halfdan            Mo                     956  150
+ 734: Holmen Per Inge           Mo                    1706  798
+ 735: Holmen Svein Erik         Elverum               1016  153
+ 736: Holmaas Kjersti S.        Masfjorden             852   78
+ 737: Holmaas Renate S.         Masfjorden             762   36
+ 738: Holskil Andreas           Trondheim              757   33
+ 739: Holst Tor Egil            Sarpsborg             1343   83
+ 740: Holt Olav                 Larvik                1325   33
+ 741: Holter Ellen              Asker                  914   62
+ 742: Holter Karl Erik          Asker                  892   81
+ 743: Holtermann Eiler          Asker                 1481  816
+ 744: Hope Caroline I.          Masfjorden             609   37
+ 745: Hope Lars                 Brønnøysund           1117  103
+ 746: Hopland Per M             (Tidl. Verdal)        1426   72
+ 747: Horda Carl Erik           Caissa                1939  500
+ 748: Hovden Hans               Kirkegata             1651  606
+ 749: Hovland Arne              Follo                 1643  271
+ 750: Hulsmans Charles          Drammen               1106  212
+ 751: Hus Svein Atle            Bergens               1222   42
+ 752: Husdal Anders             Orkdal                1716  242
+ 753: Husstad-Nedberg Benjamin. Akademisk             1975  496
+ 754: Hvamb Frode               Kongsberg             1463  161
+ 755: Hvesser Roar              Indre Østfold         1424  414
+ 756: Hvide Hans                SK 96                 1851  432
+ 757: Høe Oddvar                Steinkjer             1519  682
+ 758: Høglund Claes             Svartlamon            1125   35
+ 759: Høie Johannes             Moss                  2100  722
+ 760: Høj Preben                (Tidl. Asker)          983   57
+ 761: Hølen Knut M              (Tidl. Modum)         1486   51
+ 762: Høva Frode                Follo                 1558  449
+ 763: Høvring Per Ivar          Indre Østfold         1416  155
+ 764: Høydal Arild              (Tidl. Ørsta)         1354   23
+ 765: Høyhilder Tord            Tønsberg              1726  151
+ 766: Hågensen Odin             SMPOAÅ                1155   31
+ 767: Haagaas Kristian          Nordstrand             834   44
+ 768: Haaland Arild             Bergens               1117   13
+ 769: Hånes Sturle              Rokaden               1309   18
+ 770: Haanshuus Aslak           Stjernen              1688  257
+ 771: Haarr Jon Kristian        Sandnes               1925  200
+ 772: Håvold Even               Bergens               1324  181
+ 773: Imhof David               OSS                   1339  259
+ 774: Imhof Rudi                Egersund               985  150
+ 775: Ims Sindre                Sandnes               1903   35
+ 776: Imsrud Benjamin           Caissa                1085   19
+ 777: Indbryn Tommy             Kirkenes              2122  465
+ 778: Indrebø Kyrre             Randaberg             1702  199
+ 779: Ingebretsen Vidar         Moss                  1788   15
+ 780: Ingjær Asmund             Nordstrand            1355  348
+ 781: Ingul Tormod              SMPOAÅ                1741  534
+ 782: Ingvaldsen Jonas A.       Trondheimstud         1882  322
+ 783: Isachsen Harald           Molde                 1533  698
+ 784: Isaksen Eirik Nymo        Alta                  1423  251
+ 785: Ismailova Lala            Narvik                1598   33
+ 786: Iversen Anders Gustad     Gjøvik                1653   55
+ 787: Iversen Guttorm           Molde                 1671   14
+ 788: Iversen Henrik Horne      (Tidl. Bergens)        608   27
+ 789: Iversen Håvard            Narvik                 914   14
+ 790: Iversen Kjell             Stjernen              1266  320
+ 791: Jacobsen Fredrik Beer     Stavanger              885   34
+ 792: Jacobsen Inge             Ottestad              1135   19
+ 793: Jacobsen Leif             Strømmen              1465  648
+ 794: Jacobsen Maria Pitz       Nordstrand            1640  307
+ 795: Jacobsen Trond            Larvik                1258  206
+ 796: Jakobsen Alf Gjøran       Skjervøy              1149   55
+ 797: Jakobsen Alf Håvard       Skjervøy               732   31
+ 798: Jakobsen Gjøran           Narvik                1163   93
+ 799: Jakobsen Jarle            Harstad               1346  121
+ 800: Jakobsen Johan M          Porsgrunn             1030  234
+ 801: Jakobsen Sonder           Skjervøy               821   30
+ 802: Jakobsen Øivind           Skjervøy              1257  118
+ 803: Jansen Andreas            Bergens               1068   89
+ 804: Jansson Helge             Fredriksstad          1337  493
+ 805: Jelogir Majid Gh.         Bergens               1322   92
+ 806: Jennings Richard          Stavanger             1803   24
+ 807: Jensen Aleksander         (Tidl. Skjervøy)       877   15
+ 808: Jensen Anders             Harstad                810   27
+ 809: Jensen Anders S.          Lillestrøm            1463  280
+ 810: Jensen Andreas            Konnerud               787   24
+ 811: Jensen Arne-Roger         Sarpsborg             1920 1375
+ 812: Jensen Arvid              Konnerud              1180   96
+ 813: Jensen Asbjørn            Narvik                1308  181
+ 814: Jensen Geir               NSSF                   982   48
+ 815: Jensen Kjell Arne         Namsos                1431  230
+ 816: Jensen Michael Eckmann    Nordstrand             906   17
+ 817: Jensen Morten             (Tidl. Akademisk)     1708  381
+ 818: Jensen Paul Johan         Narvik                1672  258
+ 819: Jensen Stein              Harstad               1917  835
+ 820: Jensen Terje              Akademisk             1345  200
+ 821: Jensen Torben Winther     OSS                   1359   59
+ 822: Jenssen Espen Arild       Trondheim              950   36
+ 823: Jenssveen Trym            Stjernen              1625  192
+ 824: Jernberg Karl P           Tromsø                 872  681
+ 825: Jervan Morten             Fredriksstad          1276  432
+ 826: Jessen Simon Pind         Tromsø                1979   34
+ 827: Joensen John              Tromsø                1786   19
+ 828: Johanesen Kjell Martin    Larvik                1233   79
+ 829: Johannesen Kai Otto       Sarpsborg             1148   19
+ 830: Johannesen Truls          OSS                   1288   47
+ 831: Johannessen Kjell         Komsa                 1347  300
+ 832: Johannessen Leif E        OSS                   2486 1358
+ 833: Johannessen Martin T.     Kragerø               1490  145
+ 834: Johansen Arnstein         Moss                  1255   74
+ 835: Johansen Arnt-Ole         Kongsberg             1911  300
+ 836: Johansen Bjørn            Fredriksstad          1278  528
+ 837: Johansen Frank            Halden                1309 1077
+ 838: Johansen Geir J.          Egersund               871  118
+ 839: Johansen Johan            Caissa                1346  590
+ 840: Johansen Kai-Roger        NSSF                  2038  741
+ 841: Johansen Kim Frode I      Aurskog-Høland         592   23
+ 842: Johansen Kjell A          Alta                  1461  354
+ 843: Johansen Kjell H          Tønsberg              1531  830
+ 844: Johansen Kristian R       Nordnes               1699   91
+ 845: Johansen Lars             Nordstrand            1728  452
+ 846: Johansen Odd B.           Fredriksstad          1373  696
+ 847: Johansen Ottar            Brønnøysund           1141   10
+ 848: Johansen Ove              Stjørdal              1013   10
+ 849: Johansen Paul             Moss                  2032  796
+ 850: Johansen Paul Ivar        Tromsø                 642   61
+ 851: Johansen Pål H            Narvik                1489   31
+ 852: Johansen Reidar           Stjernen              1487   74
+ 853: Johansen Steinar          Kampen                1453   60
+ 854: Johansen Stian            Fredriksstad          1384  148
+ 855: Johansen Svein            Stjørdal              1590  192
+ 856: Johansen Terje            Oslo Vest             2183  827
+ 857: Johansen Thor             Asker                 1786 1038
+ 858: Johansen Tom Rune         Sarpsborg             1074  175
+ 859: Johansen Torbjørn Reidar  1911                  1476  277
+ 860: Johansen Torstein M       Kristiansand           971   49
+ 861: Johansen Trond A          Lillehammer           1711   59
+ 862: Johansen Øivind           Sarpsborg             2140 1125
+ 863: Johansson Marius          Masfjorden             806   28
+ 864: Johnsen Gunnar            Tromsø                2140   70
+ 865: Johnsen Hugo              Moss                   928   33
+ 866: Johnsen Håkon Kvam        SMPOAÅ                1225   38
+ 867: Johnsen John Kr.          OSS                   1641  351
+ 868: Johnsen Kjell Magne       Vadsø                 1899  435
+ 869: Johnsen Kjell R           NSSF                  1058   28
+ 870: Johnsen Knut              Lillehammer           1231  280
+ 871: Johnsen Knut Atle         Kongsberg             1466  279
+ 872: Johnsen Rune              Bodø                  1445  182
+ 873: Johnsen Svein Harald      Vadsø                 1794 1207
+ 874: Johnsen Sverre            OSS                   2125  950
+ 875: Johnsen Sylvia            OSS                   1933  910
+ 876: Jordan Eddy               Asker                 1633  663
+ 877: Jorde Hans Kristian       Trondheimstud         1232   11
+ 878: Jordet Rune               Nittedal              1462  128
+ 879: Jotun Jan                 Ottestad              1592  477
+ 880: Juliussen Frank           (Tidl. Hamar)         1347   31
+ 881: Juliussen Rolv            Halden                1257   41
+ 882: Juriloo Henrik            (Tidl. Førde)         1142   18
+ 883: Juriloo Karl              (Tidl. Førde)         1562   45
+ 884: Justad Odin Ralhlff       Nordstrand            1055   60
+ 885: Justnes Årstein           SOSS                  2096  664
+ 886: Juul Kjell                Stjernen              1357  921
+ 887: Juul Sigurd               Aalesund              1442  368
+ 888: Jæger Frode Bull          Team Bjørnsen         2118  731
+ 889: Jørgensen Bengt Arne      Komsa                 1155   37
+ 890: Jørgensen Christian       Stjernen              1439   36
+ 891: Jørgensen Line Jin        Sevland               1804  307
+ 892: Jørgensen Ronny           Stjernen              1267   38
+ 893: Jørgensen Rune A.         Asker                 1270  218
+ 894: Jørgensen Terje           Drammen                705   70
+ 895: Jørgensen Truls           Kragerø                955   75
+ 896: Jørgensen Ørjan           Stjernen              1207  293
+ 897: Jørgensson Anton          Black Knights         1770  213
+ 898: Jøssang Erling            Stjørdal              1753   26
+ 899: Kadribegovic Camil        Lillehammer           1331   87
+ 900: Kallesøe Torben           Sotra                 1382  136
+ 901: Kallset Eirik V           Trondheimstud         1426  217
+ 902: Kallset Tore              Kristiansund          1714  407
+ 903: Karimzade Reza Mohammed   (Tidl. Porsgrunn)     1276   22
+ 904: Karlsen Kai-Tore          Porsgrunn             1131  152
+ 905: Karlsen Rune              (Tidl. Tønsberg)      1263  157
+ 906: Karlsen Sverre            (Tidl. Team Bjørnsen) 1936   17
+ 907: Karlsen Terje             SK 96                 2008  512
+ 908: Karlsson Reidar           Stjørdal              1026   46
+ 909: Karlstad Audun            Lørenskog              533   22
+ 910: Kartfjord Vegard          (Tidl. SMPOAÅ)        1419   22
+ 911: Kauserud Jostein          Stjernen              1406  251
+ 912: Kaveldiget Frode          Elverum               1487   72
+ 913: Kengis Edvins             (Tidl. Moss)          2558   23
+ 914: Keskitalo Alf Isak        Samisk                 985   44
+ 915: Khachatourian Yerazik     OSS                   1935   35
+ 916: Kheynoen Vladislav        Steinkjer             1643   17
+ 917: Kilen Rudi                Orkdal                 918   27
+ 918: Kirkebø Bernt             Strømmen              1409  888
+ 919: Kirkebø Carl Peter        Oslo Vest             2098  450
+ 920: Kittelsen Sigurd          (Tidl. Elverum)        649   28
+ 921: Kjeken Johs R             1911                  1826  149
+ 922: Kjellstrøm Roar           Black Knights         1418  306
+ 923: Kjelsaas Lars Furu        1911                  1064  131
+ 924: Kjenner Svein             (Tidl. Nordnes)       1612  277
+ 925: Kjæmperud Einar           Caissa                1618  644
+ 926: Kjærgaard Jens            Rokaden               1119   18
+ 927: Kjøita Henning            1911                  1170   55
+ 928: Kjøita Torgeir            1911                  1088   54
+ 929: Kjølberg Jens Hjorth      1911                  1394  105
+ 930: Kjølberg Lars             1911                  1997   99
+ 931: Klausen Torbjørn          Bergens               1571   77
+ 932: Klausen Truls Skauge      Drammen               1697   27
+ 933: Kleiven Stig Rune         Lillehammer           1433   25
+ 934: Kleven Svein              Konnerud              1086   91
+ 935: Knudsen Arne              Halden                 766   93
+ 936: Knudsen Bjørnar           Moss                  1175   10
+ 937: Knudsen Kjell R.          Nordstrand            1089  307
+ 938: Knudsen Ragnar            Sarpsborg             1803  510
+ 939: Knudsen Tor               OSS                   1028   89
+ 940: Knutsen Henning Ardent    Akademisk             1261   42
+ 941: Knutsen Kristian          (Tidl. Risør)          641   49
+ 942: Knutsen Pål Egil          Samisk                1228  214
+ 943: Knutsen Tom-Greger        Samisk                1194   83
+ 944: Knutsen Øystein           (Tidl. Stavanger)     1649   49
+ 945: Kokkvoll Tommy            Trondheim             1372  195
+ 946: Kollerud Olav             Konnerud              1500   92
+ 947: Kolstad Arvid             Indre Østfold         1231  541
+ 948: Kolås Tore                Trondheim             2110  701
+ 949: Komel Josip               Elverum               1381  152
+ 950: Kong Xiang Yi             (Tidl. Trondheim)     1501  162
+ 951: Kongerød Rune             Porsgrunn             1291  169
+ 952: Kongevold Hans Inge       Moss                  1971  748
+ 953: Korsvold Jon Egil         Samisk                1051   35
+ 954: Kosberg Ivar              Molde                 1597   72
+ 955: Kosberg Stian             Molde                  563   65
+ 956: Kovachev Daniel Jakobsen  OSS                   2201  460
+ 957: Kristensen Anders         Fredriksstad          1211   60
+ 958: Kristensen Bjarne         Narvik                1288  459
+ 959: Kristensen Frank          Tønsberg               912  226
+ 960: Kristensen Kjell Ole      Narvik                1983  860
+ 961: Kristensen Trond          Mosjøen               1201   61
+ 962: Kristiansen Erling        OSS                   2218  741
+ 963: Kristiansen Espen         Sarpsborg             1144  301
+ 964: Kristiansen Jon           Tønsberg              1643  392
+ 965: Kristiansen Leonard       SMPOAÅ                1257   11
+ 966: Kristiansen Oddvar        Stjernen              1310  105
+ 967: Kristiansen Ole J         Hamar                 1770  796
+ 968: Kristiansen Reidar        Hamar                 1210 1235
+ 969: Kristiansen Roy F         Fredriksstad          1031  242
+ 970: Kristiansen Ruben         Sandnes               1009   51
+ 971: Kristiansen Tor           Drammen               2021  712
+ 972: Kristiansen Tore          Kristiansund          1655  104
+ 973: Kristiansen Willy         Sandnes               1769  168
+ 974: Kristoffersen Håkon       Fredriksstad          1531  159
+ 975: Kristoffersen Jan Ø.      Caissa                1439  173
+ 976: Kristoffersen Kjell       Sandnes                894   94
+ 977: Krohn Sverre Høegh        (Tidl. Tønsberg)      1709  181
+ 978: Krokan Kåre               Kongsberg             1160  373
+ 979: Kroken John Olav          Stjernen              1257   73
+ 980: Kulagin lja               Tromsø                1129   15
+ 981: Kumle Svein Erik          Nordstrand            1431  129
+ 982: Kunic Mehmedalija         Kongsberg             1730  325
+ 983: Kutrovac Milan            Stjernen              1690  325
+ 984: Kvalsund Jon Emil         Tønsberg              1328   47
+ 985: Kvam Audun                Lørenskog             1891  144
+ 986: Kvam Birger               Svartlamon            1346   48
+ 987: Kvam Kristin              Moss                  1215   34
+ 988: Kvamme Alexander          (Tidl. Hønefoss)       948   16
+ 989: Kvamme John A             SK 96                 2059  738
+ 990: Kvamme Ole F.             SK 96                 1863   50
+ 991: Kvamme Roy                Hønefoss              1921  479
+ 992: Kveinys Aloyzas           Moss                  2572   20
+ 993: Kveli Lars                Nordstrand            1175   18
+ 994: Kverndal Leif             Stjernen              1739 1529
+ 995: Kvisgaard Arne            Løten                  918  115
+ 996: Kvisgaard Herlog          Ottestad               973  150
+ 997: Kvisla Johannes           Stavanger             2088  674
+ 998: Kvisvik Brede Alex.       Trondheimstud         2042  530
+ 999: Kvåle Jarle               Trondheimstud         1337   43
+1000: Kwekkeboom Persijn        Lørenskog              750   22
+1001: Kyrkjebø Erlend           Stavanger             1142   29
+1002: Kästel Arne Morten        Molde                  984   49
+1003: Köwerich Stefan           Kongsberg             1387   88
+1004: Kårdal Alexander          Masfjorden            1500  110
+1005: Lade Arnstein             Akademisk             1566   69
+1006: Lafton Gro                Strømmen               880  122
+1007: Lafton Rolf Brage         Strømmen              1179  139
+1008: Lahlum Hans O.            Porsgrunn             2148 1057
+1009: Lahlum Ida                Alta                  1496  516
+1010: Laitamaa Tore Johan M.    Vadsø                 1131   71
+1011: Lambrechts Rolf           Porsgrunn             1111   50
+1012: Lambrechts Tore           Sandnes               1525  212
+1013: Lamo Jan Inge             Lørenskog              829   54
+1014: Lande Steinar             Brønnøysund           1360  621
+1015: Landrø Erlend Husdal      (Tidl. Orkdal)        1050   69
+1016: Lanes Mikal               Vadsø                 1232   33
+1017: Lange David               Follo                 1522  212
+1018: Lange Gunnar              Follo                  501   79
+1019: Lange Holger              Follo                 1651  132
+1020: Langeland Kåre            Voss                  1153   97
+1021: Langerød Kristian         Konnerud              1369   87
+1022: Langmyhr Tore             Trondheim             1739  142
+1023: Langmyr Asbjørn           Elverum               1446  338
+1024: Larsen Andreas            Narvik                1730  420
+1025: Larsen Arild              Lillehammer           1741  668
+1026: Larsen Atle               Stavanger             1340   88
+1027: Larsen Bjørn              Fredriksstad          1563   58
+1028: Larsen Bror Johannes      Stavanger             1195  171
+1029: Larsen Finn Walther       Fredriksstad           611   27
+1030: Larsen Gerry              Fredriksstad          1031  268
+1031: Larsen Harald             Arendal               1201   26
+1032: Larsen Helge              Komsa                  886  184
+1033: Larsen Inge               Stavanger             1231   44
+1034: Larsen Joakim             Follo                 1899  346
+1035: Larsen Kjell Bjørnar      Bærum                 1122   72
+1036: Larsen Leif Kragh         (Tidl. Follo)          934   25
+1037: Larsen Leif Sigurd        Stord                 1094   41
+1038: Larsen Martin Halsvik     Sortland              1609   96
+1039: Larsen Per Magnus         Porsgrunn              796   17
+1040: Larsen Stig Børje         Bergens               1830  912
+1041: Larsen Thomas G           Larvik                1547  530
+1042: Larsen Tor Ketil          Stavanger             1833  158
+1043: Larsen Tor Kristian       Nordnes               1901  465
+1044: Larsplass Endre           1911                  1617  226
+1045: Larsplass Frode           1911                   747   41
+1046: Lauritsen Tor             Halden                1302  258
+1047: Lauritzen Einar           Kristiansand          1922  727
+1048: Laverton Christian        Trondheimstud         1646  180
+1049: Lavik Dagfinn             Gambit                1048   25
+1050: Lea Per                   Follo                 1576  746
+1051: Lee Martin                Sarpsborg              703   50
+1052: Leer-Salvesen Bjarte      SOSS                  2357 1123
+1053: Leidland Jan P            Egersund              1425  780
+1054: Leiros Terje              Brønnøysund           1118  114
+1055: Leite Steinar             Modum                  979   74
+1056: Lensebakken Jonar         Nord-Odal             1265  237
+1057: Lensebakken Stian         Nord-Odal             1511  208
+1058: Lensebakken Øyvind        Nord-Odal             1144   57
+1059: Lerstad Bjørn             Drammen               1844  793
+1060: Levang Pål K.             (Tidl. Hauge)         1797  481
+1061: Liabøtrø Pål-Ole          Stjernen              1892   13
+1062: Lie Espen                 Porsgrunn             2434  785
+1063: Lie Gunnar                Porsgrunn             1644  155
+1064: Lie Jostein Hestvik       Molde                 1588   72
+1065: Lie Kjetil A.             Porsgrunn             2556 1126
+1066: Lie Lasse                 (Tidl. Nordnes)       1727  602
+1067: Lie Ole A.                Porsgrunn             1723  360
+1068: Lie Terje                 Bergens               1297  393
+1069: Lien Gaute                Strømmen              1464  268
+1070: Lien Kjell Håkon          Hønefoss               801   10
+1071: Lien Ole B.               Ottestad              1132  131
+1072: Lien Willy                Fredriksstad           889   12
+1073: Lilland Tom               (Tidl. Stjernen)      1475  287
+1074: Lilleby Roy               Direkte               1108  138
+1075: Lilleengen Jon Alver      SMPOAÅ                1279   24
+1076: Lillehagen Morten         1911                  1413  115
+1077: Lilleløkken Kjell A.      Verdal                1933  353
+1078: Lilleng Gunnar            Strømmen              1349  725
+1079: Lilleseth Eivind          Asker                 1563  436
+1080: Lillevold Frode           Strømmen              2086  889
+1081: Lilleøren Allan           Lørenskog             1010  112
+1082: Lilleøren David           Lørenskog             1951  669
+1083: Lilleøren Mikhail R       Lørenskog             1643  402
+1084: Lilleøren Morten          Lørenskog             1953  621
+1085: Limburg Ulf Atle          (Tidl. Asker)         1003  117
+1086: Lind Sondre Kehus         (Tidl. Lenvik)         714   10
+1087: Lind Sveinung             Lillehammer           1179  127
+1088: Lind Synnøve              Lillehammer           1059  113
+1089: Lindberget Gert           (Tidl. Sørum)         1291   42
+1090: Lindblom Roar             (Tidl. Risør)         1662   77
+1091: Lindfors Bjørn            Asker                 1202   25
+1092: Lindland Asbjørn          Voss                  1578  356
+1093: Lindmo Arne K             (Tidl. Bodø)          1350   75
+1094: Lindsjørn Trygve          Stjernen              1490  716
+1095: Lindsjørn Yngve           Stjernen              1372  171
+1096: Lindsøe Fredrik Aunan     Verdal                1963  305
+1097: Linna Lars                Kampen                1182   29
+1098: Liu Bibek                 Lørenskog              767   27
+1099: Lium Lars                 Orkdal                1297  251
+1100: Livendahl Kristian        Fredriksstad          1973   10
+1101: Ljones Anders             Stavanger              948   36
+1102: Ljones Gaute              Stavanger             1092  111
+1103: Llorca Enrique            (Tidl. Nordstrand)    1418   22
+1104: Lode Marius Skjefstad     Stavanger             1598  220
+1105: Lode Steinar              Våler                 1344   81
+1106: Lone Thomas Erling        1911                   968   18
+1107: Lorentzen Jan Ove         Porsgrunn             1210  156
+1108: Losnedal Halvor           (Tidl. Nordnes)       1393  113
+1109: Ludvigsen Frode           Drammen               2064  841
+1110: Ludvigsen Jan             Fredriksstad          1608 1188
+1111: Ludvigsen Jan             Porsgrunn             1119  519
+1112: Lund Alf Haakon           Follo                 1526   98
+1113: Lund Arne-Birger          Nordstrand            1968  501
+1114: Lund Frode Ryan           Stavanger             1866  483
+1115: Lund Håvard Dybdal        (Tidl. Bergens)        690   29
+1116: Lund Johnny               Lørenskog             1439  370
+1117: Lund Kaja S               Lillehammer            712   22
+1118: Lund Karl Henrik          Kongsberg             1713  428
+1119: Lund Petter               Asker                 1403  369
+1120: Lund Ståle                Røros                 1458  383
+1121: Lund Terje                Verdal                1984  459
+1122: Lund Theodor Jørgen       Lillehammer            823   15
+1123: Lunde Sigmund             Sarpsborg             1662 1171
+1124: Lundeby Øyvind Andersen   Trondheim             2225  740
+1125: Lundemo Kjell             Nordstrand            1596  210
+1126: Luostarinen Asmo          Alta                  1027  182
+1127: Lurdalen Svein Erik       Kongsberg             1662  494
+1128: Lynghaug Eirik            Risør                 1557  144
+1129: Lynghaug Magnus           Risør                 1200  140
+1130: Lyngstad Knut             Verdal                1636   40
+1131: Lysedal Petter H          Nordstrand            1816  646
+1132: Lystad Frank              Follo                 1359  214
+1133: Lähde Eino                Bodø                  1634   43
+1134: Løberg Jo Kristian        OSS                   1486  191
+1135: Løberg Lars               OSS                   1391   16
+1136: Løken Espen               Nordstrand            1664   73
+1137: Løken Olav                Indre Østfold         1081  401
+1138: Løken Per                 Fredriksstad           908  260
+1139: Løken Øyvind              Nordstrand            1388  443
+1140: Lømo Markus               Fredriksstad          1834  779
+1141: Lønes Andreas             Follo                  901  101
+1142: Løvberget Erik            Asker                 1334  275
+1143: Løvik Håvard              Stavanger             1163  140
+1144: Løvik Lasse Østebø        Stavanger             2115  390
+1145: Løvlien Iver              Løten                  998  129
+1146: Løvaas Roger              Konnerud              1110   99
+1147: Løvaas Tore Høe           Trondheim             1371  492
+1148: Løvåsdal Sigmund          Drammen               1586  598
+1149: Madland Kristoffer        Sandnes               1933  197
+1150: Madsen Dag                Trondheim             2204  972
+1151: Madsen Morten L           Sotra                 1630  151
+1152: Madsen Richard            Tønsberg               973   19
+1153: Madsen Rune               Harstad               1169   55
+1154: Madsen Ådne T.            1911                   893   32
+1155: Magnor William            1911                  1116  231
+1156: Malin Odd Gunnar          Vadsø                 1563  412
+1157: Malin Øyvind              Alta                   664   61
+1158: Malou Shervin             Stavanger             1380  103
+1159: Manne Per Erik            SK 96                 2118  250
+1160: Mannerud Arne             Direkte               1568  704
+1161: Marcussen Finn            Nordstrand            1462  714
+1162: Marcussen Inge Nikolay    Kristiansand           719   47
+1163: Margarites Stian          Fredriksstad           694   24
+1164: Markotic Zeljko           Voss                  1093   60
+1165: Marti Ulrich              Larvik                1209   17
+1166: Martin Pål Andreas        OSS                   1049  118
+1167: Martinez Ricardo          (Tidl. Stavanger)     1591   64
+1168: Martinsen Arnstein        Brønnøysund            857  208
+1169: Martinsen Egil            Fredriksstad           565  290
+1170: Martinsen Harald          Alta                  1215  110
+1171: Martinsen Ivar            NSSF                  1179   44
+1172: Martinsen Stig K.         Masfjorden            2067  701
+1173: Marvin Asle               Hønefoss              1480  243
+1174: Marøy Torbjørn            Sotra                  788   11
+1175: Mather Robert             Drammen               1305   45
+1176: Matheussen Julius         Arendal               1101   21
+1177: Mathisen Runar            Nordstrand            1641   28
+1178: Matre Torbjørn            (Tidl. Nordstrand)     937   26
+1179: Melhus Henning            Stavanger             1239   41
+1180: Melkeraaen Terje          Randaberg             1874  462
+1181: Melkevik Johannes         Sevland               1901  644
+1182: Mella Aage                Strømmen              1688 1292
+1183: Mellem Ada                Våler                 1166  133
+1184: Mellem Nikolas Axel       Våler                 2077  633
+1185: Merzliakov Boris          Komsa                 1059   49
+1186: Michaelsen Bjørn          Stovner                870  175
+1187: Michelsen Svein           Randaberg             2157  293
+1188: Midtbø Viggo              Lillehammer            986   12
+1189: Midtgård Andre            Sarpsborg              864  145
+1190: Midtvåge Rolf             Sarpsborg             1175   29
+1191: Miezis Normunds           Moss                  2503  106
+1192: Mihajlov Svetoslav        Asker                 1995   37
+1193: Mikalsen Erlend           Alta                  1496  140
+1194: Mikalsen Harald           Alta                  1334   48
+1195: Mikalsen Odd Erling       Alta                  1725  425
+1196: Mikkelsen Kjartan         Lørenskog             1318  115
+1197: Miland Robert             Nordstrand            1043  437
+1198: Milvang Otto              Nordstrand            1520  191
+1199: Misund Joakim S           1911                  1200   84
+1200: Misvær Gunnar             (Tidl. Kirkegata)      982  125
+1201: Mjanger Emil              Masfjorden             772   50
+1202: Mjanger Sveinung T.       Masfjorden            1044   72
+1203: Mjølnerød Jon Steinar     Halden                1433   12
+1204: Mjøs Knut                 Sotra                 1125  225
+1205: Moberg Jan Rune           Follo                 1483  778
+1206: Moe Gunnar A.             Brønnøysund           1448   20
+1207: Moe Pål                   OSS                   1431  138
+1208: Moen Andreas G.R.         OSS                   2267 1124
+1209: Moen Christiane           OSS                    651   49
+1210: Moen Geir Namstad         SMPOAÅ                1515   66
+1211: Moen Jan Fredrik          Kongsberg             1726  283
+1212: Moen Ketil                Steinkjer             1478  694
+1213: Moen Leif Magne           Hamar                 1314  140
+1214: Moen Olav Andreas         Steinkjer             1455  576
+1215: Moen Ole Christian        OSS                   2105 1087
+1216: Moen Ole Martin           OSS                    831   61
+1217: Moen Roger                (Tidl. Stjernen)      1621  566
+1218: Moen Steinar              Narvik                2108  675
+1219: Moe-Nilssen Nils Erik     SK 96                 2064  473
+1220: Mogstad Ola P             Molde                 1906  566
+1221: Moholt Jan T              Larvik                1760  376
+1222: Mollan Daniel             Verdal                1168  133
+1223: Moltu Eirik André         Sarpsborg              621  123
+1224: Moltubakk Leopold         1911                   527   23
+1225: Mona Emil                 Orkdal                 839  105
+1226: Monge Ragnvald            Sandnes               1191  940
+1227: Monsen Lars Th.           Nordstrand            1655   18
+1228: Monsen Magnus             Sandnes               1758  266
+1229: Monsen Vegard             Stavanger             1402   86
+1230: Monsøy Arild              Trondheim             1773  990
+1231: Mordt Camillo             Fredriksstad          1373  307
+1232: Morfjord Espen            (Tidl. Sørum)         1120   54
+1233: Moripen Markus            Nordstrand            1264   59
+1234: Mork Håkon                (Tidl. Molde)         1342   20
+1235: Mork Kjell Arne           Bergens               2151  827
+1236: Moro Julian Vosgraff      (Tidl. Tønsberg)      1394   22
+1237: Mosbye Karl               Halden                1761  464
+1238: Moseid Tor Inge           Tønsberg              1442  424
+1239: Moseng Geir               Nordstrand            1872  362
+1240: Mossestad Frode           Førde                 1752  299
+1241: Mossin Ivar Alexander     1911                  1086   71
+1242: Mottang Harald            Stjernen              1347  583
+1243: Mughrabi Kali AL          Fredriksstad          1016   67
+1244: Muhammad Nazar            Arendal               1275  174
+1245: Munz Jostein              Nordstrand            1589  185
+1246: Mushore George            1911                  1405   53
+1247: Music Sherif              Stjernen              1436   48
+1248: Myhrvold Rune             Hønefoss              2048  685
+1249: Myklebust Bård Inge       Ørsta                  598   55
+1250: Müller Kai                Fredriksstad          1201   25
+1251: Myran Ivar                Risør                  873  126
+1252: Myraunet Per Arne         Frosta                1200   92
+1253: Myraunet Per Aslak        Frosta                1163   48
+1254: Myraunet Rolf Arne        Frosta                 970   21
+1255: Myrene Jon Kåre           Elverum               1804  643
+1256: Myrseth Jan Otto          Hønefoss              1320  130
+1257: Myrstad Odd M.T.          Black Knights         2071  438
+1258: Myrvang Svein             Steinkjer             1284   16
+1259: Myrvold Torben S.         Svartlamon            2095  503
+1260: Mørch Mikkel              Akademisk             1374   12
+1261: Mørkedal Øyvind           Molde                 1243  193
+1262: Nabseth Cato              Elverum               1839  463
+1263: Nakken Roar E.            Aalesund              1870  685
+1264: Namtvedt Tone             OSS                   1599  215
+1265: Napstad Petter            Bergens                875   10
+1266: Narvøy Tore               Porsgrunn             1416  745
+1267: Natskår Alf               Stavanger             1290  214
+1268: Natvig Håkon Tonulltre    Sortland              1331  139
+1269: Natvik Frederik           Elverum               1640  233
+1270: Nes Anders                Modum                  901   75
+1271: Nes Jørgen                Modum                  748   43
+1272: Nes Silje Irene           Sevland                905   37
+1273: Nesheim Geir              1911                  1592   18
+1274: Nesje Arne Martin         Bodø                  1250   93
+1275: Ness Mathias              Steinkjer             1262  639
+1276: Nesseth Rolf Jørgen       Stovner               1573  216
+1277: Nestande Per              Førde                 1918  208
+1278: Neubauer Åsmund           Lillehammer           1147   35
+1279: Neukamm Christian         Strømmen              1504  143
+1280: Nguyen Petter A H         SMPOAÅ                 815   10
+1281: Nicolaisen Odd            Brønnøysund           1350  178
+1282: Nielsen Bjørn             (Tidl. Risør)         1060   18
+1283: Nielsen Håkon             Elverum               1084   16
+1284: Nielsen Lars Erik         Caissa                1255  141
+1285: Nikolaisen Bjørn          (Tidl. Løten)         1221  115
+1286: Nikolaisen Magnar         1911                  1505  136
+1287: Nikolaisen Åge            Hønefoss              1441  298
+1288: Nilsen Brage Jæger        (Tidl. Alta)           918   57
+1289: Nilsen Daniel V           (Tidl. Gjøvik)         922   39
+1290: Nilsen Geir               Modum                 1578   10
+1291: Nilsen Helmer             Konnerud              1303  401
+1292: Nilsen Jarle              Porsgrunn             1767  144
+1293: Nilsen Joachim            Bergens                685   30
+1294: Nilsen Joachim B.         Bergens               2007  367
+1295: Nilsen Kai                Fredriksstad          1582  395
+1296: Nilsen Leif Erik          Bergens               1316   24
+1297: Nilsen Nils Henrik        Alta                  1357  279
+1298: Nilsen Per Hartvig        Fredriksstad          1531  551
+1299: Nilsen Roy Andre          Kristiansund           841   10
+1300: Nilsen Roy Tore           Fredriksstad          1551  503
+1301: Nilsen Terje              Strømmen              1818  367
+1302: Nilsen Thomas             Hamar                 1609  224
+1303: Nilsen Tommy              Indre Østfold         1176   21
+1304: Nilsen Trond A            Hamar                 1873  741
+1305: Nilsen Trond E.           Nordstrand            1782  840
+1306: Nilson Bjørn Lund         Caissa                1500  766
+1307: Nilssen Ståle             Lillestrøm            1398  262
+1308: Nilssen Tore              OSS                    863   59
+1309: Njå John Olav             (Tidl. Vadsø)         1541   65
+1310: Nodland Bernt Andrè       (Tidl. Stavanger)     1141   42
+1311: Nomat Emil-Lion           (Tidl. Tromsø)        1467   62
+1312: Noor Arman                Sandnes                943   26
+1313: Norbakken Eirik           Tromsø                1048  121
+1314: Norberg Espen             Fribonden             1772   29
+1315: Nord Knut                 Follo                 1259  223
+1316: Nordahl Helge             Black Knights         2354 1080
+1317: Nordahl Terje             Løten                 1116  119
+1318: Nordal Fred               Kristiansand           976   50
+1319: Nordby Bernt              Sarpsborg             1997   60
+1320: Nordbye Per H             1911                  1081   23
+1321: Nordbø Joachim            (Tidl. Tromsø)        1266   52
+1322: Norderud Snorre           Nord-Odal              970   37
+1323: Nordheim Odd              Moss                  1556  860
+1324: Nordhuus Stein A.         Brønnøysund           1554   92
+1325: Nordli Anders Samuelsen   Trondheimstud         1488   85
+1326: Nordli Kåre               (Tidl. Kirkegata)     1202  174
+1327: Nordling Karl-Egil        Moss                  1144   20
+1328: Nordmark Oddvar           Sandnes               1183  134
+1329: Nordnes Tor Gunnar        Sotra                 1651   56
+1330: Normann Øyvind            Bergens               1925  476
+1331: Norum Ole Christian       Trondheimstud         1332   67
+1332: Norum Per Ivar            NSSF                  1474  164
+1333: Norvoll Pål               Alta                  1418   19
+1334: Nurmi Timo                Akademisk             1838   63
+1335: Nyberg Daniel Nygaard     Kongsvinger           1643  236
+1336: Nyborg Silje              Aurskog-Høland         586   15
+1337: Nyborg Simen              Aurskog-Høland         801   15
+1338: Nygreen Ivan              Tromsø                1277  104
+1339: Nygaard Dennis            Porsgrunn             1315  255
+1340: Nygaard Eddy              Strømmen              1740  786
+1341: Nygård Per                Stjernen              1795  251
+1342: Nygård Per Johnny         Hamar                 1273  256
+1343: Nygård Thomas             Moss                  1041  133
+1344: Nygaard Timmie            Caissa                1719  461
+1345: Nyhus Ole Jonny           (Tidl. Brønnøysund)   1352   17
+1346: Nyland Ingeborg Marie     Molde                 1022   68
+1347: Nyland Thomas             Fana                  2058  532
+1348: Nylund Kjetil             Stavanger             1267  203
+1349: Nærland Tallak U.         Sandnes               2047  420
+1350: Næss Jan Olav             Svartlamon            1128   99
+1351: Næss Kristian             (Tidl. Stjernen)      1228   88
+1352: Næss Mikael               Akademisk             1121   15
+1353: Næss Terje                Konnerud              1294   84
+1354: Næssvold Kjell            Orkdal                1893  333
+1355: Nørve Sjur                Stjernen              1937  641
+1356: Nøsteby Bjørn T.          Lillehammer            916   26
+1357: Naalsund Roar             Aalesund              1874  693
+1358: Odde Eilif                Kristiansund          1945  862
+1359: Odden Jan Ove             Vadsø                 1534   58
+1360: Ofstad Per                Fredriksstad          2124  802
+1361: Ofstad Sigurd             Stjernen              1557  116
+1362: Olafsen Sigmund           Nordstrand            1778   28
+1363: Olaussen Atle Gj          Akademisk             1292  329
+1364: Oldernes Harald           Vadsø                 1227  822
+1365: Olsen Alf Marius Foss     Akademisk             1461  148
+1366: Olsen Alvin               Bodø                  1358  256
+1367: Olsen Anders              Kristiansund          1972  693
+1368: Olsen Andrei              Akademisk             1525  193
+1369: Olsen Arvid               Fredriksstad          1294  242
+1370: Olsen Birger              Kirkenes              1278  407
+1371: Olsen Frank Robert        Gjøvik                1437   24
+1372: Olsen Geir-Ove            Brønnøysund           1587  534
+1373: Olsen Håvard              (Tidl. Tromsø)        1324  115
+1374: Olsen Johan               (Tidl. Ottestad)      1135   27
+1375: Olsen Jørn Ole            (Tidl. Tromsø)         832   73
+1376: Olsen Karsten             Bodø                  1221  308
+1377: Olsen Knut                Lillestrøm            1269  579
+1378: Olsen Knut                Trondheim             1036  131
+1379: Olsen Meum Geir           Moss                  1622   26
+1380: Olsen Rolf A.             Samisk                1253   35
+1381: Olsen Svein               Fredriksstad          1452  220
+1382: Olsen Tom Bredo           Kirkegata             1108  341
+1383: Olsen Trygve              Follo                 1265  715
+1384: Olsen Widar               Harstad                754   14
+1385: Olsen Willy L.            OSS                   1686  433
+1386: Olsen Åge                 Kristiansund          1774  807
+1387: Olsson Bjørn H            Molde                 1684   51
+1388: Omland Harald             Asker                 1315  693
+1389: Omland Nils H. Frivoll    Arendal               1346  151
+1390: Omtvedt Aleksander        1911                  1560  246
+1391: Omtvedt Per               Stjernen              1959 1279
+1392: Onstad Lars               Moss                  1726  661
+1393: Opdahl Hans P             Kristiansund          1794   32
+1394: Opdahl Jens Chr. Lothe    Stjernen              1593  134
+1395: Opedal Jan Petter         Stjørdal              1407   79
+1396: Opland Harald             Steinkjer             1441  412
+1397: Opsahl Kristoffer         Hamar                 1083   39
+1398: Ormåsen Odd Steinar       Hamar                 1791  209
+1399: Orseth Dag                Masfjorden            2274  502
+1400: Osaland Steven            (Tidl. Sandnes)       1285   38
+1401: Osvoll Peter O            Kongsvinger           1333  130
+1402: Otterlei Olav             Masfjorden            1770  395
+1403: Ottersen David            Arendal               1200   64
+1404: Ovesen Karsten            Sevland               1557  841
+1405: Pagtama Lawrence          (Tidl. OSS)           1696   32
+1406: Palsson Bogi              Black Knights         2012   71
+1407: Parr Hugo                 Nittedal              1565  163
+1408: Paulsen Jack-Eigil        (Tidl. Randaberg)     2073  666
+1409: Paulsen Stig-Atle         Modum                 1470  236
+1410: Paulsen Tor Arne          Hammerfest            1868  559
+1411: Paulsen Viktor            Alta                  1786  683
+1412: Paulshus Anders           Akademisk             1211   99
+1413: Pedersen Audun            Tromsø                1762  316
+1414: Pedersen Birger           Alta                  1159  476
+1415: Pedersen Erik Lind        Moss                  1238  642
+1416: Pedersen Jens Petter G.   Lørenskog              811   68
+1417: Pedersen Johnny Karl      Tromsø                1223  352
+1418: Pedersen Jone Riska       Oslo Vest             2081  554
+1419: Pedersen Lars Erik        Strømmen              1859  412
+1420: Pedersen Odd              Lørenskog             1648  422
+1421: Pedersen Thomas           (Tidl. Nordnes)       1736  305
+1422: Pedersen Øyvind           Tromsø                1964 1274
+1423: Persen Ole Morten         Modum                 1584  299
+1424: Persson Mats              OSS                   2146   50
+1425: Persson Rune              Tromsø                1656  109
+1426: Petkov Vaso               Arendal               1267  121
+1427: Pettersen Aleksander      Aurskog-Høland         625   20
+1428: Pettersen Arne J.         Mo                    1513  292
+1429: Pettersen Bjørnar         Brønnøysund           1360   89
+1430: Pettersen Erik Kr. Zahl   Fredriksstad          1182   88
+1431: Pettersen Erling          Follo                 1356  239
+1432: Pettersen Henning         Lillehammer           1725  159
+1433: Pettersen Joar Gullestad  Stavanger             1900  302
+1434: Pettersen Magnor          Narvik                1269  114
+1435: Petterson Gustav-Erik     Tønsberg               938   63
+1436: Petterson Tor             Porsgrunn             1234  449
+1437: Pham Toan Thanh           Akademisk             1942  297
+1438: Pilø Erlend               Hamar                  979   20
+1439: Pilø Lars                 Hamar                 1938  183
+1440: Polo Jose H               (Tidl. Bergens)       1844  373
+1441: Ponce Trond Magne         Sandnes                848   28
+1442: Poppe Christian Koyoma    1911                  1134  163
+1443: Portazedi Bagher          Stord                 1513   59
+1444: Porter Ross               Stavanger             1658   29
+1445: Pourali Ahmed             Asker                 1287   30
+1446: Prestby Willy             Lillestrøm            1172  219
+1447: Prohl Frank               Tromsø                1274   25
+1448: Pronstad Thomas           Trondheimstud         1844  466
+1449: Prytz Knut                NSSF                  1068  231
+1450: Prytz Otto                NSSF                  1127  294
+1451: Prytz Tormod              NSSF                  1314  226
+1452: Prøitz Mads               Fredriksstad           837   26
+1453: Pylvinen Aki              Alta                   829  118
+1454: Qualmann Marcus O Charlie Caissa                 950   10
+1455: Qvortrup Jon              Moss                  2160  468
+1456: Rafnung Skjalg            Narvik                1594  572
+1457: Rakkestad Ole Espen       1911                  1014   30
+1458: Rambø Jan-Bjarne          Bærum                 1586   11
+1459: Ramstad Vegard            Stjernen              1294   51
+1460: Ramsøy Sveinung           Lillestrøm            1510  256
+1461: Rangøy Helge A.           Halden                1686 1238
+1462: Rangøy Tormod             Sarpsborg             1670  961
+1463: Rasdal Yngve              Masfjorden            1262   48
+1464: Rasmussen Egil            Alta                  1377   91
+1465: Rasmussen Jonas H         Bergens                900   34
+1466: Rasmussen Rikard W.       Alta                  1202  120
+1467: Rasmussen Roald           (Tidl. Sørum)         1460  571
+1468: Rasmussen Rolf            Kongsberg             1526   97
+1469: Rathan Raksha             OSS                   1224  167
+1470: Raugstad Oddvar           (Tidl. Sandnes)       1308   94
+1471: Reinholdtsen Anton        Kongsberg             1569  258
+1472: Reistad Arne              Løten                 1125  359
+1473: Reitan Jon A.             Trondheim             1617  211
+1474: Remman Frank              Tromsø                1782  731
+1475: Remman Stein Børre        Tromsø                1120  252
+1476: Renke Ma                  (Tidl. Kristiansund)  1778   12
+1477: Reppe Karl M              (Tidl. Arendal)        905   26
+1478: Reppen Ellisiv            Nordstrand            1850  428
+1479: Reppen Odd                Brønnøysund           1538   45
+1480: Reppen Sigmund            NTG                   1932  454
+1481: Reppen Tore               Kongsvinger           1467  638
+1482: Revil Bjørn               (Tidl. Akademisk)     1963  498
+1483: Ribe Mads                 (Tidl. OSS)           1627  192
+1484: Richards Heather S.       Moss                  2100   75
+1485: Richter Michael           Trondheim             2347   13
+1486: Riisem Øyvind             (Tidl. Fana)          1949  134
+1487: Riiser Samuel             OSS                   1019   22
+1488: Ring Oddvar               Caissa                1312   17
+1489: Risa Geir Frode           Egersund              1078   86
+1490: Rist Karl-Johan           Alta                  1282  868
+1491: Ristesund Odd             Kampen                1407 1524
+1492: Roald Sjur                Nordstrand            1341  463
+1493: Robertsen Thomas          Team Bjørnsen         2157  476
+1494: Robertsen Yngve           Trondheim             1537  598
+1495: Roen Arild                Aurskog-Høland        1458   38
+1496: Roen Vegard Andre         Aurskog-Høland         754   41
+1497: Roer Terje                Fredriksstad          1438   79
+1498: Rognerud Sigurd           Ottestad              1396   30
+1499: Roholdt Njaal             Akademisk             1278  119
+1500: Rokstad Mads              Moss                  1228   47
+1501: Rolfsen Rolf              (Tidl. Trondheim)     1323  199
+1502: Rolien Terje              Verdal                1462   27
+1503: Romsdal Geir              Komsa                 1413  213
+1504: Romsdal Jørn              Alta                  1397  160
+1505: Romsdal Trond             Tromsø                2113 1205
+1506: Romslo Christian          (Tidl. OSS)           1573   65
+1507: Rose Dominik              (Tidl. Trondheim)     1986   35
+1508: Rosland Andreas Lothe     Sandnes                765   22
+1509: Rosland Bjørn T           Sandnes                585   20
+1510: Rosnes Sven Olav          1911                  1130   41
+1511: Rostad Mia-Kristin        Tromsø                 882   87
+1512: Roverud Thor              Caissa                1688  161
+1513: Rudi Erik                 (Tidl. Ørsta)         1415  127
+1514: Rukovci Shemsi            (Tidl. Indre Østfold) 1971   96
+1515: Runde Hans Arild          Akademisk             1870  371
+1516: Runde Per Steinar         Ørsta                 1297   48
+1517: Rundgren Anders           Trondheimstud         1400  158
+1518: Runå Thomas               Tønsberg              1254  106
+1519: Rustad Øistein            Halden                1534   71
+1520: Ruud Steffen              (Tidl. Konnerud)      1156   58
+1521: Ruud Svein E              Stjernen              1532  398
+1522: Rytterager Trygve         Asker                 1118   45
+1523: Rødvik Trym Daniel        Hamar                  636   15
+1524: Røilid S. Kristian        Mosjøen               1222   45
+1525: Røine Morten              Hønefoss              1553  563
+1526: Rølvåg Birk Anders        Narvik                1521  142
+1527: Rølvåg Mikael             Narvik                2056  990
+1528: Rønning Are               Vadsø                 1791  358
+1529: Rønning Leif              Strømmen              1216  272
+1530: Rønningen Anders          Kongsvinger           1748  222
+1531: Rønnung Bjørn             Lørenskog             1177   29
+1532: Rönnung Fredrik           Kongsberg             1483   22
+1533: Rørvik Jon                Tempo                 2161  663
+1534: Røset John                Namsos                1427  236
+1535: Røst Bjørn                SOSS                  1793  254
+1536: Røstad Rolf               Asker                 1768  593
+1537: Røtvold Trygve            Kirkenes              1377  413
+1538: Røv Arne Knut             Ørsta                  703  221
+1539: Røyset Jon Kr.            Team Bjørnsen         2157  549
+1540: Røyset Pål                Tromsø                2145 1184
+1541: Sagafos Knut              Porsgrunn             1221  173
+1542: Sagafos Magne             Porsgrunn             2376  580
+1543: Sahl Bjarke               Asker                 2390  284
+1544: Sahl Sheila Barth         Asker                 2252  932
+1545: Salen Eivind              Nordnes               1456   55
+1546: Salomon Johan             Nordstrand             896   60
+1547: Salomonsen Rune           Nordnes               1692  296
+1548: Salthe Gaute              (Tidl. Stavanger)     1873   68
+1549: Salvesen Bjørn            Røros                 1484  510
+1550: Salvesen Theodor Klæboe   Røros                  554   59
+1551: Samset Jon                Follo                 1144  490
+1552: Samuelsen Terje C.        Halden                1121  100
+1553: Sandal Eirik              SK 96                 1945   58
+1554: Sande Oddmund             Randaberg             1905  862
+1555: Sandell John              NSSF                   765   29
+1556: Sander Martin Kr          Sarpsborg              556   18
+1557: Sandholm Rune             Black Knights         1169   59
+1558: Sandlie Stein             Ottestad              1385   57
+1559: Sandmark Tore             Trondheim             1718  492
+1560: Sandum Kjell T            Kristiansund          1926  571
+1561: Sandvik Daniel            Bergens               1332   91
+1562: Sangen Kjetil             Hamar                 1440  136
+1563: Sannerud Harald           Nord-Odal              956   34
+1564: Sannes Helge              Trondheim             1482  372
+1565: Sannes Håkon              Hønefoss              1452  335
+1566: Santillan John Phillip    Kirkegata             1539   40
+1567: Savio Niklas              Porsgrunn              808   98
+1568: Sawa Sven                 Kongsvinger           1698  159
+1569: Schaeffer Janos           Tromsø                1357   13
+1570: Schanzenbecher Patrick    Kristiansund          1373  246
+1571: Schelver Eyolf Ilebekk    Porsgrunn              565   12
+1572: Schjelderup Nils J.       Harstad               1583  437
+1573: Schjong Håvard H          (Tidl. Randaberg)     1231   20
+1574: Schmidt Daniel            (Tidl. Sørum)         1305  146
+1575: Schmidt Jonny             (Tidl. Sørum)         1720  287
+1576: Schmidt Kristian          Tromsø                1286   35
+1577: Schmidt Paul              Sørum                 1415  225
+1578: Schou Bjørn A             Kristiansand          1041   31
+1579: Schølseth Martin          Kirkenes               933   13
+1580: Schølseth Tor K.          Kirkenes              2017   66
+1581: Scott Gustavo Silva       Sevland               1952   40
+1582: Sebastian Johnny          Porsgrunn             1338  133
+1583: Selbekk Michael Aron      Moss                   857   49
+1584: Selbekk Vebjørn           Moss                  1792   59
+1585: Sele Audun                Molde                 1471  712
+1586: Selnes Odd Ketil          Harstad               1426  289
+1587: Semakoff Aleks            OSS                   2062  757
+1588: Sersch Rudi               Randaberg             1924   35
+1589: Shabalin Vladimir         Sortland              1240   77
+1590: Shabrokh Favad            Strømmen              1094   20
+1591: Shkhalahov Shamil         Orkdal                 641   12
+1592: Sidselrud Laila           Kongsvinger           1611  602
+1593: Sidselrud Steinar         Kongsvinger           2041  720
+1594: Sigerset Magnar           Molde                 1388   82
+1595: Simensen Vegard           Kristiansund           998   19
+1596: Simonsen Helge            Kampen                1458   12
+1597: Simonsen Inge             Tromsø                1503   95
+1598: Simonsen Martin           Bergens               1269   44
+1599: Simonsen Steinar          Follo                 1402  823
+1600: Simula Leon               Team Bjørnsen         2032  389
+1601: Sit Louis                 1911                  1257  146
+1602: Sivagnanam Mithunan       (Tidl. OSS)           1343   66
+1603: Sivapalan Arjun           OSS                   1015   30
+1604: Sivapalan Varun           OSS                   1101   42
+1605: Sivertsen Jon Wetle       (Tidl. Sarpsborg)      568   27
+1606: Sjursen Hans-Jørgen       Sotra                 1622  301
+1607: Sjøl Henrik               Akademisk             1696 1034
+1608: Sjøli Andreas             Trondheimstud         1544   80
+1609: Sjøvoll Birger            Mosjøen               1230  211
+1610: Skadsheim Petter          (Tidl. Indre Østfold)  843   27
+1611: Skadsheim Tobias          (Tidl. Indre Østfold)  859   26
+1612: Skage Øystein Aagedal     Bergens               1649  247
+1613: Skagestad Arnfinn         Lørenskog             1046   13
+1614: Skar Øystein              Nordstrand            1671  200
+1615: Skarding Joakim           Harstad               1098   74
+1616: Skare Nils Kåre           Sotra                 1289   66
+1617: Skarsbø Thorbjørn         Strømmen              1253  329
+1618: Skarstad Morten           Caissa                1331   13
+1619: Skarstein Per B           Ørsta                 1335   48
+1620: Skaug Thorbjørn           Fredriksstad          1209  676
+1621: Ski Ole Johan             Asker                 1745   27
+1622: Skjelde Andreas           (Tidl. Bergens)       2007   10
+1623: Skjelstad Erling          SMPOAÅ                1613  614
+1624: Skjemstad Frode           Modum                 1878  491
+1625: Skjetnemark Olav          Namsos                1322  312
+1626: Skjold Leif Arne          Tempo                 1417   48
+1627: Skjold Reidar             Tempo                 1556   62
+1628: Skjæveland Olav           Strand                1278  291
+1629: Skjønberg Sverre          Indre Østfold         1476   65
+1630: Skjønsberg Harry Arne     Ottestad              1195  119
+1631: Skjøtskift Geir           Akademisk             1042   34
+1632: Skodvin Eilif             Oslo Vest             2314   52
+1633: Skogheim Ole Morten       Lillehammer           1920  499
+1634: Skogli Per                Gjøvik                1416  738
+1635: Skogli Pål                Gjøvik                1669  375
+1636: Skorge Geir Arne          Kristiansand          1364   36
+1637: Skrede Snorre             Stavanger             1463  158
+1638: Skrondal Inge Sandstad    Akademisk             2163  592
+1639: Skullerud Asbjørn         Kongsberg             1383   88
+1640: Skytte Torill             1911                  1973  455
+1641: Skøien Håvard             Bergens               1882  235
+1642: Skånseng Stian            Sarpsborg              653   65
+1643: Skårås Erik               Elverum               1379  209
+1644: Slang Harry               Fredriksstad          1014  578
+1645: Sletnes Knut              Svartlamon            1458   29
+1646: Slettebø Anders           Egersund              1196  157
+1647: Slettebø Martin           (Tidl. Egersund)      1158   10
+1648: Slettehaug Roar           Fribonden             1566   18
+1649: Sloper Christian          Bergens               1675  127
+1650: Smeby Ole                 Kongsvinger           1879  731
+1651: Smedtorp Klaus            Kongsvinger           1152  524
+1652: Smeland Jørgen            Porsgrunn             1379  186
+1653: Smith Geoff               (Tidl. 1911)          1476   90
+1654: Snekkermo Kent Ove        Verdal                1578  279
+1655: Snellingen Jørn           Black Knights         1855  678
+1656: Snerthammer Dag F. P.     Sandnes               1329  133
+1657: Snerthammer Daniel        Sandnes               1643  175
+1658: Snähre Stig Allan         Egersund              1344  372
+1659: Snørteland Per            Tønsberg              1309  585
+1660: Solbakk David             (Tidl. Akademisk)     1212   31
+1661: Solbakken Jan Børge       Ottestad              1603  394
+1662: Solberg Joachim           Alta                  2072  743
+1663: Solberg Svenn             Caissa                1148  115
+1664: Solberg Tor-Egil          Moss                  1573  508
+1665: Solberg Werner            Nordstrand            1463  535
+1666: Solbu Lasse T.            Trondheim             1687  202
+1667: Solem Trond               Direkte               2168  829
+1668: Solli Espen               Moss                  1436   85
+1669: Solli Jarle               Nordnes               1292  231
+1670: Solli Oddvar              Voss                  1607  475
+1671: Sollid Stein              OSS                   1962  934
+1672: Solstad Bjarne            Orkdal                1262  164
+1673: Solvang Terje             Trondheim             1848  287
+1674: Sousa Helsio Paulo        Lillestrøm            2174  101
+1675: Sparby Bjørn              Nittedal              1851  319
+1676: Spillum Jahn              Moss                  1821 1510
+1677: Spreemann Tarek           (Tidl. Nordstrand)    1756  156
+1678: Stabbetorp Hans           Fredriksstad          1460  509
+1679: Stake-Larsen Gunnar       OSS                   1955  398
+1680: Stampe Roger              Caissa                1802  506
+1681: Standal Bård              Tønsberg              1640 1076
+1682: Standal Egil A            Ørsta                 1626  572
+1683: Standal Erling Arve       Ørsta                  876  123
+1684: Standal Martin I          (Tidl. Ørsta)         1466  277
+1685: Stangeland Erlend         Sandnes               1748   27
+1686: Stangeland Karle          Sandnes               1967  524
+1687: Stangeland Maren          Sandnes               1291  205
+1688: Stangeland Ole Fr.        Sandnes                596   51
+1689: Stangeland Øyvind         Sandnes                899   51
+1690: Stanghelle Anders         Nord-Odal             1162  116
+1691: Stava Jan I.              Sevland               1273  160
+1692: Stava Sissel J.           Sevland               1871  253
+1693: Stavelin Arne             Risør                 1254   42
+1694: Steedman James            Randaberg             1993  515
+1695: Steen Vegard              Gjøvik                1576  958
+1696: Steg Hans Jørgen          (Tidl. Sarpsborg)     1481  275
+1697: Stein Arne W              (Tidl. Bergens)       1090   98
+1698: Steinkellner Rudolf       Kirkegata             1463  613
+1699: Steinkjer Bjarte          Stavanger             1523   48
+1700: Steinskog Asbjørn O.      Sandnes               1576  135
+1701: Steinskog Kristin         Sandnes               1051   10
+1702: Steinskog Tom             Sandnes                973   83
+1703: Stene Sigurd              Moss                  1256  683
+1704: Stenersen Gudmund         Stjernen              2192  877
+1705: Stensen Gunnar            (Tidl. Stjernen)       947   26
+1706: Stensen Vegard            Tromsø                1191   41
+1707: Stensholt Sigvat          Bergens               1249   72
+1708: Stensland Martin          Follo                 1200  331
+1709: Stensland Svein Inge      (Tidl. Stavanger)     1484  125
+1710: Stenvik Sigurd            Trondheim             1119   81
+1711: Stenvaag Per-Chr.         Aalesund              1568  550
+1712: Stephensen Ketil          Tønsberg               831   27
+1713: Sterk Michel              (Tidl. Black Knights) 2013  541
+1714: Stern Tibor               Trondheim             1408  548
+1715: Sterud Arvid              Løten                  933  156
+1716: Stette Harald Peter       Fredriksstad           946   82
+1717: Stillum Erik              Drammen               1588  367
+1718: Stokhaug Jon A.           Stjørdal              1648  679
+1719: Stokke Eirik V            Sotra                  758   16
+1720: Stokke Jan                Drammen               1785  705
+1721: Stokke Kjetil             Bergens               2360  757
+1722: Stokstad Petter G         Direkte               2113  792
+1723: Storeheier Svend          (Tidl. Lillestrøm)    1100   12
+1724: Storeide Erling           Aalesund              1686  500
+1725: Storeide Helge            Aalesund              1540  438
+1726: Storhaug Kåre             Randaberg             1888  283
+1727: Storland Knut Harald      (Tidl. Randaberg)     2208  846
+1728: Storli Frode              Hamar                 1421   71
+1729: Storm-Hanssen Claes       OSS                   1445  211
+1730: Storslett Roald           Tromsø                1157  830
+1731: Storsve Frank             Svartlamon            1019   30
+1732: Strand Andreas            Modum                 1526  166
+1733: Strand Håkon              Stavanger             1922  307
+1734: Strand Ingrid             Modum                  874  130
+1735: Strand Karl W.            Kristiansund          1873 1102
+1736: Strand Kjetil             Asker                 1953  497
+1737: Strand Magnus             NSSF                  1431   10
+1738: Strand Øyvin              Bergens               1719  459
+1739: Stray Gunnar              Moss                  1990   50
+1740: Strømme Audun             SMPOAÅ                 869   36
+1741: Strømsmoe May Helen P.    Tromsø                 906   82
+1742: Strømsnes Henning         Brønnøysund           1112   13
+1743: Stubberud Ørnulf          OSS                   2111  546
+1744: Stubrud Jan Magne         Lillehammer           1600  527
+1745: Stuhaug Norleif           Førde                 1476  137
+1746: Støkken Martin S          Follo                  740   10
+1747: Støle Alexander           Sandnes               1443  106
+1748: Støle Andreas             Sandnes               1268   76
+1749: Støle Holger              Sandnes               1298   76
+1750: Støre Erling              Lillehammer           1329  300
+1751: Sund Per Børge            Lillehammer            896   45
+1752: Sundby Morten             Caissa                1348  143
+1753: Sunde Jarl Arve           Ørsta                 1028   77
+1754: Sundvoll John-Andrè       Hønefoss               792   33
+1755: Suntharalingam Jarani     OSS                    897  120
+1756: Suntharalingam Jathavan   OSS                   1683  324
+1757: Svadberg Anders           OSS                   1210   70
+1758: Svanholm Børge W          Stjernen              1766  391
+1759: Svee André                (Tidl. Aalesund)      1431   76
+1760: Sveia Per Arne            Konnerud              1054   58
+1761: Svendsen Aina Marie       Stavanger             1712  223
+1762: Svendsen Bertil           Porsgrunn             2153  499
+1763: Svendsen Frank            Kirkenes              1904  384
+1764: Svendsen Jørgen           Kirkenes              1397  505
+1765: Svendsen Magne            Lillestrøm            1290  865
+1766: Svendsen Morten           Stavanger             1157  149
+1767: Svendsen Per Gisle        1911                  1886  725
+1768: Svendsen Petter           Kragerø                948   58
+1769: Svendsen Tony             Kirkenes              1514  405
+1770: Svensen Tarjei Joten      OSS                   1952  747
+1771: Svenske Jan               Strømmen              1726 1518
+1772: Svenson Lennarth          (Tidl. Moss)           927   45
+1773: Svensson Knut             Verdal                1180  147
+1774: Svenungsen Olaf           Strømmen               737   19
+1775: Sverdrup Tore             Bodø                  1286  560
+1776: Sviland Atle              Bergens               1427  118
+1777: Svindahl Jan              Kristiansand          1190 1349
+1778: Svingen Per M             Hamar                 1817  472
+1779: Synnestvedt Jan           Nordstrand            1810 1179
+1780: Syslak Asbjørn            NSSF                  1164   19
+1781: Syslak Bergvin            NSSF                   699   17
+1782: Sytov Pavel               Kristiansand          1102   46
+1783: Syversrud Jørn Christian  Akademisk             1235   51
+1784: Syvertsen Finn            Asker                 1156  444
+1785: Syvertsen Rolf E          Tønsberg              1641  592
+1786: Szalai Janos              Akademisk             1727 1032
+1787: Sæterøy Nina              Fredriksstad           754   56
+1788: Sæther Ivar               Kirkenes              1253   23
+1789: Sæther Karl               (Tidl. Sørum)         1105  355
+1790: Sæther Lars               Fredriksstad          1624 1071
+1791: Sæther Steinar            Fredriksstad          1665  671
+1792: Sætre Mathias             Bergens                524   16
+1793: Sætre Renate              Ørsta                  703   52
+1794: Sætre Roger               Bergens               1424   53
+1795: Sætre Stig                Aalesund              1423  280
+1796: Sævareid Ove              SK 96                 1998  544
+1797: Sødtholt Dag              SOSS                  1954  436
+1798: Søhoel Christian          (Tidl. OSS)           1616   35
+1799: Sørbøl Jørgen             1911                  1099   74
+1800: Søreng Eirik              Akademisk             1617  188
+1801: Sørensen Idar             Drammen               1155   86
+1802: Sørensen Kristian         (Tidl. Fana)          2030  514
+1803: Sørensen Odd Arne         (Tidl. Asker)         1141  134
+1804: Sørgjerd Jan              Nordstrand            2035  848
+1805: Sørgård Inger Toril Hauge Bodø                  1159   58
+1806: Sørgård Johnny Haugen     Bodø                  1491  253
+1807: Sørheim Erling            Ørsta                 1513   18
+1808: Sørhus Jostein            Bergens               1127  124
+1809: Sørjordet Anders          1911                  1485  179
+1810: Sørli Arne                Kirkegata             1347  319
+1811: Sørseth Gjermund          Caissa                1849  766
+1812: Sørum Rolf                Tønsberg              1325   16
+1813: Søraas Torben             Narvik                2124  739
+1814: Søyland Erik              Stavanger             1426  183
+1815: Søyland Jan               Asker                 1407  211
+1816: Takle Dan                 Vadsø                 1728   11
+1817: Taksrud Vidar             Tempo                 2178 1079
+1818: Talat Hogir               Fredriksstad          1884  184
+1819: Talberg Kristian          Komsa                 1357  265
+1820: Tallaksen Geir Sune       Porsgrunn             2439  706
+1821: Tallaksen Levi André      Porsgrunn             1879  312
+1822: Tandberg-Hanssen Øivind   Moss                  1376  115
+1823: Tande Ingrid Kvinge       (Tidl. Masfjorden)     798   70
+1824: Tande Magnus Kvinge       Masfjorden            1151   87
+1825: Tande Torkel Kvinge       Masfjorden            1677  185
+1826: Tangen Knut Lennart       Lillehammer           2003  384
+1827: Tangen Raymon             (Tidl. Alta)          1334   13
+1828: Tangen Rolf W.            Sarpsborg             1405  593
+1829: Tangen Thomas             Strømmen              1760   27
+1830: Taraldset Anders          Bærum                 1310   15
+1831: Tari Aryan                Asker                 1404  127
+1832: Tari Siamak               Asker                 1351   27
+1833: Taube Gregor              1911                   980   81
+1834: Teigset Markus            1911                   697   33
+1835: Teigum Amund              (Tidl. Trondheimstud) 1790  345
+1836: Telle Lars Kr M           Hamar                  926   21
+1837: Tevasvoll Svein           Kirkegata             1203  463
+1838: Thanke Bror               Nordstrand            2073  864
+1839: Theting Helge E.          Kragerø               1894  762
+1840: Thingstad Anders          Hønefoss              1681  304
+1841: Thingstad Even            Hønefoss              1941  384
+1842: Thingstad Tormod          Hønefoss               943  218
+1843: Thjømøe Hans R            Drammen               1632  770
+1844: Thomasen Aleksandern      (Tidl. Lørenskog)      960   14
+1845: Thomassen Asbjørn         Stavanger              807  490
+1846: Thomassen Joachim         Stavanger             2320  359
+1847: Thomassen Thomas          Stavanger             1981  527
+1848: Thonstad Tore             Moss                  1271  171
+1849: Thordal Holger            Sandnes               1017   67
+1850: Thordal Jens              Sandnes                932   46
+1851: Thoresen Tommy V.         Kristiansand          1322  117
+1852: Thorgersen Trond M.       Drammen               1966 1270
+1853: Thorsen Frode             Sarpsborg             1292   20
+1854: Thorsen Åge               (Tidl. Drangedal)      951   23
+1855: Thorstensen Espen         Kongsvinger           1963  364
+1856: Thorstensen Petter        Stjernen              1547  468
+1857: Thorstensen Roar          Stjernen              1360  194
+1858: Thorstensen Trond         Akademisk             2152  553
+1859: Thorsø Kristian           Trondheim              803  168
+1860: Thorsås Herman            (Tidl. Porsgrunn)      581   20
+1861: Thorvaldsen Petter        Fredriksstad          1030  114
+1862: Thowsen Alf Geir          Follo                 1237  181
+1863: Thrana Svein Arne         Nittedal              1641  341
+1864: Tidemann-Andersen Leif    Caissa                1429  559
+1865: Tiller Bjørn              OSS                   2299   19
+1866: Time Jonatan Ekelund      Sevland               1720  189
+1867: Tisdall Jonathan          Asker                 2364  980
+1868: Tjensvoll Tore            Nordnes               1853  511
+1869: Tjetland Oda              Sandnes                734   25
+1870: Tjomsland Stig            Nordstrand            2306  565
+1871: Tjølsen Katrine           Bergens               2065  386
+1872: Todnem Karl               Sandnes               1290   26
+1873: Tofte Anders              Stavanger              956   98
+1874: Tofte Sondre Waage        Stavanger             2075  414
+1875: Tollefsen Vegard          Narvik                1855  451
+1876: Torbergsen Geir A.        Narvik                1647  163
+1877: Torgersen Eric            Kristiansand          1137   92
+1878: Torgersen Markus          Narvik                 884   66
+1879: Torgersen Terje           Kristiansand          1835  773
+1880: Torgersen Torger          Tønsberg              1140  231
+1881: Torjusen Georg            Risør                 1394   50
+1882: Torkilseng Runar          Direkte               1488  268
+1883: Torsdal Jørn              Porsgrunn              813   80
+1884: Torsdal Marte             Porsgrunn              821   31
+1885: Tosi Valerio              Halden                1164  154
+1886: Totland Elin              Masfjorden             842   55
+1887: Trana Arne O              Steinkjer             1715  782
+1888: Tromp Ton                 Randaberg             1660   38
+1889: Trulsen Arve              (Tidl. Trondheim)     1269  136
+1890: Trygstad Kristian D.      OSS                   2299  986
+1891: Tuft Ole R.               Caissa                1670  205
+1892: Tufta Jon Gunnar          Bergens               1677  347
+1893: Tveit Geir                Akademisk             1453  196
+1894: Tveiten David             Tromsø                 952   80
+1895: Tveiten Paal              Moss                  1600   86
+1896: Tveter Steinar            NSSF                  1015  149
+1897: Tømte Asbjørn             Drammen               1759  300
+1898: Tønseth Harald            Ottestad              1406   54
+1899: Tørum Arild               SMPOAÅ                1536  415
+1900: Tørum Reidar              Namsos                1492  339
+1901: Uberg Per Gunnar          Kristiansand          1437  345
+1902: Udland Anders             1911                   578   11
+1903: Uggerud Ivar              Kongsvinger           1808   49
+1904: Ugland Johannes           (Tidl. Nordstrand)     914  460
+1905: Ugland Torge              Drammen               1363  272
+1906: Ukkelberg Øyvind          Stjørdal              1768  580
+1907: Ulrichsen Jarl H          Trondheim             2079  825
+1908: Ulvik Steinar             Frosta                1423  339
+1909: Ulvin Dag                 Lillestrøm            2154  707
+1910: Ulvnes Roar               Nordstrand            1910  178
+1911: Undall Ståle              Svartlamon            1048   26
+1912: Undheim Bjarne            OSS                   1608  111
+1913: Undheim Stein             Egersund              1197   19
+1914: Unnli Matti               1911                  1654  354
+1915: Urkedal Frode Olav Olsen  1911                  2206  334
+1916: Utheim Marius             Lenvik                1116   20
+1917: Utnes Peter Vedal         Tromsø                1413   94
+1918: Utnes Ulf                 Tromsø                 770   74
+1919: Utsi Nils R               Samisk                1087  148
+1920: Uyuducu Dervis            (Tidl. Akademisk)      755   11
+1921: Vagle Leif                Larvik                1364  159
+1922: Vagle Raymond             SOSS                  1849  434
+1923: Valaker Ole Johan         Oslo Vest             2088  670
+1924: Valla Martin              OSS                   1937  199
+1925: Valle Knut                Hammerfest            1471  575
+1926: Valle Lars                Akademisk             1487  561
+1927: Valle Stian               Hammerfest             977  119
+1928: Valle Tony                Hammerfest            1035   92
+1929: Vang Frithjof             (Tidl. Harstad)       1125  255
+1930: Vatland Kjell T           Stavanger             1336  278
+1931: Vea Odin Blikra           Stavanger             2118  579
+1932: Vea Rannveig Blikra       Stavanger             1510  348
+1933: Vea Tormund Blikra        Stavanger              802   77
+1934: Vedal Odd A.              Brønnøysund           1384  115
+1935: Vedal Stein Harald        Brønnøysund           1629   40
+1936: Vederhus Alf              1911                  1366  163
+1937: Vederhus Håvard           1911                  1296  112
+1938: Vega Roy                  Frosta                1141   17
+1939: Vestli Håkon Bjørge       OSS                   1476   38
+1940: Vestli Kåre               Lillestrøm             653  120
+1941: Vestly Jan Vidar          (Tidl. Randaberg)     2063  743
+1942: Vetterstad Per            (Tidl. Drammen)        936   33
+1943: Vie Trygve                Førde                 1124   69
+1944: Viestad Laila             Nordstrand            1679  391
+1945: Vigdal Per Kr             Nordstrand            1771  745
+1946: Vik Arne                  Gjøvik                1847  323
+1947: Vik Jørgen                Kristiansand          1822  526
+1948: Vik Olav                  NSSF                  1328  190
+1949: Viken Ivar                NSSF                  1581  321
+1950: Vik-Hansen Rune           Tromsø                1798  535
+1951: Villmo Harald B.          Trondheimstud         1722  289
+1952: Volden Steinar            NSSF                  1292   48
+1953: Vollan Kjetil             Bodø                  1714  847
+1954: Vollstad Bjørn            (Tidl. Mo)            1060   91
+1955: Vålerhaugen Kjell         Modum                 1412  161
+1956: Wadhah Alwali             Narvik                1439   14
+1957: Walseth Tron              Team Bjørnsen         1900  566
+1958: Wang Lyberg A.            Tromsø                 927   93
+1959: Ward Henning              Drammen                943   78
+1960: Wasenius Thomas           Moss                  1174  134
+1961: Wattø Einar               Aalesund              1740  493
+1962: Weberg Øyvind             Follo                 1516  477
+1963: Weiberg Odd               Indre Østfold         1202  322
+1964: Weinberger Simon          (Tidl. Lenvik)        1606   31
+1965: Wendelborg Morten         Porsgrunn             1589  390
+1966: Wesnes Morten             (Tidl. Stavanger)      500   15
+1967: Wessel-Berg Dag           Svartlamon            1172   68
+1968: Westgaard Ulf             (Tidl. Asker)         1290   38
+1969: Wibe Per H.               Asker                 1650  505
+1970: Wicklund-Hansen Rich.     OSS                   1724  771
+1971: Wiggen Frode              Stavanger             1431  241
+1972: Wiig Ole Martin           (Tidl. Molde)         1642  488
+1973: Wilhelmsen Fredrik        Asker                 1114  102
+1974: Willumsen Kaj Roger       Sortland              1463  149
+1975: Wilsbeck Jan B.           OSS                   1817  869
+1976: Wister Finn Arild         Kirkegata             1282  643
+1977: Wister Tom R              Kirkegata             1613  606
+1978: Wivestad Terje W          Nordstrand            1439  489
+1979: Wold Bjørn K.             1911                   716   14
+1980: Woldseth Ole              Sotra                 1932  469
+1981: Wollan Joacim             Narvik                1034   89
+1982: Wullum Thor Arne          Svartlamon            1586   45
+1983: Wågø Anders               trondheimstud         1679  111
+1984: Xue Ray Jia               1911                  1202   57
+1985: Yggeseth Øistein          Asker                 1156  884
+1986: Yndesdal Kjell            Nordstrand            1948  561
+1987: Ytterborg Jan Henrik      Nord-Odal             1639  308
+1988: Yut Michael               (Tidl. Hønefoss)      1638   31
+1989: Zachariassen Bjarne       SOSS                  1931  531
+1990: Zhuravlev Sergey          Harstad               1985  122
+1991: Zimmermann Sigurd         Stjørdal              1357   31
+1992: Ødegaard Karl Eirik       Trondheim             1152  288
+1993: Ødegaard Per              Asker                 1696   17
+1994: Ødegaard Per Chr          Trondheim             1467  625
+1995: Ødegården Harald B        Lillehammer           1149   96
+1996: Øgaard Leif               OSS                   2402 1463
+1997: Øhman Kjell Tage          Akademisk             1572  109
+1998: Øie Olav                  (Tidl. Bergens)       1126   55
+1999: Økland Sveinung           Sandnes               1540   31
+2000: Øksnevad Arild            Nittedal              1587  104
+2001: Ørjasæter Dag             Strømmen              1547  114
+2002: Ørsnes Oddbjørn           Stjernen              1473   62
+2003: Ørtoft Kai                Kristiansand          1959  929
+2004: Østbakken Ole             Trondheimstud         1058   20
+2005: Østebø Emil Andre         Hønefoss               869   10
+2006: Østebø Roger E            Hønefoss              1751  347
+2007: Østenstad Berge           Asker                 2478 1461
+2008: Østerberg Hugo            Akademisk             2025  325
+2009: Østgaard Pål              Trondheim             1321   56
+2010: Østrem Thore              Nordstrand            1695  655
+2011: Østtveit Martin           OSS                   2062  801
+2012: Øvergaard May Frida       Masfjorden             829   44
+2013: Øverås Alf                Drammen               1851  817
+2014: Øverås Jan M              Sandnes               1720   26
+2015: Øverås Vegard             Sandnes                952   26
+2016: Øyan Arild                NSSF                  1115  201
+2017: Øyan Oddvar               NSSF                  1313  228
+2018: Øye Olav                  Nordstrand            1405  871
+2019: Øyvann Aage               Nittedal              1154   38
+2020: Aaberge Vegard            1911                  1147  133
+2021: Aadland Hans Joachim      Fana                  1284  129
+2022: Ådnøy Hallvard V          Follo                 2310  878
+2023: Aagedal Geir O.           Bergens               1506  189
+2024: Aalvik Vegard             Brønnøysund            960   54
+2025: Aamodt Audun              Indre Østfold         1205  116
+2026: Aamodt Freddy             (Tidl. Sarpsborg)     1539  841
+2027: Aandal Kristian           Porsgrunn             1935  230
+2028: Aaneby Terje              Lillestrøm            1432  450
+2029: Aanes Kjell               Narvik                1809  262
+2030: Aanestad Knut             Randaberg             1299  241
+2031: Ånestad Lars Erik         (Tidl. Sandnes)       1287   22
+2032: Aanonsen Per Tore         Nordstrand            1660   18
+2033: Aanstad Magnus            Narvik                1936  851
+2034: Aanstad Sondre            Lillehammer           1014   60
+2035: Årdal Per Arne            Kirkegata             1062  158
+2036: Aarland Stein A           Oslo Vest             2310  645
+2037: Årmot Leidulv             Konnerud              1162   98
+2038: Aarnes Carl Christian     Nordstrand            1562  542
+2039: Aarstad Olav              Stjørdal              1323  178
+2040: Aarstad Tron              Stjørdal              1713  520
+2041: Aarthun Magnus            Stavanger             1143   81
+2042: Aarthun Rune              Sandnes               1668  515
+2043: Aartun Eivind             Stavanger              658   45
+2044: Aas Henrik                Stjernen              1568  252
+2045: Aas Rune Øistein          Trondheimstud         1234   14
+2046: Aase Ole V.               Stavanger             1053   82
+2047: Aasen Oddvar              Moss                   983   94
+2048: Åset Sigurd               Trondheim             1105   60
+2049: Aaseth Espen              (Tidl. Nordnes)        987   26
+2050: Aasum Anker               Halden                1544  365
+2051: Åsvang Jon Fredrik        Sortland              1575   86
