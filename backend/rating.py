@@ -41,7 +41,7 @@ def get_ratings_by_name(full_name):
         break
 
     if line:
-      line = line.replace(')', ' ')
+      line = line.replace('Æ', '_').replace('æ', '_').replace('Ø', '_').replace('ø', '_').replace('Å', 'å').replace('ö', '_').replace('ä', '_').replace(')', ' ')
 
       player = RatingGraphObject(line)
 
@@ -56,5 +56,3 @@ def get_ratings_by_name(full_name):
         elo_dict["fide_elos"].append(int(dictplayer['fide_elo']))             
 
   return elo_dict["categories"], elo_dict["elos"], elo_dict["fide_elos"]
-
-print get_ratings_by_name("Steinskog Asbjørn O.")
