@@ -11,13 +11,24 @@ Template.clubPage.helpers({
 	},
 
 	average_rating: function() {
-		total = 0
+		total = 0;
 
 		Players.find({club: this.club_name}).map(function(p) {
 		  total += p.elo;
 		});
 
 		return Math.round(total/Players.find({club: this.club_name}).count());
+	},
+
+	average_age: function() {
+		var year = new Date().getFullYear()
+		total_age = 0;
+
+		Players.find({club: this.club_name}).map(function(p) {
+		  total_age += (year-p.year_of_birth);
+		});
+
+		return Math.round(total_age/Players.find({club: this.club_name}).count());		
 	},
 
 	genderRatio: function() {
