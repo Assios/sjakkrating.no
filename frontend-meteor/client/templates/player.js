@@ -24,6 +24,28 @@ Template.player.helpers({
 	},
 
 	ratingChart: function() {
+			var nsf_elos_peak = [],
+      majorPeakVal = 70,
+      len = this.nsf_elos.length,
+      i,
+      prevVal = this.nsf_elos[i],
+      lab = '';
+
+	    for (i = 0; i < len; i++) {
+	        if (this.nsf_elos[i] - prevVal > majorPeakVal) {
+	            lab = '+' + (this.nsf_elos[i] - prevVal);
+	        } else if (prevVal - this.nsf_elos[i] > majorPeakVal) {
+	            lab = (this.nsf_elos[i] - prevVal);
+	        } else {
+	            lab = '';
+	        }
+	        nsf_elos_peak.push({
+	            y: this.nsf_elos[i],
+	            label: lab
+	        });
+	        prevVal = this.nsf_elos[i];
+	    }
+
 	    return {
 	    		chart: {
 	    			zoomType: 'xy'
@@ -51,9 +73,17 @@ Template.player.helpers({
 	            verticalAlign: 'middle',
 	            borderWidth: 0
 	        },
+	        plotOptions: {
+	            series: {
+	                dataLabels: {
+	                    enabled: true,
+	                    format: '{point.label}'
+	                }
+	            }
+	        },
 	        series: [{
 	          name: 'Norsk elo (Offisiell)',
-	          data: this.nsf_elos
+	          data: nsf_elos_peak
 	        },
 	        {
 	        	name: 'FIDE-elo',
