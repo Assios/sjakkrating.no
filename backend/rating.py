@@ -46,6 +46,12 @@ def get_ratings_by_name(full_name):
       dictplayer = player.__dict__
 
       elo_dict["categories"].append(date)
-      elo_dict["elos"].append(int(dictplayer['temp_elo']))      
+      elo_dict["elos"].append(int(dictplayer['temp_elo']))
+      if not dictplayer['fide_elo'].isdigit():
+        elo_dict["fide_elos"].append(None) 
+      else:
+        elo_dict["fide_elos"].append(int(dictplayer['fide_elo']))             
 
-  return elo_dict["categories"], elo_dict["elos"]
+  return elo_dict["categories"], elo_dict["elos"], elo_dict["fide_elos"]
+
+print get_ratings_by_name("Steinskog Asbjørn O.")

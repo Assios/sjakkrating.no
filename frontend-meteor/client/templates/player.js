@@ -23,7 +23,7 @@ Template.player.helpers({
 		return Session.get('img_url');
 	},
 
-	topGenresChart: function() {
+	ratingChart: function() {
 	    return {
 	    		chart: {
 	    			zoomType: 'xy'
@@ -52,8 +52,12 @@ Template.player.helpers({
 	            borderWidth: 0
 	        },
 	        series: [{
-	            name: 'Norsk elo (Offisiell)',
-	            data: this.nsf_elos
+	          name: 'Norsk elo (Offisiell)',
+	          data: this.nsf_elos
+	        },
+	        {
+	        	name: 'FIDE-elo',
+	        	data: this.fide_elos
 	        }],
 	        credits: false,
 	    };
