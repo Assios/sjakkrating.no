@@ -16,7 +16,6 @@ Meteor.methods({
 				throw new Meteor.Error(result.statusCode, errorJson.error);
 			}
 	},
-*/
 	getPlayer: function(nsf_id) {
 		var url = URL_PREFIX + "/player/" + nsf_id;
 
@@ -31,7 +30,6 @@ Meteor.methods({
 				throw new Meteor.Error(result.statusCode, errorJson.error);
 			}
 	},
-/*
 	getStats: function() {
 		var url = URL_PREFIX + "/stats";
 
