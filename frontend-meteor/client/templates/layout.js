@@ -6,8 +6,7 @@ Template.layout.helpers({
 
 Template.layout.events({
   "autocompleteselect input": function(event, template, doc) {
-    console.log("selected ", doc);
-
+    document.getElementById('auto-input').value = '';
     Router.go('player', {_id: doc.nsf_id});
   }
 });
