@@ -2,7 +2,7 @@ Template.auto.helpers({
   settings: function() {
     return {
       position: "bottom",
-      limit: 8,
+      limit: 5,
       rules: [
         {
           collection: Players,

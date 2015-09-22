@@ -1,6 +1,7 @@
 Template.player.onRendered(function() {
 
 	Session.set('img_url', '/images/mysteryman.png');
+	document.getElementById('auto-input').value = '';
 
 });
 
