@@ -48,7 +48,7 @@ Template.player.helpers({
 
 	    return {
 	    		chart: {
-	    			zoomType: 'xy'
+	    			zoomType: 'x'
 	    		},
 	        title: {
 	            text: "Ratinggraf",
