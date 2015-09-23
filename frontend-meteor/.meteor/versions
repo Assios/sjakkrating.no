@@ -74,7 +74,6 @@ reactive-dict@1.1.1
 reactive-var@1.0.6
 reload@1.1.4
 retry@1.0.4
-reywood:iron-router-ga@0.6.1
 routepolicy@1.0.6
 sacha:spin@2.3.1
 service-configuration@1.0.5
