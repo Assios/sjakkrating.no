@@ -20,6 +20,15 @@ Template.topList.helpers({
 		});
 	},
 
+	topJuniors: function(l) {
+		year = new Date().getFullYear();
+
+		return Players.find( { year_of_birth: { $gt: year-20 } }, {sort: {elo: -1}, limit: l}).map(function(player, index) {
+			player.place = index+1;
+			return player;
+		});
+	},
+
 	distinctClubs: function() {
 		var distinctEntries = _.uniq(Players.find({}, {
 		    sort: {club: 1}, fields: {club: true}
