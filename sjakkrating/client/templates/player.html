@@ -15,7 +15,11 @@
 			  		<img src="{{getImage}}">
 					</div>
 				<ul class="list-group">
+						<li class="list-group-item">Offisiell rating: {{lastElement nsf_elos}}</li>
 				    <li class="list-group-item">Uoffisiell rating: {{elo}}</li>
+				    {{#if fide_elos}}
+						<li class="list-group-item">FIDE-rating: {{lastElement fide_elos}}</li>
+						{{/if}}
 				    <li class="list-group-item">Klubb: <a href="{{pathFor 'clubPage' _id=this.club}}">{{club}}</a></li>
 				    <li class="list-group-item">Klasse: {{GP_class}}</li>
 				    <li class="list-group-item">Antall spilte partier: {{number_of_games}}</li>

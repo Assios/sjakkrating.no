@@ -19,6 +19,10 @@ Template.player.helpers({
 	  img.src = 'https://ratings.fide.com/card.php?code=' + fide_id;
 	},
 
+	lastElement: function(list) {
+		return _.last(list);
+	},
+
 	getImage: function() {
 		return Session.get('img_url');
 	},
