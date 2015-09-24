@@ -40,6 +40,6 @@ Template.topList.helpers({
 	},
 
 	listClubs: function() {
-		return Clubs.find({});
+		return Clubs.find({}, {sort: { club_name: 1 }});
 	}
 });
