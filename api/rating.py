@@ -9,6 +9,8 @@ class RatingGraphObject:
         self.club = line[32:54].strip()
         self.temp_elo = line[54:61].strip().split(' ')[0]
         self.fide_elo = line[64:69].strip()
+        self.rapid_elo = line[69:73].strip()
+        self.blitz_elo = line[74:79].strip()
 
 
 def get_ratings_by_name(full_name):
@@ -16,6 +18,8 @@ def get_ratings_by_name(full_name):
   elo_dict["elos"] = []
   elo_dict["categories"] = []
   elo_dict["fide_elos"] = []
+  elo_dict["rapid_elos"] = []
+  elo_dict["blitz_elos"] = []
 
   for date in rating_files:
     file_name = "ratingtall/" + date + ".txt"
@@ -31,7 +35,7 @@ def get_ratings_by_name(full_name):
         break
 
     if line:
-      line = line.replace('Æ', '_').replace('æ', '_').replace('Ø', '_').replace('ø', '_').replace('Å', 'å').replace('ö', '_').replace('ä', '_').replace(')', ' ')
+      line = line.replace('Æ', '_').replace('æ', '_').replace('Ø', '_').replace('ø', '_').replace('Å', '_').replace('å', '_').replace('ö', '_').replace('ä', '_').replace(')', ' ')
 
       player = RatingGraphObject(line)
 
@@ -43,7 +47,16 @@ def get_ratings_by_name(full_name):
       if not dictplayer['fide_elo'].isdigit():
         elo_dict["fide_elos"].append(None) 
       else:
-        elo_dict["fide_elos"].append(int(dictplayer['fide_elo']))             
+        elo_dict["fide_elos"].append(int(dictplayer['fide_elo']))       
 
-  return elo_dict["categories"], elo_dict["elos"], elo_dict["fide_elos"]
+      if not dictplayer['rapid_elo'].isdigit():
+        elo_dict["rapid_elos"].append(None) 
+      else:
+        elo_dict["rapid_elos"].append(int(dictplayer['rapid_elo']))
 
+      if not dictplayer['blitz_elo'].isdigit():
+        elo_dict["blitz_elos"].append(None) 
+      else:
+        elo_dict["blitz_elos"].append(int(dictplayer['blitz_elo']))
+
+  return elo_dict["categories"], elo_dict["elos"], elo_dict["fide_elos"], elo_dict["rapid_elos"], elo_dict["blitz_elos"]

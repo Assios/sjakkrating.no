@@ -92,6 +92,14 @@ Template.player.helpers({
 	        {
 	        	name: 'FIDE-elo',
 	        	data: this.fide_elos
+	        },
+	        {
+	        	name: 'Hurtig',
+	        	data: this.rapid_elos
+	        },
+	        {
+	        	name: 'Lyn',
+	        	data: this.blitz_elos
 	        }],
 	        credits: false,
 	    };
