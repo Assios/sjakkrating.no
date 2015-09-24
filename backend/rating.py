@@ -36,7 +36,8 @@ def get_ratings_by_name(full_name):
     line = None
 
     for l in f.readlines():
-      if full_name in l:
+      line_name = l[6:31].strip()
+      if line_name in full_name:
         line = l
         break
 
