@@ -72,3 +72,9 @@
       direction: rtl;
       text-align:left;
 }
+
+.img-circle {
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
