@@ -7,6 +7,17 @@ import unicodedata
 import codecs
 from rating import *
 
+def to_int(n):
+    if n.isdigit():
+        return int(n)
+    else:
+        return 0
+
+def last_element_if_exists(n):
+    if n:
+        return n[-1]
+    return 0
+
 class RatingObject:
     def __init__(self, line):
 
@@ -24,16 +35,14 @@ class RatingObject:
         self.fide_id = to_int(s[8])
         self.last_membership_nsf = to_int(s[9])
         self.nsf_categories, self.nsf_elos, self.fide_elos, self.rapid_elos, self.blitz_elos = get_ratings_by_name(self.full_name)
+        self.nsf_elo = last_element_if_exists(self.nsf_elos)
+        self.fide_elo = last_element_if_exists(self.fide_elos)
+        self.rapid_elo = last_element_if_exists(self.rapid_elos)
+        self.blitz_elo = last_element_if_exists(self.blitz_elos)
 
 	self.name = self.first_name + ' ' + self.surname
 
 url = urllib2.unquote("http://www.sjakk.no/rating/siste.txt")
-
-def to_int(n):
-    if n.isdigit():
-        return int(n)
-    else:
-        return 0
 
 def swap(char):
     swap = {
