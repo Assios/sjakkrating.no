@@ -4,5 +4,6 @@ Highcharts.setOptions({
   lang: {
     loading: "Laster...",
     noData: "Du må velge minst én ratingtype.",
+    resetZoom: "Zoom ut"
   }
 });
