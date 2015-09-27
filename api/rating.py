@@ -19,7 +19,7 @@ def filename_to_date(filename):
     "feb": 2,
     "mar": 3,
     "apr": 4,
-    "may": 5,
+    "mai": 5,
     "jun": 6,
     "jul": 7,
     "aug": 8,
@@ -33,7 +33,6 @@ def filename_to_date(filename):
   month = months[filename[4:]]
 
   return [year, month]
-
 
 def get_ratings_by_name(full_name):
   elo_dict = {}
@@ -63,7 +62,7 @@ def get_ratings_by_name(full_name):
 
       dictplayer = player.__dict__
 
-      elo_dict["categories"].append(date)
+      elo_dict["categories"].append(filename_to_date(date))
       elo_dict["elos"].append(int(dictplayer['temp_elo']))
 
       if not dictplayer['fide_elo'].isdigit():
