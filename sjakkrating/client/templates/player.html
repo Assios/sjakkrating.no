@@ -20,6 +20,12 @@
 				    {{#if fide_elos}}
 						<li class="list-group-item">FIDE-rating: {{lastElement fide_elos}}</li>
 						{{/if}}
+				    {{#if blitz_elo}}
+						<li class="list-group-item">Lyn: {{blitz_elo}}</li>
+						{{/if}}
+				    {{#if rapid_elo}}
+						<li class="list-group-item">Hurtig: {{rapid_elo}}</li>
+						{{/if}}
 				    <li class="list-group-item">Klubb: <a href="{{pathFor 'clubPage' _id=this.club}}">{{club}}</a></li>
 				    <li class="list-group-item">Antall spilte partier: {{number_of_games}}</li>
 				</ul>
