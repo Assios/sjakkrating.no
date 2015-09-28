@@ -1,0 +1,24 @@
+<template name="filter">
+
+  <h2>Avansert søk</h2>
+
+<div class="col-md-6">
+  <div class="panel panel-default well">
+    <input type="text" name="text" id="chessClub" placeholder="Sjakklubb" /><br>
+    Min rating: <input type="number" name="text" id="minRating" min="100" max="3000" step="100" value="500"><br>
+    Max rating: <input type="number" name="text" id="maxRating" min="100" max="3000" step="100" value="3000"><br>
+    Min fødselsår: <input type="number" name="text" id="minYearOfBirth" min="1910" max="2015" step="5" value="1910"><br>
+    Max fødselsår: <input type="number" name="text" id="maxYearOfBirth" min="1910" max="2015" step="5" value="2015"><br>
+    <button type="button" class="btn btn-default club-submit">Søk</button>
+  </div>
+</div>
+
+<div class="col-md-6">
+  <ul>
+      {{#each filteredPlayers}}
+          <li class="list-group-item"><a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a> <span class="badge">{{elo}}</span></li>
+      {{/each}}
+  </ul>
+</div>
+
+</template>
