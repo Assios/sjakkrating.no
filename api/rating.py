@@ -15,18 +15,18 @@ class RatingGraphObject:
 
 def filename_to_date(filename):
   months = {
-    "jan": 1,
-    "feb": 2,
-    "mar": 3,
-    "apr": 4,
-    "mai": 5,
-    "jun": 6,
-    "jul": 7,
-    "aug": 8,
-    "sep": 9,
-    "okt": 10,
-    "nov": 11,
-    "des": 12,
+    "jan": 0,
+    "feb": 1,
+    "mar": 2,
+    "apr": 3,
+    "mai": 4,
+    "jun": 5,
+    "jul": 6,
+    "aug": 7,
+    "sep": 8,
+    "okt": 9,
+    "nov": 10,
+    "des": 11,
   }
 
   year = int(filename[:4])
