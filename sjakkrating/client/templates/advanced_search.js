@@ -17,12 +17,16 @@ Template.advancedSearch.helpers({
       return true;
     }
     return false;
+  },
+
+  listClubs: function() {
+    return Clubs.find({}, {sort: { club_name: 1 }});
   }
 });
 
 Template.advancedSearch.events({
   'click .advanced-search': function () {
-    chess_club = $("#chessClub").val();
+    chess_club = $('#chessClub').val()
     min_rating = parseInt($("#minRating").val())-1;
     max_rating = parseInt($("#maxRating").val())+1;
     min_year_of_birth = parseInt($("#minYearOfBirth").val())-1;
