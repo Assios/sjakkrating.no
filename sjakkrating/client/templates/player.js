@@ -93,12 +93,19 @@ Template.player.helpers({
 				rapid_date_elos.push([dates[i], this.rapid_elos[i]])
 			}
 
+			var title_text;
+
+			if (this.name.slice(-1) == 's')
+				title_text = this.name + '\' ratingprogresjon';
+			else
+				title_text = this.name + 's ratingprogresjon';
+
 	    return {
 	    		chart: {
 	    			zoomType: 'x'
 	    		},
 	        title: {
-	            text: "Ratinggraf",
+	            text: title_text,
 	            x: -20 //center
 	        },
 	        xAxis: {
