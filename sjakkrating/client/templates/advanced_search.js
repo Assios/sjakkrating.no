@@ -16,10 +16,10 @@ Template.advancedSearch.helpers({
 Template.advancedSearch.events({
   'click .advanced-search': function () {
     chess_club = $("#chessClub").val();
-    min_rating = parseInt($("#minRating").val());
-    max_rating = parseInt($("#maxRating").val());
-    min_year_of_birth = parseInt($("#minYearOfBirth").val());
-    max_year_of_birth = parseInt($("#maxYearOfBirth").val());
+    min_rating = parseInt($("#minRating").val())-1;
+    max_rating = parseInt($("#maxRating").val())+1;
+    min_year_of_birth = parseInt($("#minYearOfBirth").val())-1;
+    max_year_of_birth = parseInt($("#maxYearOfBirth").val())+1;
     number_of_results = parseInt($("#numberOfResults").val());
 
     obj = { nsf_elo: { $gt: min_rating, $lt: max_rating }, year_of_birth: { $gt: min_year_of_birth, $lt: max_year_of_birth } }
