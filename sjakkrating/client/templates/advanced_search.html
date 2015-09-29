@@ -35,7 +35,7 @@
           {{#each filteredPlayers}}
             <tr>
               <td><a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a></td>
-              <td><a href="{{pathFor 'clubPage' _id=this.club_name}}">{{club}}</a></td>
+              <td><a href="{{pathFor 'clubPage' _id=this.club}}">{{club}}</a></td>
               <td>{{nsf_elo}}</td>
               <td>{{elo}}</td>
               <td>{{fide_elo}}</td>
