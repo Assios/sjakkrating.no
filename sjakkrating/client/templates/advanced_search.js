@@ -1,10 +1,10 @@
-Template.filter.onRendered(function() {
+Template.advancedSearch.onRendered(function() {
 
   $("#chessTable").stupidtable();
 
 });
 
-Template.filter.helpers({
+Template.advancedSearch.helpers({
   filteredPlayers: function() {
     if (Session.get("filter_object"))
       return Players.find(Session.get("filter_object"), {sort: {elo: -1}, limit: Session.get("result_limit")});
@@ -13,7 +13,7 @@ Template.filter.helpers({
   }
 });
 
-Template.filter.events({
+Template.advancedSearch.events({
   'click .advanced-search': function () {
     chess_club = $("#chessClub").val();
     min_rating = parseInt($("#minRating").val());

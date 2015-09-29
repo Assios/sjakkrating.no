@@ -7,7 +7,7 @@ Router.configure({
 
 Router.route('/', {name: 'frontPage'});
 Router.route('/om', {name: 'about'});
-Router.route('/filtrer', {name: 'filter'});
+Router.route('/sok', {name: 'advancedSearch'});
 
 Router.route('spiller/:_id', {
     name: 'player',
