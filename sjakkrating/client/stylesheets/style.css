@@ -78,3 +78,11 @@
     -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
+
+.advanced-search {
+    margin-left: 120px;
+}
+
+th[data-sort] {
+  cursor:pointer;
+}
