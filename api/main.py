@@ -16,10 +16,6 @@ class PostHandler(tornado.web.RequestHandler):
         self.set_header('Access-Control-Allow-Origin', '*')
         self.set_header('Content-Type', 'application/json')
 
-        for element in response[date]:
-            ratings = [{"dato": date, "rating": element["elo"]}]
-            element["ratings"] = ratings
-
         self.write(json.dumps(response, indent=4, ensure_ascii=False))
 
 class StatsHandler(tornado.web.RequestHandler):

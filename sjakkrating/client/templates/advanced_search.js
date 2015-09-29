@@ -25,7 +25,7 @@ Template.advancedSearch.events({
     obj = { nsf_elo: { $gt: min_rating, $lt: max_rating }, year_of_birth: { $gt: min_year_of_birth, $lt: max_year_of_birth } }
 
     if (chess_club && (chess_club!="Alle")) {
-      $.extend(obj, { club: chess_club });
+      $.extend(obj, { club_lc: chess_club.toLowerCase() });
     }
 
     Session.set("result_limit", number_of_results);
