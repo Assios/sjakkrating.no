@@ -83,6 +83,21 @@
     margin-left: 120px;
 }
 
+.button-wrapper {
+    padding-bottom: 50px;
+}
+
 th[data-sort] {
   cursor:pointer;
+}
+
+.radio-group {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.gender-indicator {
+    text-align: right;
+    float: right;
 }

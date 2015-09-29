@@ -5,15 +5,37 @@
       <div class="panel panel-default">
         <div class="panel-heading"><b>Avansert søk</b></div>
         <ul class="list-group">
-          <li class="list-group-item"><span title="La dette feltet være blankt hvis du vil søke blant alle sjakklubber"><b>Sjakklubb:</b></span> <input type="text" name="text" id="chessClub" placeholder="Sjakklubb" /></li>
-          <li class="list-group-item"><b>Min rating:</b> <input type="number" id="minRating" min="100" max="3000" step="100" value="500"></li>
-          <li class="list-group-item"><b>Max rating:</b> <input type="number" id="maxRating" min="100" max="3000" step="100" value="3000"></li>
-          <li class="list-group-item"><b>Min fødselsår:</b> <input type="number" id="minYearOfBirth" min="1910" max="2015" step="5" value="1910"></li>
-          <li class="list-group-item"><b>Max fødselsår:</b> <input type="number" id="maxYearOfBirth" min="1910" max="2015" step="5" value="2015"></li>
+          <li class="list-group-item"><span title="La dette feltet være blankt hvis du vil søke blant alle sjakklubber"><b>Sjakklubb:</b></span> <input class="form-control" type="text" name="text" id="chessClub" placeholder="Sjakklubb" /></li>
+          <li class="list-group-item"><b>Min rating:</b> <input class="form-control" type="number" id="minRating" min="100" max="3000" step="100" value="500"></li>
+          <li class="list-group-item"><b>Max rating:</b> <input class="form-control" type="number" id="maxRating" min="100" max="3000" step="100" value="3000"></li>
+          <li class="list-group-item"><b>Min fødselsår:</b> <input class="form-control" type="number" id="minYearOfBirth" min="1910" max="2015" step="5" value="1910"></li>
+          <li class="list-group-item"><b>Max fødselsår:</b> <input class="form-control" type="number" id="maxYearOfBirth" min="1910" max="2015" step="5" value="2015"></li> 
+          <div class="radio-group">
+            <div class="radio-inline">
+              <label>
+                <input type="radio" name="gender" id="maleRadio" value="M">
+                Menn
+              </label>
+            </div>
+            <div class="radio-inline">
+              <label>
+                <input type="radio" name="gender" id="femaleRadio" value="F">
+                Kvinner
+              </label>
+            </div>
+            <div class="radio-inline">
+              <label>
+                <input type="radio" name="gender" id="maleAndFemaleRadio" value="both" checked>
+                Begge
+              </label>
+            </div>
+          </div>
           <li class="list-group-item"><b>Antall resultater:</b> <input type="number" id="numberOfResults" min="1" max="3000" step="10" value="50"></li>
         </ul>
     </div>
-    <button type="button" class="btn btn-primary advanced-search">Søk</button>
+    <div class="button-wrapper">
+      <button type="button" class="btn btn-primary advanced-search">Søk</button>
+    </div>
   </div>
 
   <div class="col-md-8">
@@ -34,7 +56,13 @@
           <tbody>
           {{#each filteredPlayers}}
             <tr>
-              <td><a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a></td>
+              <td><a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a>
+                {{#if isMale gender}}
+                  <i class="fa fa-mars gender-indicator"></i>
+                {{else}}
+                  <i class="fa fa-venus gender-indicator"></i>
+                {{/if}}
+              </td>
               <td><a href="{{pathFor 'clubPage' _id=this.club}}">{{club}}</a></td>
               <td>{{nsf_elo}}</td>
               <td>{{elo}}</td>

@@ -10,6 +10,13 @@ Template.advancedSearch.helpers({
       return Players.find(Session.get("filter_object"), {sort: {elo: -1}, limit: Session.get("result_limit")});
     else
       return [];
+  },
+
+  isMale: function(gender) {
+    if (gender=='M') {
+      return true;
+    }
+    return false;
   }
 });
 
@@ -26,6 +33,12 @@ Template.advancedSearch.events({
 
     if (chess_club && (chess_club!="Alle")) {
       $.extend(obj, { club_lc: chess_club.toLowerCase() });
+    }
+
+    gender_box = $('input:radio[name=gender]:checked').val();
+
+    if (!(gender_box=='both')) {
+      $.extend(obj, { gender: gender_box });
     }
 
     Session.set("result_limit", number_of_results);
