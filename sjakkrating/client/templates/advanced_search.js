@@ -1,6 +1,7 @@
 Template.advancedSearch.onRendered(function() {
 
   $("#chessTable").stupidtable();
+  Session.set("filter_object", []);
 
 });
 
