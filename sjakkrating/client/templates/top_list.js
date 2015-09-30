@@ -1,3 +1,9 @@
+Template.topList.onRendered(function() {
+
+  delete Session.keys["filter_object"];
+
+});
+
 Template.topList.helpers({
 	topElo: function(l) {
 		return Players.find({}, {sort: {elo: -1}, limit: l}).map(function(player, index) {
