@@ -15,7 +15,8 @@ def to_int(n):
 
 def last_element_if_exists(n):
     if n:
-        return n[-1]
+        if n[-1]:
+            return n[-1]
     return 0
 
 class RatingObject:

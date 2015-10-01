@@ -75,9 +75,21 @@
               <td><a href="{{pathFor 'clubPage' _id=this.club}}">{{club}}</a></td>
               <td>{{nsf_elo}}</td>
               <td>{{elo}}</td>
+              {{#if fide_elo}}
               <td>{{fide_elo}}</td>
+              {{else}}
+              <td><span class="nodisplay">{{fide_elo}}</span></td>
+              {{/if}}
+              {{#if blitz_elo}}
               <td>{{blitz_elo}}</td>
+              {{else}}
+              <td><span class="nodisplay">{{blitz_elo}}</span></td>
+              {{/if}}
+              {{#if rapid_elo}}
               <td>{{rapid_elo}}</td>
+              {{else}}
+              <td><span class="nodisplay">{{rapid_elo}}</span></td>
+              {{/if}}
               <td>{{number_of_games}}</td>
               <td>{{year_of_birth}}</td>
             </tr>
