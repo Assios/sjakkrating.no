@@ -8,6 +8,7 @@ Router.configure({
 Router.route('/', {name: 'frontPage'});
 Router.route('/om', {name: 'about'});
 Router.route('/sok', {name: 'advancedSearch'});
+Router.route('/statistikk', {name: 'stats'});
 
 Router.route('spiller/:_id', {
     name: 'player',

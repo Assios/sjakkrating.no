@@ -1,0 +1,27 @@
+<template name="stats">
+  <row>
+      <div class="col-md-6">
+        <div class="panel panel-default well">
+          <div class="panel-heading">
+            <h3 class="panel-title"><b>Statistikk</b>
+          </h3>
+          </div>
+          <div class="panel-body">
+          <ul class="list-group">
+            <li class="list-group-item">Antall aktive spillere: {{number_of_players}}</li>
+            <li class="list-group-item">Antall sjakklubber: {{number_of_clubs}}</li>
+            <li class="list-group-item">Snittrating: {{average_rating}}</li>
+            <li class="list-group-item">Snittalder: {{average_age}}</li>
+            <li class="list-group-item">Yngste aktive spiller: <a href="{{pathFor 'player' _id=youngest_player.nsf_id}}">{{youngest_player.name}}</a> <i>(f. {{youngest_player.year_of_birth}})</i></li>
+            <li class="list-group-item">Eldste aktive spiller: <a href="{{pathFor 'player' _id=oldest_player.nsf_id}}">{{oldest_player.name}}</a> <i>(f. {{oldest_player.year_of_birth}})</i></li>
+          </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+          {{> highchartsHelper chartId="all_gender_ratio" chartWidth="100%" charHeight="100%" chartObject=genderRatio}}
+      </div>
+  </row>
+
+</template>
