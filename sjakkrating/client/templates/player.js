@@ -25,6 +25,21 @@ Template.player.helpers({
 		return _.last(list);
 	},
 
+  better_than: function() {
+    var number_of_players = Players.find().count();
+
+		var number = Players.find({}, {sort: {elo: -1}}).map(function(player, index) {
+			player.place = index+1;
+			return player;
+		});
+
+	  for (var i=0; i<number.length; i++) {
+	    if (number[i].nsf_id == this.nsf_id) {
+	    	return Math.round(((number_of_players - number[i].place)/(number_of_players))*100);
+	    }
+	  }
+  },
+
 	getImage: function() {
 		return Session.get('img_url');
 	},
