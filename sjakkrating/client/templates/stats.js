@@ -34,6 +34,16 @@ Template.stats.helpers({
     return Math.round(total_age/Players.find().count());  
   },
 
+  youngest_player: function() {
+    p = Players.findOne({}, {sort: {year_of_birth: -1}});
+    return p;
+  },
+
+  oldest_player: function() {
+    p = Players.findOne({}, {sort: {year_of_birth: 1}});
+    return p;
+  },
+
   genderRatio: function() {
       male = Players.find({gender: 'M'}).count();
       female = Players.find({gender: 'F'}).count();
