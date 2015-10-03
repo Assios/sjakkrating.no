@@ -1,174 +1,175 @@
 Template.player.onRendered(function() {
 
-	Session.set('img_url', '/images/mysteryman.png');
+    Session.set('img_url', '/images/mysteryman.png');
 
-  delete Session.keys["filter_object"];
+    delete Session.keys["filter_object"];
 
 });
 
 Template.player.helpers({
 
-	loadImage: function(fide_id) {
-	  var img = new Image();
-	  img.addEventListener('load', function() { // addeventlistener is better than onload
-	    if (img.width !== 80) {
-	      Session.set('img_url', img.src);
-	    } else {
-	      Session.set('img_url', '/images/mysteryman.png');
-	    }
-	  });
-	  
-	  img.src = 'https://ratings.fide.com/card.php?code=' + fide_id;
-	},
+    loadImage: function(fide_id) {
+        var img = new Image();
+        img.addEventListener('load', function() { // addeventlistener is better than onload
+            if (img.width !== 80) {
+                Session.set('img_url', img.src);
+            } else {
+                Session.set('img_url', '/images/mysteryman.png');
+            }
+        });
 
-	lastElement: function(list) {
-		return _.last(list);
-	},
+        img.src = 'https://ratings.fide.com/card.php?code=' + fide_id;
+    },
 
-  better_than: function() {
-    var number_of_players = Players.find().count();
+    lastElement: function(list) {
+        return _.last(list);
+    },
 
-		var number = Players.find({}, {sort: {elo: -1}}).map(function(player, index) {
-			player.place = index+1;
-			return player;
-		});
+    better_than: function() {
+        var number_of_players = Players.find().count();
 
-	  for (var i=0; i<number.length; i++) {
-	    if (number[i].nsf_id == this.nsf_id) {
-	    	return Math.round(((number_of_players - number[i].place)/(number_of_players))*100);
-	    }
-	  }
-  },
+        var number = Players.find({}, {
+            sort: {
+                elo: -1
+            }
+        }).map(function(player, index) {
+            player.place = index + 1;
+            return player;
+        });
 
-	getImage: function() {
-		return Session.get('img_url');
-	},
+        for (var i = 0; i < number.length; i++) {
+            if (number[i].nsf_id == this.nsf_id) {
+                return Math.round(((number_of_players - number[i].place) / (number_of_players)) * 100);
+            }
+        }
+    },
 
-	merge_lists: function(first, second) {
-		// Must be same length
-		result = [];
+    getImage: function() {
+        return Session.get('img_url');
+    },
 
-		for (var i = 0; i < first.length; i++) {
-			result.push([first[i], second[i]]);
-		}
+    merge_lists: function(first, second) {
+        // Must be same length
+        result = [];
 
-		return result;
+        for (var i = 0; i < first.length; i++) {
+            result.push([first[i], second[i]]);
+        }
 
-	},
+        return result;
 
-	ratingChart: function() {
+    },
 
-			dates = [];
+    ratingChart: function() {
 
-			for (var i = 0; i < this.nsf_categories.length; i++) {
-				dates.push(Date.UTC(this.nsf_categories[i][0], this.nsf_categories[i][1]));
-			}
+        dates = [];
 
-			var nsf_elos_peak = [],
-      majorPeakVal = 70,
-      len = this.nsf_elos.length,
-      i,
-      prevVal = this.nsf_elos[i],
-      lab = '';
+        for (var i = 0; i < this.nsf_categories.length; i++) {
+            dates.push(Date.UTC(this.nsf_categories[i][0], this.nsf_categories[i][1]));
+        }
 
-	    for (i = 0; i < len; i++) {
-	        if (this.nsf_elos[i] - prevVal > majorPeakVal) {
-	            lab = '+' + (this.nsf_elos[i] - prevVal);
-	        } else if (prevVal - this.nsf_elos[i] > majorPeakVal) {
-	            lab = (this.nsf_elos[i] - prevVal);
-	        } else {
-	            lab = '';
-	        }
-	        nsf_elos_peak.push({
-	            y: this.nsf_elos[i],
-	            label: lab
-	        });
-	        prevVal = this.nsf_elos[i];
-	    }
+        var nsf_elos_peak = [],
+            majorPeakVal = 70,
+            len = this.nsf_elos.length,
+            i,
+            prevVal = this.nsf_elos[i],
+            lab = '';
 
-			nsf_date_elos = [];
-			
-			for (var i = 0; i < dates.length; i++) {
-				nsf_date_elos.push([dates[i], this.nsf_elos[i]])
-			}
+        for (i = 0; i < len; i++) {
+            if (this.nsf_elos[i] - prevVal > majorPeakVal) {
+                lab = '+' + (this.nsf_elos[i] - prevVal);
+            } else if (prevVal - this.nsf_elos[i] > majorPeakVal) {
+                lab = (this.nsf_elos[i] - prevVal);
+            } else {
+                lab = '';
+            }
+            nsf_elos_peak.push({
+                y: this.nsf_elos[i],
+                label: lab
+            });
+            prevVal = this.nsf_elos[i];
+        }
 
-			fide_date_elos = [];
-			
-			for (var i = 0; i < dates.length; i++) {
-				fide_date_elos.push([dates[i], this.fide_elos[i]])
-			}
+        nsf_date_elos = [];
 
-			blitz_date_elos = [];
+        for (var i = 0; i < dates.length; i++) {
+            nsf_date_elos.push([dates[i], this.nsf_elos[i]])
+        }
 
-			for (var i = 0; i < dates.length; i++) {
-				blitz_date_elos.push([dates[i], this.blitz_elos[i]])
-			}
+        fide_date_elos = [];
 
-			rapid_date_elos = [];
+        for (var i = 0; i < dates.length; i++) {
+            fide_date_elos.push([dates[i], this.fide_elos[i]])
+        }
 
-			for (var i = 0; i < dates.length; i++) {
-				rapid_date_elos.push([dates[i], this.rapid_elos[i]])
-			}
+        blitz_date_elos = [];
 
-			var title_text;
+        for (var i = 0; i < dates.length; i++) {
+            blitz_date_elos.push([dates[i], this.blitz_elos[i]])
+        }
 
-			if (this.name.slice(-1) == 's')
-				title_text = this.name + '\' ratingprogresjon';
-			else
-				title_text = this.name + 's ratingprogresjon';
+        rapid_date_elos = [];
 
-	    return {
-	    		chart: {
-	    			zoomType: 'x'
-	    		},
-	        title: {
-	            text: title_text,
-	            x: -20 //center
-	        },
-	        xAxis: {
-	        		type: 'datetime',
-	        },
-	        yAxis: {
-	            title: {
-	                text: 'Elo'
-	            },
-	            plotLines: [{
-	                value: 0,
-	                width: 1,
-	                color: '#808080'
-	            }]
-	        },
-	        legend: {
-	            layout: 'vertical',
-	            align: 'right',
-	            verticalAlign: 'middle',
-	            borderWidth: 0
-	        },
-	        plotOptions: {
-	            series: {
-	                dataLabels: {
-	                    enabled: true,
-	                    format: '{point.label}'
-	                }
-	            }
-	        },
-	        series: [{
-	          name: 'Norsk elo (Offisiell)',
-	          data: nsf_date_elos
-	        },
-	        {	
-	        	name: 'FIDE elo',
-	        	data: fide_date_elos
-					},
-					{
-	        	name: 'Lyn',
-	        	data: blitz_date_elos
-					},
-					{
-	        	name: 'Hurtig',
-	        	data: rapid_date_elos
-					}],
-	        credits: false,
-	    };
-	}
+        for (var i = 0; i < dates.length; i++) {
+            rapid_date_elos.push([dates[i], this.rapid_elos[i]])
+        }
+
+        var title_text;
+
+        if (this.name.slice(-1) == 's')
+            title_text = this.name + '\' ratingprogresjon';
+        else
+            title_text = this.name + 's ratingprogresjon';
+
+        return {
+            chart: {
+                zoomType: 'x'
+            },
+            title: {
+                text: title_text,
+                x: -20 //center
+            },
+            xAxis: {
+                type: 'datetime',
+            },
+            yAxis: {
+                title: {
+                    text: 'Elo'
+                },
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            },
+            legend: {
+                layout: 'vertical',
+                align: 'right',
+                verticalAlign: 'middle',
+                borderWidth: 0
+            },
+            plotOptions: {
+                series: {
+                    dataLabels: {
+                        enabled: true,
+                        format: '{point.label}'
+                    }
+                }
+            },
+            series: [{
+                name: 'Norsk elo (Offisiell)',
+                data: nsf_date_elos
+            }, {
+                name: 'FIDE elo',
+                data: fide_date_elos
+            }, {
+                name: 'Lyn',
+                data: blitz_date_elos
+            }, {
+                name: 'Hurtig',
+                data: rapid_date_elos
+            }],
+            credits: false,
+        };
+    }
 });
