@@ -3,7 +3,10 @@ Router.configure({
     loadingTemplate: 'loading',
     notFoundTemplate: 'notFound',
     waitOn: function() {
-        return Meteor.subscribe('players');
+        return [
+            Meteor.subscribe('players'),
+            Meteor.subscribe('clubs')
+        ]
     }
 });
 

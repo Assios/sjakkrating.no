@@ -1,5 +1,3 @@
-Meteor.subscribe('clubs');
-
 Highcharts.setOptions({
   lang: {
     loading: "Laster...",
