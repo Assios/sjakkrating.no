@@ -4,11 +4,12 @@ function getAllPlayers() {
     var url = "http://assios.no:8888"
 
     var result = Meteor.http.get(url, {
-        timeout: 3000
+        timeout: 15000
     });
     if (result.statusCode == 200) {
         var response = JSON.parse(result.content);
-        console.log("Got all players.");
+        console.log("Got all players:");
+        console.log(_.values(response())[0].length);
         return response;
     } else {
         console.log("Response issue: ", result.statusCode);
