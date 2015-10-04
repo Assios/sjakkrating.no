@@ -143,16 +143,14 @@ Template.player.helpers({
                 }]
             },
             legend: {
-                layout: 'vertical',
-                align: 'right',
-                verticalAlign: 'middle',
-                borderWidth: 0
+                align: 'top',
+                verticalAlign: 'top',
+                layout: 'horizontal',
             },
             plotOptions: {
                 series: {
                     dataLabels: {
-                        enabled: true,
-                        format: '{point.label}'
+                        enabled: false
                     }
                 }
             },
