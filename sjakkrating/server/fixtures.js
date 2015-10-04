@@ -1,7 +1,7 @@
 // Fetch players from API if not found in db
 function getAllPlayers() {
-    var url = "http://localhost:8888"
-        //var url = "http://assios.no:8888"
+    //var url = "http://localhost:8888"
+    var url = "http://assios.no:8888"
 
     var result = Meteor.http.get(url, {
         timeout: 3000

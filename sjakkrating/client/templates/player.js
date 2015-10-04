@@ -114,6 +114,12 @@ Template.player.helpers({
             rapid_date_elos.push([dates[i], this.rapid_elos[i]])
         }
 
+        games_date = [];
+
+        for (var i = 0; i < dates.length; i++) {
+            games_date.push([dates[i], this.games[i]])
+        }        
+
         var title_text;
 
         if (this.name.slice(-1) == 's')
@@ -171,6 +177,9 @@ Template.player.helpers({
             }, {
                 name: 'Hurtig',
                 data: rapid_date_elos
+            }, {
+                name: 'Antall partier',
+                data: games_date
             }],
             credits: false,
         };

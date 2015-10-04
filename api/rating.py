@@ -11,6 +11,7 @@ class RatingGraphObject:
         self.fide_elo = line[64:69].strip()
         self.rapid_elo = line[69:73].strip()
         self.blitz_elo = line[74:79].strip()
+        self.games = line[59:63].strip()
 
 
 def filename_to_date(filename):
@@ -41,6 +42,7 @@ def get_ratings_by_name(full_name):
   elo_dict["fide_elos"] = []
   elo_dict["rapid_elos"] = []
   elo_dict["blitz_elos"] = []
+  elo_dict["games"] = []
 
   for date in rating_files:
     file_name = "ratingtall/" + date + ".txt"
@@ -80,4 +82,9 @@ def get_ratings_by_name(full_name):
       else:
         elo_dict["blitz_elos"].append(int(dictplayer['blitz_elo']))
 
-  return elo_dict["categories"], elo_dict["elos"], elo_dict["fide_elos"], elo_dict["rapid_elos"], elo_dict["blitz_elos"]
+      if not dictplayer['games'].isdigit():
+        elo_dict["games"].append(None)
+      else:
+        elo_dict["games"].append(int(dictplayer["games"]))
+
+  return elo_dict["categories"], elo_dict["elos"], elo_dict["fide_elos"], elo_dict["rapid_elos"], elo_dict["blitz_elos"], elo_dict["games"]

@@ -35,7 +35,7 @@ class RatingObject:
         self.GP_class = s[6]
         self.year_of_birth = to_int(s[7])
         self.fide_id = to_int(s[8])
-        self.nsf_categories, self.nsf_elos, self.fide_elos, self.rapid_elos, self.blitz_elos = get_ratings_by_name(self.full_name)
+        self.nsf_categories, self.nsf_elos, self.fide_elos, self.rapid_elos, self.blitz_elos, self.games = get_ratings_by_name(self.full_name)
         self.nsf_elo = last_element_if_exists(self.nsf_elos)
         self.fide_elo = last_element_if_exists(self.fide_elos)
         self.rapid_elo = last_element_if_exists(self.rapid_elos)
