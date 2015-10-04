@@ -127,7 +127,8 @@ Template.player.helpers({
             },
             title: {
                 text: title_text,
-                x: -20 //center
+                align: 'center',
+                x: -20,
             },
             xAxis: {
                 type: 'datetime',
@@ -142,10 +143,14 @@ Template.player.helpers({
                     color: '#808080'
                 }]
             },
+            tooltip: {
+                shared: true,
+            },
             legend: {
                 align: 'top',
                 verticalAlign: 'top',
                 layout: 'horizontal',
+                y: 10,
             },
             plotOptions: {
                 series: {
