@@ -25,6 +25,25 @@ Template.player.helpers({
         return _.last(list);
     },
 
+    isNegative: function(number) {
+        return (number<0);
+    },
+
+    eloDifference: function() {
+        var difference = this.elo - this.nsf_elo;
+        var res;
+
+        if (difference > 0)
+            res = "(+" + difference + ")"
+        else if (difference < 0)
+            res = "(" + difference + ")"
+        else
+            res = "";
+
+        return res;
+
+    },
+
     better_than: function() {
         var number_of_players = Players.find().count();
 

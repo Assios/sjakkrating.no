@@ -1,7 +1,7 @@
-var URL_PREFIX = "http://localhost:8888"
+var URL_PREFIX = "http://assios.no:8888"
 
 Meteor.methods({
-/*
+
 	getDate: function() {
 		var url = URL_PREFIX + "/date";
 
@@ -16,6 +16,7 @@ Meteor.methods({
 				throw new Meteor.Error(result.statusCode, errorJson.error);
 			}
 	},
+/*
 	getPlayer: function(nsf_id) {
 		var url = URL_PREFIX + "/player/" + nsf_id;
 

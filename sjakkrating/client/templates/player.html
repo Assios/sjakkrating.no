@@ -16,7 +16,13 @@
 					</div>
 				<ul class="list-group">
 						<li class="list-group-item">Offisiell rating: {{nsf_elo}}</li>
-				    <li class="list-group-item">Uoffisiell rating: {{elo}}</li>
+				    <li class="list-group-item">Uoffisiell rating: {{elo}}
+				    	{{#if isNegative eloDifference}}
+				    		<span style="color:red;" title="Differanse mellom offisiell og uoffisiell rating.">{{eloDifference}}</span>
+				    	{{else}}
+				    		<span style="color:green;" title="Differanse mellom offisiell og uoffisiell rating.">{{eloDifference}}</span>
+				    	{{/if}}
+				    	</li>
 				    {{#if fide_elo}}
 						<li class="list-group-item">FIDE-rating: {{fide_elo}}</li>
 						{{/if}}

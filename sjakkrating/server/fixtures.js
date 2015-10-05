@@ -9,7 +9,6 @@ function getAllPlayers() {
     if (result.statusCode == 200) {
         var response = JSON.parse(result.content);
         console.log("Got all players:");
-        console.log(_.values(response())[0].length);
         return response;
     } else {
         console.log("Response issue: ", result.statusCode);
