@@ -17,6 +17,18 @@ Template.topList.helpers({
         });
     },
 
+    labelBasedOnRatingDifference: function(newRating, oldRating) {
+        if (newRating < oldRating) {
+            return "label label-danger";
+        }
+        else if (newRating > oldRating) {
+            return "label label-success";
+        }
+        else {
+            return "label label-default";
+        }
+    },
+
     topGames: function(l) {
         return Players.find({}, {
             sort: {

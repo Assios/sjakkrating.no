@@ -25,8 +25,8 @@ Template.player.helpers({
         return _.last(list);
     },
 
-    isNegative: function(number) {
-        return (number<0);
+    isNegative: function() {
+        return this.elo<this.nsf_elo;
     },
 
     eloDifference: function() {

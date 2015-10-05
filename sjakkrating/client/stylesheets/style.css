@@ -105,3 +105,26 @@ th[data-sort] {
 .nodisplay {
     display: none;
 }
+
+.label {
+    float: right;
+}
+
+.truncate {
+    width: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.name {
+    float: left;
+    width: 170px;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+
+.list-group-item {
+    height: 40px;
+}
