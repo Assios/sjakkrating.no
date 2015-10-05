@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import re
 import json
 import urllib2
 import unicodedata
@@ -30,11 +31,11 @@ class RatingObject:
         self.gender = s[2]
         self.club = s[3]
         self.club_lc = self.club.lower()
-        self.elo = to_int(s[4])
         self.number_of_games = to_int(s[5])
         self.GP_class = s[6]
         self.year_of_birth = to_int(s[7])
         self.fide_id = to_int(s[8])
+        self.elo = to_int(s[11])
         self.nsf_categories, self.nsf_elos, self.fide_elos, self.rapid_elos, self.blitz_elos, self.games = get_ratings_by_name(self.full_name)
         self.nsf_elo = last_element_if_exists(self.nsf_elos)
         self.fide_elo = last_element_if_exists(self.fide_elos)
@@ -61,9 +62,31 @@ def swap(char):
 
     return swap.get(ord(char)) or ''
 
-lines = [''.join([i if ord(i)<128 else swap(i) for i in line]) for line in urllib2.urlopen(url)]
+def decrypt(row, cipher):
+    """
+    Thanks to https://www.reddit.com/r/GoForGold/comments/3k7z3s/gold_for_anyone_who_can_help_me_recognize_andor/cv1qj3o
+    """
+    plain = ""
+    seed = ((row * 0x1E2F) + 0xFE64) & 0xFFFFFFFF
+    for byte in bytearray.fromhex(cipher):
+            mask = (seed >> 8) & 0xFF
+            plain += chr(byte ^ mask)
+            seed = (((seed + byte) * 0x0E6C9AA0) + 0x196AAA91) & 0xFFFFFFFF
+    plain = re.sub("[^0-9]", "", plain)
+    return plain
 
-date = ''.join(lines.pop(0).split())
+decrypted_lines = []
+original_lines = [line for line in urllib2.urlopen(url)]
+date = ''.join(original_lines.pop(0).split())
+
+row = 0
+for line in original_lines:
+        fields = line.split(";")
+        fields[11] = decrypt(row, fields[11])
+        decrypted_lines.append(";".join(fields))
+        row += 1
+
+lines = [''.join([i if ord(i)<128 else swap(i) for i in line]) for line in decrypted_lines]
 
 players = [RatingObject(line) for line in lines]
 p = sorted(players, key=lambda x: x.elo, reverse=True)
