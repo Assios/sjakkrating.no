@@ -19,6 +19,18 @@ Template.clubPage.helpers({
         });
     },
 
+    labelBasedOnRatingDifference: function(newRating, oldRating) {
+        if (newRating < oldRating) {
+            return "label label-danger";
+        }
+        else if (newRating > oldRating) {
+            return "label label-success";
+        }
+        else {
+            return "label label-default";
+        }
+    },
+
     number_of_players: function() {
         return Players.find({
             club: this.club_name
