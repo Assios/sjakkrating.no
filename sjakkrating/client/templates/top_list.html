@@ -6,7 +6,7 @@
 		  <div class="panel-heading"><b>Norgestoppen</b></div>
 		  <ul class="list-group">
 			{{#each topElo 100}}
-		    	<li class="list-group-item"><div class="name">{{place}}. <a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a></div>
+		    	<li class="list-group-item toplist"><div class="name">{{place}}. <a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a></div>
 		    			<span class="{{labelBasedOnRatingDifference elo nsf_elo}}">{{elo}}</span>
 		    	</li>
 		  {{/each}}
@@ -22,7 +22,7 @@
 
 		  <ul class="list-group">
 			{{#each topJuniors 100}}
-		    	<li class="list-group-item"><div class="name">{{place}}. <a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a></div>
+		    	<li class="list-group-item toplist"><div class="name">{{place}}. <a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a></div>
 		    			<span class="{{labelBasedOnRatingDifference elo nsf_elo}}">{{elo}}</span>
 		    	</li>
 		  {{/each}}
@@ -38,7 +38,7 @@
 		  <ul class="list-group">
 
 			{{#each topWomen 50}}
-		    	<li class="list-group-item"><div class="name">{{place}}. <a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a></div>
+		    	<li class="list-group-item toplist"><div class="name">{{place}}. <a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a></div>
 		    			<span class="{{labelBasedOnRatingDifference elo nsf_elo}}">{{elo}}</span>
 		    	</li>
 		  {{/each}}

@@ -125,6 +125,6 @@ th[data-sort] {
     text-overflow:ellipsis;
 }
 
-.list-group-item {
+.toplist {
     height: 40px;
 }
