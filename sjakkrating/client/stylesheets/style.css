@@ -128,3 +128,12 @@ th[data-sort] {
 .toplist {
     height: 40px;
 }
+
+.full-width {
+    width: 100%;
+}
+
+.info-header {
+    float: right;
+    line-height: 50px;
+}
