@@ -24,9 +24,16 @@ class DistributionHandler(tornado.web.RequestHandler):
         self.set_header('Access-Control-Allow-Origin', '*')
         self.set_header('Content-Type', 'application/json')
 
-        hgram = np.histogram(all_ratings, bins=range(500, 2950, 50))
+        r = range(500, 2950, 50)
 
-        self.write(json.dumps({"distribution": hgram[0].tolist()}, indent=4, ensure_ascii=False))
+        x_axis = []
+
+        for i in range(len(r)-1):
+            x_axis.append(str(r[i]) + "-" + str(r[i+1]))
+
+        hgram = np.histogram(all_ratings, bins=r)
+
+        self.write(json.dumps({"y": hgram[0].tolist(), "x": x_axis}, indent=4, ensure_ascii=False))
 
 
 class StatsHandler(tornado.web.RequestHandler):
