@@ -203,7 +203,7 @@ Template.stats.helpers({
 
         return {
             chart: {
-                type: "area"
+                type: "areaspline"
             },
             title: {
                 text: "Ratingfordeling",
@@ -242,14 +242,6 @@ Template.stats.helpers({
             series: [{
                 name: 'Frekvens',
                 data: y_axis,
-                type: "area",
-                fillColor: {
-                    linearGradient: [0, 0, 0, 399],
-                    stops: [
-                    [0, Highcharts.getOptions().colors[0]],
-                    [1, "rgba(2,0,0,0)"]
-                    ]
-                },
             }],
             credits: false,
         };
