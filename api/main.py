@@ -8,6 +8,7 @@ from parsing import *
 import collections
 import memcache
 from urllib import urlopen
+import numpy as np
 
 mc = memcache.Client(['127.0.0.1:11211'], debug=1)
 
@@ -17,6 +18,16 @@ class PostHandler(tornado.web.RequestHandler):
         self.set_header('Content-Type', 'application/json')
 
         self.write(json.dumps(response, indent=4, ensure_ascii=False))
+
+class DistributionHandler(tornado.web.RequestHandler):
+    def get(self):
+        self.set_header('Access-Control-Allow-Origin', '*')
+        self.set_header('Content-Type', 'application/json')
+
+        hgram = np.histogram(all_ratings, bins=range(500, 2950, 50))
+
+        self.write(json.dumps({"distribution": hgram[0]}, indent=4, ensure_ascii=False))
+
 
 class StatsHandler(tornado.web.RequestHandler):
     def get(self):
@@ -143,6 +154,7 @@ application = tornado.web.Application([
     (r"/date/?", DateHandler),
     (r"/stats/?", StatsHandler),
     (r"/fide/(\d+)/?", FideHandler),
+    (r"/distribution/?", DistributionHandler), 
 ])
 
 def format_date(date):

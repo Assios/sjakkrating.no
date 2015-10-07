@@ -89,6 +89,9 @@ for line in original_lines:
 lines = [''.join([i if ord(i)<128 else swap(i) for i in line]) for line in decrypted_lines]
 
 players = [RatingObject(line) for line in lines]
+
+all_ratings = [p.nsf_elo for p in players]
+
 p = sorted(players, key=lambda x: x.elo, reverse=True)
 
 response = {}
