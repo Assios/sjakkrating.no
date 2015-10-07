@@ -20,8 +20,14 @@
       </div>
 
       <div class="col-md-6">
-          {{> highchartsHelper chartId="all_gender_ratio" chartWidth="100%" charHeight="100%" chartObject=genderRatio}}
+        {{> highchartsHelper chartId="stat_chart" chartWidth="100%" charHeight="100%" chartObject=distributionChart}}
       </div>
   </row>
+
+  <div class="row">
+    <div class="col-md-6">
+        {{> highchartsHelper chartId="all_gender_ratio" chartWidth="100%" charHeight="100%" chartObject=genderRatio}}
+    </div>
+  </div>
 
 </template>
