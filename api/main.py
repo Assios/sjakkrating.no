@@ -26,7 +26,7 @@ class DistributionHandler(tornado.web.RequestHandler):
 
         hgram = np.histogram(all_ratings, bins=range(500, 2950, 50))
 
-        self.write(json.dumps({"distribution": hgram[0]}, indent=4, ensure_ascii=False))
+        self.write(json.dumps({"distribution": hgram[0].tolist()}, indent=4, ensure_ascii=False))
 
 
 class StatsHandler(tornado.web.RequestHandler):
