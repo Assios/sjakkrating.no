@@ -137,3 +137,8 @@ th[data-sort] {
     float: right;
     line-height: 50px;
 }
+
+#iron-router-progress {
+    background-color : #A6EAFF;
+    box-shadow       : 0 0 5px #B0E7F7;
+}

@@ -2,6 +2,8 @@ Router.configure({
     layoutTemplate: 'layout',
     loadingTemplate: 'loading',
     notFoundTemplate: 'notFound',
+    progressDelay: 500,
+    progressSpinner: false,
     waitOn: function() {
         return [
             Meteor.subscribe('players'),
