@@ -5,4 +5,4 @@ Sjakkrating.no is the easiest way to browse [NSF](http://www.sjakk.no/)'s chess 
 # TODO
 
 * Mulighet for å sammenligne spillere
-* Ratingdistribusjonsgraf
+
