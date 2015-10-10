@@ -48,13 +48,14 @@ url = urllib2.unquote("http://www.sjakk.no/rating/siste.txt")
 
 def swap(char):
     swap = {
-        129: 'Æ',
+        129: 'ü',
         132: 'ä',
         133: 'à',
         134: 'å',
         140: 'î',
         143: 'Å',
         145: 'æ',
+        146: 'Æ',
         148: 'ö',
         155: 'ø',
         157: 'Ø',
