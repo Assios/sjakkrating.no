@@ -49,8 +49,6 @@ Template.player.helpers({
 
         if (difference > 0)
             res = "(+" + difference + ")"
-        else if (difference < 0)
-            res = "(" + difference + ")"
         else
             res = "";
 
