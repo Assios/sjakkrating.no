@@ -41,7 +41,20 @@ Template.player.helpers({
             res = "";
 
         return res;
+    },
 
+    gamesDifference: function() {
+        var difference = this.number_of_games - this.games[this.games.length - 1];
+        var res;
+
+        if (difference > 0)
+            res = "(+" + difference + ")"
+        else if (difference < 0)
+            res = "(" + difference + ")"
+        else
+            res = "";
+
+        return res;
     },
 
     better_than: function() {
