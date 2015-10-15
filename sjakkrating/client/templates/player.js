@@ -55,6 +55,30 @@ Template.player.helpers({
         return res;
     },
 
+    ratingPerGame: function() {
+        var g;
+        var d;
+        var games_difference = this.number_of_games - this.games[this.games.length - 1];
+        var elo_difference = this.elo - this.nsf_elo;
+
+        if (this.gender=="M")
+            g = "Han";
+        else
+            g = "Hun";
+
+        if (games_difference==0)
+            return " " + g + " har ikke spilt noen partier siden siste offisielle rating kom.";
+
+        var rating_per_game = parseFloat(Math.round((elo_difference/games_difference) * 100) / 100).toFixed(2);
+
+        if (rating_per_game>0)
+            d = "opp"
+        else
+            d = "ned"
+
+        return " " + g + " har gått " + d + " " + Math.abs(rating_per_game) + " i rating per parti siden siste offisielle rating kom.";
+    },
+
     better_than: function() {
         var number_of_players = Players.find().count();
 
