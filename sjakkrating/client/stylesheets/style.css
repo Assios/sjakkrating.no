@@ -106,7 +106,7 @@ th[data-sort] {
     display: none;
 }
 
-.label {
+.list-label {
     float: right;
 }
 
@@ -141,4 +141,14 @@ th[data-sort] {
 #iron-router-progress {
     background-color : #A6EAFF;
     box-shadow       : 0 0 5px #B0E7F7;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.rating-legend {
+    margin-top: -10px;
+    margin-bottom: 10px;
+    text-align: center;
 }
