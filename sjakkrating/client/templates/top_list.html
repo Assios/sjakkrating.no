@@ -1,12 +1,10 @@
 <template name="topList">
-
 	<div class="full-width rating-legend">
 	  <span class="label label-success">Grønn</span> boks indikerer oppgang i rating. <span class="label label-danger">Rød</span> boks indikerer nedgang i rating. <span class="label label-default">Grå</span> boks indikerer uendret rating.
 	</div>
 
 	<div class="col-sm-3">
 		<div class="panel panel-default">
-		  <!-- Default panel contents -->
 		  <div class="panel-heading"><b>Norgestoppen</b></div>
 		  <ul class="list-group">
 			{{#each topElo 100}}
@@ -14,14 +12,12 @@
 		    			<span class="list-label {{labelBasedOnRatingDifference elo nsf_elo}}">{{elo}}</span>
 		    	</li>
 		  {{/each}}
-
 		  </ul>
 		</div>
 	</div>
 
 	<div class="col-sm-3">
 		<div class="panel panel-default">
-		  <!-- Default panel contents -->
 		  <div class="panel-heading"><b>Juniortoppen</b></div>
 
 		  <ul class="list-group">
@@ -36,11 +32,9 @@
 
 	<div class="col-sm-3">
 		<div class="panel panel-default">
-		  <!-- Default panel contents -->
 		  <div class="panel-heading"><b>Kvinnetoppen</b></div>
 
 		  <ul class="list-group">
-
 			{{#each topWomen 50}}
 		    	<li class="list-group-item toplist"><div class="name">{{place}}. <a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a></div>
 		    			<span class="list-label {{ labelBasedOnRatingDifference elo nsf_elo}}">{{elo}}</span>
@@ -52,7 +46,6 @@
 
 	<div class="col-sm-3">
 		<div class="panel panel-default">
-		  <!-- Default panel contents -->
 		  <div class="panel-heading"><b>Sjakklubber</b></div>
 		  	{{#each listClubs}}
 			  		<li class="list-group-item"><a href="{{pathFor 'clubPage' _id=this.club_name}}">{{club_name}}</a></li>

@@ -1,6 +1,5 @@
 // Fetch players from API if not found in db
 function getAllPlayers() {
-    //var url = "http://localhost:8888"
     var url = "http://assios.no:8888"
 
     var result = Meteor.http.get(url, {
@@ -336,7 +335,6 @@ chess_clubs = [{
 
 
 if (Players.find().count() === 0) {
-
     players = _.values(getAllPlayers())[0];
 
     for (i = 0; i < players.length; i++) {
