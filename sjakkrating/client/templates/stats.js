@@ -215,7 +215,7 @@ Template.stats.helpers({
             },
             yAxis: {
                 title: {
-                    text: 'Elo'
+                    text: 'Antall spillere'
                 },
                 plotLines: [{
                     value: 0,
