@@ -152,3 +152,7 @@ th[data-sort] {
     margin-bottom: 10px;
     text-align: center;
 }
+
+.statrow {
+    margin-bottom: 50px;
+}
