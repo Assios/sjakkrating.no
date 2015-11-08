@@ -58,7 +58,16 @@ Template.player.helpers({
     ratingPerGame: function() {
         var g;
         var d;
-        var games_difference = this.number_of_games - this.games[this.games.length - 1];
+        var games_difference;
+
+        if (this.games.length == 0)
+        {
+            games_difference = this.number_of_games;
+        }
+        else {
+            games_difference = this.number_of_games - this.games[this.games.length - 1];
+        }
+
         var elo_difference = this.elo - this.nsf_elo;
 
         if (this.gender=="M")
@@ -76,7 +85,10 @@ Template.player.helpers({
         else
             d = "ned"
 
-        return " " + g + " har gått " + d + " " + Math.abs(rating_per_game) + " i rating per parti siden siste offisielle rating kom.";
+        if (this.games.length>0)
+            return " " + g + " har gått " + d + " " + Math.abs(rating_per_game) + " i rating per parti siden siste offisielle rating kom.";
+        else
+            return "";
     },
 
     better_than: function() {
