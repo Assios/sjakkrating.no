@@ -48,7 +48,6 @@ def get_fide_rating(fide_id):
 
   for l in f.readlines():
     _id = int(l[:15].strip())
-    print _id
     if int(fide_id)==_id:
       line = l
       break
