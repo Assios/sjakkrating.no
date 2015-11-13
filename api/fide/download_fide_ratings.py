@@ -1,58 +1,50 @@
 import zipfile
 import urllib
-import xmltodict
 import os
 import xml.etree.ElementTree as ET
 
 
 def retrieve_player_list_xml():
-	print "Downloading players_list_xml.zip"
+	print "Downloading standard_rating_list.zip"
 
 	try:
 		_file = urllib.URLopener()
-		_file.retrieve("http://ratings.fide.com/download/players_list_xml.zip", "player_list_xml.zip")
-		print "Retrieved player_list_xml.zip successfully."
+		_file.retrieve("http://ratings.fide.com/download/standard_rating_list.zip", "standard_rating_list.zip")
+		print "Retrieved standard_rating_list.zip successfully."
 		return True
 	except:
-		print "Failed to retrieve player_list_xml.zip"
+		print "Failed to retrieve standard_rating_list.zip"
 		return False
 
 def unzip_player_list():
-	print "Unzipping player_list_xml.zip..."
+	print "Unzipping standard_rating_list.zip..."
 
-	fh = open('player_list_xml.zip', 'rb')
+	fh = open('standard_rating_list.zip', 'rb')
 	z = zipfile.ZipFile(fh)
 	for name in z.namelist():
 	    z.extract(name, ".")
 	fh.close()
 
-	os.remove("player_list_xml.zip")
-	print "Removed player_list_xml.zip."
+	os.remove("standard_rating_list.zip")
+	print "Removed standard_rating_list.zip."
 
-##retrieve_player_list_xml()
-##unzip_player_list()
+#retrieve_player_list_xml()
+#zip_player_list()
 
 class Player:
-	def __init__(self, fideid, title, rating, rapid_rating, blitz_rating):
+	def __init__(self, fideid, title, rating):
 		self.fideid = fideid
 		self.country = "NOR"
 		self.title = title
 		self.rating = rating
-		self.rapid_rating = rapid_rating
-		self.blitz_rating = blitz_rating
 
-players = []
+f = open("standard_rating_list.txt")
 
-tree = ET.parse("players_list_xml.xml")
-root = tree.getroot()
+players = [l for l in f if "NOR" in l]
 
-for player in root:
-	fed = player.find("country").text
-	if fed=="NOR":
-		fideid = player.find("fideid").text
-		title = player.find("title").text
-		rating = player.find("rating").text
-		rapid_rating = player.find("rapid_rating").text
-		blitz_rating = player.find("blitz_rating").text
-		players.append(Player(fideid, title, rating, rapid_rating, blitz_rating))
-		continue
+f = open('fide_standard_ratings.txt', 'w')
+
+for line in players:
+	f.write(line)
+
+f.close()
