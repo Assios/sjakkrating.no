@@ -1,5 +1,9 @@
 <template name="autoCompletePlayers">
-    <div class="unselectable"><b>{{name}}</b> <span class="{{labelBasedOnRatingDifference elo nsf_elo}}">{{elo}}</span>
+    <div class="unselectable"><b>
+    	{{#if fide_title}}
+    		{{title fide_title}}
+    	{{/if}} 
+    	{{name}}</b> <span class="{{labelBasedOnRatingDifference elo nsf_elo}}">{{elo}}</span>
     <span> {{club}}</span></div>
 </template>
 
