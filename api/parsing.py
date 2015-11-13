@@ -41,6 +41,7 @@ class RatingObject:
         self.fide_elo = last_element_if_exists(self.fide_elos)
         self.rapid_elo = last_element_if_exists(self.rapid_elos)
         self.blitz_elo = last_element_if_exists(self.blitz_elos)
+        self.country, self.fide_standard, self.fide_title = get_fide_rating(self.fide_id)
 
 	self.name = self.first_name + ' ' + self.surname
 

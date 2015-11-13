@@ -13,6 +13,11 @@ class RatingGraphObject:
         self.blitz_elo = line[74:79].strip()
         self.games = line[59:63].strip()
 
+class FideRatingObject:
+  def __init__(self, line):
+    self.title = line[82:90].strip()
+    self.standard = line[108:115].strip()
+    self.country = "NOR"
 
 def filename_to_date(filename):
   months = {
@@ -34,6 +39,30 @@ def filename_to_date(filename):
   month = months[filename[4:]]
 
   return [year, month]
+
+def get_fide_rating(fide_id):
+
+  f = open("fide_ratings/fide_standard_ratings.txt")
+
+  line = None
+
+  for l in f.readlines():
+    _id = int(l[:15].strip())
+    print _id
+    if int(fide_id)==_id:
+      line = l
+      break
+
+  if not line:
+    return [None, "", ""]
+
+  if line:
+
+    player = FideRatingObject(line)
+
+    dictplayer = player.__dict__
+
+    return dictplayer["country"], dictplayer["standard"], dictplayer["title"]
 
 def get_ratings_by_name(full_name):
   elo_dict = {}
