@@ -4,7 +4,11 @@
 		<div class="col-md-6">
 			<div class="panel panel-default well">
 			  <div class="panel-heading">
-			    <h3 class="panel-title"><b>{{name}}</b>
+			    <h3 class="panel-title"><b>
+			    	{{#if fide_title}}
+			    		{{title fide_title}}
+			    	{{/if}} 
+			    	{{name}}</b>
 			    <div class="yob">
 			    	f. {{year_of_birth}}
 			    </div>
@@ -23,8 +27,8 @@
 				    		<span style="color:green;" title="Differanse mellom offisiell og uoffisiell rating.">{{eloDifference}}</span>
 				    	{{/if}}
 				    	</li>
-				    {{#if fide_elo}}
-						<li class="list-group-item">FIDE-rating: {{fide_elo}}</li>
+				    {{#if fide_standard}}
+						<li class="list-group-item">FIDE-rating: {{fide_standard}}</li>
 						{{/if}}
 				    {{#if blitz_elo}}
 						<li class="list-group-item">Lyn: {{blitz_elo}}</li>

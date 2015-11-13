@@ -5,8 +5,16 @@ Template.topList.onRendered(function() {
 });
 
 Template.topList.helpers({
+    title: function(l) {
+        if (l.length > 3) {
+            return l.substring(0, 3);
+        }
+
+        return l;
+    },
+
     topElo: function(l) {
-        return Players.find({}, {
+        return Players.find({country: "NOR"}, {
             sort: {
                 elo: -1
             },
@@ -30,7 +38,7 @@ Template.topList.helpers({
     },
 
     topGames: function(l) {
-        return Players.find({}, {
+        return Players.find({country: "NOR"}, {
             sort: {
                 number_of_games: -1
             },
@@ -43,7 +51,8 @@ Template.topList.helpers({
 
     topWomen: function(l) {
         return Players.find({
-            gender: "F"
+            gender: "F",
+            country: "NOR"
         }, {
             sort: {
                 elo: -1
@@ -61,7 +70,8 @@ Template.topList.helpers({
         return Players.find({
             year_of_birth: {
                 $gt: year - 20
-            }
+            },
+            country: "NOR"
         }, {
             sort: {
                 elo: -1

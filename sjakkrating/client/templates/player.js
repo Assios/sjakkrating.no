@@ -7,6 +7,13 @@ Template.player.onRendered(function() {
 });
 
 Template.player.helpers({
+    title: function(l) {
+        if (l.length > 3) {
+            return l.substring(0, 3);
+        }
+
+        return l;
+    },
 
     loadImage: function(fide_id) {
         var img = new Image();
