@@ -17,7 +17,7 @@ class FideRatingObject:
   def __init__(self, line):
     self.title = line[82:88].strip()
     self.standard = line[108:115].strip()
-    self.country = "NOR"
+    self.country = line[75:80].strip()
 
 def filename_to_date(filename):
   months = {

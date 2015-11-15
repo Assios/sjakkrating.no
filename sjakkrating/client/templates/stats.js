@@ -9,6 +9,10 @@ Template.stats.helpers({
         return Players.find().count();
     },
 
+    number_of_gms: function() {
+        return Players.find({fide_title: "GM", "country": "NOR"}).count();
+    },
+
     number_of_clubs: function() {
         return Clubs.find().count();
     },

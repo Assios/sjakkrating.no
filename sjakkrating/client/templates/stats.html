@@ -14,6 +14,7 @@
             <li class="list-group-item">Snittalder: {{average_age}}</li>
             <li class="list-group-item">Yngste aktive spiller: <a href="{{pathFor 'player' _id=youngest_player.nsf_id}}">{{youngest_player.name}}</a> <i>(f. {{youngest_player.year_of_birth}})</i></li>
             <li class="list-group-item">Eldste aktive spiller: <a href="{{pathFor 'player' _id=oldest_player.nsf_id}}">{{oldest_player.name}}</a> <i>(f. {{oldest_player.year_of_birth}})</i></li>
+            <li class="list-group-item">Antall GMer: {{number_of_gms}}</li>
           </ul>
           </div>
         </div>
