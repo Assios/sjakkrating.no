@@ -9,9 +9,7 @@
 		  <ul class="list-group">
 			{{#each topElo 100}}
 		    	<li class="list-group-item toplist"><div class="name">{{place}}. 
-		    		{{#if fide_title}}
-		    			{{title fide_title}}
-		    		{{/if}} 
+		    			{{fide_title}} 
 		    		<a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a></div>
 		    			<span class="list-label {{labelBasedOnRatingDifference elo nsf_elo}}">{{elo}}</span>
 		    	</li>
@@ -27,9 +25,7 @@
 		  <ul class="list-group">
 			{{#each topJuniors 100}}
 		    	<li class="list-group-item toplist"><div class="name">{{place}}. 
-		    		{{#if fide_title}}
-		    			{{title fide_title}}
-		    		{{/if}} 
+		    			{{fide_title}} 
 		    		<a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a></div>
 		    			<span class="list-label {{labelBasedOnRatingDifference elo nsf_elo}}">{{elo}}</span>
 		    	</li>
@@ -45,9 +41,7 @@
 		  <ul class="list-group">
 			{{#each topWomen 50}}
 		    	<li class="list-group-item toplist"><div class="name">{{place}}. 
-		    		{{#if fide_title}}
-		    			{{title fide_title}}
-		    		{{/if}} 
+		    			{{fide_title}} 
 		    		<a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a></div>
 		    			<span class="list-label {{ labelBasedOnRatingDifference elo nsf_elo}}">{{elo}}</span>
 		    	</li>

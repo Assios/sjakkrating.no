@@ -11,11 +11,4 @@ Template.autoCompletePlayers.helpers({
         }
     },
 
-    title: function(l) {
-        if (l.length > 3) {
-            return l.substring(0, 3);
-        }
-
-        return l;
-    },
 });

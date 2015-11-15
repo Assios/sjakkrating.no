@@ -5,9 +5,7 @@
 			<div class="panel panel-default well">
 			  <div class="panel-heading">
 			    <h3 class="panel-title"><b>
-			    	{{#if fide_title}}
-			    		{{title fide_title}}
-			    	{{/if}} 
+			    	{{fide_title}} 
 			    	{{name}}</b>
 			    <div class="yob">
 			    	f. {{year_of_birth}}
@@ -30,11 +28,11 @@
 				    {{#if fide_standard}}
 						<li class="list-group-item">FIDE-rating: {{fide_standard}}</li>
 						{{/if}}
-				    {{#if blitz_elo}}
-						<li class="list-group-item">Lyn: {{blitz_elo}}</li>
+				    {{#if fide_blitz}}
+						<li class="list-group-item">Lyn: {{fide_blitz}}</li>
 						{{/if}}
-				    {{#if rapid_elo}}
-						<li class="list-group-item">Hurtig: {{rapid_elo}}</li>
+				    {{#if fide_rapid}}
+						<li class="list-group-item">Hurtig: {{fide_rapid}}</li>
 						{{/if}}
 				    <li class="list-group-item">Klubb: <a href="{{pathFor 'clubPage' _id=this.club}}">{{club}}</a></li>
 				    <li class="list-group-item">Antall spilte partier: {{number_of_games}} <span title="Antall partier spilt siden siste offisielle rating.">{{gamesDifference}}</span></li>
