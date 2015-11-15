@@ -69,6 +69,42 @@ Template.advancedSearch.events({
             });
         }
 
+        or_list = [];
+
+        if ($("#gm-check").is(":checked")) {
+            or_list.push({fide_title: "GM"})
+        }
+
+        if ($("#im-check").is(":checked")) {
+            or_list.push({fide_title: "IM"})
+        }
+
+        if ($("#fm-check").is(":checked")) {
+            or_list.push({fide_title: "FM"})
+        }
+
+        if ($("#cm-check").is(":checked")) {
+            or_list.push({fide_title: "CM"})
+        }
+
+        if ($("#wgm-check").is(":checked")) {
+            or_list.push({fide_title: "WGM"})
+        }
+
+        if ($("#wim-check").is(":checked")) {
+            or_list.push({fide_title: "WIM"})
+        }
+
+        if ($("#wfm-check").is(":checked")) {
+            or_list.push({fide_title: "WFM"})
+        }
+
+        if ($("#untitled-check").is(":checked")) {
+            or_list.push({fide_title: ""})
+        }
+
+        $.extend(obj, {$or: or_list});
+
         Session.set("result_limit", number_of_results);
         Session.set("filter_object", obj);
     }
