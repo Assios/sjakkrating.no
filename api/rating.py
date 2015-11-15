@@ -15,7 +15,7 @@ class RatingGraphObject:
 
 class FideRatingObject:
   def __init__(self, line):
-    self.title = line[82:90].strip()
+    self.title = line[82:88].strip()
     self.standard = line[108:115].strip()
     self.country = "NOR"
 
@@ -41,27 +41,56 @@ def filename_to_date(filename):
   return [year, month]
 
 def get_fide_rating(fide_id):
+  fide_dict = {}
 
-  f = open("fide_ratings/fide_standard_ratings.txt")
+  f = open("fide_ratings/standard_rating_list.txt")
+  f_rapid = open("fide_ratings/rapid_rating_list.txt")
+  f_blitz = open("fide_ratings/blitz_rating_list.txt")
 
   line = None
 
-  for l in f.readlines():
-    _id = int(l[:15].strip())
+  for l in f.readlines()[1:]:
+    _id = int(l[:10].strip())
     if int(fide_id)==_id:
       line = l
       break
 
-  if not line:
-    return [None, "", ""]
+  if line:
+    fide_dict["country"] = "NOR"
+    fide_dict["title"] = line[82:88].strip()
+    fide_dict["standard"] = line[108:115].strip()
+  else:
+    fide_dict["country"] = None
+    fide_dict["title"] = None
+    fide_dict["standard"] = None   
+
+  line = None
+
+  for l in f_rapid.readlines()[1:]:
+    _id = int(l[:10].strip())
+    if int(fide_id)==_id:
+      line = l
+      break
 
   if line:
+    fide_dict["rapid"] = line[108:115].strip()
+  else:
+    fide_dict["rapid"] = None
 
-    player = FideRatingObject(line)
+  line = None
 
-    dictplayer = player.__dict__
+  for l in f_blitz.readlines()[1:]:
+    _id = int(l[:10].strip())
+    if int(fide_id)==_id:
+      line = l
+      break
 
-    return dictplayer["country"], dictplayer["standard"], dictplayer["title"]
+  if line:
+    fide_dict["blitz"] = line[108:115].strip()
+  else:
+    fide_dict["blitz"] = None
+
+  return fide_dict["country"], fide_dict["standard"], fide_dict["rapid"], fide_dict["blitz"], fide_dict["title"]
 
 def get_ratings_by_name(full_name):
   elo_dict = {}
