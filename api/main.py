@@ -188,34 +188,6 @@ def format_date(date):
 
     return day + " " + month + " " + year
 
-def get_fide_rating(fide_id):
-    title_mapping = {
-        "None</t": "",
-        "Woman I": "WIM",
-        "Woman G": "WGM",
-        "Woman F": "WFM",
-        "Candida": "CM",
-        "FIDE Ma": "FM",
-        "Interna": "IM",
-        "Grand M": "GM",
-    }
-
-    try:
-        f = urlopen('https://ratings.fide.com/card.phtml?event=' + str(fide_id)).read()
-        s = f.find('std.</small><br>')
-        fide_rating = int(f[s+16:s+20])
-
-        t = f.find('FIDE title</td><td colspan=3 bgcolor=#efefef>&nbsp;')
-
-        fide_title = f[t+51:t+58].strip()
-
-        fide_title = title_mapping[fide_title]
-
-        return [fide_rating, fide_title]
-
-    except:
-        return [0, ""]
-
 if __name__ == "__main__":
     application.listen(8888)
     tornado.ioloop.IOLoop.instance().start()

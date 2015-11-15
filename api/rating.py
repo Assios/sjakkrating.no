@@ -49,7 +49,9 @@ def get_fide_rating(fide_id):
 
   line = None
 
-  for l in f.readlines()[1:]:
+  lines = [l for l in f.readlines() if "NOR" in l]
+
+  for l in lines:
     _id = int(l[:10].strip())
     if int(fide_id)==_id:
       line = l
@@ -66,7 +68,9 @@ def get_fide_rating(fide_id):
 
   line = None
 
-  for l in f_rapid.readlines()[1:]:
+  lines = [l for l in f_rapid.readlines() if "NOR" in l]
+
+  for l in lines:
     _id = int(l[:10].strip())
     if int(fide_id)==_id:
       line = l
@@ -79,7 +83,9 @@ def get_fide_rating(fide_id):
 
   line = None
 
-  for l in f_blitz.readlines()[1:]:
+  lines = [l for l in f_blitz.readlines() if "NOR" in l]
+
+  for l in lines:
     _id = int(l[:10].strip())
     if int(fide_id)==_id:
       line = l
