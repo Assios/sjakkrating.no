@@ -38,6 +38,10 @@
 				    <li class="list-group-item">Antall spilte partier: {{number_of_games}} <span title="Antall partier spilt siden siste offisielle rating.">{{gamesDifference}}</span></li>
 				</ul>
 				<i>{{name}} er bedre enn {{better_than}}% av spillerne.{{ratingPerGame}}</i>
+				{{#if country}}
+				{{else}}
+				<b>{{name}} er ikke norsk, så informasjonen kan være mangelfull.</b>
+				{{/if}}
 			  </div>
 			</div>
 		</div>
