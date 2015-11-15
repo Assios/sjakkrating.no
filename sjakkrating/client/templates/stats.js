@@ -9,10 +9,6 @@ Template.stats.helpers({
         return Players.find().count();
     },
 
-    number_of_gms: function() {
-        return Players.find({fide_title: "GM", "country": "NOR"}).count();
-    },
-
     number_of_clubs: function() {
         return Clubs.find().count();
     },
@@ -100,6 +96,74 @@ Template.stats.helpers({
                     y: female
                 }]
             }]
+        };
+    },
+
+    titleChart: function() {
+        gms = Players.find({fide_title: "GM", "country": "NOR"}).count();
+
+        ims = Players.find({fide_title: "IM", "country": "NOR"}).count();
+
+        fms = Players.find({fide_title: "FM", "country": "NOR"}).count();
+
+        cms = Players.find({fide_title: "CM", "country": "NOR"}).count();
+
+        wgms = Players.find({fide_title: "WGM", "country": "NOR"}).count();
+
+        wims = Players.find({fide_title: "WIM", "country": "NOR"}).count();
+
+        wfms = Players.find({fide_title: "WFM", "country": "NOR"}).count();
+
+        return {
+        credits: false,
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Titlede spillere'
+        },
+        xAxis: {
+            type: 'category',
+            labels: {
+                rotation: 0,
+                style: {
+                    fontSize: '13px',
+                    fontFamily: 'Verdana, sans-serif'
+                }
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Antall spillere'
+            }
+        },
+        legend: {
+            enabled: false
+        },
+        series: [{
+            name: 'Antall',
+            data: [
+                ['GM', gms],
+                ['IM', ims],
+                ['FM', fms],
+                ['CM', cms],
+                ['WGM', wgms],
+                ['WIM', wims],
+                ['WFM', wfms]
+            ],
+            dataLabels: {
+                enabled: true,
+                rotation: -0,
+                color: '#fff',
+                align: 'right',
+                y: 25,
+                style: {
+                    fontSize: '13px',
+                    fontFamily: 'Verdana, sans-serif'
+                }
+            }
+        }]
         };
     },
 

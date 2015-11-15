@@ -14,7 +14,6 @@
             <li class="list-group-item">Snittalder: {{average_age}}</li>
             <li class="list-group-item">Yngste aktive spiller: <a href="{{pathFor 'player' _id=youngest_player.nsf_id}}">{{youngest_player.name}}</a> <i>(f. {{youngest_player.year_of_birth}})</i></li>
             <li class="list-group-item">Eldste aktive spiller: <a href="{{pathFor 'player' _id=oldest_player.nsf_id}}">{{oldest_player.name}}</a> <i>(f. {{oldest_player.year_of_birth}})</i></li>
-            <li class="list-group-item">Antall GMer: {{number_of_gms}}</li>
           </ul>
           </div>
         </div>
@@ -29,6 +28,10 @@
     <div class="col-md-12">
         {{> highchartsHelper chartId="stat_chart" chartWidth="100%" charHeight="100%" chartObject=distributionChart}}
     </div>
+  </div>
+
+  <div class="col-md-6">
+    {{> highchartsHelper chartId="title_chart" chartWidth="100%" charHeight="100%" chartObject=titleChart}}
   </div>
 
 </template>
