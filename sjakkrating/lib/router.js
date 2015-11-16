@@ -6,7 +6,9 @@ Router.configure({
     progressSpinner: false,
     waitOn: function() {
         return [
-            Meteor.subscribe('players'),
+            Meteor.subscribe('topPlayers'),
+            Meteor.subscribe('topJuniors'),
+            Meteor.subscribe('topWomen'),
             Meteor.subscribe('clubs')
         ]
     }
@@ -31,6 +33,11 @@ Router.route('spiller/:_id', {
         return Players.findOne({
             nsf_id: parseInt(this.params._id)
         });
+    },
+    waitOn: function() {
+        return [
+            Meteor.subscribe('player', this.params._id)
+        ]
     }
 });
 
@@ -40,5 +47,10 @@ Router.route('klubb/:_id', {
         return Clubs.findOne({
             club_name: this.params._id
         });
+    },
+    waitOn: function() {
+        return [
+            Meteor.subscribe('clubPlayers', this.params._id)
+        ]
     }
 });
