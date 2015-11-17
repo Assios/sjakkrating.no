@@ -52,3 +52,8 @@ Meteor.publish("topWomen", function() {
 Meteor.publish('clubs', function() {
 	return Clubs.find();
 });
+
+Meteor.publish("autocompletePlayers", function(selector, options) {
+  Autocomplete.publishCursor(Players.find(selector, options), this);
+  this.ready();
+});

@@ -4,9 +4,9 @@ Template.auto.helpers({
             position: "bottom",
             limit: 8,
             rules: [{
-                collection: Players,
-                field: "name",
-                matchAll: true,
+                collection: 'Players',
+                subscription: 'autocompletePlayers',
+                field: 'name',
                 template: Template.autoCompletePlayers,
                 noMatchTemplate: Template.noMatch,
             }]
