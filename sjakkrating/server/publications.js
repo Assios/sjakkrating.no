@@ -12,6 +12,14 @@ Meteor.publish('clubPlayers', function(c_name) {
     });
 });
 
+Meteor.publish('youngestPlayer', function() {
+    return Players.find({}, {sort: {year_of_birth: -1}, limit: 1});
+});
+
+Meteor.publish('oldestPlayer', function() {
+    return Players.find({}, {sort: {year_of_birth: 1}, limit: 1});
+});
+
 Meteor.publish('topPlayers', function() {
 	return Players.find({country: "NOR"}, {
             sort: {
@@ -56,4 +64,19 @@ Meteor.publish('clubs', function() {
 Meteor.publish("autocompletePlayers", function(selector, options) {
   Autocomplete.publishCursor(Players.find(selector, options), this);
   this.ready();
+});
+
+Meteor.publish('stats', function() {
+  Counts.publish(this, 'player-count', Players.find());
+  Counts.publish(this, 'age-count', Players.find(), { countFromField: 'year_of_birth' });
+  Counts.publish(this, 'rating-count', Players.find(), { countFromField: 'elo' });
+  Counts.publish(this, 'male-count', Players.find({gender: 'M'}));
+  Counts.publish(this, 'female-count', Players.find({gender: 'F'}));
+  Counts.publish(this, 'gm-count', Players.find({fide_title: "GM", "country": "NOR"}));
+  Counts.publish(this, 'im-count', Players.find({fide_title: "IM", "country": "NOR"}));
+  Counts.publish(this, 'fm-count', Players.find({fide_title: "FM", "country": "NOR"}));
+  Counts.publish(this, 'cm-count', Players.find({fide_title: "CM", "country": "NOR"}));
+  Counts.publish(this, 'wgm-count', Players.find({fide_title: "WGM", "country": "NOR"}));
+  Counts.publish(this, 'wim-count', Players.find({fide_title: "WIM", "country": "NOR"}));
+  Counts.publish(this, 'wfm-count', Players.find({fide_title: "WFM", "country": "NOR"}));
 });

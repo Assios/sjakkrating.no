@@ -70,13 +70,13 @@ Template.player.helpers({
 
         var elo_difference = this.elo - this.nsf_elo;
 
-        if (this.gender=="M")
-            g = "Han";
-        else
-            g = "Hun";
+        g = this.name;
 
         if (games_difference==0)
-            return " " + g + " har ikke spilt noen partier siden siste offisielle rating kom.";
+            return g + " har ikke spilt noen partier siden siste offisielle rating kom.";
+
+        if (elo_difference==0)
+            return g + " har hverken gått opp eller ned siden siste offisielle rating kom.";
 
         var rating_per_game = parseFloat(Math.round((elo_difference/games_difference) * 100) / 100).toFixed(2);
 

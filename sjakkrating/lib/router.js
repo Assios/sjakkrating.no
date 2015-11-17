@@ -24,7 +24,14 @@ Router.route('/sok', {
     name: 'advancedSearch'
 });
 Router.route('/statistikk', {
-    name: 'stats'
+    name: 'stats',
+    waitOn: function() {
+        return [
+            Meteor.subscribe('stats'),
+            Meteor.subscribe('youngestPlayer'),
+            Meteor.subscribe('oldestPlayer')
+        ]
+    }
 });
 
 Router.route('spiller/:_id', {

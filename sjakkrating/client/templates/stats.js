@@ -5,33 +5,8 @@ Template.stats.onRendered(function() {
 });
 
 Template.stats.helpers({
-    number_of_players: function() {
-        return Players.find().count();
-    },
-
     number_of_clubs: function() {
         return Clubs.find().count();
-    },
-
-    average_rating: function() {
-        total = 0;
-
-        Players.find().map(function(p) {
-            total += p.elo;
-        }); 
-
-        return Math.round(total / Players.find().count());
-    },
-
-    average_age: function() {
-        var year = new Date().getFullYear()
-        total_age = 0;
-
-        Players.find().map(function(p) {
-            total_age += (year - p.year_of_birth);
-        });
-
-        return Math.round(total_age / Players.find().count());
     },
 
     youngest_player: function() {
@@ -52,13 +27,20 @@ Template.stats.helpers({
         return p;
     },
 
+    average_rating: function() {
+        return Math.round(Counts.get('rating-count')/Counts.get('player-count'));
+    },
+
+    average_age: function() {
+        var year = new Date().getFullYear()
+
+        return Math.round(year - (Counts.get('age-count'))/Counts.get('player-count'));
+    },
+
+
     genderRatio: function() {
-        male = Players.find({
-            gender: 'M'
-        }).count();
-        female = Players.find({
-            gender: 'F'
-        }).count();
+        male = Counts.get('male-count');
+        female = Counts.get('female-count');
 
         return {
             credits: false,
@@ -100,19 +82,19 @@ Template.stats.helpers({
     },
 
     titleChart: function() {
-        gms = Players.find({fide_title: "GM", "country": "NOR"}).count();
+        gms = Counts.get('gm-count');
 
-        ims = Players.find({fide_title: "IM", "country": "NOR"}).count();
+        ims = Counts.get('im-count');
 
-        fms = Players.find({fide_title: "FM", "country": "NOR"}).count();
+        fms = Counts.get('fm-count');
 
-        cms = Players.find({fide_title: "CM", "country": "NOR"}).count();
+        cms = Counts.get('cm-count');
 
-        wgms = Players.find({fide_title: "WGM", "country": "NOR"}).count();
+        wgms = Counts.get('wgm-count');
 
-        wims = Players.find({fide_title: "WIM", "country": "NOR"}).count();
+        wims = Counts.get('wim-count');
 
-        wfms = Players.find({fide_title: "WFM", "country": "NOR"}).count();
+        wfms = Counts.get('wfm-count');
 
         return {
         credits: false,
