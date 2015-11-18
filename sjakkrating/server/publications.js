@@ -12,6 +12,10 @@ Meteor.publish('clubPlayers', function(c_name) {
     });
 });
 
+Meteor.publish('advancedSearch', function(attributes) {
+    return Players.find(attributes);
+});
+
 Meteor.publish('youngestPlayer', function() {
     return Players.find({}, {sort: {year_of_birth: -1}, limit: 1});
 });
@@ -63,6 +67,7 @@ Meteor.publish('clubs', function() {
 
 Meteor.publish("autocompletePlayers", function(selector, options) {
   Autocomplete.publishCursor(Players.find(selector, options), this);
+  Autocomplete.publishCursor(Clubs.find(selector, options), this);
   this.ready();
 });
 

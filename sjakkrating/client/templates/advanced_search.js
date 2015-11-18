@@ -29,7 +29,7 @@ Template.advancedSearch.helpers({
     listClubs: function() {
         return Clubs.find({}, {
             sort: {
-                club_name: 1
+                name: 1
             }
         });
     }

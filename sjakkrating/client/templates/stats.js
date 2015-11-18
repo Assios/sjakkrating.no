@@ -34,7 +34,7 @@ Template.stats.helpers({
     average_age: function() {
         var year = new Date().getFullYear()
 
-        return Math.round(year - (Counts.get('age-count'))/Counts.get('player-count'));
+        return Math.round(year - Counts.get('age-count')/Counts.get('player-count'));
     },
 
 

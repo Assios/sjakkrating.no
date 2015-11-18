@@ -17,12 +17,15 @@ Router.configure({
 Router.route('/', {
     name: 'frontPage'
 });
+
 Router.route('/om', {
     name: 'about'
 });
+
 Router.route('/sok', {
     name: 'advancedSearch'
 });
+
 Router.route('/statistikk', {
     name: 'stats',
     waitOn: function() {
@@ -52,7 +55,7 @@ Router.route('klubb/:_id', {
     name: 'clubPage',
     data: function() {
         return Clubs.findOne({
-            club_name: this.params._id
+            name: this.params._id
         });
     },
     waitOn: function() {

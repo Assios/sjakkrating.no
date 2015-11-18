@@ -2,7 +2,7 @@
 		<div class="col-md-6">
 			<div class="panel panel-default well">
 			  <div class="panel-heading">
-			    <h3 class="panel-title"><b>{{club_name}}</b>
+			    <h3 class="panel-title"><b>{{name}}</b>
 					{{#if website}}
 						<a href="{{website}}" class="btn btn-sm btn-default" target="_blank">Besøk klubbens nettside</a>
 				    {{/if}}
@@ -10,8 +10,8 @@
 			  </div>
 			  <div class="panel-body">
 				<ul class="list-group">
-					<li class="list-group-item">Antall spillere: {{number_of_players club_name}}</li>
-					<li class="list-group-item">Snittrating: {{average_rating club_name}}</li>
+					<li class="list-group-item">Antall spillere: {{number_of_players name}}</li>
+					<li class="list-group-item">Snittrating: {{average_rating name}}</li>
 					<li class="list-group-item">Snittalder: {{average_age}}</li>
 				</ul>
 			  </div>
@@ -25,7 +25,7 @@
 		<div class="col-md-6">
 			<div class="panel panel-default">
 			  <div class="panel-heading"><b>Klubbens spillere</b></div>
-			  	{{#each club_players club_name}}
+			  	{{#each club_players name}}
 			    	<li class="list-group-item toplist">{{place}}. <b>{{fide_title}}</b> <a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a>
 			    			<span class="{{labelBasedOnRatingDifference elo nsf_elo}}">{{elo}}</span>
 			    	</li>

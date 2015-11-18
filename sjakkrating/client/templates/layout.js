@@ -7,8 +7,15 @@ Template.layout.helpers({
 Template.layout.events({
     "autocompleteselect input": function(event, template, doc) {
         document.getElementById('auto-input').value = '';
-        Router.go('player', {
-            _id: doc.nsf_id
-        });
+        if (doc.nsf_id) {
+	        Router.go('player', {
+	            _id: doc.nsf_id
+	        });
+	    }
+	    else {
+	    	Router.go('clubPage', {
+	    		_id: doc.name
+	    	})
+	    }
     }
 });

@@ -17,319 +17,319 @@ function getAllPlayers() {
 }
 
 chess_clubs = [{
-    "club_name": "1911",
+    "name": "1911",
     "website": "http://www.sk1911.no/"
 }, {
-    "club_name": "Aalesunds",
+    "name": "Aalesunds",
     "website": "http://alesundsjakk.no/"
 }, {
-    "club_name": "Akademisk",
+    "name": "Akademisk",
     "website": "http://www.akademisk.org/"
 }, {
-    "club_name": "Alta",
+    "name": "Alta",
     "website": "http://www.altasjakklubb.no/"
 }, {
-    "club_name": "Arendal",
+    "name": "Arendal",
     "website": "http://www.arendalsjakk.no/"
 }, {
-    "club_name": "Asker",
+    "name": "Asker",
     "website": "http://www.askersjakk.no/"
 }, {
-    "club_name": "Aurskog-Høland",
+    "name": "Aurskog-Høland",
     "website": ""
 }, {
-    "club_name": "Bergens",
+    "name": "Bergens",
     "website": "http://www.bergensjakk.no/"
 }, {
-    "club_name": "Black Knights",
+    "name": "Black Knights",
     "website": ""
 }, {
-    "club_name": "Bodø",
+    "name": "Bodø",
     "website": ""
 }, {
-    "club_name": "Brønnøysund",
+    "name": "Brønnøysund",
     "website": "http://www.bronnoysundsjakklubb.net/"
 }, {
-    "club_name": "Bærum",
+    "name": "Bærum",
     "website": ""
 }, {
-    "club_name": "Caissa",
+    "name": "Caissa",
     "website": "http://www.caissa.no/"
 }, {
-    "club_name": "Direkte",
+    "name": "Direkte",
     "website": ""
 }, {
-    "club_name": "Drammens",
+    "name": "Drammens",
     "website": "http://www.drammensjakk.no/"
 }, {
-    "club_name": "Egersund",
+    "name": "Egersund",
     "website": ""
 }, {
-    "club_name": "Eidsvoll",
+    "name": "Eidsvoll",
     "website": "http://www.eidsvollsjakklubb.no/"
 }, {
-    "club_name": "Elefantene",
+    "name": "Elefantene",
     "website": "https://elefantenesjakk.wordpress.com/"
 }, {
-    "club_name": "Elverum",
+    "name": "Elverum",
     "website": "http://www.elverum.hedmarksjakk.net/"
 }, {
-    "club_name": "Fana",
+    "name": "Fana",
     "website": "http://fanasjakk.blogspot.com/"
 }, {
-    "club_name": "Florø",
+    "name": "Florø",
     "website": ""
 }, {
-    "club_name": "Folgefonn",
+    "name": "Folgefonn",
     "website": ""
 }, {
-    "club_name": "Follo",
+    "name": "Follo",
     "website": "http://www.follosjakk.no/"
 }, {
-    "club_name": "Fredriksstad",
+    "name": "Fredriksstad",
     "website": "http://www.sjakk.net/fss.php"
 }, {
-    "club_name": "Fribonden",
+    "name": "Fribonden",
     "website": ""
 }, {
-    "club_name": "Frosta",
+    "name": "Frosta",
     "website": ""
 }, {
-    "club_name": "Førde",
+    "name": "Førde",
     "website": "http://privat.enivest.net/~per.nestande/"
 }, {
-    "club_name": "Gjøvik",
+    "name": "Gjøvik",
     "website": "http://www.sjakk64.no/"
 }, {
-    "club_name": "Groruddalen",
+    "name": "Groruddalen",
     "website": "http://www.groruddalensjakk.no/"
 }, {
-    "club_name": "Guovdageainnu",
+    "name": "Guovdageainnu",
     "website": ""
 }, {
-    "club_name": "Halden",
+    "name": "Halden",
     "website": "http://www.sjakk.net/halden.html"
 }, {
-    "club_name": "Hamar",
+    "name": "Hamar",
     "website": "http://hamar.hedmarksjakk.net/"
 }, {
-    "club_name": "Hammerfest",
+    "name": "Hammerfest",
     "website": "http://sjakklubb.no/"
 }, {
-    "club_name": "Harstad",
+    "name": "Harstad",
     "website": "http://www.harstadsjakklubb.no/"
 }, {
-    "club_name": "Hell",
+    "name": "Hell",
     "website": "http://hellchess.com/"
 }, {
-    "club_name": "Holmestrand",
+    "name": "Holmestrand",
     "website": "http://hsjakk.blogspot.com/"
 }, {
-    "club_name": "Horten",
+    "name": "Horten",
     "website": ""
 }, {
-    "club_name": "Hønefoss",
+    "name": "Hønefoss",
     "website": "http://www.honefossjakk.org/"
 }, {
-    "club_name": "Indre Østfold",
+    "name": "Indre Østfold",
     "website": "http://www.sjakk.net/iof.html"
 }, {
-    "club_name": "Kampen",
+    "name": "Kampen",
     "website": "http://www.kampensjakk.no/"
 }, {
-    "club_name": "Kirkegata",
+    "name": "Kirkegata",
     "website": ""
 }, {
-    "club_name": "Kirkenes",
+    "name": "Kirkenes",
     "website": ""
 }, {
-    "club_name": "Klyve",
+    "name": "Klyve",
     "website": "http://www.skien.kommune.no/Lag-og-foreninger-i-Skien/Klyve-sjakklubb1/"
 }, {
-    "club_name": "Komsa",
+    "name": "Komsa",
     "website": "http://www.komsasjakklubb.no/"
 }, {
-    "club_name": "Kongsberg",
+    "name": "Kongsberg",
     "website": "http://www.kongsbergsjakk.net/"
 }, {
-    "club_name": "Kongsvinger",
+    "name": "Kongsvinger",
     "website": "http://kongesjakk.origo.no/"
 }, {
-    "club_name": "Konnerud",
+    "name": "Konnerud",
     "website": "http://www.konnerudsjakk.no/"
 }, {
-    "club_name": "Kragerø",
+    "name": "Kragerø",
     "website": ""
 }, {
-    "club_name": "Kristiansand",
+    "name": "Kristiansand",
     "website": "http://www.kristiansandsjakk.no/"
 }, {
-    "club_name": "Kristiansund",
+    "name": "Kristiansund",
     "website": "http://ksk.no/"
 }, {
-    "club_name": "Larvik",
+    "name": "Larvik",
     "website": "http://www.larviksjakk.no/"
 }, {
-    "club_name": "Levanger",
+    "name": "Levanger",
     "website": ""
 }, {
-    "club_name": "Lillehammer",
+    "name": "Lillehammer",
     "website": ""
 }, {
-    "club_name": "Lillestrøm",
+    "name": "Lillestrøm",
     "website": ""
 }, {
-    "club_name": "Longyearbyen",
+    "name": "Longyearbyen",
     "website": ""
 }, {
-    "club_name": "Luster",
+    "name": "Luster",
     "website": ""
 }, {
-    "club_name": "Lørenskog",
+    "name": "Lørenskog",
     "website": "http://www.lorenskogsjakk.com/"
 }, {
-    "club_name": "Masfjorden",
+    "name": "Masfjorden",
     "website": "http://www.masfjordensku.com/"
 }, {
-    "club_name": "Mo",
+    "name": "Mo",
     "website": ""
 }, {
-    "club_name": "Modum",
+    "name": "Modum",
     "website": "http://www.modumsjakken.net/"
 }, {
-    "club_name": "Molde",
+    "name": "Molde",
     "website": "http://moldesjakklubb.net/"
 }, {
-    "club_name": "Mosjøen",
+    "name": "Mosjøen",
     "website": ""
 }, {
-    "club_name": "Moss",
+    "name": "Moss",
     "website": "http://www.sjakknet.no"
 }, {
-    "club_name": "NSSF",
+    "name": "NSSF",
     "website": ""
 }, {
-    "club_name": "Namsos",
+    "name": "Namsos",
     "website": ""
 }, {
-    "club_name": "Narvik",
+    "name": "Narvik",
     "website": "http://www.narviksjakklubb.org/"
 }, {
-    "club_name": "Nittedal",
+    "name": "Nittedal",
     "website": "http://www.nittedalsjakk.priv.no/"
 }, {
-    "club_name": "Nord-Odal",
+    "name": "Nord-Odal",
     "website": ""
 }, {
-    "club_name": "Nordstrand",
+    "name": "Nordstrand",
     "website": "http://www.nordstrandsjakk.no/"
 }, {
-    "club_name": "OSS",
+    "name": "OSS",
     "website": "http://sjakkselskapet.no/"
 }, {
-    "club_name": "Orkdal",
+    "name": "Orkdal",
     "website": "http://orkdalsjakklubb.net/"
 }, {
-    "club_name": "Otta",
+    "name": "Otta",
     "website": ""
 }, {
-    "club_name": "Porsgrunn",
+    "name": "Porsgrunn",
     "website": ""
 }, {
-    "club_name": "Randaberg",
+    "name": "Randaberg",
     "website": "http://randaberg-sjakklubb.com/"
 }, {
-    "club_name": "Rokaden",
+    "name": "Rokaden",
     "website": ""
 }, {
-    "club_name": "Røros",
+    "name": "Røros",
     "website": ""
 }, {
-    "club_name": "SK 96",
+    "name": "SK 96",
     "website": ""
 }, {
-    "club_name": "SMPOAÅ",
+    "name": "SMPOAÅ",
     "website": ""
 }, {
-    "club_name": "SOSS",
+    "name": "SOSS",
     "website": ""
 }, {
-    "club_name": "Samisk",
+    "name": "Samisk",
     "website": ""
 }, {
-    "club_name": "Sandnes",
+    "name": "Sandnes",
     "website": "http://www.sandnessjakk.no/"
 }, {
-    "club_name": "Sarpsborg",
+    "name": "Sarpsborg",
     "website": "http://www.sjakk.net/ssk.html"
 }, {
-    "club_name": "Sevland",
+    "name": "Sevland",
     "website": "http://sevlandsjakk.com/"
 }, {
-    "club_name": "Sortland",
+    "name": "Sortland",
     "website": "http://sortlandsjakklubb.com/"
 }, {
-    "club_name": "Sotra",
+    "name": "Sotra",
     "website": "http://www.sotrasjakk.no/"
 }, {
-    "club_name": "Stavanger",
+    "name": "Stavanger",
     "website": "https://tvilsomttrekk.wordpress.com/"
 }, {
-    "club_name": "Steinkjer",
+    "name": "Steinkjer",
     "website": ""
 }, {
-    "club_name": "Stjernen",
+    "name": "Stjernen",
     "website": "http://skstjernen.no/"
 }, {
-    "club_name": "Stjørdal",
+    "name": "Stjørdal",
     "website": ""
 }, {
-    "club_name": "Strand",
+    "name": "Strand",
     "website": ""
 }, {
-    "club_name": "Strømmen",
+    "name": "Strømmen",
     "website": "http://www.strommensjakk.com/"
 }, {
-    "club_name": "Svartlamon",
+    "name": "Svartlamon",
     "website": "http://www.slsl.no/"
 }, {
-    "club_name": "Søråshøgda",
+    "name": "Søråshøgda",
     "website": ""
 }, {
-    "club_name": "Tempo",
+    "name": "Tempo",
     "website": ""
 }, {
-    "club_name": "Tinn",
+    "name": "Tinn",
     "website": ""
 }, {
-    "club_name": "Tromsø",
+    "name": "Tromsø",
     "website": "http://tromsosjakk.no/"
 }, {
-    "club_name": "Trondheim",
+    "name": "Trondheim",
     "website": "http://www.tsf.no/"
 }, {
-    "club_name": "Tønsberg",
+    "name": "Tønsberg",
     "website": "http://www.123hjemmeside.no/tonsberg_sjakklubb/"
 }, {
-    "club_name": "Ullr",
+    "name": "Ullr",
     "website": ""
 }, {
-    "club_name": "Vadsø",
+    "name": "Vadsø",
     "website": "http://www.vadsosjakk.no/"
 }, {
-    "club_name": "Vestvågøy",
+    "name": "Vestvågøy",
     "website": ""
 }, {
-    "club_name": "Volda Ørsta",
+    "name": "Volda Ørsta",
     "website": ""
 }, {
-    "club_name": "Voss",
+    "name": "Voss",
     "website": ""
 }, {
-    "club_name": "Våler",
+    "name": "Våler",
     "website": ""
 }, {
-    "club_name": "Vålerenga",
+    "name": "Vålerenga",
     "website": ""
 }, ]
 

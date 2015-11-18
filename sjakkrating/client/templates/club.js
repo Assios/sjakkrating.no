@@ -8,7 +8,7 @@ Template.clubPage.onRendered(function() {
 Template.clubPage.helpers({
     club_players: function() {
         return Players.find({
-            club: this.club_name
+            club: this.name
         }, {
             sort: {
                 elo: -1
@@ -33,7 +33,7 @@ Template.clubPage.helpers({
 
     number_of_players: function() {
         return Players.find({
-            club: this.club_name
+            club: this.name
         }).count();
     },
 
@@ -41,13 +41,13 @@ Template.clubPage.helpers({
         total = 0;
 
         Players.find({
-            club: this.club_name
+            club: this.name
         }).map(function(p) {
             total += p.elo;
         });
 
         return Math.round(total / Players.find({
-            club: this.club_name
+            club: this.name
         }).count());
     },
 
@@ -56,23 +56,23 @@ Template.clubPage.helpers({
         total_age = 0;
 
         Players.find({
-            club: this.club_name
+            club: this.name
         }).map(function(p) {
             total_age += (year - p.year_of_birth);
         });
 
         return Math.round(total_age / Players.find({
-            club: this.club_name
+            club: this.name
         }).count());
     },
 
     genderRatio: function() {
         male = Players.find({
-            club: this.club_name,
+            club: this.name,
             gender: 'M'
         }).count();
         female = Players.find({
-            club: this.club_name,
+            club: this.name,
             gender: 'F'
         }).count();
 
