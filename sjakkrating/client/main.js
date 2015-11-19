@@ -7,3 +7,5 @@ Highcharts.setOptions({
     months: ["Januar" , "Februar" , "Mars" , "April" , "Mai" , "Juni" , "Juli" , "August" , "September" , "Oktober" , "November" , "Desember"]
   }
 });
+
+i18n.setLanguage('no');
