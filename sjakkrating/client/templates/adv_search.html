@@ -1,21 +1,31 @@
 <template name="advSearch">
-
-  <div class="col-md-4">
+<div class="col-md-8">
+  <div class="row">
+    <div class="col-md-4">
       <div class="panel panel-default">
-        <div class="panel-heading"><b>Avansert søk</b></div>
-
         <ul class="list-group">
-          <li class="list-group-item">
-	{{> greaterThanFilter }}
-		  </li>
-		  <li class="list-group-item">
-	{{> reactiveTableFilter id="clubFilter" label="Klubb" fields=clubFilterFields }}
-		  </li>
-		</ul>
-	</div>
+          <li class="list-group-item">{{> greaterThanFilter }}</li>
+          <li class="list-group-item">{{> lessThanFilter }}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <ul class="list-group">
+          <li class="list-group-item">{{> greaterThanAgeFilter }}</li>
+          <li class="list-group-item">{{> lessThanAgeFilter }}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="panel panel-default">
+      	<div class="panel-heading"><b>Sjakklubb</b></div>
+        <ul class="list-group">
+          <li class="list-group-item">{{> chessClubFilter }}</li>
+        </ul>
+      </div>
+    </div>
+    {{> genderFilter }}
   </div>
-
-
-	{{> reactiveTable settings=settings}}
-
+</div>{{> reactiveTable settings=settings}}
 </template>

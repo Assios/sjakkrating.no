@@ -1,0 +1,67 @@
+<template name="greaterThanFilter">
+    <div class="input-group">
+      <span class="input-group-addon">
+        <span>Min rating</span>
+      </span>
+      <input class="form-control greater-than-filter-input" type="number" value="500"/>
+    </div>
+</template>
+
+<template name="lessThanFilter">
+    <div class="input-group">
+      <span class="input-group-addon">
+        <span>Max rating</span>
+      </span>
+      <input class="form-control less-than-filter-input" type="number" value="3000"/>
+    </div>
+</template>
+
+<template name="greaterThanAgeFilter">
+    <div class="input-group">
+      <span class="input-group-addon">
+        <span>Min fødselsår</span>
+      </span>
+      <input class="form-control greater-than-age-filter-input" type="number" value="1920"/>
+    </div>
+</template>
+
+<template name="lessThanAgeFilter">
+    <div class="input-group">
+      <span class="input-group-addon">
+        <span>Max fødselsår</span>
+      </span>
+      <input class="form-control less-than-age-filter-input" type="number" value="2015"/>
+    </div>
+</template>
+
+<template name="chessClubFilter">
+	<select id="chessClub" class="form-control">
+		<option value="Alle">Alle</option>
+		{{#each listClubs}}
+		  <option value="{{name}}">{{name}}</option>
+		{{/each}}
+	</select>
+</template>
+
+<template name="genderFilter">
+  <div class="radio-group">
+    <div class="radio-inline">
+      <label>
+        <input type="radio" name="gender" id="maleRadio" value="M" class="radio-gender">
+        Menn
+      </label>
+    </div>
+    <div class="radio-inline">
+      <label>
+        <input type="radio" name="gender" id="femaleRadio" value="F" class="radio-gender">
+        Kvinner
+      </label>
+    </div>
+    <div class="radio-inline">
+      <label>
+        <input type="radio" name="gender" id="maleAndFemaleRadio" value="both" class="radio-gender" checked>
+        Begge
+      </label>
+    </div>
+  </div>
+</template>

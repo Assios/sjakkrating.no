@@ -13,10 +13,8 @@ Template.advSearch.helpers({
 
     settings: function () {
         return {
-            showFilter: false,
             collection: "tableplayers",
             rowsPerPage: 10,
-            showFilter: true,
             showColumnToggles: true,
             fields: [
             	{key: 'name', label: 'Navn', hideToggle: true, tmpl: Template.nameTmpl, cellClass: 'col-md-2', sortOrder: 5},
@@ -34,6 +32,11 @@ Template.advSearch.helpers({
             filters: [
                 'clubFilter',
                 'greater-than-filter',
+                'less-than-filter',
+                'greater-than-age-filter',
+                'less-than-age-filter',
+                'chess-club-filter',
+                'gender-filter',
             ]
         };
     }

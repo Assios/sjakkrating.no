@@ -9,3 +9,14 @@ Highcharts.setOptions({
 });
 
 i18n.setLanguage('no');
+
+i18n.map('no', {
+    reactiveTable: {
+        filter: 'Filter',
+        columns: 'Kolonner',
+        show: 'Vis',
+        rowsPerPage: 'rader per side',
+        page: 'Side',
+        of: 'av'
+    }
+});
