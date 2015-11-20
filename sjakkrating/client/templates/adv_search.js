@@ -1,3 +1,9 @@
+Template.advSearch.onRendered(function() {
+
+    ReactiveTable.clearFilters(['clubFilter', 'greater-than-filter', 'less-than-filter', 'greater-than-age-filter', 'less-than-age-filter', 'chess-club-filter', 'gender-filter']);
+
+});
+
 Template.advSearch.helpers({
     players: function () {
         return Players;
@@ -19,7 +25,7 @@ Template.advSearch.helpers({
             fields: [
             	{key: 'name', label: 'Navn', hideToggle: true, tmpl: Template.nameTmpl, cellClass: 'col-md-2', sortOrder: 5},
                 {key: 'gender', label: 'Kjønn', tmpl: Template.genderTmpl, cellClass: 'col-md-1'},
-            	{key: 'club', label: 'Klubb'},
+            	{key: 'club', label: 'Klubb', tmpl: Template.clubTmpl},
             	{key: 'nsf_elo', label: 'Norsk', sortOrder: 1, sortDirection: 'descending'},
             	{key: 'elo', label: 'Uoffisiell', sortOrder: 0, sortDirection: 'descending'},
             	{key: 'fide_standard', label: 'FIDE', sortOrder: 2, sortDirection: 'descending'},

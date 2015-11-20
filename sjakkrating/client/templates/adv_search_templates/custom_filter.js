@@ -28,6 +28,7 @@ Template.greaterThanAgeFilter.events({
       var input = parseInt($(event.target).val(), 10) -1;
       if (!_.isNaN(input)) {
         template.filter.set({'$gt': input});
+        Session.set("filtergreaterAge", input);
       } else {
         template.filter.set("");
       }
@@ -35,7 +36,7 @@ Template.greaterThanAgeFilter.events({
 });
 
 Template.lessThanAgeFilter.events({
-   "keyup .greater-than-age-filter-input, input .less-than-age-filter-input": function (event, template) {
+   "keyup .less-than-age-filter-input, input .less-than-age-filter-input": function (event, template) {
       var input = parseInt($(event.target).val(), 10) +1;
       if (!_.isNaN(input)) {
         template.filter.set({'$lt': input});
