@@ -2,7 +2,7 @@ Template.player.onRendered(function() {
 
     Session.set('img_url', '/images/mysteryman.png');
 
-    delete Session.keys["filter_object"];
+    $('[data-toggle="tooltip"]').tooltip(); 
 
 });
 

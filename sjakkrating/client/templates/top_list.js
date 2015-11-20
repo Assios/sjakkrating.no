@@ -1,16 +1,12 @@
 Template.topList.onRendered(function() {
 
-    delete Session.keys["filter_object"];
+    $('[data-toggle="tooltip"]').tooltip(); 
 
 });
 
 Template.topList.helpers({
-    title: function(l) {
-        if (l.length > 3) {
-            return l.substring(0, 3);
-        }
-
-        return l;
+    junior: function() {
+        return new Date().getFullYear() - 20;
     },
 
     topElo: function(l) {

@@ -26,13 +26,25 @@ Router.route('/sok', {
     name: 'advancedSearch'
 });
 
+Router.route('/aldersgrupper', {
+    name: 'ageTop',
+    waitOn: function() {
+        return [
+            Meteor.subscribe('topKadetts'),
+            Meteor.subscribe('topLilleputts'),
+            Meteor.subscribe('topMiniputts'),
+            Meteor.subscribe('topSeniors'),
+        ]
+    }
+});
+
 Router.route('/statistikk', {
     name: 'stats',
     waitOn: function() {
         return [
             Meteor.subscribe('stats'),
             Meteor.subscribe('youngestPlayer'),
-            Meteor.subscribe('oldestPlayer')
+            Meteor.subscribe('oldestPlayer'),
         ]
     }
 });

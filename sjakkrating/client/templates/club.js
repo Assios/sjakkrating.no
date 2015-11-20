@@ -1,10 +1,3 @@
-Template.clubPage.onRendered(function() {
-
-    delete Session.keys["filter_object"];
-
-});
-
-
 Template.clubPage.helpers({
     club_players: function() {
         return Players.find({

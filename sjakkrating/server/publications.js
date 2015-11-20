@@ -51,6 +51,66 @@ Meteor.publish("topJuniors", function() {
 	        });
 });
 
+Meteor.publish("topKadetts", function() {
+    year = new Date().getFullYear();
+
+  return Players.find({
+              year_of_birth: {
+                  $gt: year - 16
+              },
+          }, {
+              sort: {
+                  elo: -1
+              },
+              limit: 100
+          });
+});
+
+Meteor.publish("topLilleputts", function() {
+    year = new Date().getFullYear();
+
+  return Players.find({
+              year_of_birth: {
+                  $gt: year - 13
+              },
+          }, {
+              sort: {
+                  elo: -1
+              },
+              limit: 100
+          });
+});
+
+Meteor.publish("topMiniputts", function() {
+    year = new Date().getFullYear();
+
+  return Players.find({
+              year_of_birth: {
+                  $gt: year - 11
+              },
+          }, {
+              sort: {
+                  elo: -1
+              },
+              limit: 50
+          });
+});
+
+Meteor.publish("topSeniors", function() {
+    year = new Date().getFullYear();
+
+  return Players.find({
+              year_of_birth: {
+                  $lt: year - 59
+              },
+          }, {
+              sort: {
+                  elo: -1
+              },
+              limit: 100
+          });
+});
+
 Meteor.publish("topWomen", function() {
     return Players.find({
         gender: "F",

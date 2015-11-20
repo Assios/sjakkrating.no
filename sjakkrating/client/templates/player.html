@@ -20,9 +20,9 @@
 						<li class="list-group-item">Offisiell rating: {{nsf_elo}}</li>
 				    <li class="list-group-item">Uoffisiell rating: {{elo}}
 				    	{{#if isNegative}}
-				    		<span style="color:red;" title="Differanse mellom offisiell og uoffisiell rating.">{{eloDifference}}</span>
+				    		<span style="color:red;" data-toggle="tooltip" title="Differanse mellom offisiell og uoffisiell rating.">{{eloDifference}}</span>
 				    	{{else}}
-				    		<span style="color:green;" title="Differanse mellom offisiell og uoffisiell rating.">{{eloDifference}}</span>
+				    		<span style="color:green;" data-toggle="tooltip" title="Differanse mellom offisiell og uoffisiell rating.">{{eloDifference}}</span>
 				    	{{/if}}
 				    	</li>
 				    {{#if fide_standard}}
@@ -35,7 +35,7 @@
 						<li class="list-group-item">Hurtig: {{fide_rapid}}</li>
 						{{/if}}
 				    <li class="list-group-item">Klubb: <a href="{{pathFor 'clubPage' _id=this.club}}">{{club}}</a></li>
-				    <li class="list-group-item">Antall spilte partier: {{number_of_games}} <span title="Antall partier spilt siden siste offisielle rating.">{{gamesDifference}}</span></li>
+				    <li class="list-group-item">Antall spilte partier: {{number_of_games}} <span data-toggle="tooltip" title="Antall partier spilt siden siste offisielle rating.">{{gamesDifference}}</span></li>
 				</ul>
 				<i>{{ratingPerGame}}</i>
 			  </div>

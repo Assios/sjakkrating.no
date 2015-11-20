@@ -1,9 +1,3 @@
-Template.stats.onRendered(function() {
-
-    delete Session.keys["filter_object"];
-
-});
-
 Template.stats.helpers({
     number_of_clubs: function() {
         return Clubs.find().count();
