@@ -23,7 +23,7 @@ Router.route('/om', {
 });
 
 Router.route('/sok', {
-    name: 'advSearch'
+    name: 'advancedSearch'
 });
 
 Router.route('/statistikk', {

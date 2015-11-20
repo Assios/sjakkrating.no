@@ -1,111 +1,49 @@
 Template.advancedSearch.onRendered(function() {
 
-    $("#chessTable").stupidtable();
-
-    delete Session.keys["filter_object"];
+    ReactiveTable.clearFilters(['clubFilter', 'greater-than-filter', 'less-than-filter', 'greater-than-age-filter', 'less-than-age-filter', 'chess-club-filter', 'gender-filter']);
 
 });
 
 Template.advancedSearch.helpers({
-    filteredPlayers: function() {
-        if (Session.get("filter_object"))
-            return Players.find(Session.get("filter_object"), {
-                sort: {
-                    elo: -1
-                },
-                limit: Session.get("result_limit")
-            });
-        else
-            return [];
+    players: function () {
+        return Players;
     },
 
-    isMale: function(gender) {
-        if (gender == 'M') {
-            return true;
-        }
-        return false;
+    clubFilterFields: function() {
+        return ["club"]
     },
 
-    listClubs: function() {
-        return Clubs.find({}, {
-            sort: {
-                name: 1
-            }
-        });
-    }
-});
+    minRatingFields: function() {
+        return ["elo"]
+    },
 
-Template.advancedSearch.events({
-    'click .advanced-search': function() {
-        chess_club = $('#chessClub').val()
-        min_rating = parseInt($("#minRating").val()) - 1;
-        max_rating = parseInt($("#maxRating").val()) + 1;
-        min_year_of_birth = parseInt($("#minYearOfBirth").val()) - 1;
-        max_year_of_birth = parseInt($("#maxYearOfBirth").val()) + 1;
-        number_of_results = parseInt($("#numberOfResults").val());
-
-        obj = {
-            nsf_elo: {
-                $gt: min_rating,
-                $lt: max_rating
-            },
-            year_of_birth: {
-                $gt: min_year_of_birth,
-                $lt: max_year_of_birth
-            }
-        }
-
-        if (chess_club && (chess_club != "Alle")) {
-            $.extend(obj, {
-                club_lc: chess_club.toLowerCase()
-            });
-        }
-
-        gender_box = $('input:radio[name=gender]:checked').val();
-
-        if (!(gender_box == 'both')) {
-            $.extend(obj, {
-                gender: gender_box
-            });
-        }
-
-        or_list = [];
-
-        if ($("#gm-check").is(":checked")) {
-            or_list.push({fide_title: "GM"})
-        }
-
-        if ($("#im-check").is(":checked")) {
-            or_list.push({fide_title: "IM"})
-        }
-
-        if ($("#fm-check").is(":checked")) {
-            or_list.push({fide_title: "FM"})
-        }
-
-        if ($("#cm-check").is(":checked")) {
-            or_list.push({fide_title: "CM"})
-        }
-
-        if ($("#wgm-check").is(":checked")) {
-            or_list.push({fide_title: "WGM"})
-        }
-
-        if ($("#wim-check").is(":checked")) {
-            or_list.push({fide_title: "WIM"})
-        }
-
-        if ($("#wfm-check").is(":checked")) {
-            or_list.push({fide_title: "WFM"})
-        }
-
-        if ($("#untitled-check").is(":checked")) {
-            or_list.push({fide_title: ""})
-        }
-
-        $.extend(obj, {$or: or_list});
-
-        Session.set("result_limit", number_of_results);
-        Session.set("filter_object", obj);
+    settings: function () {
+        return {
+            collection: "tableplayers",
+            rowsPerPage: 10,
+            showColumnToggles: true,
+            fields: [
+            	{key: 'name', label: 'Navn', hideToggle: true, tmpl: Template.nameTmpl, cellClass: 'col-md-2', sortOrder: 5},
+                {key: 'gender', label: 'Kjønn', tmpl: Template.genderTmpl, cellClass: 'col-md-1'},
+            	{key: 'club', label: 'Klubb', tmpl: Template.clubTmpl},
+            	{key: 'nsf_elo', label: 'Norsk', sortOrder: 1, sortDirection: 'descending'},
+            	{key: 'elo', label: 'Uoffisiell', sortOrder: 0, sortDirection: 'descending'},
+            	{key: 'fide_standard', label: 'FIDE', sortOrder: 2, sortDirection: 'descending'},
+            	{key: 'fide_rapid', label: 'Hurtig', sortOrder: 3, sortDirection: 'descending'},
+            	{key: 'fide_blitz', label: 'Lyn', sortOrder: 4, sortDirection: 'descending'},
+            	{key: 'number_of_games', label: 'Partier'},
+            	{key: 'year_of_birth', label: 'Fødselsår'},
+            	{key: 'fide_title', hidden: true, hideToggle: true}
+            ],
+            filters: [
+                'clubFilter',
+                'greater-than-filter',
+                'less-than-filter',
+                'greater-than-age-filter',
+                'less-than-age-filter',
+                'chess-club-filter',
+                'gender-filter',
+            ]
+        };
     }
 });
