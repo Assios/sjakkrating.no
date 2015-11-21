@@ -40,7 +40,7 @@ Meteor.publish("topJuniors", function() {
 
 	return Players.find({
 	            year_of_birth: {
-	                $gt: year - 20
+	                $gte: year - 20
 	            },
 	            country: "NOR"
 	        }, {
@@ -56,7 +56,7 @@ Meteor.publish("topKadetts", function() {
 
   return Players.find({
               year_of_birth: {
-                  $gt: year - 16
+                  $gte: year - 16,
               },
           }, {
               sort: {
@@ -71,7 +71,7 @@ Meteor.publish("topLilleputts", function() {
 
   return Players.find({
               year_of_birth: {
-                  $gt: year - 13
+                  $gte: year - 13,
               },
           }, {
               sort: {
@@ -86,13 +86,13 @@ Meteor.publish("topMiniputts", function() {
 
   return Players.find({
               year_of_birth: {
-                  $gt: year - 11
+                  $gte: year - 11
               },
           }, {
               sort: {
                   elo: -1
               },
-              limit: 50
+              limit: 100
           });
 });
 
@@ -101,7 +101,7 @@ Meteor.publish("topSeniors", function() {
 
   return Players.find({
               year_of_birth: {
-                  $lt: year - 59
+                  $lte: year - 60
               },
           }, {
               sort: {

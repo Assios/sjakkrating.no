@@ -23,7 +23,7 @@ Template.ageTop.helpers({
 
         return Players.find({
             year_of_birth: {
-                $gt: year - 16
+                $gte: year - 16,
             },
         }, {
             sort: {
@@ -41,7 +41,7 @@ Template.ageTop.helpers({
 
         return Players.find({
             year_of_birth: {
-                $gt: year - 13
+                $gte: year - 13,
             },
         }, {
             sort: {
@@ -59,7 +59,7 @@ Template.ageTop.helpers({
 
         return Players.find({
             year_of_birth: {
-                $gt: year - 11
+                $gte: year - 11
             },
         }, {
             sort: {
@@ -77,7 +77,7 @@ Template.ageTop.helpers({
 
         return Players.find({
             year_of_birth: {
-                $lt: year - 60
+                $lte: year - 60
             },
         }, {
             sort: {

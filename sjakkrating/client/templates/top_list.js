@@ -65,7 +65,7 @@ Template.topList.helpers({
 
         return Players.find({
             year_of_birth: {
-                $gt: year - 20
+                $gte: year - 20
             },
             country: "NOR"
         }, {

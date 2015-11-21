@@ -5,7 +5,7 @@
 
 	<div class="col-sm-3">
 		<div class="panel panel-default">
-		  <div class="panel-heading"><b data-toggle="tooltip" title="Født i {{kadett}} eller senere">Kadett-toppen</b></div>
+		  <div class="panel-heading"><b data-toggle="tooltip" title="Født i {{kadett}} eller senere">Kadettoppen</b></div>
 		  <ul class="list-group">
 			{{#each topKadett 100}}
 		    	<li class="list-group-item toplist"><div class="name">{{place}}. 
@@ -20,7 +20,7 @@
 
 	<div class="col-sm-3">
 		<div class="panel panel-default">
-		  <div class="panel-heading"><b data-toggle="tooltip" title="Født i {{lilleputt}} eller senere">Lilleputt-toppen</b></div>
+		  <div class="panel-heading"><b data-toggle="tooltip" title="Født i {{lilleputt}} eller senere">Lilleputt</b></div>
 
 		  <ul class="list-group">
 			{{#each topLilleputt 100}}
@@ -36,10 +36,10 @@
 
 	<div class="col-sm-3">
 		<div class="panel panel-default">
-		  <div class="panel-heading"><b data-toggle="tooltip" title="Født i {{miniputt}} eller senere">Miniputt-toppen</b></div>
+		  <div class="panel-heading"><b data-toggle="tooltip" title="Født i {{miniputt}} eller senere">Miniputt</b></div>
 
 		  <ul class="list-group">
-			{{#each topMiniputt 50}}
+			{{#each topMiniputt 100}}
 		    	<li class="list-group-item toplist"><div class="name">{{place}}. 
 		    			<b>{{fide_title}}</b> 
 		    		<a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a></div>
