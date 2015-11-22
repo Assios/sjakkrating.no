@@ -3,7 +3,7 @@
       <span class="input-group-addon">
         <span>Min rating</span>
       </span>
-      <input class="form-control greater-than-filter-input" type="number" value="500"/>
+      <input class="form-control greater-than-filter-input" type="number" value="500" min="500" max="3000"/>
     </div>
 </template>
 
@@ -12,7 +12,7 @@
       <span class="input-group-addon">
         <span>Max rating</span>
       </span>
-      <input class="form-control less-than-filter-input" type="number" value="3000"/>
+      <input class="form-control less-than-filter-input" type="number" value="3000" min="500" max="3000"/>
     </div>
 </template>
 
@@ -21,7 +21,7 @@
       <span class="input-group-addon">
         <span>Min fødselsår</span>
       </span>
-      <input class="form-control greater-than-age-filter-input" type="number" value="1920"/>
+      <input class="form-control greater-than-age-filter-input" type="number" value="1920" min="1920" max="2015"/>
     </div>
 </template>
 
@@ -30,7 +30,7 @@
       <span class="input-group-addon">
         <span>Max fødselsår</span>
       </span>
-      <input class="form-control less-than-age-filter-input" type="number" value="2015"/>
+      <input class="form-control less-than-age-filter-input" type="number" value="2015" min="1920" max="2015"/>
     </div>
 </template>
 
