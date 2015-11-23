@@ -26,6 +26,10 @@ Router.route('/sok', {
     name: 'advancedSearch'
 });
 
+Router.route('/parti', {
+    name: 'game'
+});
+
 Router.route('/aldersgrupper', {
     name: 'ageTop',
     waitOn: function() {
