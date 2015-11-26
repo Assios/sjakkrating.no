@@ -8,6 +8,11 @@ Template.game.onRendered(function() {
 
 });
 
+Template.game.events({
+
+});
+
+
 
 Template.game.helpers({
 
