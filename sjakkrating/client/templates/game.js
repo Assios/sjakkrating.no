@@ -9,7 +9,13 @@ Template.game.onRendered(function() {
 });
 
 Template.game.events({
+   ".pager .prev": function () {
+      console.log("prev");
+   },
 
+   ".pager .next": function () {
+      console.log("next");
+   },  
 });
 
 
