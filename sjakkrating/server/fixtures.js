@@ -7,7 +7,7 @@ function getAllPlayers() {
     });
     if (result.statusCode == 200) {
         var response = JSON.parse(result.content);
-        console.log("Got all players:");
+        console.log("Got all players.");
         return response;
     } else {
         console.log("Response issue: ", result.statusCode);
@@ -334,11 +334,20 @@ chess_clubs = [{
 }, ]
 
 
-if (Players.find().count() === 0) {
-    players = _.values(getAllPlayers())[0];
+players = _.values(getAllPlayers())[0];
 
-    for (i = 0; i < players.length; i++) {
+for (i = 0; i < players.length; i++) {
+    var temp_id = players[i].nsf_id;
+    var already_existing_player = Players.findOne({nsf_id: temp_id});
+
+    if (!(already_existing_player)) {
         Players.insert(players[i]);
+        console.log("added player", players[i].name);
+    }
+    else {
+        if (!(_.isEqual(players[i], already_existing_player)))
+            Players.remove({nsf_id: temp_id});
+            Players.insert(players[i]);
     }
 }
 
