@@ -4,9 +4,29 @@ Template.player.onRendered(function() {
 
     $('[data-toggle="tooltip"]').tooltip(); 
 
+/*
+    if (this.lichess_username) {
+        console.log("Fetching lichess info");
+
+        Meteor.call('getLichess', this.lichess_username, function(err, response) {
+            console.log(response);
+            Session.set('lichess_response', response);
+        });
+    }
+*/
+
 });
 
 Template.player.helpers({
+
+    lichessBullet: function() {
+        var r = Session.get("lichess_response");
+
+        if (r)
+            return r.perfs.bullet.rating;
+        else
+            return 1483;
+    },
 
     loadImage: function(fide_id) {
         var img = new Image();

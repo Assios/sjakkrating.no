@@ -333,7 +333,7 @@ chess_clubs = [{
     "website": ""
 }, ]
 
-
+/**
 players = _.values(getAllPlayers())[0];
 
 for (i = 0; i < players.length; i++) {
@@ -350,7 +350,7 @@ for (i = 0; i < players.length; i++) {
             Players.insert(players[i]);
     }
 }
-
+**/
 if (Clubs.find().count() === 0) {
     for (i = 0; i < chess_clubs.length; i++) {
         Clubs.insert(chess_clubs[i]);
