@@ -345,9 +345,7 @@ for (i = 0; i < players.length; i++) {
         console.log("added player", players[i].name);
     }
     else {
-        if (players[i].elo != already_existing_player.elo)
-            Players.remove({nsf_id: temp_id});
-            Players.insert(players[i]);
+        Players.update({nsf_id: temp_id}, { $set: { elo: players[i].elo }});
     }
 }
 
