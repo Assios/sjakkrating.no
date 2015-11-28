@@ -333,7 +333,7 @@ chess_clubs = [{
     "website": ""
 }, ]
 
-/**
+
 players = _.values(getAllPlayers())[0];
 
 for (i = 0; i < players.length; i++) {
@@ -345,12 +345,12 @@ for (i = 0; i < players.length; i++) {
         console.log("added player", players[i].name);
     }
     else {
-        if (!(_.isEqual(players[i], already_existing_player)))
+        if (players[i].elo != already_existing_player.elo)
             Players.remove({nsf_id: temp_id});
             Players.insert(players[i]);
     }
 }
-**/
+
 if (Clubs.find().count() === 0) {
     for (i = 0; i < chess_clubs.length; i++) {
         Clubs.insert(chess_clubs[i]);
