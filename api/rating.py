@@ -43,9 +43,9 @@ def filename_to_date(filename):
 def get_fide_rating(fide_id):
   fide_dict = {}
 
-  f = open("fide_ratings/standard_rating_list.txt")
-  f_rapid = open("fide_ratings/rapid_rating_list.txt")
-  f_blitz = open("fide_ratings/blitz_rating_list.txt")
+  f = open("fide/standard_rating_list.txt")
+  f_rapid = open("fide/rapid_rating_list.txt")
+  f_blitz = open("fide/blitz_rating_list.txt")
 
   line = None
 
