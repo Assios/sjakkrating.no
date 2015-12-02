@@ -345,9 +345,12 @@ for (i = 0; i < players.length; i++) {
         console.log("added player", players[i].name);
     }
     else {
-        Players.update({nsf_id: temp_id}, { $set: { elo: players[i].elo, fide_standard: players[i].fide_standard, fide_rapid: players[i].fide_rapid, fide_blitz: players[i].fide_blitz }});
+        Players.update({nsf_id: temp_id}, { $set: { elo: players[i].elo });
     }
 }
+
+// when new fide lists also add:
+// fide_standard: players[i].fide_standard, fide_rapid: players[i].fide_rapid, fide_blitz: players[i].fide_blitz }
 
 if (Clubs.find().count() === 0) {
     for (i = 0; i < chess_clubs.length; i++) {
