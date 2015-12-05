@@ -7,7 +7,7 @@ function getAllPlayers() {
     });
     if (result.statusCode == 200) {
         var response = JSON.parse(result.content);
-        console.log("Got all players:");
+        console.log("Got all players.");
         return response;
     } else {
         console.log("Response issue: ", result.statusCode);
@@ -334,13 +334,22 @@ chess_clubs = [{
 }, ]
 
 
-if (Players.find().count() === 0) {
-    players = _.values(getAllPlayers())[0];
+players = _.values(getAllPlayers())[0];
+/*
+for (i = 0; i < players.length; i++) {
+    var temp_id = players[i].nsf_id;
+    var already_existing_player = Players.findOne({nsf_id: temp_id});
 
-    for (i = 0; i < players.length; i++) {
+    if (!(already_existing_player)) {
         Players.insert(players[i]);
+        console.log("added player", players[i].name);
+    }
+    else {
+        Players.update({nsf_id: temp_id}, { $set: { elo: players[i].elo }});
     }
 }
+*/
+// fide_standard: players[i].fide_standard, fide_rapid: players[i].fide_rapid, fide_blitz: players[i].fide_blitz }
 
 if (Clubs.find().count() === 0) {
     for (i = 0; i < chess_clubs.length; i++) {

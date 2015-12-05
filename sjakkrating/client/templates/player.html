@@ -17,6 +17,7 @@
 			  		<img src="{{getImage}}">
 					</div>
 				<ul class="list-group">
+					<li class="list-group-item list-group-item-info">Norsk</li>
 						<li class="list-group-item">Offisiell rating: {{nsf_elo}}</li>
 				    <li class="list-group-item">Uoffisiell rating: {{elo}}
 				    	{{#if isNegative}}
@@ -25,18 +26,21 @@
 				    		<span style="color:green;" data-toggle="tooltip" title="Differanse mellom offisiell og uoffisiell rating.">{{eloDifference}}</span>
 				    	{{/if}}
 				    	</li>
-				    {{#if fide_standard}}
-						<li class="list-group-item">FIDE-rating: {{fide_standard}}</li>
+				    <li class="list-group-item">Klubb: <a href="{{pathFor 'clubPage' _id=this.club}}">{{club}}</a></li>
+				    <li class="list-group-item">Antall spilte partier: {{number_of_games}} <span data-toggle="tooltip" title="Antall partier spilt siden siste offisielle rating.">{{gamesDifference}}</span></li>
+				</ul>
+				{{#if fide_standard}}
+				<ul class="list-group">
+					<li class="list-group-item list-group-item-info">FIDE <i>(oppdatert 1. desember 2015)</i></li>
+						<li class="list-group-item">Standard: {{fide_standard}}</li>
+				    {{#if fide_rapid}}
+						<li class="list-group-item">Hurtig: {{fide_rapid}}</li>
 						{{/if}}
 				    {{#if fide_blitz}}
 						<li class="list-group-item">Lyn: {{fide_blitz}}</li>
 						{{/if}}
-				    {{#if fide_rapid}}
-						<li class="list-group-item">Hurtig: {{fide_rapid}}</li>
-						{{/if}}
-				    <li class="list-group-item">Klubb: <a href="{{pathFor 'clubPage' _id=this.club}}">{{club}}</a></li>
-				    <li class="list-group-item">Antall spilte partier: {{number_of_games}} <span data-toggle="tooltip" title="Antall partier spilt siden siste offisielle rating.">{{gamesDifference}}</span></li>
 				</ul>
+				{{/if}}
 				<i>{{ratingPerGame}}</i>
 			  </div>
 			</div>
@@ -54,6 +58,23 @@
 					    <li class="list-group-item"><a href="http://norbase.sjakk.biz/index.php?page=base&header=0&subpage=search&action=view&white={{surname}},+{{first_name}}&nocolor=on&headline=Partier+med+{{name}}" target="_blank">Partier fra NorBase</a></li>
 					    <li class="list-group-item"><a href="http://www.chessgames.com/perl/chess.pl?yearcomp=exactly&year=&playercomp=either&pid=&player={{surname}}, {{first_name}}&pid2=&player2=&movescomp=exactly&moves=&opening=&eco=&result=" target="_blank">Partier fra chessgames.com</a></li>
 					    <li class="list-group-item"><a href="http://www.365chess.com/search_result.php?wlname={{surname}}&wname={{first_name}}&open=&blname=&bname=&eco=&nocolor=on&yeari=&yeare=&sply=1&ply=&res=&submit_search=1" target="_blank">Partier fra 365chess.com</a></li>
+						{{#if lichess_username }}
+					    <li class="list-group-item">
+							<a class="lichess_widget lichess_theme_light" href="http://lichess.org/@/{{lichess_username}}" target="_blank">
+								<img src="{{lichess_image}}"/>
+							    <span>
+							    	{{ lichess_username }} på Lichess | Blitz
+							    	<b>
+							    	{{ lichessBlitz }}
+							    	</b>
+							    	| Bullet
+							    	<b>
+							    	{{ lichessBullet }}
+							    	</b>
+							    </span>
+							</a>
+					    </li>
+					    {{/if}}
 					</ul>
 				</div>
 			</div>		

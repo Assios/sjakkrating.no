@@ -4,9 +4,41 @@ Template.player.onRendered(function() {
 
     $('[data-toggle="tooltip"]').tooltip(); 
 
+    if (this.data.lichess_username) {
+        Meteor.call('getLichess', this.data.lichess_username, function(err, response) {
+            Session.set('lichess_response', response);
+        });
+    }
+
+
 });
 
 Template.player.helpers({
+
+    lichess_image: function() {
+        var offline_img = "http://lichess1.org/assets/images/favicon-32-white.png";
+        var online_img = "http://rubenwardy.github.io/lichess_widgets/lichess_online.png";
+
+        var r = Session.get("lichess_response");
+
+        if (r.online) {
+            return online_img;
+        } else {
+            return offline_img;
+        }
+    },
+
+    lichessBlitz: function() {
+        var r = Session.get("lichess_response");
+
+        return r.perfs.blitz.rating;
+    },
+
+    lichessBullet: function() {
+        var r = Session.get("lichess_response");
+
+        return r.perfs.bullet.rating;
+    },
 
     loadImage: function(fide_id) {
         var img = new Image();
