@@ -2,6 +2,10 @@
 	width: 250px;
 }
 
+.container {
+    width: 95%;
+}
+
 .player-container {
 	width: 100%;
 	min-height: 600px;
@@ -119,11 +123,24 @@ th[data-sort] {
 
 .name {
     float: left;
-    width: 170px;
+    width: 80%;
     overflow:hidden;
     white-space:nowrap;
     text-overflow:ellipsis;
 }
+
+@media screen and (max-width: 1200px) {
+    .name {
+        width: 70%;
+    }  
+}
+
+@media screen and (max-width: 900px) {
+    .name {
+        width: 60%;
+    }  
+}
+
 
 .toplist {
     height: 40px;
