@@ -135,13 +135,6 @@ th[data-sort] {
     }  
 }
 
-@media screen and (max-width: 900px) {
-    .name {
-        width: 60%;
-    }  
-}
-
-
 .toplist {
     height: 40px;
 }
@@ -159,7 +152,7 @@ th[data-sort] {
     background-color : #A6EAFF;
     box-shadow       : 0 0 5px #B0E7F7;
 }
-
+#
 .full-width {
     width: 100%;
 }
