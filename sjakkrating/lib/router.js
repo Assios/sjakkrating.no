@@ -9,7 +9,8 @@ Router.configure({
             Meteor.subscribe('topPlayers'),
             Meteor.subscribe('topJuniors'),
             Meteor.subscribe('topWomen'),
-            Meteor.subscribe('clubs')
+            Meteor.subscribe('clubs'),
+            Meteor.subscribe('games'),
         ]
     }
 });
@@ -24,10 +25,6 @@ Router.route('/om', {
 
 Router.route('/sok', {
     name: 'advancedSearch'
-});
-
-Router.route('/parti', {
-    name: 'game'
 });
 
 Router.route('/aldersgrupper', {
@@ -50,6 +47,13 @@ Router.route('/statistikk', {
             Meteor.subscribe('youngestPlayer'),
             Meteor.subscribe('oldestPlayer'),
         ]
+    }
+});
+
+Router.route('parti/:_id', {
+    name: 'chessGame',
+    data: function() {
+        return Games.findOne(this.params._id);
     }
 });
 
