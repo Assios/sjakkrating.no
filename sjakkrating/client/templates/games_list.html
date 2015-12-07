@@ -1,0 +1,9 @@
+<template name="gamesList">
+
+	<ul class="list-group">
+		{{#each games}}
+			<li class="list-group-item"><a href="{{pathFor 'chessGame'}}">{{white}} - {{black}}</a></li>
+		{{/each}}
+	</ul>
+
+</template>

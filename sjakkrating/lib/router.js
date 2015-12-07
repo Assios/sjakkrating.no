@@ -15,6 +15,10 @@ Router.configure({
     }
 });
 
+Router.route('/partier', {
+    name: 'gamesList'
+});
+
 Router.route('/', {
     name: 'frontPage'
 });
