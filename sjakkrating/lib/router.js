@@ -57,7 +57,7 @@ Router.route('/statistikk', {
 Router.route('parti/:_id', {
     name: 'chessGame',
     data: function() {
-        return Games.findOne(this.params._id);
+        return Games.findOne({ _id: new Meteor.Collection.ObjectID(this.params._id)});
     }
 });
 

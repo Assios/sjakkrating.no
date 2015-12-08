@@ -7,7 +7,7 @@ Template.chessGame.onRendered(function() {
 
    console.log(game);
 
-	board = ChessBoard('board', config);
+	 board = ChessBoard('board', config);
 
    pgn = this.data.moves;
    currentIndex = 0;
@@ -41,6 +41,10 @@ Template.chessGame.events({
          }
 
         board.position(game.fen());
+    },
+
+    'click .flip': function(){
+        board.flip();
     }
 
 });
