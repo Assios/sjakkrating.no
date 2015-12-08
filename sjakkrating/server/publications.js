@@ -118,12 +118,12 @@ Meteor.publish("topSeniors", function() {
 Meteor.publish("topWomen", function() {
     return Players.find({
         gender: "F",
-        country: "NOR"
+        $or: [ {country: null}, {country: "NOR"} ],
     }, {
         sort: {
             elo: -1
         },
-        limit: 50
+        limit: 100
     });
 });
 
