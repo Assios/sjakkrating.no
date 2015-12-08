@@ -48,7 +48,9 @@ Template.topList.helpers({
     topWomen: function(l) {
         return Players.find({
             gender: "F",
-            country: "NOR"
+            // Assuming that players that aren't
+            // FIDE registered (country: null) are new players and Norwegian.
+            $or: [ {country: null}, {country: "NOR"} ],
         }, {
             sort: {
                 elo: -1
