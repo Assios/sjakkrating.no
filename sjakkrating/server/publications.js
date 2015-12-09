@@ -129,7 +129,7 @@ Meteor.publish("topWomen", function() {
 
 Meteor.publish('playerGames', function(player) {
   return Games.find({
-    $or: [ {WhiteSurname: player.surname}, {BlackSurname: player.surname} ]
+    $or: [ {WhiteSurname: player.surname, WhiteFirstName: player.only_first_name}, {BlackSurname: player.surname, BlackFirstName: player.only_first_name} ]
   });
 });
 

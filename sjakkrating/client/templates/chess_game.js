@@ -10,6 +10,36 @@ Template.chessGame.onRendered(function() {
    pgn = this.data.moves;
    currentIndex = 0;
 
+   $(document).on('keyup', function (e) {
+        if (e.keyCode == 37) {
+          game.undo();
+
+          if (currentIndex!=0) {
+              currentIndex--;
+           }
+
+          board.position(game.fen());          
+        }
+
+        if (e.keyCode == 39) {
+          var possibleMoves = game.moves();
+
+          if (currentIndex==pgn.length) {
+           return false;
+          }
+
+          // exit if the game is over
+          if (game.game_over() === true ||
+            game.in_draw() === true ||
+            possibleMoves.length === 0) return;
+
+          game.move(pgn[currentIndex]);
+          currentIndex++;
+          board.position(game.fen());        
+        }
+   });
+
+
 });
 
 Template.chessGame.events({
@@ -61,6 +91,14 @@ Template.chessGame.events({
 
       board.position(game.fen());
     },
+
+    'keypress input': function(event) {
+        if (event.keyCode == 13) {
+            alert('you hit enter');
+            event.stopPropagation();
+            return false;
+        }
+    }
 
 });
 

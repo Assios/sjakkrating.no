@@ -8,7 +8,7 @@ Template.playerGames.onRendered(function() {
 Template.playerGames.helpers({
 	games: function() {
 		  return Games.find({
-		    $or: [ {WhiteSurname: this.surname}, {BlackSurname: this.surname} ]
+            $or: [ {WhiteSurname: player.surname, WhiteFirstName: player.only_first_name}, {BlackSurname: player.surname, BlackFirstName: player.only_first_name} ]
 		  });
 	},
 
