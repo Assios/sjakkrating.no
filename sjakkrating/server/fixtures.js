@@ -16,31 +16,6 @@ function getAllPlayers() {
     }
 }
 
-games = [{
-    "event": "No Logo Norway Chess",
-    "site": "Stavanger",
-    "date": "2014.06.13",
-    "round": "9",
-    "white": "Carlsen, Magnus Øen",
-    "black": "Agdestein, Simen",
-    "result": "1-0",
-    "white_elo": "2881",
-    "black_elo": "2628",
-    "eco": "E15",
-    "moves": ['d4', 'Nf6', 'c4', 'e6', 'Nf3', 'b6', 'g3', 'Ba6', 'b3', 'd5', 'Bg2', 'Bb4', 'Bd2', 'Bd6', 'Nc3', 'O-O', 'O-O', 'dxc4', 'Ne5', 'c6', 'bxc4', 'Qc7', 'Bf4', 'Bb7', 'Rc1', 'Nh5', 'Ne4', 'Nxf4', 'gxf4', 'c5', 'Qd3', 'Bxe5', 'Ng5', 'g6', 'Qh3', 'h5', 'dxe5', 'Nc6', 'Ne4', 'Nd4', 'Nf6', 'Kg7', 'Rfe1', 'Nf5', 'Rc3', 'Rh8', 'Rd1', 'Rad8', 'Rcd3', 'Rd4', 'e3', 'Rxd3', 'Rxd3', 'Bxg2', 'Qxg2', 'Rd8', 'Kf1', 'Kf8', 'Rxd8', 'Qxd8', 'Ke2', 'Qc8', 'a3', 'Ke7', 'h3', 'Kd8', 'Qe4', 'Kc7', 'Nh7', 'Qe8', 'Ng5', 'b5', 'Qd3', 'a6', 'Kd2', 'Kb6', 'Kc3', 'Qe7', 'Ne4', 'Qc7', 'Kb3', 'Kc6', 'Nc3', 'bxc4', 'Qxc4', 'Qb6', 'Kc2', 'Qa5', 'Qe4', 'Kc7', 'Qa8', 'c4', 'Qf8', 'Kd7', 'Ne4', 'Qa4', 'Kc1', 'Qc6', 'Qxf7', 'Kc8', 'Nd6', 'Kd8', 'Qf8', 'Kc7', 'Qc8', 'Kb6', 'Qb8']
-}, {
-    "event": "Entercard Scandinavian Masters",
-    "site": "Oslo",
-    "date": "2015.05.09",
-    "round": "2",
-    "white": "Tari, Aryan",
-    "black": "Agdestein, Simen",
-    "results": "1/2-1/2",
-    "white_elo": "2520",
-    "black_elo": "2620",
-    "ECO": "B04",
-    "moves": ['e4', 'Nf6', 'e5', 'Nd5', 'd4', 'd6', 'Nf3', 'c6', 'c4', 'Nc7', 'h3', 'dxe5', 'Nxe5', 'g6', 'Nc3', 'Bg7', 'Nf3', 'O-O', 'Be3', 'b5', 'Qd2', 'Ba6', 'Bh6', 'bxc4', 'Bxg7', 'Kxg7', 'Ne5', 'Nb5', 'Rd1', 'Nd6', 'Be2', 'f6', 'Ng4', 'Nd7', 'O-O', 'Rb8', 'Rfe1', 'c5', 'dxc5', 'Nxc5', 'Qe3', 'Rc8', 'Nd5', 'e5', 'b4', 'cxb3', 'Bxa6', 'Nxa6', 'Qxa7', 'Nc7', 'Nb6', 'Rb8', 'Nc4', 'Nb5', 'Qc5', 'Ne6', 'Qe3', 'Nbd4', 'Ncxe5', 'Qc7', 'Rc1', 'Qb7', 'axb3', 'Nf5', 'Qc3', 'Rbc8', 'Qf3', 'Qxf3', 'Nxf3', 'Nf4', 'Rxc8', 'Rxc8', 'g3', 'Nxh3', 'Kg2', 'Ng5', 'Nxg5', 'fxg5', 'Ne3', 'Nxe3', 'Rxe3', 'Rb8']
-}]
 
 chess_clubs = [{
     "name": "1911",

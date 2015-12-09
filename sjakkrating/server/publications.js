@@ -127,6 +127,12 @@ Meteor.publish("topWomen", function() {
     });
 });
 
+Meteor.publish('playerGames', function(player) {
+  return Games.find({
+    $or: [ {WhiteSurname: player.surname}, {BlackSurname: player.surname} ]
+  });
+});
+
 Meteor.publish('clubs', function() {
 	return Clubs.find();
 });
