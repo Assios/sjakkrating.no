@@ -25,9 +25,9 @@ class RatingObject:
 
         s = line.split(';')
         self.nsf_id = to_int(s[0])
-        self.full_name = str(s[1])
         self.surname = s[1].split(' ')[0]
         self.first_name = ' '.join(s[1].split(' ')[1:])
+        self.only_first_name = s[1].split(' ')[1]
         self.gender = s[2]
         self.club = s[3]
         self.club_lc = self.club.lower()
@@ -36,7 +36,7 @@ class RatingObject:
         self.year_of_birth = to_int(s[7])
         self.fide_id = to_int(s[8])
         self.elo = to_int(s[11])
-        self.nsf_categories, self.nsf_elos, self.fide_elos, self.rapid_elos, self.blitz_elos, self.games = get_ratings_by_name(self.full_name)
+        self.nsf_categories, self.nsf_elos, self.fide_elos, self.rapid_elos, self.blitz_elos, self.games = get_ratings_by_name(str(s[1]))
         self.nsf_elo = last_element_if_exists(self.nsf_elos)
         self.fide_elo = last_element_if_exists(self.fide_elos)
         self.rapid_elo = last_element_if_exists(self.rapid_elos)
