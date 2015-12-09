@@ -58,15 +58,20 @@
 }
 
 .chessboard {
-
+    margin: auto;
 }
 
 .chess-buttons {
-    margin-right: 640px;
+    margin: auto;
 }
 
 .game-heading {
     margin-bottom: 30px;
+}
+
+.center-text {
+    margin: auto;
+    text-align: center;
 }
 
 .unselectable {

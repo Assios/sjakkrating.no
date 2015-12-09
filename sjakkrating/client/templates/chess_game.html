@@ -1,17 +1,17 @@
 <template name="chessGame">
 
-	<div class="container">
+	<div class="col-md-6">
 
 	<div class="panel panel-default well">
 	  <div class="panel-heading game-heading">
 	    <h3 class="panel-title">
-	    	<h4><b>{{White}} ({{WhiteElo}}) vs. {{Black}} ({{BlackElo}})</b></h4></h3>
-	    	<div>{{Event}}, runde {{Round}}.</div>
-	    	<div><i>{{Site}}, {{Date}}</i></div>
-	    	<div>{{Result}}</div>
+	    	<h4 class="center-text"><b>{{White}} ({{WhiteElo}}) vs. {{Black}} ({{BlackElo}})</b></h4></h3>
+	    	<div class="center-text">{{Event}}, runde {{Round}}.</div>
+	    	<div class="center-text"><i>{{Site}}, {{Date}}</i></div>
+	    	<div class="center-text"><b>{{Result}}</b></div>
 	  </div>
 
-	<div class="chessboard" id="board" style="width: 400px"></div>
+	<div class="chessboard" id="board" style="width: 450px"></div>
 
 	<nav class="chess-buttons">
 	  <ul class="pager">
@@ -25,6 +25,11 @@
 
 	</div>
 
+	</div>
+
+
+	<div class="col-md-6">
+		{{>disqus disqus_id=_id}}
 	</div>
 
 </template>
