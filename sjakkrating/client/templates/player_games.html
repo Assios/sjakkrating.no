@@ -2,10 +2,6 @@
 
 	<h2><span data-toggle="tooltip" title="Til {{name}}s profil" class="back-profile unselectable back-arrow glyphicon glyphicon-arrow-left"></span>Partier av {{name}}</h2>
 
-	<ul class="list-group">
-		{{#each games}}
-			<li class="list-group-item"><a href="{{pathFor 'chessGame' _id=this._id._str}}">{{White}} - {{Black}}</a></li>
-		{{/each}}
-	</ul>
+	{{> reactiveTable settings=settings}}
 
 </template>

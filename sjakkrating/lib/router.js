@@ -74,7 +74,7 @@ Router.route('spiller/:_id', {
     }
 });
 
-Router.route('spiller/partier/:_id', {
+Router.route('spiller/:_id/partier', {
     name: 'playerGames',
     data: function() {
         return Players.findOne({
