@@ -1,17 +1,30 @@
 <template name="chessGame">
 
-	<h1>{{White}} ({{WhiteElo}}) - {{Black}} ({{BlackElo}})</h1>
-	<h3>{{Event}}, {{Site}}</h3>
-	<h4>{{Date}}</h4>
+	<div class="container">
 
-	<div id="board" style="width: 400px"></div>
+	<div class="panel panel-default well">
+	  <div class="panel-heading game-heading">
+	    <h3 class="panel-title">
+	    	<h4><b>{{White}} ({{WhiteElo}}) vs. {{Black}} ({{BlackElo}})</b></h4></h3>
+	    	<div>{{Event}}, runde {{Round}}.</div>
+	    	<div><i>{{Site}}, {{Date}}</i></div>
+	    	<div>{{Result}}</div>
+	  </div>
 
-	<nav>
+	<div class="chessboard" id="board" style="width: 400px"></div>
+
+	<nav class="chess-buttons">
 	  <ul class="pager">
-	    <li><a href="#" class="prev">Previous</a></li>
-	    <li><a href="#" class="next">Next</a></li>
-	    <li><a href="#" class="flip">Flip</a></li>
+		<li><span class="start glyphicon glyphicon-step-backward unselectable"></span></li>
+	    <li><span class="prev glyphicon glyphicon glyphicon-triangle-left unselectable"></span></li>
+	    <li><span class="next glyphicon glyphicon glyphicon-triangle-right unselectable"></span></li>
+	    <li><span class="end glyphicon glyphicon glyphicon-step-forward unselectable"></span></li>
+	    <li><span class="flip unselectable"><b>Flip</b></span></li>
 	  </ul>
 	</nav>
+
+	</div>
+
+	</div>
 
 </template>

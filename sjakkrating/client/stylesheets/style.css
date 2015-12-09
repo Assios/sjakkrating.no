@@ -57,6 +57,18 @@
     margin: auto;
 }
 
+.chessboard {
+
+}
+
+.chess-buttons {
+    margin-right: 640px;
+}
+
+.game-heading {
+    margin-bottom: 30px;
+}
+
 .unselectable {
     cursor: default;
     -webkit-touch-callout: none;
@@ -172,6 +184,13 @@ th[data-sort] {
     height: 40px;
     font-size: 15px;
     padding: 5px 12px;
+}
+
+.flipped {
+    transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
 }
 
 input[type='number'] {

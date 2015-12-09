@@ -5,14 +5,11 @@ Template.chessGame.onRendered(function() {
 
    game = new Chess();
 
-   console.log(game);
-
 	 board = ChessBoard('board', config);
 
    pgn = this.data.moves;
    currentIndex = 0;
 
-   console.log(this.data);
 });
 
 Template.chessGame.events({
@@ -45,7 +42,25 @@ Template.chessGame.events({
 
     'click .flip': function(){
         board.flip();
-    }
+    },
+
+    'click .end': function(){
+      while (currentIndex < pgn.length) {
+        game.move(pgn[currentIndex]);
+        currentIndex++;
+      }
+
+      board.position(game.fen());
+    },
+
+    'click .start': function(){
+      while (currentIndex > -1) {
+        game.undo();
+        currentIndex--;
+      }
+
+      board.position(game.fen());
+    },
 
 });
 
