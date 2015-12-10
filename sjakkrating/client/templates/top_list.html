@@ -54,10 +54,10 @@
 	<div class="col-md-3 col-sm-6">
 		<div class="panel panel-default">
 		  <div class="panel-heading"><b>Sjakklubber</b></div>
+		  <ul class="list-group">
 		  	{{#each listClubs}}
 			  		<li class="list-group-item"><a href="{{pathFor 'clubPage' _id=this.name}}">{{name}}</a></li>
 		  	{{/each}}
-		  <ul class="list-group">
 		  </ul>
 		</div>
 	</div>
