@@ -1,0 +1,28 @@
+Template.advancedGames.onRendered(function() {
+
+
+
+});
+
+
+Template.advancedGames.helpers({
+
+    settings: function () {
+        return {
+            collection: "tableGames",
+            rowsPerPage: 10,
+            fields: [
+            	{key: 'Round', label: '', tmpl: Template.gameTmpl},
+            	{key: 'Event', label: 'Turnering'},
+            	{key: 'White', label: 'Hvit'},
+            	{key: 'Black', label: 'Svart', sortDirection: 'descending'},
+				{key: 'Result', label: 'Resultat', sortOrder: 1, sortDirection: 'descending'},       	
+            	{key: 'Date', label: 'Dato', sortOrder: 0, sortDirection: 'descending'},
+            ],
+            filters: [
+                'surnameFilter',
+            ]
+        };
+    }
+
+});

@@ -15,7 +15,7 @@ Router.configure({
 });
 
 Router.route('/partier', {
-    name: 'gamesList'
+    name: 'advancedGames'
 });
 
 Router.route('/', {

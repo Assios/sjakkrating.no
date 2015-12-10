@@ -34,6 +34,8 @@ Meteor.publish('oldestPlayer', function() {
 
 ReactiveTable.publish("tableplayers", Players);
 
+ReactiveTable.publish("tableGames", Games);
+
 Meteor.publish('topPlayers', function() {
 	return Players.find({country: "NOR"}, {
             sort: {

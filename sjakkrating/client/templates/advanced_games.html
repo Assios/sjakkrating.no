@@ -1,0 +1,14 @@
+<template name="advancedGames">
+
+<div class="col-md-3">
+  <div class="panel panel-default">
+    <div class="panel-heading"><b>Navn</b></div>
+    <ul class="list-group">
+      <li class="list-group-item">{{> surnameFilter }}</li>
+    </ul>
+  </div>
+</div>
+
+{{> reactiveTable settings=settings}}
+
+</template>
