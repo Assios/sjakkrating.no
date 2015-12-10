@@ -1,0 +1,35 @@
+<template name="chessGame">
+
+	<div class="col-md-6">
+
+	<div class="panel panel-default well">
+	  <div class="panel-heading game-heading">
+	    <h3 class="panel-title">
+	    	<h4 class="center-text"><b>{{White}} ({{WhiteElo}}) vs. {{Black}} ({{BlackElo}})</b></h4></h3>
+	    	<div class="center-text">{{Event}}, runde {{Round}}.</div>
+	    	<div class="center-text"><i>{{Site}}, {{Date}}</i></div>
+	    	<div class="center-text"><b>{{Result}}</b></div>
+	  </div>
+
+	<div class="chessboard" id="board" style="width: 450px"></div>
+
+	<nav class="chess-buttons">
+	  <ul class="pager">
+		<li><span class="start glyphicon glyphicon-step-backward unselectable"></span></li>
+	    <li><span class="prev glyphicon glyphicon glyphicon-triangle-left unselectable"></span></li>
+	    <li><span class="next glyphicon glyphicon glyphicon-triangle-right unselectable"></span></li>
+	    <li><span class="end glyphicon glyphicon glyphicon-step-forward unselectable"></span></li>
+	    <li><span class="flip unselectable rotate90 glyphicon glyphicon-transfer"></span></li>
+	  </ul>
+	</nav>
+
+	</div>
+
+	</div>
+
+
+	<div class="col-md-6">
+		{{>disqus disqus_id=_id}}
+	</div>
+
+</template>

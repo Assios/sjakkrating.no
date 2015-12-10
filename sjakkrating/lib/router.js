@@ -9,9 +9,13 @@ Router.configure({
             Meteor.subscribe('topPlayers'),
             Meteor.subscribe('topJuniors'),
             Meteor.subscribe('topWomen'),
-            Meteor.subscribe('clubs')
+            Meteor.subscribe('clubs'),
         ]
     }
+});
+
+Router.route('/partier', {
+    name: 'gamesList'
 });
 
 Router.route('/', {
@@ -49,8 +53,29 @@ Router.route('/statistikk', {
     }
 });
 
+Router.route('parti/:_id', {
+    name: 'chessGame',
+    data: function() {
+        return Games.findOne({ _id: new Meteor.Collection.ObjectID(this.params._id)});
+    }
+});
+
 Router.route('spiller/:_id', {
     name: 'player',
+    data: function() {
+        return Players.findOne({
+            nsf_id: parseInt(this.params._id)
+        });
+    },
+    waitOn: function() {
+        return [
+            Meteor.subscribe('player', this.params._id)
+        ]
+    }
+});
+
+Router.route('spiller/:_id/partier', {
+    name: 'playerGames',
     data: function() {
         return Players.findOne({
             nsf_id: parseInt(this.params._id)

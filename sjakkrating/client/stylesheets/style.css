@@ -57,6 +57,35 @@
     margin: auto;
 }
 
+.chessboard {
+    margin: auto;
+}
+
+.chess-buttons {
+    margin: auto;
+}
+
+.back-arrow {
+    margin-right: 10px;
+}
+
+.game-heading {
+    margin-bottom: 30px;
+}
+
+.center-text {
+    margin: auto;
+    text-align: center;
+}
+
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
 .unselectable {
     cursor: default;
     -webkit-touch-callout: none;
@@ -172,6 +201,13 @@ th[data-sort] {
     height: 40px;
     font-size: 15px;
     padding: 5px 12px;
+}
+
+.flipped {
+    transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
 }
 
 input[type='number'] {

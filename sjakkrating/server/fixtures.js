@@ -16,6 +16,7 @@ function getAllPlayers() {
     }
 }
 
+
 chess_clubs = [{
     "name": "1911",
     "website": "http://www.sk1911.no/"
@@ -335,7 +336,7 @@ chess_clubs = [{
 
 
 players = _.values(getAllPlayers())[0];
-/*
+
 for (i = 0; i < players.length; i++) {
     var temp_id = players[i].nsf_id;
     var already_existing_player = Players.findOne({nsf_id: temp_id});
@@ -345,14 +346,20 @@ for (i = 0; i < players.length; i++) {
         console.log("added player", players[i].name);
     }
     else {
-        Players.update({nsf_id: temp_id}, { $set: { elo: players[i].elo }});
+        Players.update({nsf_id: temp_id}, { $set: { elo: players[i].elo, only_first_name: players[i].only_first_name }});
     }
 }
-*/
+
 // fide_standard: players[i].fide_standard, fide_rapid: players[i].fide_rapid, fide_blitz: players[i].fide_blitz }
 
 if (Clubs.find().count() === 0) {
     for (i = 0; i < chess_clubs.length; i++) {
         Clubs.insert(chess_clubs[i]);
+    }
+}
+
+if (Games.find().count() === 0) {
+    for (i = 0; i < games.length; i++) {
+        Games.insert(games[i]);
     }
 }

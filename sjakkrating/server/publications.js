@@ -2,6 +2,10 @@ Meteor.publish('players', function() {
  	return Players.find();
 });
 
+Meteor.publish('games', function() {
+  return Games.find();
+});
+
 Meteor.publish('player', function(_id) {
   return Players.find({nsf_id: parseInt(_id)});
 });
@@ -121,6 +125,12 @@ Meteor.publish("topWomen", function() {
         },
         limit: 100
     });
+});
+
+Meteor.publish('playerGames', function(player) {
+  return Games.find({
+    $or: [ {WhiteSurname: player.surname, WhiteFirstName: player.only_first_name}, {BlackSurname: player.surname, BlackFirstName: player.only_first_name} ]
+  });
 });
 
 Meteor.publish('clubs', function() {
