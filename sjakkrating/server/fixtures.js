@@ -357,9 +357,3 @@ if (Clubs.find().count() === 0) {
         Clubs.insert(chess_clubs[i]);
     }
 }
-
-if (Games.find().count() === 0) {
-    for (i = 0; i < games.length; i++) {
-        Games.insert(games[i]);
-    }
-}

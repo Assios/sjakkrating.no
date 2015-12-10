@@ -104,5 +104,4 @@ Template.chessGame.events({
 
 Template.chessGame.helpers({
 
-
 });

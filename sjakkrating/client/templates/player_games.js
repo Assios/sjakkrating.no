@@ -6,15 +6,15 @@ Template.playerGames.onRendered(function() {
 });
 
 Template.playerGames.helpers({
-	games: function() {
+	player_games: function() {
 		  return Games.find({
-            $or: [ {WhiteSurname: player.surname, WhiteFirstName: player.only_first_name}, {BlackSurname: player.surname, BlackFirstName: player.only_first_name} ]
+            $or: [ {WhiteSurname: this.surname, WhiteFirstName: this.only_first_name}, {BlackSurname: this.surname, BlackFirstName: this.only_first_name} ]
 		  });
 	},
 
     settings: function () {
         return {
-            collection: Games,
+            collection: Games.find({$or: [ {WhiteSurname: this.surname, WhiteFirstName: this.only_first_name}, {BlackSurname: this.surname, BlackFirstName: this.only_first_name} ]}),
             rowsPerPage: 100,
             fields: [
             	{key: 'Round', label: '', tmpl: Template.gameTmpl},

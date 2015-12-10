@@ -6,6 +6,10 @@ Meteor.publish('games', function() {
   return Games.find();
 });
 
+Meteor.publish('game', function(_idg) {
+  return Games.find({ _id: new Meteor.Collection.ObjectID(_idg)});
+});
+
 Meteor.publish('player', function(_id) {
   return Players.find({nsf_id: parseInt(_id)});
 });
