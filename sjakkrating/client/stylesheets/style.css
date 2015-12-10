@@ -11,6 +11,10 @@
 	min-height: 600px;
 }
 
+ul.notifications {
+    position: fixed;
+}
+
 .yob {
 	float:right;
 	font-style: italic;
