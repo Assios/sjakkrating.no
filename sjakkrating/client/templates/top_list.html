@@ -10,7 +10,7 @@
 		  <ul class="list-group">
 			{{#each topElo 100}}
 		    	<li class="list-group-item toplist"><div class="name">{{place}}. 
-		    			<b>{{fide_title}}</b> 
+		    			<b data-toggle="tooltip" title="{{title_mappings fide_title}}">{{fide_title}}</b> 
 		    		<a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a></div>
 		    			<span class="list-label {{labelBasedOnRatingDifference elo nsf_elo}}">{{elo}}</span>
 		    	</li>
@@ -26,7 +26,7 @@
 		  <ul class="list-group">
 			{{#each topJuniors 100}}
 		    	<li class="list-group-item toplist"><div class="name">{{place}}. 
-		    			<b>{{fide_title}}</b> 
+		    			<b data-toggle="tooltip" title="{{title_mappings fide_title}}">{{fide_title}}</b> 
 		    		<a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a></div>
 		    			<span class="list-label {{labelBasedOnRatingDifference elo nsf_elo}}">{{elo}}</span>
 		    	</li>
@@ -42,7 +42,7 @@
 		  <ul class="list-group">
 			{{#each topWomen 100}}
 		    	<li class="list-group-item toplist"><div class="name">{{place}}. 
-		    			<b>{{fide_title}}</b> 
+		    			<b data-toggle="tooltip" title="{{title_mappings fide_title}}">{{fide_title}}</b> 
 		    		<a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a></div>
 		    			<span class="list-label {{ labelBasedOnRatingDifference elo nsf_elo}}">{{elo}}</span>
 		    	</li>

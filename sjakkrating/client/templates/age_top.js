@@ -18,6 +18,21 @@ Template.ageTop.helpers({
         }
     },
 
+    title_mappings: function(title) {
+        title_dict = {
+            "GM": "Grandmaster",
+            "IM": "International Master",
+            "FM": "FIDE Master",
+            "CM": "Candidate Master",
+            "WGM": "Woman Grandmaster",
+            "WIM": "Woman International Master",
+            "WFM": "Woman FIDE Master",
+            "WCM": "Woman Candidate Master",
+        }
+
+        return title_dict[title];
+    },
+
     topKadett: function(l) {
         year = new Date().getFullYear();
 
