@@ -19,10 +19,18 @@ Template.advancedGames.helpers({
 				{key: 'Result', label: 'Resultat', sortOrder: 1, sortDirection: 'descending'},       	
             	{key: 'Date', label: 'Dato', sortOrder: 0, sortDirection: 'descending'},
             ],
-            filters: [
-                'surnameFilter',
-            ]
+            filters: ['surnameFilter', 'firstnameFilter']
         };
-    }
+    },
+
+    surnameArray: function() {
+        return ['WhiteSurname', 'BlackSurname'];
+    },
+
+    firstnameArray: function() {
+        return ['WhiteFirstName', 'BlackFirstName'];
+    },
+
+
 
 });
