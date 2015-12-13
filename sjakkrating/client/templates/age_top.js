@@ -2,6 +2,8 @@ Template.ageTop.onRendered(function() {
 
     $('[data-toggle="tooltip"]').tooltip(); 
 
+    Session.set("currentNameFilter", "");
+
 });
 
 Template.ageTop.helpers({

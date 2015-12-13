@@ -1,3 +1,10 @@
+Template.stats.onRendered(function() {
+
+    Session.set("currentNameFilter", "");
+
+});
+
+
 Template.stats.helpers({
     number_of_clubs: function() {
         return Clubs.find().count();

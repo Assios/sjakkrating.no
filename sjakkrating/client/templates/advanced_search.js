@@ -1,6 +1,8 @@
 Template.advancedSearch.onRendered(function() {
 
-    ReactiveTable.clearFilters(['clubFilter', 'greater-than-filter', 'less-than-filter', 'greater-than-age-filter', 'less-than-age-filter', 'chess-club-filter', 'gender-filter']);
+    Session.set("currentNameFilter", "");
+
+    ReactiveTable.clearFilters(['currentNameFilter', 'clubFilter', 'greater-than-filter', 'less-than-filter', 'greater-than-age-filter', 'less-than-age-filter', 'chess-club-filter', 'gender-filter']);
 
 });
 

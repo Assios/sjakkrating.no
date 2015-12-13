@@ -2,7 +2,9 @@ Template.player.onRendered(function() {
 
     Session.set('img_url', '/images/mysteryman.png');
 
-    $('[data-toggle="tooltip"]').tooltip(); 
+    Session.set("currentNameFilter", this.data.surname + ", " + this.data.only_first_name);
+
+    $('[data-toggle="tooltip"]').tooltip();
 
     if (this.data.lichess_username) {
         Meteor.call('getLichess', this.data.lichess_username, function(err, response) {

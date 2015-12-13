@@ -1,3 +1,7 @@
+Template.clubPage.onRendered({
+    Session.set("currentNameFilter", "");
+});
+
 Template.clubPage.helpers({
     club_players: function() {
         return Players.find({

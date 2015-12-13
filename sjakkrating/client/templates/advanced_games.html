@@ -11,15 +11,9 @@
 -->
 
 <div class="col-md-3">
-  <div class="panel panel-default">
-    <div class="panel-heading"><b>Spiller</b></div>
-    <ul class="list-group">
-      <li class="list-group-item">{{> reactiveTableFilter id="surnameFilter" label="Etternavn" fields=surnameArray }}</li>
-      <li class="list-group-item">{{> reactiveTableFilter id="firstnameFilter" label="Fornavn" fields=firstnameArray }}</li>
-    </ul>
-  </div>
+      {{> generalFilter }}
 </div>
-
+<br>
 {{> reactiveTable settings=settings}}
 
 </template>

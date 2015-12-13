@@ -1,6 +1,15 @@
 Template.advancedGames.onRendered(function() {
 
+    this.filter = new ReactiveTable.Filter('generalFilter', []);
 
+    var name = Session.get("currentNameFilter");
+
+    if (name) {
+        this.filter.set(name);
+        $(".general-filter-input").val(name); 
+    } else {
+        this.filter.set("");
+    }
 
 });
 
@@ -19,7 +28,7 @@ Template.advancedGames.helpers({
 				{key: 'Result', label: 'Resultat', sortOrder: 1, sortDirection: 'descending'},       	
             	{key: 'Date', label: 'Dato', sortOrder: 0, sortDirection: 'descending'},
             ],
-            filters: ['surnameFilter', 'firstnameFilter']
+            filters: ['generalFilter']
         };
     },
 
@@ -31,6 +40,14 @@ Template.advancedGames.helpers({
         return ['WhiteFirstName', 'BlackFirstName'];
     },
 
+});
 
+Template.advancedGames.events({
+
+   "keyup .general-filter-input, input .general-filter-input": function (event, template) {
+    var input = $(event.target).val();
+    template.filter.set(input);
+    console.log(template.filter.get())
+   }
 
 });

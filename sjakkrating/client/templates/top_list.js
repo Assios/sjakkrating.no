@@ -1,5 +1,7 @@
 Template.topList.onRendered(function() {
 
+    Session.set("currentNameFilter", "");
+
     $('[data-toggle="tooltip"]').tooltip(); 
 
     if (!(Session.get("not_warned") == "done")) {
