@@ -60,7 +60,7 @@ Template.player.helpers({
     },
 
     isNegative: function() {
-        return this.elo<this.nsf_elo;
+        return this.elo < this.nsf_elo;
     },
 
     eloDifference: function() {
@@ -94,11 +94,9 @@ Template.player.helpers({
         var d;
         var games_difference;
 
-        if (this.games.length == 0)
-        {
+        if (this.games.length == 0) {
             games_difference = this.number_of_games;
-        }
-        else {
+        } else {
             games_difference = this.number_of_games - this.games[this.games.length - 1];
         }
 
@@ -106,20 +104,20 @@ Template.player.helpers({
 
         g = this.name;
 
-        if (games_difference==0)
+        if (games_difference == 0)
             return g + " har ikke spilt noen partier siden siste offisielle rating kom.";
 
-        if (elo_difference==0)
+        if (elo_difference == 0)
             return g + " har hverken gått opp eller ned siden siste offisielle rating kom.";
 
-        var rating_per_game = parseFloat(Math.round((elo_difference/games_difference) * 100) / 100).toFixed(2);
+        var rating_per_game = parseFloat(Math.round((elo_difference / games_difference) * 100) / 100).toFixed(2);
 
-        if (rating_per_game>0)
+        if (rating_per_game > 0)
             d = "opp"
         else
             d = "ned"
 
-        if (this.games.length>0)
+        if (this.games.length > 0)
             return " " + g + " har gått " + d + " " + Math.abs(rating_per_game) + " i rating per parti siden siste offisielle rating kom.";
         else
             return "";
@@ -233,7 +231,7 @@ Template.player.helpers({
 
         for (var i = 0; i < dates.length; i++) {
             games_date.push([dates[i], this.games[i]])
-        }        
+        }
 
         var title_text;
 

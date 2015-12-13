@@ -2,10 +2,12 @@ Template.topList.onRendered(function() {
 
     Session.set("currentNameFilter", "");
 
-    $('[data-toggle="tooltip"]').tooltip(); 
+    $('[data-toggle="tooltip"]').tooltip();
 
     if (!(Session.get("not_warned") == "done")) {
-        Notifications.error('NYHET', 'Du kan nå spille gjennom partier på profilsidene!', {timeout: 6000});
+        Notifications.error('NYHET', 'Du kan nå spille gjennom partier på profilsidene!', {
+            timeout: 6000
+        });
     }
 
     Session.set("not_warned", "done");
@@ -18,7 +20,9 @@ Template.topList.helpers({
     },
 
     topElo: function(l) {
-        return Players.find({country: "NOR"}, {
+        return Players.find({
+            country: "NOR"
+        }, {
             sort: {
                 elo: -1
             },
@@ -47,17 +51,17 @@ Template.topList.helpers({
     labelBasedOnRatingDifference: function(newRating, oldRating) {
         if (newRating < oldRating) {
             return "label label-danger";
-        }
-        else if (newRating > oldRating) {
+        } else if (newRating > oldRating) {
             return "label label-success";
-        }
-        else {
+        } else {
             return "label label-default";
         }
     },
 
     topGames: function(l) {
-        return Players.find({country: "NOR"}, {
+        return Players.find({
+            country: "NOR"
+        }, {
             sort: {
                 number_of_games: -1
             },
@@ -73,7 +77,11 @@ Template.topList.helpers({
             gender: "F",
             // Assuming that players that aren't
             // FIDE registered (country: null) are new players and Norwegian.
-            $or: [ {country: null}, {country: "NOR"} ],
+            $or: [{
+                country: null
+            }, {
+                country: "NOR"
+            }],
         }, {
             sort: {
                 elo: -1

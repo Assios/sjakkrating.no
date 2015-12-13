@@ -2,11 +2,9 @@ Template.autoCompletePlayers.helpers({
     labelBasedOnRatingDifference: function(newRating, oldRating) {
         if (newRating < oldRating) {
             return "label label-danger";
-        }
-        else if (newRating > oldRating) {
+        } else if (newRating > oldRating) {
             return "label label-success";
-        }
-        else {
+        } else {
             return "label label-default";
         }
     },

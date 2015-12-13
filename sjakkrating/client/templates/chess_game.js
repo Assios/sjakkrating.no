@@ -1,95 +1,95 @@
 Template.chessGame.onRendered(function() {
-	var config = {
-		position: 'start',
-	}
+    var config = {
+        position: 'start',
+    }
 
-   game = new Chess();
+    game = new Chess();
 
-	 board = ChessBoard('board', config);
+    board = ChessBoard('board', config);
 
-   pgn = this.data.moves;
-   currentIndex = 0;
+    pgn = this.data.moves;
+    currentIndex = 0;
 
-   $(document).on('keyup', function (e) {
+    $(document).on('keyup', function(e) {
         if (e.keyCode == 37) {
-          game.undo();
+            game.undo();
 
-          if (currentIndex!=0) {
-              currentIndex--;
-           }
+            if (currentIndex != 0) {
+                currentIndex--;
+            }
 
-          board.position(game.fen());          
+            board.position(game.fen());
         }
 
         if (e.keyCode == 39) {
-          var possibleMoves = game.moves();
+            var possibleMoves = game.moves();
 
-          if (currentIndex==pgn.length) {
-           return false;
-          }
+            if (currentIndex == pgn.length) {
+                return false;
+            }
 
-          // exit if the game is over
-          if (game.game_over() === true ||
-            game.in_draw() === true ||
-            possibleMoves.length === 0) return;
+            // exit if the game is over
+            if (game.game_over() === true ||
+                game.in_draw() === true ||
+                possibleMoves.length === 0) return;
 
-          game.move(pgn[currentIndex]);
-          currentIndex++;
-          board.position(game.fen());        
+            game.move(pgn[currentIndex]);
+            currentIndex++;
+            board.position(game.fen());
         }
-   });
+    });
 
 
 });
 
 Template.chessGame.events({
-    'click .next': function(){
+    'click .next': function() {
         var possibleMoves = game.moves();
 
-        if (currentIndex==pgn.length) {
-         return false;
+        if (currentIndex == pgn.length) {
+            return false;
         }
 
         // exit if the game is over
         if (game.game_over() === true ||
-          game.in_draw() === true ||
-          possibleMoves.length === 0) return;
+            game.in_draw() === true ||
+            possibleMoves.length === 0) return;
 
         game.move(pgn[currentIndex]);
         currentIndex++;
         board.position(game.fen());
     },
 
-    'click .prev': function(){
+    'click .prev': function() {
         game.undo();
 
-        if (currentIndex!=0) {
+        if (currentIndex != 0) {
             currentIndex--;
-         }
+        }
 
         board.position(game.fen());
     },
 
-    'click .flip': function(){
+    'click .flip': function() {
         board.flip();
     },
 
-    'click .end': function(){
-      while (currentIndex < pgn.length) {
-        game.move(pgn[currentIndex]);
-        currentIndex++;
-      }
+    'click .end': function() {
+        while (currentIndex < pgn.length) {
+            game.move(pgn[currentIndex]);
+            currentIndex++;
+        }
 
-      board.position(game.fen());
+        board.position(game.fen());
     },
 
-    'click .start': function(){
-      while (currentIndex > -1) {
-        game.undo();
-        currentIndex--;
-      }
+    'click .start': function() {
+        while (currentIndex > -1) {
+            game.undo();
+            currentIndex--;
+        }
 
-      board.position(game.fen());
+        board.position(game.fen());
     },
 
     'keypress input': function(event) {
@@ -99,9 +99,5 @@ Template.chessGame.events({
             return false;
         }
     }
-
-});
-
-Template.chessGame.helpers({
 
 });
