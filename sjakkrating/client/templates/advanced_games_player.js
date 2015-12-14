@@ -2,7 +2,9 @@ Template.advancedGamesPlayer.onRendered(function() {
 
     game_filter = new ReactiveTable.Filter('generalFilter', []);
 
-    var name = Session.get("currentNameFilter");
+    var name = this.data.surname + ", " + this.data.only_first_name;
+
+    Session.set("currentNameFilter", name);
 
     if (name) {
         game_filter.set(name);

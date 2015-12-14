@@ -82,8 +82,8 @@ Router.route('spiller/:_id', {
     }
 });
 
-Router.route('spiller/:_id/partier', {
-    name: 'playerGames',
+Router.route('partier/:_id', {
+    name: 'advancedGamesPlayer',
     data: function() {
         return Players.findOne({
             nsf_id: parseInt(this.params._id)
@@ -91,7 +91,7 @@ Router.route('spiller/:_id/partier', {
     },
     waitOn: function() {
         return [
-            Meteor.subscribe('player', this.params._id)
+            Meteor.subscribe('player', this.params._id),
         ]
     }
 });

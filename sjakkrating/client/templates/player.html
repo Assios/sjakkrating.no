@@ -55,7 +55,7 @@
 						{{#if fide_id}}
 							<li class="list-group-item"><a href="https://ratings.fide.com/card.phtml?event={{fide_id}}" target="_blank">FIDE-profil</a></li>
 						{{/if}}
-						<li class="list-group-item list-group-item-danger">NYHET: <a href="{{pathFor 'advancedGames'}}">Partier av {{name}}</a></li>
+						<li class="list-group-item list-group-item-danger">NYHET: <a href="{{pathFor 'advancedGamesPlayer' _id=this.nsf_id}}">Partier av {{name}}</a></li>
 						{{#if lichess_username }}
 					    <li class="list-group-item">
 							<a class="lichess_widget lichess_theme_light" href="http://lichess.org/@/{{lichess_username}}" target="_blank">
