@@ -10,7 +10,7 @@ Template.chessGame.onRendered(function() {
     pgn = this.data.moves;
     currentIndex = 0;
 
-    $(document).on('keyup', function(e) {
+    $(document).on('keypress', function(e) {
         if (e.keyCode == 37) {
             game.undo();
 

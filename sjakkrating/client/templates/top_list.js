@@ -4,6 +4,7 @@ Template.topList.onRendered(function() {
 
     $('[data-toggle="tooltip"]').tooltip();
 
+    /*
     if (!(Session.get("not_warned") == "done")) {
         Notifications.error('NYHET', 'Du kan nå spille gjennom partier på profilsidene!', {
             timeout: 6000
@@ -11,6 +12,8 @@ Template.topList.onRendered(function() {
     }
 
     Session.set("not_warned", "done");
+
+    */
 
 });
 

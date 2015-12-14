@@ -296,5 +296,9 @@ Template.player.helpers({
             }],
             credits: false,
         };
+    },
+
+    whiteWin: function() {
+        return Counts.get("player-win-white");
     }
 });

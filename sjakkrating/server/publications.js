@@ -149,6 +149,10 @@ Meteor.publish("autocompletePlayers", function(selector, options) {
   this.ready();
 });
 
+Meteor.publish('player-game-stats', function(player) {
+  Counts.publish(this, 'player-win-white', Games.find({WhiteSurname: player.surname, WhiteFirstName: player.only_first_name, Result: "1-0"}));
+});
+
 Meteor.publish('stats', function() {
   Counts.publish(this, 'player-count', Players.find());
   Counts.publish(this, 'age-count', Players.find(), { countFromField: 'year_of_birth' });
