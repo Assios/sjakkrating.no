@@ -313,7 +313,7 @@ Template.player.helpers({
         var blackWin = Counts.get("player-win-black");
         var blackDraw = Counts.get("player-draw-black");
         var blackLose = Counts.get("player-lose-black");
-        var totalGames = Counts.get("player-games");
+        //var totalGames = Counts.get("player-games");
 
         return {
 
@@ -365,9 +365,9 @@ Template.player.helpers({
                 name: 'Svart',
                 id: 'Svart',
                 data: [
-                    ['Vinst', whiteWin],
-                    ['Remis', whiteDraw],
-                    ['Tap', whiteLose],
+                    ['Vinst', blackWin],
+                    ['Remis', blackDraw],
+                    ['Tap', blackLose],
                 ]
             }]
         },
