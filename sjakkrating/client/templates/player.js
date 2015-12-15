@@ -330,14 +330,14 @@ Template.player.helpers({
             series: {
                 dataLabels: {
                     enabled: true,
-                    format: '{point.name}: {point.y:.1f}%'
+                    format: '{point.name}: {point.y:.1f}'
                 }
             }
         },
 
         tooltip: {
             headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
-            pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b><br/>'
+            pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}</b><br/>'
         },
         series: [{
             name: 'Partier',
@@ -357,7 +357,7 @@ Template.player.helpers({
                 name: 'Hvit',
                 id: 'Hvit',
                 data: [
-                    ['Vinst', whiteWin],
+                    ['Vinn', whiteWin],
                     ['Remis', whiteDraw],
                     ['Tap', whiteLose],
                 ]
