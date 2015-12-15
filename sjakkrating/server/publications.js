@@ -150,7 +150,15 @@ Meteor.publish("autocompletePlayers", function(selector, options) {
 });
 
 Meteor.publish('player-game-stats', function(player) {
+  Counts.publish(this, 'player-games', Games.find({$or: [ {WhiteSurname: player.surname, WhiteFirstName: player.only_first_name}, {BlackSurname: player.surname, BlackFirstName: player.only_first_name}]}));
+  Counts.publish(this, 'player-white', Games.find({BlackSurname: player.surname, BlackFirstName: player.only_first_name}));
+  Counts.publish(this, 'player-black', Games.find({WhiteSurname: player.surname, WhiteFirstName: player.only_first_name}));
   Counts.publish(this, 'player-win-white', Games.find({WhiteSurname: player.surname, WhiteFirstName: player.only_first_name, Result: "1-0"}));
+  Counts.publish(this, 'player-draw-white', Games.find({WhiteSurname: player.surname, WhiteFirstName: player.only_first_name, Result: "1/2-1/2"}));
+  Counts.publish(this, 'player-lose-white', Games.find({WhiteSurname: player.surname, WhiteFirstName: player.only_first_name, Result: "0-1"}));
+  Counts.publish(this, 'player-win-black', Games.find({BlackSurname: player.surname, BlackFirstName: player.only_first_name, Result: "0-1"}));
+  Counts.publish(this, 'player-draw-black', Games.find({WhiteSurname: player.surname, BlackFirstName: player.only_first_name, Result: "1/2-1/2"}));
+  Counts.publish(this, 'player-lose-black', Games.find({WhiteSurname: player.surname, BlackFirstName: player.only_first_name, Result: "1-0"}));
 });
 
 Meteor.publish('stats', function() {

@@ -39,6 +39,7 @@
 				    {{#if fide_blitz}}
 						<li class="list-group-item">Lyn: {{fide_blitz}}</li>
 						{{/if}}
+					<li class="list-group-item"><a href="https://ratings.fide.com/card.phtml?event={{fide_id}}" target="_blank">FIDE-profil</a></li>
 				</ul>
 				{{/if}}
 				<i>{{ratingPerGame}}</i>
@@ -48,32 +49,32 @@
 		<div class="col-md-6">
 			<div class="panel panel-default well">
 				<div class="panel-heading">
-					<h3 class="panel-title"><b>Annet</b></h3>
+					<h3 class="panel-title"><b>Partier</b></h3>
 				</div>
 				<div class="panel-body">
-					<ul class="list-group">
-						{{#if fide_id}}
-							<li class="list-group-item"><a href="https://ratings.fide.com/card.phtml?event={{fide_id}}" target="_blank">FIDE-profil</a></li>
-						{{/if}}
-						<li class="list-group-item list-group-item-danger">NYHET: <a href="{{pathFor 'advancedGamesPlayer' _id=this.nsf_id}}">Partier av {{name}}</a></li>
-						{{#if lichess_username }}
-					    <li class="list-group-item">
-							<a class="lichess_widget lichess_theme_light" href="http://lichess.org/@/{{lichess_username}}" target="_blank">
-								<img src="{{lichess_image}}"/>
-							    <span>
-							    	{{ lichess_username }} på Lichess | Blitz
-							    	<b>
-							    	{{ lichessBlitz }}
-							    	</b>
-							    	| Bullet
-							    	<b>
-							    	{{ lichessBullet }}
-							    	</b>
-							    </span>
-							</a>
-					    </li>
-					    {{/if}}
-					</ul>
+				<ul class="list-group">
+					<li class="list-group-item list-group-item-danger">NYHET: <a href="{{pathFor 'advancedGamesPlayer' _id=this.nsf_id}}">Partier av {{name}}</a></li>
+					{{#if lichess_username }}
+				    <li class="list-group-item">
+						<a class="lichess_widget lichess_theme_light" href="http://lichess.org/@/{{lichess_username}}" target="_blank">
+							<img src="{{lichess_image}}"/>
+						    <span>
+						    	{{ lichess_username }} på Lichess | Blitz
+						    	<b>
+						    	{{ lichessBlitz }}
+						    	</b>
+						    	| Bullet
+						    	<b>
+						    	{{ lichessBullet }}
+						    	</b>
+						    </span>
+						</a>
+				    </li>
+				    {{/if}}
+				</ul>
+				{{#if playedGames}}
+{{> highchartsHelper chartId=gameChartId chartWidth="100%" charHeight="100%" chartObject=gameChart}}
+				{{/if}}
 				</div>
 			</div>		
 		</div>

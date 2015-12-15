@@ -12,6 +12,8 @@ Template.player.onRendered(function() {
         });
     }
 
+    console.log(Counts.get("player-win-white"));
+
 
 });
 
@@ -298,7 +300,120 @@ Template.player.helpers({
         };
     },
 
+    gameChartId: function() {
+        return this._id + "gamechart";
+    },
+
+    gameChart: function() {
+        var whiteGames = Counts.get("player-white");
+        var blackGames = Counts.get("player-black");
+        var whiteWin = Counts.get("player-win-white");
+        var whiteDraw = Counts.get("player-draw-white");
+        var whiteLose = Counts.get("player-lose-white");
+        var blackWin = Counts.get("player-win-black");
+        var blackDraw = Counts.get("player-draw-black");
+        var blackLose = Counts.get("player-lose-black");
+        var totalGames = Counts.get("player-games");
+
+        return {
+
+        chart: {
+            type: 'pie'
+        },
+        title: {
+            text: 'Spillstatistikk'
+        },
+        subtitle: {
+            text: 'Trykk på en av fargene for å se resultater.'
+        },
+        plotOptions: {
+            series: {
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.name}: {point.y:.1f}%'
+                }
+            }
+        },
+
+        tooltip: {
+            headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+            pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b><br/>'
+        },
+        series: [{
+            name: 'Partier',
+            colorByPoint: true,
+            data: [{
+                name: 'Hvit',
+                y: whiteGames,
+                drilldown: 'Hvit'
+            }, {
+                name: 'Svart',
+                y: blackGames,
+                drilldown: 'Svart'
+            }]
+        }],
+        drilldown: {
+            series: [{
+                name: 'Hvit',
+                id: 'Hvit',
+                data: [
+                    ['Vinst', whiteWin],
+                    ['Remis', whiteDraw],
+                    ['Tap', whiteLose],
+                ]
+            }, {
+                name: 'Svart',
+                id: 'Svart',
+                data: [
+                    ['Vinst', whiteWin],
+                    ['Remis', whiteDraw],
+                    ['Tap', whiteLose],
+                ]
+            }]
+        },
+        credits: false
+    }
+    },
+
+    playedGames: function() {
+        var n_games = Counts.get("player-games");
+
+        if (n_games > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    },
+
+    whiteGames: function() {
+        return Counts.get("player-white");
+    },
+
+    blackGames: function() {
+        return Counts.get("player-black");
+    },
+
     whiteWin: function() {
         return Counts.get("player-win-white");
-    }
+    },
+
+    whiteDraw: function() {
+        return Counts.get("player-draw-white");
+    },
+
+    whiteLose: function() {
+        return Counts.get("player-lose-white");
+    },
+
+    blackWin: function() {
+        return Counts.get("player-win-black");
+    },
+
+    blackDraw: function() {
+        return Counts.get("player-draw-black");
+    },
+
+    blackLose: function() {
+        return Counts.get("player-lose-black");
+    },
 });

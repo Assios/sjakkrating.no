@@ -2,14 +2,8 @@ Template.advancedGames.onRendered(function() {
 
     game_filter = new ReactiveTable.Filter('generalFilter', []);
 
-    var name = Session.get("currentNameFilter");
-
-    if (name) {
-        game_filter.set(name);
-        $(".general-filter-input").val(name);
-    } else {
-        game_filter.set("");
-    }
+    $(".general-filter-input").val("");
+    game_filter.set("");
 
 });
 
