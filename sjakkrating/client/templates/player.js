@@ -305,14 +305,14 @@ Template.player.helpers({
     },
 
     gameChart: function() {
-        var whiteGames = Counts.get("player-white");
-        var blackGames = Counts.get("player-black");
-        var whiteWin = Counts.get("player-win-white");
-        var whiteDraw = Counts.get("player-draw-white");
-        var whiteLose = Counts.get("player-lose-white");
-        var blackWin = Counts.get("player-win-black");
-        var blackDraw = Counts.get("player-draw-black");
-        var blackLose = Counts.get("player-lose-black");
+        whiteGames = Counts.get("player-white");
+        blackGames = Counts.get("player-black");
+        whiteWin = Counts.get("player-win-white");
+        whiteDraw = Counts.get("player-draw-white");
+        whiteLose = Counts.get("player-lose-white");
+        blackWin = Counts.get("player-win-black");
+        blackDraw = Counts.get("player-draw-black");
+        blackLose = Counts.get("player-lose-black");
         //var totalGames = Counts.get("player-games");
 
         return {
