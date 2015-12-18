@@ -53,9 +53,6 @@
 				</div>
 				<div class="panel-body">
 				<ul class="list-group">
-					{{#if playedGames}}
-					<li class="list-group-item"><a href="{{pathFor 'advancedGamesPlayer' _id=this.nsf_id}}">Partier av {{name}}</a></li>
-					{{/if}}
 					{{#if lichess_username }}
 				    <li class="list-group-item">
 						<a class="lichess_widget lichess_theme_light" href="http://lichess.org/@/{{lichess_username}}" target="_blank">
@@ -73,6 +70,10 @@
 						</a>
 				    </li>
 				    {{/if}}
+				{{#if playedGames}}
+				<li class="list-group-item"><a href="{{pathFor 'advancedGamesPlayer' _id=this.nsf_id}}">Partier av {{name}}</a>
+				</li>
+				{{/if}}
 				</ul>
 				{{#if gameChart}}
 {{> highchartsHelper chartId=gameChartId chartWidth="100%" charHeight="100%" chartObject=gameChart}}

@@ -305,6 +305,9 @@ Template.player.helpers({
     },
 
     gameChart: function() {
+        if (Counts.get("player-games") < 1)
+            return false;
+
         whiteGames = Counts.get("player-white");
         blackGames = Counts.get("player-black");
         whiteWin = Counts.get("player-win-white");
@@ -331,7 +334,8 @@ Template.player.helpers({
                 dataLabels: {
                     enabled: true,
                     format: '{point.name}: {point.y}'
-                }
+                },
+                animation: false
             }
         },
 
