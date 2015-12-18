@@ -46,7 +46,7 @@ chess_clubs = [{
     "website": ""
 }, {
     "name": "Bodø",
-    "website": ""
+    "website": "http://www.prpr.no/bsl"
 }, {
     "name": "Brønnøysund",
     "website": "http://www.bronnoysundsjakklubb.net/"

@@ -1,3 +1,11 @@
+#main {
+    margin-top: 100px;
+}
+
+.navbar {
+    background: rgba(249, 249, 249, 0.9);
+}
+
 .top-box {
 	width: 250px;
 }
