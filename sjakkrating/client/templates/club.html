@@ -3,13 +3,13 @@
 			<div class="panel panel-default well">
 			  <div class="panel-heading">
 			    <h3 class="panel-title"><b>{{name}}</b>
-					{{#if website}}
-						<a href="{{website}}" class="btn btn-sm btn-default" target="_blank">Besøk klubbens nettside</a>
-				    {{/if}}
 				</h3>
 			  </div>
 			  <div class="panel-body">
 				<ul class="list-group">
+					{{#if website}}
+						<li class="list-group-item">Nettside: <a href="{{website}}" target="_blank">{{website}}</a></li>
+				    {{/if}}
 					<li class="list-group-item">Antall spillere: {{number_of_players name}}</li>
 					<li class="list-group-item">Snittrating: {{average_rating name}}</li>
 					<li class="list-group-item">Snittalder: {{average_age}}</li>
