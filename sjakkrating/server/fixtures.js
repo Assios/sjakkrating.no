@@ -235,7 +235,7 @@ chess_clubs = [{
     "website": ""
 }, {
     "name": "Porsgrunn",
-    "website": ""
+    "website": "http://psk-sjakk.no/"
 }, {
     "name": "Randaberg",
     "website": "http://randaberg-sjakklubb.com/"
