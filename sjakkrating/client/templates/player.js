@@ -361,7 +361,7 @@ Template.player.helpers({
                 name: 'Hvit',
                 id: 'Hvit',
                 data: [
-                    ['Vinn', whiteWin],
+                    ['Seire', whiteWin],
                     ['Remis', whiteDraw],
                     ['Tap', whiteLose],
                 ]
@@ -369,7 +369,7 @@ Template.player.helpers({
                 name: 'Svart',
                 id: 'Svart',
                 data: [
-                    ['Vinst', blackWin],
+                    ['Seire', blackWin],
                     ['Remis', blackDraw],
                     ['Tap', blackLose],
                 ]
