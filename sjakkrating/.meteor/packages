@@ -12,7 +12,6 @@ sacha:spin
 gaelan:each-with-index
 meteorhacks:search-source
 mizzao:autocomplete
-accounts-ui
 accounts-password
 maazalik:highcharts
 standard-minifiers
@@ -43,3 +42,4 @@ makalu:chess-js
 gfk:notifications
 ecmascript
 clarencel:highcharts-drilldown
+ian:accounts-ui-bootstrap-3

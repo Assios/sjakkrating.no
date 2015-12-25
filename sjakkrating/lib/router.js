@@ -30,6 +30,10 @@ Router.route('/sok', {
     name: 'advancedSearch'
 });
 
+Router.route('/l0g1n', {
+    name: 'login'
+});
+
 Router.route('/aldersgrupper', {
     name: 'ageTop',
     waitOn: function() {
@@ -82,6 +86,20 @@ Router.route('spiller/:_id', {
     }
 });
 
+Router.route('spiller/:_id/edit', {
+    name: 'playerEdit',
+    data: function() {
+        return Players.findOne({
+            nsf_id: parseInt(this.params._id)
+        });
+    },
+    waitOn: function() {
+        return [
+            Meteor.subscribe('player', this.params._id),
+        ]
+    }
+});
+
 Router.route('partier/:_id', {
     name: 'advancedGamesPlayer',
     data: function() {
@@ -107,5 +125,14 @@ Router.route('klubb/:_id', {
         return [
             Meteor.subscribe('clubPlayers', this.params._id)
         ]
+    }
+});
+
+Router.route('klubb/:_id/edit', {
+    name: 'clubEdit',
+    data: function() {
+        return Clubs.findOne({
+            name: this.params._id
+        });
     }
 });
