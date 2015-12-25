@@ -1,0 +1,54 @@
+<template name="playerEdit">
+  {{#if isAdmin}}
+  <h2>Endre spiller {{name}}</h2>
+  <form class="main form page">
+    <div class="form-group">
+      <label class="control-label" for="elo">Uoffisiell rating</label>
+      <div class="controls">
+          <input name="elo" id="elo" type="text" value="{{elo}}" placeholder="Sett uoffisiell rating" class="form-control"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label" for="nsf_elo">Offisiell rating</label>
+      <div class="controls">
+          <input name="nsf_elo" id="nsf_elo" type="text" value="{{nsf_elo}}" placeholder="Sett offisiell rating" class="form-control"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label" for="fide_title">FIDE-tittel</label>
+      <div class="controls">
+          <input name="fide_title" id="fide_title" type="text" value="{{fide_title}}" placeholder="Sett tittel" class="form-control"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label" for="club">Klubb</label>
+      <div class="controls">
+          <input name="club" id="club" type="text" value="{{club}}" placeholder="Sett klubb" class="form-control"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label" for="country">Land</label>
+      <div class="controls">
+          <input name="country" id="country" type="text" value="{{country}}" placeholder="Sett land" class="form-control"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label" for="lichess_username">Lichess-brukernavn</label>
+      <div class="controls">
+          <input name="lichess_username" id="lichess_username" type="text" value="{{lichess_username}}" placeholder="Sett Lichess-brukernavn" class="form-control"/>
+      </div>
+    </div>
+
+    <input type="submit" value="Submit" class="btn btn-primary submit"/>
+    <hr/>
+    <a class="btn btn-danger delete" href="#">Fjern spiller</a>
+  </form>
+  {{else}}
+    {{> notFound}}
+  {{/if}}
+</template>

@@ -82,6 +82,20 @@ Router.route('spiller/:_id', {
     }
 });
 
+Router.route('spiller/:_id/edit', {
+    name: 'playerEdit',
+    data: function() {
+        return Players.findOne({
+            nsf_id: parseInt(this.params._id)
+        });
+    },
+    waitOn: function() {
+        return [
+            Meteor.subscribe('player', this.params._id),
+        ]
+    }
+});
+
 Router.route('partier/:_id', {
     name: 'advancedGamesPlayer',
     data: function() {
