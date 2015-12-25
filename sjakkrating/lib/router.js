@@ -123,3 +123,12 @@ Router.route('klubb/:_id', {
         ]
     }
 });
+
+Router.route('klubb/:_id/edit', {
+    name: 'clubEdit',
+    data: function() {
+        return Clubs.findOne({
+            name: this.params._id
+        });
+    }
+});
