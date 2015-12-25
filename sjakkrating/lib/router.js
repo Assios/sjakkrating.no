@@ -30,6 +30,10 @@ Router.route('/sok', {
     name: 'advancedSearch'
 });
 
+Router.route('/l0g1n', {
+    name: 'login'
+});
+
 Router.route('/aldersgrupper', {
     name: 'ageTop',
     waitOn: function() {
