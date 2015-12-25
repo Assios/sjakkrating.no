@@ -1,5 +1,7 @@
 Template.player.onRendered(function() {
 
+    Session.set("l_username", false);
+
     Session.set('img_url', '/images/mysteryman.png');
 
     Session.set("currentNameFilter", this.data.surname + ", " + this.data.only_first_name);
@@ -13,7 +15,6 @@ Template.player.onRendered(function() {
     }
 
     console.log(Counts.get("player-win-white"));
-
 
 });
 
@@ -420,4 +421,50 @@ Template.player.helpers({
     blackLose: function() {
         return Counts.get("player-lose-black");
     },
+
+    allowEdit: function() {
+        if (this.protect) {
+            return false;
+        } else {
+            return true;
+        }
+    },
+});
+
+Template.player.events({
+   "keyup .lichess-username-input": function (e) {
+        e.preventDefault();
+
+        var username = $("#lichess_username").val();
+
+        if (username.length<2) {
+            return;
+        }
+
+        Meteor.call('getLichess', username, function(err, response) {
+            if (response) {
+                Session.set("l_username", response);
+            } else {
+                Session.set("l_username", false);
+            }
+        });
+   },
+
+
+  'click .submit-lichess': function(e) {
+    var response = Session.get("l_username");
+
+    if (response.id) {
+        Players.update(this._id, {$set: {lichess_username: response.username}}, function(error) {
+          if (error) {
+            alert(error.reason);
+          } else {
+            alert("La til Lichess-bruker!");
+          } 
+        });
+    }
+    else {
+        alert("Fant ikke bruker på Lichess");
+    }
+  }
 });

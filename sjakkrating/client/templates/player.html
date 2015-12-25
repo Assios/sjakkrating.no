@@ -69,6 +69,12 @@
 						    </span>
 						</a>
 				    </li>
+				    {{else}}
+				    {{#if allowEdit}}
+				    <li class="list-group-item">
+				    	Legg til <a href="http://lichess.org" target="_blank">Lichess</a>-brukernavn: <input name="lichess_username" id="lichess_username" class="lichess-username-input" type="text"/><input type="submit" value="Lagre" class="btn btn-primary submit-lichess"/>
+				    </li>
+				    {{/if}}
 				    {{/if}}
 				{{#if playedGames}}
 				<li class="list-group-item"><a href="{{pathFor 'advancedGamesPlayer' _id=this.nsf_id}}">Partier av {{name}}</a>
