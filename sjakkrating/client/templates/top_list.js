@@ -4,16 +4,14 @@ Template.topList.onRendered(function() {
 
     $('[data-toggle="tooltip"]').tooltip();
 
-    /*
+    
     if (!(Session.get("not_warned") == "done")) {
-        Notifications.error('NYHET', 'Du kan nå spille gjennom partier på profilsidene!', {
-            timeout: 6000
+        Notifications.success('Lichess', 'Legg til Lichess-brukernavnet ditt på profilsiden din!', {
+            timeout: 5000
         });
     }
 
     Session.set("not_warned", "done");
-
-    */
 
 });
 

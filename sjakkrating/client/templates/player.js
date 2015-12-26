@@ -45,6 +45,12 @@ Template.player.helpers({
         return r.perfs.bullet.rating;
     },
 
+    lichessClassical: function() {
+        var r = Session.get("lichess_response");
+
+        return r.perfs.classical.rating;
+    },
+
     loadImage: function(fide_id) {
         var img = new Image();
         img.addEventListener('load', function() { // addeventlistener is better than onload

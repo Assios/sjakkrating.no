@@ -10,8 +10,6 @@ Template.playerEdit.events({
     e.preventDefault();
 
     var playerProperties = {
-      elo: parseInt($(e.target).find('[name=elo]').val()),
-      nsf_elo: parseInt($(e.target).find('[name=nsf_elo]').val()),
       fide_title: $(e.target).find('[name=fide_title]').val(),
       club: $(e.target).find('[name=club]').val(),
       club_lc: $(e.target).find('[name=club]').val().toLowerCase(),
