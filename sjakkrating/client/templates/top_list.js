@@ -4,7 +4,7 @@ Template.topList.onRendered(function() {
 
     $('[data-toggle="tooltip"]').tooltip();
 
-    
+    /*
     if (!(Session.get("not_warned") == "done")) {
         Notifications.success('Lichess', 'Legg til Lichess-brukernavnet ditt på profilsiden din!', {
             timeout: 5000
@@ -12,6 +12,7 @@ Template.topList.onRendered(function() {
     }
 
     Session.set("not_warned", "done");
+    */
 
 });
 
