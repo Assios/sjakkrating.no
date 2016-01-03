@@ -72,7 +72,7 @@ if len(sys.argv) > 1:
       for player in players:
         if ((player.only_first_name.lower() == data["WhiteFirstName"].lower()) and (player.surname.lower() == data["WhiteSurname"].lower())):
           data["WhiteId"] = player.nsf_id
-        if ((player.only_first_name.lower() == data["BlackFirstName"].lower()) and (player.surname.lower() == data["BlackFirstName"].lower())):
+        if ((player.only_first_name.lower() == data["BlackFirstName"].lower()) and (player.surname.lower() == data["BlackSurname"].lower())):
           data["BlackId"] = player.nsf_id
 
       data["moves"] = []
