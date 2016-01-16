@@ -20,6 +20,32 @@ Template.player.onRendered(function() {
 
 Template.player.helpers({
 
+    class: function() {
+        val = ""
+        year = new Date().getFullYear();
+
+        if (this.GP_class == "M") {
+            val += "Mester";
+        } else {
+            val += this.GP_class;
+        }
+
+        if (this.year_of_birth >= year - 11) {
+            return val + " / Miniputt";
+        } else if (this.year_of_birth >= year - 13) {
+            return val + " / Lilleputt";
+        } else if (this.year_of_birth >= year - 16) {
+            return val + " / Kadett";
+        } else if (this.year_of_birth >= year - 20) {
+            return val + " / Junior";
+        } else if (this.year_of_birth <= year - 60) {
+            return val + " / Senior";
+        } else {
+            return val;
+        }
+
+    },
+
     lichess_image: function() {
         var offline_img = "http://lichess1.org/assets/images/favicon-32-white.png";
         var online_img = "http://rubenwardy.github.io/lichess_widgets/lichess_online.png";

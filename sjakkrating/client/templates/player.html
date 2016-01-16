@@ -27,6 +27,7 @@
 				    	{{/if}}
 				    	</li>
 				    <li class="list-group-item">Klubb: <a href="{{pathFor 'clubPage' _id=this.club}}">{{club}}</a></li>
+				    <li class="list-group-item">Klasse: {{class}}</li>
 				    <li class="list-group-item">Antall spilte partier: {{number_of_games}} <span data-toggle="tooltip" title="Antall partier spilt siden siste offisielle rating.">{{gamesDifference}}</span></li>
 				</ul>
 				{{#if fide_standard}}
