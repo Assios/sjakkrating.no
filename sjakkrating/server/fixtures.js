@@ -346,7 +346,7 @@ for (i = 0; i < players.length; i++) {
         console.log("added player", players[i].name);
     }
     else {
-        Players.update({nsf_id: temp_id}, { $set: { elo: players[i].elo, games: players[i].games }});
+        Players.update({nsf_id: temp_id}, { $set: { fide_standard: players[i].fide_standard, fide_rapid: players[i].fide_rapid, fide_blitz: players[i].fide_blitz }});
     }
 }
 
