@@ -1,17 +1,18 @@
-#main {
-    margin-top: 100px;
+body {
+    padding-top: 100px;
 }
 
 .navbar {
     background: rgba(249, 249, 249, 0.9);
+    padding-bottom: 5px;
+}
+
+.navbar-brand ul {
+  padding-left: 2px;
 }
 
 .top-box {
 	width: 250px;
-}
-
-.container {
-    width: 95%;
 }
 
 .player-container {
@@ -199,7 +200,6 @@ th[data-sort] {
 }
 
 .rating-legend {
-    margin-top: -10px;
     margin-bottom: 10px;
     text-align: center;
 }
