@@ -29,14 +29,6 @@ ul.notifications {
 	font-style: italic;
 }
 
-.last-updated {
-	float: right;
-	margin-top: 19px;
-	margin-left: 5px;
-	font-style: italic;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-}
-
 .image-wrapper {
     overflow: hidden;
     border-radius: 50%;
