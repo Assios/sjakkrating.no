@@ -20,6 +20,14 @@ Template.player.onRendered(function() {
 
 Template.player.helpers({
 
+    has_fide_rating: function() {
+        if (this.fide_standard || this.fide_rapid || this.fide_blitz) {
+            return true;
+        } else {
+            return false;
+        }
+    },
+
     class: function() {
         val = ""
         year = new Date().getFullYear();

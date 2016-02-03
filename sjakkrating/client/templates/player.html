@@ -30,10 +30,12 @@
 				    <li class="list-group-item">Klasse: {{class}}</li>
 				    <li class="list-group-item">Antall spilte partier: {{number_of_games}} <span data-toggle="tooltip" title="Antall partier spilt siden siste offisielle rating.">{{gamesDifference}}</span></li>
 				</ul>
-				{{#if fide_standard}}
+				{{#if has_fide_rating}}
 				<ul class="list-group">
 					<li class="list-group-item list-group-item-info">FIDE <i>(oppdatert 1. februar 2016)</i></li>
+					{{#if fide_standard}}
 						<li class="list-group-item">Standard: {{fide_standard}}</li>
+					{{/if}}
 				    {{#if fide_rapid}}
 						<li class="list-group-item">Hurtig: {{fide_rapid}}</li>
 						{{/if}}
