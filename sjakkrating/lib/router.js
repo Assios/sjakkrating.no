@@ -14,6 +14,18 @@ Router.configure({
     }
 });
 
+Router.map(function () {
+  this.route('api', {
+    path: '/api',
+    where: 'server',
+    action: function () {
+      var json = {"last_updated": "27/01/2016", "players": Players.find({ elo: { $gt: 0 } }, {fields: {nsf_id: 1, name: 1, elo: 1, _id: 0}}).fetch()};
+      this.response.setHeader('Content-Type', 'application/json');
+      this.response.end(JSON.stringify(json));
+  }
+});
+});
+
 Router.route('/partier', {
     name: 'advancedGames'
 });
