@@ -14,6 +14,10 @@ Router.configure({
     }
 });
 
+Router.route('/newgame', {
+    name: 'newGame'
+});
+
 Router.route('/partier', {
     name: 'advancedGames'
 });
