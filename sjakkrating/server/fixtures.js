@@ -322,7 +322,7 @@ chess_clubs = [{
     "website": ""
 }, {
     "name": "Volda Ørsta",
-    "website": ""
+    "website": "http://www.vosjakk.no"
 }, {
     "name": "Voss",
     "website": ""
@@ -346,7 +346,7 @@ for (i = 0; i < players.length; i++) {
         console.log("added player", players[i].name);
     }
     else {
-        Players.update({nsf_id: temp_id}, { $set: { fide_standard: players[i].fide_standard, fide_rapid: players[i].fide_rapid, fide_blitz: players[i].fide_blitz }});
+        Players.update({nsf_id: temp_id}, { $set: { fide_standard: players[i].fide_standard, fide_rapid: players[i].fide_rapid, fide_blitz: players[i].fide_blitz, elo: players[i].elo, number_of_games: players[i].number_of_games }});
     }
 }
 
