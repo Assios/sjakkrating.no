@@ -18,7 +18,7 @@ Router.map(function () {
   this.route('api/siste', {
     where: 'server',
     action: function () {
-      var json = {"last_updated": "15/2/2016", "players": Players.find({ elo: { $gt: 0 } }, {fields: {nsf_id: 1, name: 1, elo: 1, _id: 0}}).fetch()};
+      var json = {"last_updated": "16/2/2016", "players": Players.find({ elo: { $gt: 0 } }, {fields: {nsf_id: 1, name: 1, elo: 1, _id: 0}}).fetch()};
       this.response.setHeader('Content-Type', 'application/json');
       this.response.end(JSON.stringify(json));
   }

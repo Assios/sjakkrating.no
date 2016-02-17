@@ -196,7 +196,7 @@ chess_clubs = [{
     "website": ""
 }, {
     "name": "Modum",
-    "website": "http://www.modumsjakken.net/"
+    "website": "http://www.modumsjakken.no/"
 }, {
     "name": "Molde",
     "website": "http://moldesjakklubb.net/"
