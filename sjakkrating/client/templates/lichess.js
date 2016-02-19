@@ -1,3 +1,9 @@
+Template.lichessList.onRendered(function() {
+
+    $('[data-toggle="tooltip"]').tooltip();
+
+});
+
 Template.lichessList.helpers({
     lichessUsers: function() {
         return Players.find({
