@@ -1,0 +1,21 @@
+<template name="lichessList">
+
+<div class="jumbotron">
+  <h1>Lichess-brukere</h1>
+
+  	<span>Her er Lichess-brukernavnene til norske spillere. Hvis du ikke finner deg selv på listen, kan du legge til brukernavnet ditt på profilsiden din.</span>
+  	<br><br>
+      <div class="panel panel-default">
+        <ul class="list-group">
+        {{#each lichessUsers}}
+            <li class="list-group-item toplist"><div class="name">{{place}}. 
+                <b data-toggle="tooltip" title="{{title_mappings fide_title}}">{{fide_title}}</b> 
+              <a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a> (<a href="http://lichess.org/@/{{lichess_username}}" target="_blank">{{lichess_username}}</a>)</div>
+            </li>
+        {{/each}}
+        </ul>
+      </div>
+
+</div>
+
+</template>

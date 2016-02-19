@@ -20,6 +20,10 @@ Meteor.publish('clubPlayers', function(c_name) {
     });
 });
 
+Meteor.publish('lichessPlayers', function() {
+  return Players.find({lichess_username: { $exists: true, $ne: "" }});
+});
+
 Meteor.publish('advancedSearch', function(attributes) {
     return Players.find(attributes);
 });
