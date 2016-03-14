@@ -81,6 +81,18 @@ Router.route('/aldersgrupper', {
     }
 });
 
+Router.route('/jenter', {
+    name: 'girlTop',
+    waitOn: function() {
+        return [
+            Meteor.subscribe('topJuniorGirls'),
+            Meteor.subscribe('topKadettGirls'),
+            Meteor.subscribe('topLilleputtGirls'),
+            Meteor.subscribe('topMiniputtGirls'),
+        ]
+    }
+});
+
 Router.route('/statistikk', {
     name: 'stats',
     waitOn: function() {

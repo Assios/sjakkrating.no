@@ -65,6 +65,23 @@ Meteor.publish("topJuniors", function() {
 	        });
 });
 
+Meteor.publish("topJuniorGirls", function() {
+    year = new Date().getFullYear();
+
+  return Players.find({
+              year_of_birth: {
+                  $gte: year - 20
+              },
+              country: "NOR",
+              gender: "F",
+          }, {
+              sort: {
+                  elo: -1
+              },
+              limit: 100
+          });
+});
+
 Meteor.publish("topKadetts", function() {
     year = new Date().getFullYear();
 
@@ -79,6 +96,23 @@ Meteor.publish("topKadetts", function() {
               limit: 100
           });
 });
+
+Meteor.publish("topKadettGirls", function() {
+    year = new Date().getFullYear();
+
+  return Players.find({
+              year_of_birth: {
+                  $gte: year - 16,
+              },
+              gender: "F",
+          }, {
+              sort: {
+                  elo: -1
+              },
+              limit: 100
+          });
+});
+
 
 Meteor.publish("topLilleputts", function() {
     year = new Date().getFullYear();
@@ -95,6 +129,22 @@ Meteor.publish("topLilleputts", function() {
           });
 });
 
+Meteor.publish("topLilleputtGirls", function() {
+    year = new Date().getFullYear();
+
+  return Players.find({
+              year_of_birth: {
+                  $gte: year - 13,
+              },
+              gender: "F",
+          }, {
+              sort: {
+                  elo: -1
+              },
+              limit: 100
+          });
+});
+
 Meteor.publish("topMiniputts", function() {
     year = new Date().getFullYear();
 
@@ -102,6 +152,22 @@ Meteor.publish("topMiniputts", function() {
               year_of_birth: {
                   $gte: year - 11
               },
+          }, {
+              sort: {
+                  elo: -1
+              },
+              limit: 100
+          });
+});
+
+Meteor.publish("topMiniputtGirls", function() {
+    year = new Date().getFullYear();
+
+  return Players.find({
+              year_of_birth: {
+                  $gte: year - 11
+              },
+              gender: "F",
           }, {
               sort: {
                   elo: -1

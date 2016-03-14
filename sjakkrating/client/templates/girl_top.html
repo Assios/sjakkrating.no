@@ -1,0 +1,69 @@
+<template name="girlTop">
+	<div class="full-width rating-legend">
+	  <span class="label label-success">Grønn</span> boks indikerer oppgang i rating. <span class="label label-danger">Rød</span> boks indikerer nedgang i rating. <span class="label label-default">Grå</span> boks indikerer uendret rating.
+	</div>
+
+	<div class="col-md-3 col-sm-6">
+		<div class="panel panel-default">
+		  <div class="panel-heading"><b data-toggle="tooltip" title="Født i {{miniputt}} eller senere">Junior jenter</b></div>
+
+		  <ul class="list-group">
+			{{#each topJuniorGirls 100}}
+		    	<li class="list-group-item toplist"><div class="name">{{place}}. 
+		    			<b data-toggle="tooltip" title="{{title_mappings fide_title}}">{{fide_title}}</b> 
+		    		<a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a></div>
+		    			<span class="list-label {{ labelBasedOnRatingDifference elo nsf_elo}}">{{elo}}</span>
+		    	</li>
+		  {{/each}}
+		  </ul>
+		</div>
+	</div>
+
+	<div class="col-md-3 col-sm-6">
+		<div class="panel panel-default">
+		  <div class="panel-heading"><b data-toggle="tooltip" title="Født i {{kadett}} eller senere">Kadett jenter</b></div>
+		  <ul class="list-group">
+			{{#each topKadettGirls 100}}
+		    	<li class="list-group-item toplist"><div class="name">{{place}}. 
+		    			<b data-toggle="tooltip" title="{{title_mappings fide_title}}">{{fide_title}}</b> 
+		    		<a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a></div>
+		    			<span class="list-label {{labelBasedOnRatingDifference elo nsf_elo}}">{{elo}}</span>
+		    	</li>
+		  {{/each}}
+		  </ul>
+		</div>
+	</div>
+
+	<div class="col-md-3 col-sm-6">
+		<div class="panel panel-default">
+		  <div class="panel-heading"><b data-toggle="tooltip" title="Født i {{lilleputt}} eller senere">Lilleputt jenter</b></div>
+
+		  <ul class="list-group">
+			{{#each topLilleputtGirls 100}}
+		    	<li class="list-group-item toplist"><div class="name">{{place}}. 
+		    			<b data-toggle="tooltip" title="{{title_mappings fide_title}}">{{fide_title}}</b> 
+		    		<a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a></div>
+		    			<span class="list-label {{labelBasedOnRatingDifference elo nsf_elo}}">{{elo}}</span>
+		    	</li>
+		  {{/each}}
+		  </ul>
+		</div>
+	</div>
+
+	<div class="col-md-3 col-sm-6">
+		<div class="panel panel-default">
+		  <div class="panel-heading"><b data-toggle="tooltip" title="Født i {{miniputt}} eller senere">Miniputt jenter</b></div>
+
+		  <ul class="list-group">
+			{{#each topMiniputtGirls 100}}
+		    	<li class="list-group-item toplist"><div class="name">{{place}}. 
+		    			<b data-toggle="tooltip" title="{{title_mappings fide_title}}">{{fide_title}}</b> 
+		    		<a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a></div>
+		    			<span class="list-label {{ labelBasedOnRatingDifference elo nsf_elo}}">{{elo}}</span>
+		    	</li>
+		  {{/each}}
+		  </ul>
+		</div>
+	</div>
+
+</template>
