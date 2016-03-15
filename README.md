@@ -1,4 +1,4 @@
-# Sjakkrating.no
+# [Sjakkrating.no](http://sjakkrating.no)
 ![](http://i.imgur.com/4kzmo5X.png)
 [Sjakkrating.no](http://sjakkrating.no) provides rating information and statistics for all Norwegian chess players.
 ## Contributing
