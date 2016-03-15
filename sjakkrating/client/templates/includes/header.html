@@ -8,7 +8,13 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li class="{{activeIfTemplateIs 'FrontPage'}}"><a href="{{ pathFor 'frontPage' }}">Liverating</a></li>
-          <li class="{{activeIfTemplateIs 'AgeTop'}}"><a href="{{ pathFor 'ageTop' }}">Aldersgrupper</a></li>
+          <li class="dropdown {{activeIfTemplateIs 'GirlTop'}} {{activeIfTemplateIs 'AgeTop'}}">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Aldersgrupper <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="{{ pathFor 'ageTop' }}">Alle</a></li>
+              <li><a href="{{ pathFor 'girlTop' }}">Jenter</a></li>
+            </ul>
+          </li>
           <li class="{{activeIfTemplateIs 'AdvancedSearch'}}"><a href="{{ pathFor 'advancedSearch' }}">Avansert søk</a></li>
           <li class="{{activeIfTemplateIs 'AdvancedGames'}}"><a href="{{ pathFor 'advancedGames' }}">Partier</a></li>
           <li class="{{activeIfTemplateIs 'Stats'}}"><a href="{{ pathFor 'stats'}}">Statistikk</a></li>
