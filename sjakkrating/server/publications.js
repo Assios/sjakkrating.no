@@ -49,6 +49,24 @@ Meteor.publish('topPlayers', function() {
         });
 });
 
+Meteor.publish('topDiff', function() {
+  return Players.find({nsf_elo: {$gte: 1}}, {
+            sort: {
+                diff: -1
+            },
+            limit: 100
+        });
+});
+
+Meteor.publish('topGameDiff', function() {
+  return Players.find({gamesDiff: {$gte: 10}}, {
+            sort: {
+                gamesDiff: -1
+            },
+            limit: 100
+        });
+});
+
 Meteor.publish("topJuniors", function() {
     year = new Date().getFullYear();
 

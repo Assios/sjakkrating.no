@@ -346,7 +346,13 @@ for (i = 0; i < players.length; i++) {
         console.log("added player", players[i].name);
     }
     else {
-        Players.update({nsf_id: temp_id}, { $set: { fide_standard: players[i].fide_standard, fide_rapid: players[i].fide_rapid, fide_blitz: players[i].fide_blitz, elo: players[i].elo, number_of_games: players[i].number_of_games }});
+        Players.update({nsf_id: temp_id}, { $set: { fide_standard: players[i].fide_standard, fide_rapid: players[i].fide_rapid, fide_blitz: players[i].fide_blitz, elo: players[i].elo, number_of_games: players[i].number_of_games, nsf_elo: players[i].nsf_elo }});
+        if (already_existing_player.gamesDiff != -1) {
+            Players.update({nsf_id: temp_id}, { $set: { gamesDiff: players[i].number_of_games - players[i].games[players[i].games.length - 1]}});
+        }
+        if (already_existing_player.diff != -1) {
+            Players.update({nsf_id: temp_id}, { $set: { diff: players[i].elo - players[i].nsf_elo}});            
+        }
     }
 }
 

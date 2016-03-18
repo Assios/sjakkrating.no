@@ -53,6 +53,16 @@ Router.route('/lichess', {
     }
 });
 
+Router.route('/fremgang', {
+    name: 'ratingGain',
+    waitOn: function() {
+        return [
+            Meteor.subscribe('topDiff'),
+            Meteor.subscribe('topGameDiff'),
+        ]
+    }
+});
+
 Router.route('/', {
     name: 'frontPage'
 });

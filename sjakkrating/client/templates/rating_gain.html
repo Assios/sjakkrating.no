@@ -1,0 +1,33 @@
+<template name="ratingGain">
+
+	<div class="col-xs-6">
+		<div class="panel panel-default">
+		  <div class="panel-heading"><b data-toggle="tooltip">Størst ratingøkning siden siste offisielle rating</b></div>
+		  <ul class="list-group">
+			{{#each bestDiff 50}}
+		    	<li class="list-group-item toplist"><div class="name">{{place}}. 
+		    			<b data-toggle="tooltip" title="{{title_mappings fide_title}}">{{fide_title}}</b> 
+		    		<a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a>, <i><a href="{{pathFor 'clubPage' _id=this.name}}">{{club}}</a>, født {{year_of_birth}}</i></div>
+		    			<span class="">{{elo}} <b>(+{{diff}})</b></span>
+		    	</li>
+		  {{/each}}
+		  </ul>
+		</div>
+	</div>
+
+	<div class="col-xs-6">
+		<div class="panel panel-default">
+		  <div class="panel-heading"><b data-toggle="tooltip">Flest antall partier siden siste offisielle rating</b></div>
+		  <ul class="list-group">
+			{{#each bestGameDiff 50}}
+		    	<li class="list-group-item toplist"><div class="name">{{place}}. 
+		    			<b data-toggle="tooltip" title="{{title_mappings fide_title}}">{{fide_title}}</b> 
+		    		<a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a>, <i><a href="{{pathFor 'clubPage' _id=this.name}}">{{club}}</a>, født {{year_of_birth}}</i></div>
+		    			<span class="">{{number_of_games}} <b>(+{{gamesDiff}})</b></span>
+		    	</li>
+		  {{/each}}
+		  </ul>
+		</div>
+	</div>
+
+</template>
