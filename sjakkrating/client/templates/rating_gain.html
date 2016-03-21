@@ -7,7 +7,7 @@
 			{{#each bestDiff 50}}
 		    	<li class="list-group-item toplist"><div class="name">{{place}}. 
 		    			<b data-toggle="tooltip" title="{{title_mappings fide_title}}">{{fide_title}}</b> 
-		    		<a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a>, <i><a href="{{pathFor 'clubPage' _id=this.name}}">{{club}}</a>, født {{year_of_birth}}</i></div>
+		    		<a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a>, <i><a href="{{pathFor 'clubPage' _id=this.club}}">{{club}}</a>, født {{year_of_birth}}</i></div>
 		    			<span class="">{{elo}} <b>(+{{diff}})</b></span>
 		    	</li>
 		  {{/each}}
@@ -22,7 +22,7 @@
 			{{#each bestGameDiff 50}}
 		    	<li class="list-group-item toplist"><div class="name">{{place}}. 
 		    			<b data-toggle="tooltip" title="{{title_mappings fide_title}}">{{fide_title}}</b> 
-		    		<a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a>, <i><a href="{{pathFor 'clubPage' _id=this.name}}">{{club}}</a>, født {{year_of_birth}}</i></div>
+		    		<a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a>, <i><a href="{{pathFor 'clubPage' _id=this.club}}">{{club}}</a>, født {{year_of_birth}}</i></div>
 		    			<span class="">{{number_of_games}} <b>(+{{gamesDiff}})</b></span>
 		    	</li>
 		  {{/each}}
