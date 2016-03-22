@@ -220,10 +220,6 @@ Template.player.helpers({
 
         dates = [];
 
-        for (var i = 0; i < this.nsf_categories.length; i++) {
-            dates.push(Date.UTC(this.nsf_categories[i][0], this.nsf_categories[i][1]));
-        }
-
         var nsf_elos_peak = [],
             majorPeakVal = 70,
             len = this.nsf_elos.length,
@@ -248,32 +244,32 @@ Template.player.helpers({
 
         nsf_date_elos = [];
 
-        for (var i = 0; i < dates.length; i++) {
-            nsf_date_elos.push([dates[i], this.nsf_elos[i]])
+        for (var i = 0; i < this.nsf_elos.length; i++) {
+            nsf_date_elos.push([Date.UTC(this.nsf_elos[i][0][0], this.nsf_elos[i][0][1]), this.nsf_elos[i][1]])
         }
 
         fide_date_elos = [];
 
-        for (var i = 0; i < dates.length; i++) {
-            fide_date_elos.push([dates[i], this.fide_elos[i]])
+        for (var i = 0; i < this.fide_elos.length; i++) {
+            fide_date_elos.push([Date.UTC(this.fide_elos[i][0][0], this.fide_elos[i][0][1]), this.fide_elos[i][1]])
         }
 
         blitz_date_elos = [];
 
-        for (var i = 0; i < dates.length; i++) {
-            blitz_date_elos.push([dates[i], this.blitz_elos[i]])
+        for (var i = 0; i < this.blitz_elos.length; i++) {
+            blitz_date_elos.push([Date.UTC(this.blitz_elos[i][0][0], this.blitz_elos[i][0][1]), this.blitz_elos[i][1]])
         }
 
         rapid_date_elos = [];
 
-        for (var i = 0; i < dates.length; i++) {
-            rapid_date_elos.push([dates[i], this.rapid_elos[i]])
+        for (var i = 0; i < this.rapid_elos.length; i++) {
+            rapid_date_elos.push([Date.UTC(this.rapid_elos[i][0][0], this.rapid_elos[i][0][1]), this.rapid_elos[i][1]])
         }
 
         games_date = [];
 
-        for (var i = 0; i < dates.length; i++) {
-            games_date.push([dates[i], this.games[i]])
+        for (var i = 0; i < this.games.length; i++) {
+            games_date.push([Date.UTC(this.games[i][0][0], this.games[i][0][1]), this.games[i][1]])
         }
 
         var title_text;
@@ -285,7 +281,8 @@ Template.player.helpers({
 
         return {
             chart: {
-                zoomType: 'x'
+                zoomType: 'x',
+                type: 'spline'
             },
             title: {
                 text: title_text,
@@ -294,16 +291,14 @@ Template.player.helpers({
             },
             xAxis: {
                 type: 'datetime',
+                title: {
+                    text: 'Dato'
+                }
             },
             yAxis: {
                 title: {
                     text: 'Elo'
                 },
-                plotLines: [{
-                    value: 0,
-                    width: 1,
-                    color: '#808080'
-                }]
             },
             tooltip: {
                 shared: true,
@@ -321,21 +316,27 @@ Template.player.helpers({
                     }
                 }
             },
-            series: [{
-                name: 'Norsk elo (Offisiell)',
+            series: [
+            {
+                name: 'Norsk elo (offisiell)',
                 data: nsf_date_elos
-            }, {
+            },
+            {
                 name: 'FIDE elo',
                 data: fide_date_elos
-            }, {
+            },
+            {
                 name: 'Lyn',
-                data: blitz_date_elos
-            }, {
+                data: blitz_date_elos                
+            },
+            {
                 name: 'Hurtig',
-                data: rapid_date_elos
-            }, {
+                data: rapid_date_elos                
+            },
+            {
                 name: 'Antall partier',
-                data: games_date
+                data: games_date,
+                visible: false,              
             }],
             credits: false,
         };
