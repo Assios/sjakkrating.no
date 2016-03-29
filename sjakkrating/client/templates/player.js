@@ -14,8 +14,6 @@ Template.player.onRendered(function() {
         });
     }
 
-    console.log(Counts.get("player-win-white"));
-
 });
 
 Template.player.helpers({
@@ -140,7 +138,7 @@ Template.player.helpers({
         if (this.games.length == 0) {
             games_difference = this.number_of_games;
         } else {
-            games_difference = this.number_of_games - this.games[this.games.length - 1];
+            games_difference = this.number_of_games - this.games[this.games.length - 1][1];
         }
 
         var elo_difference = this.elo - this.nsf_elo;

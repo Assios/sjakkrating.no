@@ -10,9 +10,9 @@ import unicodedata
 import codecs
 import numpy as np
 
-client = MongoClient('mongodb://127.0.0.1:3001/meteor')
+client = MongoClient('mongodb://localhost:27017/sjakkrating')
 
-db = client.meteor
+db = client.sjakkrating
 
 url = urllib2.unquote("http://www.sjakk.no/rating/siste.txt")
 
