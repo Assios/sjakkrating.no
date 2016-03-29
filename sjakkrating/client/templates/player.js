@@ -272,6 +272,12 @@ Template.player.helpers({
             games_date.push([Date.UTC(this.games[i][0][0], this.games[i][0][1]), this.games[i][1]])
         }
 
+        unofficial_date_elos = [];
+
+        for (var i = 0; i < this.elos.length; i++) {
+            unofficial_date_elos.push([Date.UTC(this.elos[i][0][0], this.elos[i][0][1], this.elos[i][0][2]), this.elos[i][1]])
+        }
+
         var title_text;
 
         if (this.name.slice(-1) == 's')
@@ -320,6 +326,10 @@ Template.player.helpers({
             {
                 name: 'Norsk elo (offisiell)',
                 data: nsf_date_elos
+            },
+            {
+                name: 'Uoffisiell',
+                data: unofficial_date_elos,
             },
             {
                 name: 'FIDE elo',
