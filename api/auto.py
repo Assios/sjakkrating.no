@@ -65,28 +65,66 @@ for line in original_lines:
 
 lines = [''.join([i if ord(i)<128 else swap(i) for i in line]) for line in decrypted_lines]
 
+all_ids = [to_int(l.split(";")[0]) for l in lines]
+
 def update_unofficial_rating(nsf_id):
-	current = None
-	l = [l.split(";") for l in lines]
+    current = None
+    day, month, year = date.split("/")
+    day = int(day)
+    month = int(month)
+    year = int("20" + year)
 
-	for line in l:
-		if nsf_id == to_int(line[0]):
-			current = line
+    l = [l.split(";") for l in lines]
 
-	elo = to_int(current[11])
+    for line in l:
+        if nsf_id == to_int(line[0]):
+            current = line
 
-	mongo_player = db.players.find_one({"nsf_id": nsf_id})
+    if not current:
+        return False
 
-	db.players.update({"nsf_id": 11470}, {"$set": {"elo": 2900}})
+    elo = to_int(current[11])
 
-	print mongo_player["elo"]
+    mongo_player = db.players.find_one({
+        "nsf_id": nsf_id
+    })
 
-	if elo == mongo_player["elo"]:
-		return mongo_player
+    if not mongo_player:
+        return False
+
+    if not mongo_player.get("elos"):
+        db.players.update({
+            "nsf_id": nsf_id
+        }, {
+            "$set": {
+                "elos": [[[year, month, day], elo]]
+            }
+        })
+        return True
+
+    mongo_player = db.players.find_one({
+        "nsf_id": nsf_id
+    })
+
+    current_elos = mongo_player.get("elos")
+    current_elos.append([[year, month, day], elo])
+    nsf = mongo_player.get("nsf_elo")
+
+    if (elo == mongo_player.get("elo")):
+        return mongo_player
     else:
-        mongo_player = db.players.update({"nsf_id": 11470}, {"$set": {"elo": elo}})
+        db.players.update({
+            "nsf_id": nsf_id
+        }, {
+            "$set": {
+                "elo": elo,
+                "elos": current_elos,
+                "diff": elo-nsf
+            }
+        })
         return mongo_player
 
 
-print update_unofficial_rating(11470)
 
+for _id in all_ids:
+    update_unofficial_rating(_id)
