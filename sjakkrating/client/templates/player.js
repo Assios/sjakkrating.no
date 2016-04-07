@@ -14,11 +14,33 @@ Template.player.onRendered(function() {
         });
     }
 
-    console.log(Counts.get("player-win-white"));
-
 });
 
 Template.player.helpers({
+
+    playerCount: function() {
+        return Counts.get("player-count");
+    },
+
+    rank: function() {
+        return Counts.get("player-rank") + 1;
+    },
+
+    playerNor: function() {
+        return Counts.get("player-nor");
+    },
+
+    rankNor: function() {
+        return Counts.get("player-rank-nor") + 1;
+    },
+
+    playerYearCount: function() {
+        return Counts.get("player-year-count");
+    },
+
+    rankYear: function() {
+        return Counts.get("player-year-rank") + 1;
+    },
 
     has_fide_rating: function() {
         if (this.fide_standard || this.fide_rapid || this.fide_blitz) {
@@ -26,6 +48,13 @@ Template.player.helpers({
         } else {
             return false;
         }
+    },
+
+    norwegian: function() {
+        if (this.country == "NOR" || (this.country.length != 3))
+            return true;
+        else
+            return false;
     },
 
     class: function() {

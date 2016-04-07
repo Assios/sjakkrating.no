@@ -237,6 +237,15 @@ Meteor.publish("autocompletePlayers", function(selector, options) {
   this.ready();
 });
 
+Meteor.publish('playerStats', function(player) {
+  Counts.publish(this, 'player-count', Players.find());
+  Counts.publish(this, 'player-rank', Players.find({elo: { $gt: player.elo }}));
+  Counts.publish(this, 'player-rank-nor', Players.find({$or: [ {country: "NOR"}, {country: null} ], elo: { $gt: player.elo }}));
+  Counts.publish(this, 'player-nor', Players.find({ $or: [ {country: "NOR"}, {country: null} ]}));
+  Counts.publish(this, 'player-year-rank', Players.find({year_of_birth: player.year_of_birth, elo: { $gt: player.elo }}));
+  Counts.publish(this, 'player-year-count', Players.find({year_of_birth: player.year_of_birth}));
+});
+
 Meteor.publish('stats', function() {
   Counts.publish(this, 'player-count', Players.find());
   Counts.publish(this, 'age-count', Players.find(), { countFromField: 'year_of_birth' });
