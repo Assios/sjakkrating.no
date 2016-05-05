@@ -5,6 +5,11 @@
 			<div class="panel panel-default well">
 			  <div class="panel-heading">
 			    <h3 class="panel-title"><b>
+			    	{{#if foreign}}
+			    	<img src="/images/flags/{{country}}.gif" title="{{country_mapping country}}" data-toggle="tooltip">
+			    	{{else}}
+			    	<img src="/images/flags/NOR.gif" title="Norge" data-toggle="tooltip">
+			    	{{/if}}
 			    	<span data-toggle="tooltip" title="{{title_mappings fide_title}}">{{fide_title}} </span>
 			    	{{name}}</b>
 			    <div class="yob">
@@ -32,7 +37,7 @@
 				</ul>
 				{{#if has_fide_rating}}
 				<ul class="list-group">
-					<li class="list-group-item list-group-item-info">FIDE <i>(oppdatert 1. april 2016)</i></li>
+					<li class="list-group-item list-group-item-info">FIDE <i>(oppdatert 1. mai 2016)</i></li>
 					{{#if fide_standard}}
 						<li class="list-group-item">Standard: {{fide_standard}}</li>
 					{{/if}}
