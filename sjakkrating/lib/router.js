@@ -138,7 +138,7 @@ Router.route('spiller/:_id', {
     waitOn: function() {
         return [
             Meteor.subscribe('player', this.params._id),
-            Meteor.subscribe('player-game-stats', Players.findOne({nsf_id: parseInt(this.params._id)})),
+            Meteor.subscribe('playerStats', Players.findOne({nsf_id: parseInt(this.params._id)})),
         ]
     }
 });

@@ -237,16 +237,13 @@ Meteor.publish("autocompletePlayers", function(selector, options) {
   this.ready();
 });
 
-Meteor.publish('player-game-stats', function(player) {
-  Counts.publish(this, 'player-games', Games.find({$or: [ {WhiteSurname: player.surname, WhiteFirstName: player.only_first_name}, {BlackSurname: player.surname, BlackFirstName: player.only_first_name}]}));
-  Counts.publish(this, 'player-white', Games.find({WhiteSurname: player.surname, WhiteFirstName: player.only_first_name}));
-  Counts.publish(this, 'player-black', Games.find({BlackSurname: player.surname, BlackFirstName: player.only_first_name}));
-  Counts.publish(this, 'player-win-white', Games.find({WhiteSurname: player.surname, WhiteFirstName: player.only_first_name, Result: "1-0"}));
-  Counts.publish(this, 'player-draw-white', Games.find({WhiteSurname: player.surname, WhiteFirstName: player.only_first_name, Result: "1/2-1/2"}));
-  Counts.publish(this, 'player-lose-white', Games.find({WhiteSurname: player.surname, WhiteFirstName: player.only_first_name, Result: "0-1"}));
-  Counts.publish(this, 'player-win-black', Games.find({BlackSurname: player.surname, BlackFirstName: player.only_first_name, Result: "0-1"}));
-  Counts.publish(this, 'player-draw-black', Games.find({BlackSurname: player.surname, BlackFirstName: player.only_first_name, Result: "1/2-1/2"}));
-  Counts.publish(this, 'player-lose-black', Games.find({BlackSurname: player.surname, BlackFirstName: player.only_first_name, Result: "1-0"}));
+Meteor.publish('playerStats', function(player) {
+  Counts.publish(this, 'player-count', Players.find());
+  Counts.publish(this, 'player-rank', Players.find({elo: { $gt: player.elo }}));
+  Counts.publish(this, 'player-rank-nor', Players.find({$or: [ {country: "NOR"}, {country: null} ], elo: { $gt: player.elo }}));
+  Counts.publish(this, 'player-nor', Players.find({ $or: [ {country: "NOR"}, {country: null} ]}));
+  Counts.publish(this, 'player-year-rank', Players.find({year_of_birth: player.year_of_birth, elo: { $gt: player.elo }}));
+  Counts.publish(this, 'player-year-count', Players.find({year_of_birth: player.year_of_birth}));
 });
 
 Meteor.publish('stats', function() {

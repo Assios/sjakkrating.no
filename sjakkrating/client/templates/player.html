@@ -5,6 +5,11 @@
 			<div class="panel panel-default well">
 			  <div class="panel-heading">
 			    <h3 class="panel-title"><b>
+			    	{{#if foreign}}
+			    	<img src="/images/flags/{{country}}.gif" title="{{country_mapping country}}" data-toggle="tooltip">
+			    	{{else}}
+			    	<img src="/images/flags/NOR.gif" title="Norge" data-toggle="tooltip">
+			    	{{/if}}
 			    	<span data-toggle="tooltip" title="{{title_mappings fide_title}}">{{fide_title}} </span>
 			    	{{name}}</b>
 			    <div class="yob">
@@ -32,7 +37,7 @@
 				</ul>
 				{{#if has_fide_rating}}
 				<ul class="list-group">
-					<li class="list-group-item list-group-item-info">FIDE <i>(oppdatert 1. mars 2016)</i></li>
+					<li class="list-group-item list-group-item-info">FIDE <i>(oppdatert 30. mai 2016)</i></li>
 					{{#if fide_standard}}
 						<li class="list-group-item">Standard: {{fide_standard}}</li>
 					{{/if}}
@@ -87,6 +92,14 @@
 				<li class="list-group-item"><a href="{{pathFor 'advancedGamesPlayer' _id=this.nsf_id}}">Partier av {{name}}</a>
 				</li>
 				{{/if}}
+				</ul>
+				<ul class="list-group">
+				<li class="list-group-item list-group-item-info">Rangering</li>
+				<li class="list-group-item">Alle: {{rank}}/{{playerCount}}</li>
+				{{#if norwegian}}
+				<li class="list-group-item">Norske: {{rankNor}}/{{playerNor}}</li>
+				{{/if}}
+				<li class="list-group-item">Født {{year_of_birth}}: {{rankYear}}/{{playerYearCount}}</li>
 				</ul>
 				{{#if gameChart}}
 {{> highchartsHelper chartId=gameChartId chartWidth="100%" charHeight="100%" chartObject=gameChart}}

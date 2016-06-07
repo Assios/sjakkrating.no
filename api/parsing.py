@@ -98,7 +98,7 @@ all_ratings = [p.nsf_elo for p in players]
 p = sorted(players, key=lambda x: x.elo, reverse=True)
 
 response = {}
-response[date] = [a.__dict__ for a in p if a.elo!=0]
+response[date] = [a.__dict__ for a in p if a.elo]
 
 if __name__=="__main__":
     print response
