@@ -100,6 +100,7 @@
 				<li class="list-group-item">Norske: {{rankNor}}/{{playerNor}}</li>
 				{{/if}}
 				<li class="list-group-item">Født {{year_of_birth}}: {{rankYear}}/{{playerYearCount}}</li>
+				<li class="list-group-item">Antall partier: {{gameRank}}/{{playerCount}}</li>	
 				</ul>
 				{{#if gameChart}}
 {{> highchartsHelper chartId=gameChartId chartWidth="100%" charHeight="100%" chartObject=gameChart}}

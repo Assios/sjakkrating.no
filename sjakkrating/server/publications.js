@@ -240,6 +240,7 @@ Meteor.publish("autocompletePlayers", function(selector, options) {
 Meteor.publish('playerStats', function(player) {
   Counts.publish(this, 'player-count', Players.find());
   Counts.publish(this, 'player-rank', Players.find({elo: { $gt: player.elo }}));
+  Counts.publish(this, 'game-rank', Players.find({number_of_games: { $gt: player.number_of_games }}));
   Counts.publish(this, 'player-rank-nor', Players.find({$or: [ {country: "NOR"}, {country: null} ], elo: { $gt: player.elo }}));
   Counts.publish(this, 'player-nor', Players.find({ $or: [ {country: "NOR"}, {country: null} ]}));
   Counts.publish(this, 'player-year-rank', Players.find({year_of_birth: player.year_of_birth, elo: { $gt: player.elo }}));

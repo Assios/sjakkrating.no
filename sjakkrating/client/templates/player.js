@@ -32,6 +32,10 @@ Template.player.helpers({
         return Counts.get("player-rank") + 1;
     },
 
+    gameRank: function() {
+        return Counts.get("game-rank") + 1;
+    },
+
     playerNor: function() {
         return Counts.get("player-nor");
     },
