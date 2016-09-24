@@ -27,7 +27,10 @@ class RatingObject:
         self.nsf_id = to_int(s[0])
         self.surname = s[1].split(' ')[0]
         self.first_name = ' '.join(s[1].split(' ')[1:])
-        self.only_first_name = s[1].split(' ')[1]
+        try:
+            self.only_first_name = s[1].split(' ')[1]
+        except:
+            self.only_first_name = self.first_name
         self.gender = s[2]
         self.club = s[3]
         self.club_lc = self.club.lower()
