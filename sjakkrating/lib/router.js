@@ -55,6 +55,9 @@ Router.route('/lichess', {
 
 Router.route('/fremgang', {
     name: 'ratingGain',
+    yieldTemplates: {
+        'footer': {to: 'footer'}
+    },
     waitOn: function() {
         return [
             Meteor.subscribe('topDiff'),
@@ -63,16 +66,36 @@ Router.route('/fremgang', {
     }
 });
 
-Router.route('/', {
-    name: 'frontPage'
+Router.map(function () {
+    this.route('/', {
+        path: '/',
+        template: 'frontPage',
+        yieldTemplates: {
+            'footer': {to: 'footer'}
+        },
+        waitOn: function() {
+            return [
+                Meteor.subscribe('topPlayers'),
+                Meteor.subscribe('topJuniors'),
+                Meteor.subscribe('topWomen'),
+                Meteor.subscribe('clubs')
+            ]
+        }
+    });
 });
 
 Router.route('/om', {
-    name: 'about'
+    name: 'about',
+    yieldTemplates: {
+        'footer': {to: 'footer'}
+    }
 });
 
 Router.route('/sok', {
-    name: 'advancedSearch'
+    name: 'advancedSearch',
+    yieldTemplates: {
+        'footer': {to: 'footer'}
+    }
 });
 
 Router.route('/l0g1n', {
@@ -88,6 +111,9 @@ Router.route('/aldersgrupper', {
             Meteor.subscribe('topMiniputts'),
             Meteor.subscribe('topSeniors'),
         ]
+    },
+    yieldTemplates: {
+        'footer': {to: 'footer'}
     }
 });
 
@@ -100,6 +126,9 @@ Router.route('/jenter', {
             Meteor.subscribe('topLilleputtGirls'),
             Meteor.subscribe('topMiniputtGirls'),
         ]
+    },
+    yieldTemplates: {
+        'footer': {to: 'footer'}
     }
 });
 
@@ -111,6 +140,9 @@ Router.route('/statistikk', {
             Meteor.subscribe('youngestPlayer'),
             Meteor.subscribe('oldestPlayer'),
         ]
+    },
+    yieldTemplates: {
+        'footer': {to: 'footer'}
     }
 });
 
@@ -140,6 +172,9 @@ Router.route('spiller/:_id', {
             Meteor.subscribe('player', this.params._id),
             Meteor.subscribe('playerStats', Players.findOne({nsf_id: parseInt(this.params._id)})),
         ]
+    },
+    yieldTemplates: {
+        'footer': {to: 'footer'}
     }
 });
 

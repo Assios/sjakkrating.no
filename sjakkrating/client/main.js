@@ -9,6 +9,14 @@ Highcharts.setOptions({
   }
 });
 
+window.fbAsyncInit = function() {
+    FB.init({
+        appId      : '373762092661242',
+        status     : true,
+        xfbml      : true
+    });
+};
+
 i18n.setLanguage('no');
 
 i18n.map('no', {
