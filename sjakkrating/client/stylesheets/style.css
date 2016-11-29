@@ -47,7 +47,7 @@ ul.notifications {
 }
 
 @media screen and (max-width: 600px) {
-  .image-wrapper {
+  .image-wrapper, .trophy {
     visibility: hidden;
   }
 }
@@ -248,4 +248,3 @@ input::-webkit-inner-spin-button {
   -moz-box-shadow:    0px 0px 50px 0px rgba(252, 250, 0, 0.9);
   box-shadow:         0px 0px 50px 0px rgba(252, 250, 0, 0.9);
 }
-
