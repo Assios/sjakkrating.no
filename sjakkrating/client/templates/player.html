@@ -2,7 +2,6 @@
 	{{loadImage fide_id}}
 	<div class="row">
         <div class="col-md-6">
-            <div class="fb-like" data-href="http://sjakkrating.no" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 			<div class="panel panel-default well">
 			  <div class="panel-heading">
 			    <h3 class="panel-title"><b>
@@ -22,6 +21,11 @@
 			  	<div class="image-wrapper">
 			  		<img src="{{getImage}}">
 					</div>
+                  {{#if trophy}}
+                  <div class="trophy">
+                      <img data-toggle="tooltip" data-placement="bottom" title="{{trophy}}" src="/images/trophy.png" height="100" width="100">
+                  </div>
+                  {{/if}}
 				<ul class="list-group">
 					<li class="list-group-item list-group-item-info">Norsk</li>
 						<li class="list-group-item">Offisiell rating: {{nsf_elo}}</li>
