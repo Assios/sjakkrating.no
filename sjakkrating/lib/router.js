@@ -66,22 +66,8 @@ Router.route('/fremgang', {
     }
 });
 
-Router.map(function () {
-    this.route('/', {
-        path: '/',
-        template: 'frontPage',
-        yieldTemplates: {
-            'footer': {to: 'footer'}
-        },
-        waitOn: function() {
-            return [
-                Meteor.subscribe('topPlayers'),
-                Meteor.subscribe('topJuniors'),
-                Meteor.subscribe('topWomen'),
-                Meteor.subscribe('clubs')
-            ]
-        }
-    });
+Router.route('/', {
+    name: 'frontPage',
 });
 
 Router.route('/om', {
