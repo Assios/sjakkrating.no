@@ -134,7 +134,7 @@ Template.player.helpers({
             }
         });
 
-        img.src = 'https://ratings.fide.com/card.php?code=' + fide_id;
+        img.src = 'http://chess-db.com/public/tmp/' + fide_id + '.jpg';
     },
 
     lastElement: function(list) {

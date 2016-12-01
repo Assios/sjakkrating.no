@@ -21,6 +21,11 @@
 			  	<div class="image-wrapper">
 			  		<img src="{{getImage}}">
 					</div>
+                  {{#if trophy}}
+                  <div class="trophy">
+                      <a href="/utmerkelser"><img data-toggle="tooltip" data-placement="bottom" title="{{trophy}}" src="/images/trophy.png" height="100" width="100"></a>
+                  </div>
+                  {{/if}}
 				<ul class="list-group">
 					<li class="list-group-item list-group-item-info">Norsk</li>
 						<li class="list-group-item">Offisiell rating: {{nsf_elo}}</li>
@@ -37,7 +42,7 @@
 				</ul>
 				{{#if has_fide_rating}}
 				<ul class="list-group">
-					<li class="list-group-item list-group-item-info">FIDE <i>(oppdatert 1. oktober 2016)</i></li>
+					<li class="list-group-item list-group-item-info">FIDE <i>(oppdatert 30. november 2016)</i></li>
 					{{#if fide_standard}}
 						<li class="list-group-item">Standard: {{fide_standard}}</li>
 					{{/if}}

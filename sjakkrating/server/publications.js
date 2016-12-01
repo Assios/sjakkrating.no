@@ -24,6 +24,10 @@ Meteor.publish('lichessPlayers', function() {
   return Players.find({lichess_username: { $exists: true, $ne: "" }});
 });
 
+Meteor.publish('trophyPlayers', function() {
+  return Players.find({trophy: { $exists: true, $ne: "" }});
+});
+
 Meteor.publish('advancedSearch', function(attributes) {
     return Players.find(attributes);
 });

@@ -53,6 +53,15 @@ Router.route('/lichess', {
     }
 });
 
+Router.route('/utmerkelser', {
+    name: 'trophyList',
+    waitOn: function() {
+        return [
+            Meteor.subscribe('trophyPlayers'),
+        ]
+    }
+});
+
 Router.route('/fremgang', {
     name: 'ratingGain',
     waitOn: function() {
