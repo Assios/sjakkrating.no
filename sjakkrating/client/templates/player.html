@@ -1,126 +1,142 @@
 <template name="player">
-	{{loadImage fide_id}}
-	<div class="row">
+    {{loadImage fide_id}}
+    <div class="row">
         <div class="col-md-6">
-			<div class="panel panel-default well">
-			  <div class="panel-heading">
-			    <h3 class="panel-title"><b>
-			    	{{#if foreign}}
-			    	<img src="/images/flags/{{country}}.gif" title="{{country_mapping country}}" data-toggle="tooltip">
-			    	{{else}}
-			    	<img src="/images/flags/NOR.gif" title="Norge" data-toggle="tooltip">
-			    	{{/if}}
-			    	<span data-toggle="tooltip" title="{{title_mappings fide_title}}">{{fide_title}} </span>
-			    	{{name}}</b>
-			    <div class="yob">
-			    	f. {{year_of_birth}}
-			    </div>
-				</h3>
-			  </div>
-			  <div class="panel-body">
-			  	<div class="image-wrapper">
-			  		<img src="{{getImage}}">
-					</div>
-                  {{#if trophy}}
-                  <div class="trophy">
-                      <img data-toggle="tooltip" data-placement="bottom" title="{{trophy}}" src="/images/trophy.png" height="100" width="100">
-                  </div>
-                  {{/if}}
-				<ul class="list-group">
-					<li class="list-group-item list-group-item-info">Norsk</li>
-						<li class="list-group-item">Offisiell rating: {{nsf_elo}}</li>
-				    <li class="list-group-item">Uoffisiell rating: {{elo}}
-				    	{{#if isNegative}}
-				    		<span style="color:red;" data-toggle="tooltip" title="Differanse mellom offisiell og uoffisiell rating.">{{eloDifference}}</span>
-				    	{{else}}
-				    		<span style="color:green;" data-toggle="tooltip" title="Differanse mellom offisiell og uoffisiell rating.">{{eloDifference}}</span>
-				    	{{/if}}
-				    	</li>
-				    <li class="list-group-item">Klubb: <a href="{{pathFor 'clubPage' _id=this.club}}">{{club}}</a></li>
-				    <li class="list-group-item">Klasse: {{class}}</li>
-				    <li class="list-group-item">Antall spilte partier: {{number_of_games}} <span data-toggle="tooltip" title="Antall partier spilt siden siste offisielle rating.">{{gamesDifference}}</span></li>
-				</ul>
-				{{#if has_fide_rating}}
-				<ul class="list-group">
-					<li class="list-group-item list-group-item-info">FIDE <i>(oppdatert 30. november 2016)</i></li>
-					{{#if fide_standard}}
-						<li class="list-group-item">Standard: {{fide_standard}}</li>
-					{{/if}}
-				    {{#if fide_rapid}}
-						<li class="list-group-item">Hurtig: {{fide_rapid}}</li>
-						{{/if}}
-				    {{#if fide_blitz}}
-						<li class="list-group-item">Lyn: {{fide_blitz}}</li>
-						{{/if}}
-					<li class="list-group-item"><a href="https://ratings.fide.com/card.phtml?event={{fide_id}}" target="_blank">FIDE-profil</a></li>
-				</ul>
-				{{/if}}
-				<i>{{ratingPerGame}}</i>
-			  </div>
-			</div>
-		</div>
-		<div class="col-md-6">
-			<div class="panel panel-default well">
-				<div class="panel-heading">
-					<h3 class="panel-title"><b>Annet</b></h3>
-				</div>
-				<div class="panel-body">
-				<ul class="list-group">
-					{{#if lichess_username }}
-				    <li class="list-group-item">
-						<a class="lichess_widget lichess_theme_light" href="http://lichess.org/@/{{lichess_username}}" target="_blank">
-							<img src="{{lichess_image}}"/>
-						    <span>
+            <div class="panel panel-default well">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><b>
+                        {{#if foreign}}
+                            <img src="/images/flags/{{country}}.gif" title="{{country_mapping country}}"
+                                 data-toggle="tooltip">
+                        {{else}}
+                            <img src="/images/flags/NOR.gif" title="Norge" data-toggle="tooltip">
+                        {{/if}}
+                        <span data-toggle="tooltip" title="{{title_mappings fide_title}}">{{fide_title}} </span>
+                        {{name}}</b>
+                        <div class="yob">
+                            f. {{year_of_birth}}
+                        </div>
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <div class="image-wrapper">
+                        <img src="{{getImage}}">
+                    </div>
+                    {{#if trophy}}
+                        <div class="trophy">
+                            <a href="/utmerkelser"><img data-toggle="tooltip" data-placement="bottom" title="{{trophy}}"
+                                                        src="/images/trophy.png" height="100" width="100"></a>
+                        </div>
+                    {{/if}}
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-info">Norsk</li>
+                        <li class="list-group-item">Offisiell rating: {{nsf_elo}}</li>
+                        <li class="list-group-item">Uoffisiell rating: {{elo}}
+                            {{#if isNegative}}
+                                <span style="color:red;" data-toggle="tooltip"
+                                      title="Differanse mellom offisiell og uoffisiell rating.">{{eloDifference}}</span>
+                            {{else}}
+                                <span style="color:green;" data-toggle="tooltip"
+                                      title="Differanse mellom offisiell og uoffisiell rating.">{{eloDifference}}</span>
+                            {{/if}}
+                        </li>
+                        <li class="list-group-item">Klubb: <a href="{{pathFor 'clubPage' _id=this.club}}">{{club}}</a>
+                        </li>
+                        <li class="list-group-item">Klasse: {{class}}</li>
+                        <li class="list-group-item">Antall spilte partier: {{number_of_games}} <span
+                                data-toggle="tooltip"
+                                title="Antall partier spilt siden siste offisielle rating.">{{gamesDifference}}</span>
+                        </li>
+                    </ul>
+                    {{#if has_fide_rating}}
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-info">FIDE <i>(oppdatert 30. november 2016)</i>
+                            </li>
+                            {{#if fide_standard}}
+                                <li class="list-group-item">Standard: {{fide_standard}}</li>
+                            {{/if}}
+                            {{#if fide_rapid}}
+                                <li class="list-group-item">Hurtig: {{fide_rapid}}</li>
+                            {{/if}}
+                            {{#if fide_blitz}}
+                                <li class="list-group-item">Lyn: {{fide_blitz}}</li>
+                            {{/if}}
+                            <li class="list-group-item"><a href="https://ratings.fide.com/card.phtml?event={{fide_id}}"
+                                                           target="_blank">FIDE-profil</a></li>
+                        </ul>
+                    {{/if}}
+                    <i>{{ratingPerGame}}</i>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default well">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><b>Annet</b></h3>
+                </div>
+                <div class="panel-body">
+                    <ul class="list-group">
+                        {{#if lichess_username }}
+                            <li class="list-group-item">
+                                <a class="lichess_widget lichess_theme_light"
+                                   href="http://lichess.org/@/{{lichess_username}}" target="_blank">
+                                    <img src="{{lichess_image}}"/>
+                                    <span>
 						    	{{ lichess_username }} på Lichess | Blitz
 						    	<b>
-						    	{{ lichessBlitz }}
-						    	</b>
+                                    {{ lichessBlitz }}
+                                </b>
 						    	| Bullet
 						    	<b>
-						    	{{ lichessBullet }}
-						    	</b>
+                                    {{ lichessBullet }}
+                                </b>
 						    	| Classical
 						    	<b>
-						    	{{ lichessClassical }}
-						    	</b>
+                                    {{ lichessClassical }}
+                                </b>
 						    </span>
-						</a>
-				    </li>
-				    {{else}}
-				    {{#if allowEdit}}
-				    <li class="list-group-item">
-				    	Legg til <a href="http://lichess.org" target="_blank">Lichess</a>-brukernavn: <input name="lichess_username" id="lichess_username" class="lichess-username-input" type="text"/><input type="submit" value="Lagre" class="btn btn-primary submit-lichess"/>
-				    </li>
-				    {{/if}}
-				    {{/if}}
-				    <li class="list-group-item">
-				    	<a href="http://www.sjakknytt.no/partier/liste/spiller/{{nsf_id}}" target="_blank" rel="noopener">Se partier av {{first_name}} på Sjakknytt.no</a>
-				    </li>
-				{{#if playedGames}}
-				<li class="list-group-item"><a href="{{pathFor 'advancedGamesPlayer' _id=this.nsf_id}}">Partier av {{name}}</a>
-				</li>
-				{{/if}}
-				</ul>
-				<ul class="list-group">
-				<li class="list-group-item list-group-item-info">Rangering</li>
-				<li class="list-group-item">Alle: {{rank}}/{{playerCount}}</li>
-				{{#if norwegian}}
-				<li class="list-group-item">Norske: {{rankNor}}/{{playerNor}}</li>
-				{{/if}}
-				<li class="list-group-item">Født {{year_of_birth}}: {{rankYear}}/{{playerYearCount}}</li>
-				<li class="list-group-item">Antall partier: {{gameRank}}/{{playerCount}}</li>	
-				</ul>
-				{{#if gameChart}}
-{{> highchartsHelper chartId=gameChartId chartWidth="100%" charHeight="100%" chartObject=gameChart}}
-				{{/if}}
-				</div>
-			</div>		
-		</div>
-	</div>
+                                </a>
+                            </li>
+                        {{else}}
+                            {{#if allowEdit}}
+                                <li class="list-group-item">
+                                    Legg til <a href="http://lichess.org" target="_blank">Lichess</a>-brukernavn: <input
+                                        name="lichess_username" id="lichess_username" class="lichess-username-input"
+                                        type="text"/><input type="submit" value="Lagre"
+                                                            class="btn btn-primary submit-lichess"/>
+                                </li>
+                            {{/if}}
+                        {{/if}}
+                        <li class="list-group-item">
+                            <a href="http://www.sjakknytt.no/partier/liste/spiller/{{nsf_id}}" target="_blank"
+                               rel="noopener">Se partier av {{first_name}} på Sjakknytt.no</a>
+                        </li>
+                        {{#if playedGames}}
+                            <li class="list-group-item"><a href="{{pathFor 'advancedGamesPlayer' _id=this.nsf_id}}">Partier
+                                av {{name}}</a>
+                            </li>
+                        {{/if}}
+                    </ul>
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-info">Rangering</li>
+                        <li class="list-group-item">Alle: {{rank}}/{{playerCount}}</li>
+                        {{#if norwegian}}
+                            <li class="list-group-item">Norske: {{rankNor}}/{{playerNor}}</li>
+                        {{/if}}
+                        <li class="list-group-item">Født {{year_of_birth}}: {{rankYear}}/{{playerYearCount}}</li>
+                        <li class="list-group-item">Antall partier: {{gameRank}}/{{playerCount}}</li>
+                    </ul>
+                    {{#if gameChart}}
+                        {{> highchartsHelper chartId=gameChartId chartWidth="100%" charHeight="100%" chartObject=gameChart}}
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    </div>
 
-	<div class="row">
-		<div class="col-md-12">
-			{{> highchartsHelper chartId=_id chartWidth="100%" charHeight="100%" chartObject=ratingChart}}
-		</div>
-	</div>
+    <div class="row">
+        <div class="col-md-12">
+            {{> highchartsHelper chartId=_id chartWidth="100%" charHeight="100%" chartObject=ratingChart}}
+        </div>
+    </div>
 </template>

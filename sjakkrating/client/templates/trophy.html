@@ -1,0 +1,21 @@
+<template name="trophyList">
+
+    <div class="jumbotron">
+        <h2>Utmerkelser <img src="/images/trophy.png" height="100" width="100"></h2>
+
+        <br><br>
+        <div class="panel panel-default">
+            <ul class="list-group">
+                {{#each trophyPlayers}}
+                    <li class="list-group-item toplist"><div class="name">
+                        <b>{{trophy}}</b> <b data-toggle="tooltip" title="{{title_mappings fide_title}}">{{fide_title}}</b>
+                        <a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a></div>
+                    </li>
+
+                {{/each}}
+            </ul>
+        </div>
+
+    </div>
+
+</template>

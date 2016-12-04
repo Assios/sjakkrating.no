@@ -15,25 +15,25 @@ Router.configure({
 });
 
 Router.map(function () {
-  this.route('api/siste', {
-    where: 'server',
-    action: function () {
-      var json = {"last_updated": UPDATED, "players": Players.find({ elo: { $gt: 0 } }, {fields: {_id: 0, nsf_id: 1, fide_id: 1, name: 1, elo: 1, nsf_elo: 1, fide_standard: 1, fide_rapid: 1, fide_blitz: 1, number_of_games: 1}}).fetch()};
-      this.response.setHeader('Content-Type', 'application/json');
-      this.response.end(JSON.stringify(json));
-  }
-});
+    this.route('api/siste', {
+        where: 'server',
+        action: function () {
+            var json = {"last_updated": UPDATED, "players": Players.find({ elo: { $gt: 0 } }, {fields: {_id: 0, nsf_id: 1, fide_id: 1, name: 1, elo: 1, nsf_elo: 1, fide_standard: 1, fide_rapid: 1, fide_blitz: 1, number_of_games: 1}}).fetch()};
+            this.response.setHeader('Content-Type', 'application/json');
+            this.response.end(JSON.stringify(json));
+        }
+    });
 });
 
 Router.map(function () {
-  this.route('api/spiller/:_id', {
-    where: 'server',
-    action: function () {
-      var json = Players.findOne({nsf_id: parseInt(this.params._id)}, {fields: {_id: 0, nsf_id: 1, fide_id: 1, name: 1, elo: 1, nsf_elo: 1, fide_standard: 1, fide_rapid: 1, fide_blitz: 1, number_of_games: 1}});
-      this.response.setHeader('Content-Type', 'application/json');
-      this.response.end(JSON.stringify(json));
-  }
-});
+    this.route('api/spiller/:_id', {
+        where: 'server',
+        action: function () {
+            var json = Players.findOne({nsf_id: parseInt(this.params._id)}, {fields: {_id: 0, nsf_id: 1, fide_id: 1, name: 1, elo: 1, nsf_elo: 1, fide_standard: 1, fide_rapid: 1, fide_blitz: 1, number_of_games: 1}});
+            this.response.setHeader('Content-Type', 'application/json');
+            this.response.end(JSON.stringify(json));
+        }
+    });
 });
 
 Router.route('/api', {
@@ -53,11 +53,17 @@ Router.route('/lichess', {
     }
 });
 
+Router.route('/utmerkelser', {
+    name: 'trophyList',
+    waitOn: function() {
+        return [
+            Meteor.subscribe('trophyPlayers'),
+        ]
+    }
+});
+
 Router.route('/fremgang', {
     name: 'ratingGain',
-    yieldTemplates: {
-        'footer': {to: 'footer'}
-    },
     waitOn: function() {
         return [
             Meteor.subscribe('topDiff'),
@@ -67,21 +73,15 @@ Router.route('/fremgang', {
 });
 
 Router.route('/', {
-    name: 'frontPage',
+    name: 'frontPage'
 });
 
 Router.route('/om', {
-    name: 'about',
-    yieldTemplates: {
-        'footer': {to: 'footer'}
-    }
+    name: 'about'
 });
 
 Router.route('/sok', {
-    name: 'advancedSearch',
-    yieldTemplates: {
-        'footer': {to: 'footer'}
-    }
+    name: 'advancedSearch'
 });
 
 Router.route('/l0g1n', {
@@ -97,9 +97,6 @@ Router.route('/aldersgrupper', {
             Meteor.subscribe('topMiniputts'),
             Meteor.subscribe('topSeniors'),
         ]
-    },
-    yieldTemplates: {
-        'footer': {to: 'footer'}
     }
 });
 
@@ -112,9 +109,6 @@ Router.route('/jenter', {
             Meteor.subscribe('topLilleputtGirls'),
             Meteor.subscribe('topMiniputtGirls'),
         ]
-    },
-    yieldTemplates: {
-        'footer': {to: 'footer'}
     }
 });
 
@@ -126,9 +120,6 @@ Router.route('/statistikk', {
             Meteor.subscribe('youngestPlayer'),
             Meteor.subscribe('oldestPlayer'),
         ]
-    },
-    yieldTemplates: {
-        'footer': {to: 'footer'}
     }
 });
 
@@ -158,9 +149,6 @@ Router.route('spiller/:_id', {
             Meteor.subscribe('player', this.params._id),
             Meteor.subscribe('playerStats', Players.findOne({nsf_id: parseInt(this.params._id)})),
         ]
-    },
-    yieldTemplates: {
-        'footer': {to: 'footer'}
     }
 });
 
