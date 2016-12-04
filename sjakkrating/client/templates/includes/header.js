@@ -4,6 +4,12 @@ Template.header.helpers({
       return currentRoute && template === currentRoute.lookupTemplate() ? 'active' : '';
     },
 
+	random_piece: function() {
+    	const pieces = ["king", "queen", "knight", "bishop", "pawn"];
+
+		return pieces[Math.floor(Math.random() * pieces.length)];
+	},
+
 	format_date: function() {
 		var date = UPDATED;
 
