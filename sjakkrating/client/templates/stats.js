@@ -33,7 +33,7 @@ Template.stats.helpers({
     },
 
     average_age: function() {
-        var year = new Date().getFullYear()
+        const year = new Date().getFullYear()
 
         return Math.round(year - Counts.get('age-count') / Counts.get('player-count'));
     },
@@ -152,7 +152,7 @@ Template.stats.helpers({
 
     distributionChart: function() {
 
-        var y_axis = [25, 
+        const y_axis = [25,
             21, 
             34, 
             42, 
@@ -202,7 +202,7 @@ Template.stats.helpers({
             0
         ];
 
-        var x_axis = [
+        const x_axis = [
             "500-550",
             "550-600",
             "600-650",

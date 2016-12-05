@@ -9,13 +9,13 @@ Template.playerEdit.events({
   'submit form': function(e) {
     e.preventDefault();
 
-    var playerProperties = {
+    const playerProperties = {
       fide_title: $(e.target).find('[name=fide_title]').val(),
       club: $(e.target).find('[name=club]').val(),
       club_lc: $(e.target).find('[name=club]').val().toLowerCase(),
       country: $(e.target).find('[name=country]').val(),
       lichess_username: $(e.target).find('[name=lichess_username]').val(),
-    }
+    };
 
     Players.update(this._id, {$set: playerProperties}, function(error) {
       if (error) {

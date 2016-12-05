@@ -18,7 +18,7 @@ Router.map(function () {
     this.route('api/siste', {
         where: 'server',
         action: function () {
-            var json = {"last_updated": UPDATED, "players": Players.find({ elo: { $gt: 0 } }, {fields: {_id: 0, nsf_id: 1, fide_id: 1, name: 1, elo: 1, nsf_elo: 1, fide_standard: 1, fide_rapid: 1, fide_blitz: 1, number_of_games: 1}}).fetch()};
+            const json = {"last_updated": UPDATED, "players": Players.find({ elo: { $gt: 0 } }, {fields: {_id: 0, nsf_id: 1, fide_id: 1, name: 1, elo: 1, nsf_elo: 1, fide_standard: 1, fide_rapid: 1, fide_blitz: 1, number_of_games: 1}}).fetch()};
             this.response.setHeader('Content-Type', 'application/json');
             this.response.end(JSON.stringify(json));
         }
@@ -29,7 +29,7 @@ Router.map(function () {
     this.route('api/spiller/:_id', {
         where: 'server',
         action: function () {
-            var json = Players.findOne({nsf_id: parseInt(this.params._id)}, {fields: {_id: 0, nsf_id: 1, fide_id: 1, name: 1, elo: 1, nsf_elo: 1, fide_standard: 1, fide_rapid: 1, fide_blitz: 1, number_of_games: 1}});
+            const json = Players.findOne({nsf_id: parseInt(this.params._id)}, {fields: {_id: 0, nsf_id: 1, fide_id: 1, name: 1, elo: 1, nsf_elo: 1, fide_standard: 1, fide_rapid: 1, fide_blitz: 1, number_of_games: 1}});
             this.response.setHeader('Content-Type', 'application/json');
             this.response.end(JSON.stringify(json));
         }

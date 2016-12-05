@@ -19,7 +19,7 @@ Template.ageTop.helpers({
     },
 
     title_mappings: function(title) {
-        title_dict = {
+        const title_dict = {
             "GM": "Grandmaster",
             "IM": "International Master",
             "FM": "FIDE Master",
@@ -28,13 +28,13 @@ Template.ageTop.helpers({
             "WIM": "Woman International Master",
             "WFM": "Woman FIDE Master",
             "WCM": "Woman Candidate Master",
-        }
+        };
 
         return title_dict[title];
     },
 
     topKadett: function(l) {
-        year = new Date().getFullYear();
+        const year = new Date().getFullYear();
 
         return Players.find({
             year_of_birth: {
@@ -52,7 +52,7 @@ Template.ageTop.helpers({
     },
 
     topLilleputt: function(l) {
-        year = new Date().getFullYear();
+        const year = new Date().getFullYear();
 
         return Players.find({
             year_of_birth: {
@@ -70,7 +70,7 @@ Template.ageTop.helpers({
     },
 
     topMiniputt: function(l) {
-        year = new Date().getFullYear();
+        const year = new Date().getFullYear();
 
         return Players.find({
             year_of_birth: {
@@ -88,7 +88,7 @@ Template.ageTop.helpers({
     },
 
     topSenior: function(l) {
-        year = new Date().getFullYear();
+        const year = new Date().getFullYear();
 
         return Players.find({
             year_of_birth: {

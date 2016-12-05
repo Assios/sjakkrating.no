@@ -31,7 +31,7 @@ Template.clubPage.helpers({
     },
 
     average_rating: function() {
-        total = 0;
+        let total = 0;
 
         Players.find({
             club: this.name
@@ -45,8 +45,8 @@ Template.clubPage.helpers({
     },
 
     average_age: function() {
-        var year = new Date().getFullYear()
-        total_age = 0;
+        const year = new Date().getFullYear()
+        let total_age = 0;
 
         Players.find({
             club: this.name
@@ -60,11 +60,11 @@ Template.clubPage.helpers({
     },
 
     genderRatio: function() {
-        male = Players.find({
+        const male = Players.find({
             club: this.name,
             gender: 'M'
         }).count();
-        female = Players.find({
+        const female = Players.find({
             club: this.name,
             gender: 'F'
         }).count();

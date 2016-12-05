@@ -1,14 +1,14 @@
 Template.chessGame.onRendered(function() {
-    var config = {
+    const config = {
         position: 'start',
-    }
+    };
 
-    game = new Chess();
+    const game = new Chess();
 
-    board = ChessBoard('board', config);
+    const board = ChessBoard('board', config);
 
-    pgn = this.data.moves;
-    currentIndex = 0;
+    const pgn = this.data.moves;
+    let currentIndex = 0;
 
     $(document).on('keypress', function(e) {
         if (e.keyCode == 37) {
@@ -22,7 +22,7 @@ Template.chessGame.onRendered(function() {
         }
 
         if (e.keyCode == 39) {
-            var possibleMoves = game.moves();
+            const possibleMoves = game.moves();
 
             if (currentIndex == pgn.length) {
                 return false;

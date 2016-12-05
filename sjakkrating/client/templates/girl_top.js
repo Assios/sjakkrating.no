@@ -19,7 +19,7 @@ Template.girlTop.helpers({
     },
 
     title_mappings: function(title) {
-        title_dict = {
+        const title_dict = {
             "GM": "Grandmaster",
             "IM": "International Master",
             "FM": "FIDE Master",
@@ -28,13 +28,13 @@ Template.girlTop.helpers({
             "WIM": "Woman International Master",
             "WFM": "Woman FIDE Master",
             "WCM": "Woman Candidate Master",
-        }
+        };
 
         return title_dict[title];
     },
 
     topJuniorGirls: function(l) {
-        year = new Date().getFullYear();
+        const year = new Date().getFullYear();
 
         return Players.find({
             year_of_birth: {
@@ -53,7 +53,7 @@ Template.girlTop.helpers({
     },
 
     topKadettGirls: function(l) {
-        year = new Date().getFullYear();
+        const year = new Date().getFullYear();
 
         return Players.find({
             year_of_birth: {
@@ -72,7 +72,7 @@ Template.girlTop.helpers({
     },
 
     topLilleputtGirls: function(l) {
-        year = new Date().getFullYear();
+        const year = new Date().getFullYear();
 
         return Players.find({
             year_of_birth: {
@@ -91,7 +91,7 @@ Template.girlTop.helpers({
     },
 
     topMiniputtGirls: function(l) {
-        year = new Date().getFullYear();
+        const year = new Date().getFullYear();
 
         return Players.find({
             year_of_birth: {

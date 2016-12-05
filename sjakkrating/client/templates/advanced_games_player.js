@@ -2,7 +2,7 @@ Template.advancedGamesPlayer.onRendered(function() {
 
     game_filter = new ReactiveTable.Filter('generalFilter', []);
 
-    var name = this.data.surname + ", " + this.data.only_first_name;
+    const name = this.data.surname + ", " + this.data.only_first_name;
 
     Session.set("currentNameFilter", name);
 
@@ -64,7 +64,7 @@ Template.advancedGamesPlayer.helpers({
 Template.advancedGamesPlayer.events({
 
     'click .search': function() {
-        var f = $(".general-filter-input").val();
+        const f = $(".general-filter-input").val();
 
         game_filter.set(f);
     },

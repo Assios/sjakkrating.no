@@ -9,10 +9,10 @@ Template.clubEdit.events({
   'submit form': function(e) {
     e.preventDefault();
 
-    var clubProperties = {
+    const clubProperties = {
       name: $(e.target).find('[name=name]').val(),
       website: $(e.target).find('[name=website]').val(),
-    }
+    };
 
     Clubs.update(this._id, {$set: clubProperties}, function(error) {
       if (error) {

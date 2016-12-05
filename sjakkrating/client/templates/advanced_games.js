@@ -56,7 +56,7 @@ Template.advancedGames.helpers({
 Template.advancedGames.events({
 
     'click .search': function() {
-        var f = $(".general-filter-input").val();
+        const f = $(".general-filter-input").val();
 
         game_filter.set(f);
     },

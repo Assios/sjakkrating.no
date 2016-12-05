@@ -19,9 +19,7 @@ Template.player.onRendered(function() {
 Template.player.helpers({
 
     foreign: function() {
-        if ((this.country.length == 3) && !(this.country == "NOR"))
-            return true;
-        return false;
+        return ((this.country.length == 3) && !(this.country == "NOR"));
     },
 
     playerCount: function() {
@@ -53,23 +51,16 @@ Template.player.helpers({
     },
 
     has_fide_rating: function() {
-        if (this.fide_standard || this.fide_rapid || this.fide_blitz) {
-            return true;
-        } else {
-            return false;
-        }
+        return (this.fide_standard || this.fide_rapid || this.fide_blitz);
     },
 
     norwegian: function() {
-        if (this.country == "NOR" || (this.country.length != 3))
-            return true;
-        else
-            return false;
+        return (this.country == "NOR" || (this.country.length != 3));
     },
 
     class: function() {
-        val = ""
-        year = new Date().getFullYear();
+        let val = "";
+        const year = new Date().getFullYear();
 
         if (this.GP_class == "M") {
             val += "Mester";
@@ -94,10 +85,10 @@ Template.player.helpers({
     },
 
     lichess_image: function() {
-        var offline_img = "http://lichess1.org/assets/images/favicon-32-white.png";
-        var online_img = "http://rubenwardy.github.io/lichess_widgets/lichess_online.png";
+        const offline_img = "http://lichess1.org/assets/images/favicon-32-white.png";
+        const online_img = "http://rubenwardy.github.io/lichess_widgets/lichess_online.png";
 
-        var r = Session.get("lichess_response");
+        const r = Session.get("lichess_response");
 
         if (r.online) {
             return online_img;
@@ -107,25 +98,25 @@ Template.player.helpers({
     },
 
     lichessBlitz: function() {
-        var r = Session.get("lichess_response");
+        const r = Session.get("lichess_response");
 
         return r.perfs.blitz.rating;
     },
 
     lichessBullet: function() {
-        var r = Session.get("lichess_response");
+        const r = Session.get("lichess_response");
 
         return r.perfs.bullet.rating;
     },
 
     lichessClassical: function() {
-        var r = Session.get("lichess_response");
+        const r = Session.get("lichess_response");
 
         return r.perfs.classical.rating;
     },
 
     loadImage: function(fide_id) {
-        var img = new Image();
+        let img = new Image();
         img.addEventListener('load', function() { // addeventlistener is better than onload
             if (img.width !== 80) {
                 Session.set('img_url', img.src);
@@ -146,8 +137,8 @@ Template.player.helpers({
     },
 
     eloDifference: function() {
-        var difference = this.elo - this.nsf_elo;
-        var res;
+        const difference = this.elo - this.nsf_elo;
+        let res;
 
         if (difference > 0)
             res = "(+" + difference + ")"
@@ -160,8 +151,8 @@ Template.player.helpers({
     },
 
     gamesDifference: function() {
-        var difference = this.number_of_games - this.games[this.games.length - 1];
-        var res;
+        const difference = this.number_of_games - this.games[this.games.length - 1];
+        let res;
 
         if (difference > 0)
             res = "(+" + difference + ")"
@@ -172,9 +163,8 @@ Template.player.helpers({
     },
 
     ratingPerGame: function() {
-        var g;
-        var d;
-        var games_difference;
+        let d;
+        let games_difference;
 
         if (this.games.length == 0) {
             games_difference = this.number_of_games;
@@ -182,9 +172,9 @@ Template.player.helpers({
             games_difference = this.number_of_games - this.games[this.games.length - 1];
         }
 
-        var elo_difference = this.elo - this.nsf_elo;
+        const elo_difference = this.elo - this.nsf_elo;
 
-        g = this.name;
+        const g = this.name;
 
         if (games_difference == 0)
             return g + " har ikke spilt noen partier siden siste offisielle rating kom.";
@@ -192,12 +182,12 @@ Template.player.helpers({
         if (elo_difference == 0)
             return g + " har hverken gått opp eller ned siden siste offisielle rating kom.";
 
-        var rating_per_game = parseFloat(Math.round((elo_difference / games_difference) * 100) / 100).toFixed(2);
+        const rating_per_game = parseFloat(Math.round((elo_difference / games_difference) * 100) / 100).toFixed(2);
 
         if (rating_per_game > 0)
-            d = "opp"
+            d = "opp";
         else
-            d = "ned"
+            d = "ned";
 
         if (this.games.length > 0)
             return " " + g + " har gått " + d + " " + Math.abs(rating_per_game) + " i rating per parti siden siste offisielle rating kom.";
@@ -206,9 +196,9 @@ Template.player.helpers({
     },
 
     better_than: function() {
-        var number_of_players = Players.find().count();
+        const number_of_players = Players.find().count();
 
-        var number = Players.find({}, {
+        const number = Players.find({}, {
             sort: {
                 elo: -1
             }
@@ -217,7 +207,7 @@ Template.player.helpers({
             return player;
         });
 
-        for (var i = 0; i < number.length; i++) {
+        for (let i = 0; i < number.length; i++) {
             if (number[i].nsf_id == this.nsf_id) {
                 return Math.round(((number_of_players - number[i].place) / (number_of_players)) * 100);
             }
@@ -229,7 +219,6 @@ Template.player.helpers({
     },
 
     merge_lists: function(first, second) {
-        // Must be same length
         result = [];
 
         for (var i = 0; i < first.length; i++) {
@@ -237,11 +226,10 @@ Template.player.helpers({
         }
 
         return result;
-
     },
 
     title_mappings: function(title) {
-        title_dict = {
+        const title_dict = {
             "GM": "Grandmaster",
             "IM": "International Master",
             "FM": "FIDE Master",
@@ -250,25 +238,25 @@ Template.player.helpers({
             "WIM": "Woman International Master",
             "WFM": "Woman FIDE Master",
             "WCM": "Woman Candidate Master",
-        }
+        };
 
         return title_dict[title];
     },
 
     ratingChart: function() {
 
-        dates = [];
+        const dates = [];
 
-        for (var i = 0; i < this.nsf_categories.length; i++) {
+        for (let i = 0; i < this.nsf_categories.length; i++) {
             dates.push(Date.UTC(this.nsf_categories[i][0], this.nsf_categories[i][1]));
         }
 
-        var nsf_elos_peak = [],
-            majorPeakVal = 70,
-            len = this.nsf_elos.length,
-            i,
-            prevVal = this.nsf_elos[i],
-            lab = '';
+        const nsf_elos_peak = [];
+        const majorPeakVal = 70;
+        const len = this.nsf_elos.length;
+        let i;
+        let prevVal = this.nsf_elos[i];
+        let lab = '';
 
         for (i = 0; i < len; i++) {
             if (this.nsf_elos[i] - prevVal > majorPeakVal) {
@@ -285,37 +273,37 @@ Template.player.helpers({
             prevVal = this.nsf_elos[i];
         }
 
-        nsf_date_elos = [];
+        const nsf_date_elos = [];
 
-        for (var i = 0; i < dates.length; i++) {
+        for (let i = 0; i < dates.length; i++) {
             nsf_date_elos.push([dates[i], this.nsf_elos[i]])
         }
 
-        fide_date_elos = [];
+        const fide_date_elos = [];
 
-        for (var i = 0; i < dates.length; i++) {
+        for (let i = 0; i < dates.length; i++) {
             fide_date_elos.push([dates[i], this.fide_elos[i]])
         }
 
-        blitz_date_elos = [];
+        const blitz_date_elos = [];
 
-        for (var i = 0; i < dates.length; i++) {
+        for (let i = 0; i < dates.length; i++) {
             blitz_date_elos.push([dates[i], this.blitz_elos[i]])
         }
 
-        rapid_date_elos = [];
+        const rapid_date_elos = [];
 
-        for (var i = 0; i < dates.length; i++) {
+        for (let i = 0; i < dates.length; i++) {
             rapid_date_elos.push([dates[i], this.rapid_elos[i]])
         }
 
-        games_date = [];
+        const games_date = [];
 
-        for (var i = 0; i < dates.length; i++) {
+        for (let i = 0; i < dates.length; i++) {
             games_date.push([dates[i], this.games[i]])
         }
 
-        var title_text;
+        let title_text;
 
         if (this.name.slice(-1) == 's')
             title_text = this.name + '\' ratingprogresjon';
@@ -388,14 +376,14 @@ Template.player.helpers({
         if (Counts.get("player-games") < 1)
             return false;
 
-        whiteGames = Counts.get("player-white");
-        blackGames = Counts.get("player-black");
-        whiteWin = Counts.get("player-win-white");
-        whiteDraw = Counts.get("player-draw-white");
-        whiteLose = Counts.get("player-lose-white");
-        blackWin = Counts.get("player-win-black");
-        blackDraw = Counts.get("player-draw-black");
-        blackLose = Counts.get("player-lose-black");
+        const whiteGames = Counts.get("player-white");
+        const blackGames = Counts.get("player-black");
+        const whiteWin = Counts.get("player-win-white");
+        const whiteDraw = Counts.get("player-draw-white");
+        const whiteLose = Counts.get("player-lose-white");
+        const blackWin = Counts.get("player-win-black");
+        const blackDraw = Counts.get("player-draw-black");
+        const blackLose = Counts.get("player-lose-black");
         //var totalGames = Counts.get("player-games");
 
         return {
@@ -502,15 +490,11 @@ Template.player.helpers({
     },
 
     allowEdit: function() {
-        if (this.protect) {
-            return false;
-        } else {
-            return true;
-        }
+        return (this.protect);
     },
 
     country_mapping: function(country_code) {
-        country_dict = {
+        const country_dict = {
             "ABW": "Aruba",
             "AFG": "Afghanistan",
             "AGO": "Angola",
@@ -759,7 +743,7 @@ Template.player.helpers({
             "ZAF": "Sør-Afrika",
             "ZMB": "Zambia",
             "ZWE": "Zimbabwe",
-        }
+        };
 
         return country_dict[country_code];
     },
@@ -770,7 +754,7 @@ Template.player.events({
    "keyup .lichess-username-input": function (e) {
         e.preventDefault();
 
-        var username = $("#lichess_username").val();
+        const username = $("#lichess_username").val();
 
         if (username.length<2) {
             return;
@@ -787,7 +771,7 @@ Template.player.events({
 
 
   'click .submit-lichess': function(e) {
-    var response = Session.get("l_username");
+    const response = Session.get("l_username");
 
     if (response.id) {
         Players.update(this._id, {$set: {lichess_username: response.username}}, function(error) {
