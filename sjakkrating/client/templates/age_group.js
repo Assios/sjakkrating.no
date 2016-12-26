@@ -1,8 +1,6 @@
 Template.ageGroup.onRendered(function() {
 
     Session.set("currentNameFilter", "");
-    Session.set("specificAgeGender", "M");
-
     $('[data-toggle="tooltip"]').tooltip()
 
 });
@@ -47,7 +45,7 @@ Template.ageGroup.helpers({
     },
 
     specific_age: function(age, l) {
-        year = new Date().getFullYear();
+        const year = new Date().getFullYear();
 
         let query;
         const gender = Router.current().params.query.gender;
