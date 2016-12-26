@@ -9,10 +9,12 @@
         <ul class="nav navbar-nav">
           <li class="{{activeIfTemplateIs 'FrontPage'}}"><a href="{{ pathFor 'frontPage' }}">Liverating</a></li>
           <li class="dropdown {{activeIfTemplateIs 'GirlTop'}} {{activeIfTemplateIs 'AgeTop'}}">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Aldersgrupper <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Alderslister <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="{{ pathFor 'ageTop' }}">Alle</a></li>
-              <li><a href="{{ pathFor 'girlTop' }}">Jenter</a></li>
+              <li><a href="{{ pathFor 'ageTop' }}">Klasser (alle)</a></li>
+              <li><a href="{{ pathFor 'girlTop' }}">Klasser (jenter)</a></li>
+              <li><a href="{{ pathFor 'ageGroup' }}">Grupper (alle)</a></li>
+              <li><a href="{{ pathFor 'ageGroup' query='gender=f' }}">Grupper (jenter)</a></li>
             </ul>
           </li>
           <li class="{{activeIfTemplateIs 'RatingGain'}}"><a href="{{ pathFor 'ratingGain' }}">Fremgang</a></li>

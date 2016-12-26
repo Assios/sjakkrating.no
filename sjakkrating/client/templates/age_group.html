@@ -1,0 +1,68 @@
+<template name="ageGroup">
+    {{> notifications}}
+
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="panel panel-default">
+                <div class="panel-heading"><b>{{heading_title}}18</b></div>
+                <ul class="list-group">
+                    {{#each specific_age 18 100}}
+                        <li class="list-group-item toplist"><div class="name">{{place}}.
+                            <b data-toggle="tooltip" title="{{title_mappings fide_title}}">{{fide_title}}</b>
+                            <a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a></div>
+                            <span class="list-label {{labelBasedOnRatingDifference elo nsf_elo}}">{{elo}}</span>
+                        </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="panel panel-default">
+                <div class="panel-heading"><b>{{heading_title}}16</b></div>
+
+                <ul class="list-group">
+                    {{#each specific_age 16 100}}
+                        <li class="list-group-item toplist"><div class="name">{{place}}.
+                            <b data-toggle="tooltip" title="{{title_mappings fide_title}}">{{fide_title}}</b>
+                            <a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a></div>
+                            <span class="list-label {{labelBasedOnRatingDifference elo nsf_elo}}">{{elo}}</span>
+                        </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="panel panel-default">
+                <div class="panel-heading"><b>{{heading_title}}14</b></div>
+
+                <ul class="list-group">
+                    {{#each specific_age 14 100}}
+                        <li class="list-group-item toplist"><div class="name">{{place}}.
+                            <b data-toggle="tooltip" title="{{title_mappings fide_title}}">{{fide_title}}</b>
+                            <a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a></div>
+                            <span class="list-label {{ labelBasedOnRatingDifference elo nsf_elo}}">{{elo}}</span>
+                        </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="panel panel-default">
+                <div class="panel-heading"><b>{{heading_title}}12</b></div>
+
+                <ul class="list-group">
+                    {{#each specific_age 12 100}}
+                        <li class="list-group-item toplist"><div class="name">{{place}}.
+                            <b data-toggle="tooltip" title="{{title_mappings fide_title}}">{{fide_title}}</b>
+                            <a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a></div>
+                            <span class="list-label {{ labelBasedOnRatingDifference elo nsf_elo}}">{{elo}}</span>
+                        </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</template>

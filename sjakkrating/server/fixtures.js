@@ -334,7 +334,7 @@ chess_clubs = [{
     "website": ""
 }, ]
 
-
+/*
 players = _.values(getAllPlayers())[0];
 
 for (i = 0; i < players.length; i++) {
@@ -355,7 +355,7 @@ for (i = 0; i < players.length; i++) {
         }
     }
 }
-
+*/
 // fide_standard: players[i].fide_standard, fide_rapid: players[i].fide_rapid, fide_blitz: players[i].fide_blitz }
 // elo: players[i].elo, nsf_elo: players[i].nsf_elo, fide_elos: players[i].fide_elos, rapid_elos: players[i].rapid_elos, blitz_elos: players[i].blitz_elos, nsf_elos: players[i].nsf_elos, nsf_categories: players[i].nsf_categories, games: players[i].games
 

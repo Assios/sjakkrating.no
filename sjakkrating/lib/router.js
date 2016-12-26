@@ -88,7 +88,7 @@ Router.route('/l0g1n', {
     name: 'login'
 });
 
-Router.route('/aldersgrupper', {
+Router.route('/aldersklasser', {
     name: 'ageTop',
     waitOn: function() {
         return [
@@ -119,6 +119,15 @@ Router.route('/statistikk', {
             Meteor.subscribe('stats'),
             Meteor.subscribe('youngestPlayer'),
             Meteor.subscribe('oldestPlayer'),
+        ]
+    }
+});
+
+Router.route('/aldersgrupper', {
+    name: 'ageGroup',
+    waitOn: function() {
+        return [
+            Meteor.subscribe('topU'),
         ]
     }
 });

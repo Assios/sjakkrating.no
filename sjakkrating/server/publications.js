@@ -104,6 +104,21 @@ Meteor.publish("topJuniorGirls", function() {
     });
 });
 
+Meteor.publish("topU", function() {
+    year = new Date().getFullYear();
+
+    return Players.find({
+        year_of_birth: {
+            $gt: year - 18,
+            $lt: year - 11
+        },
+    }, {
+        sort: {
+            elo: -1
+        },
+    });
+});
+
 Meteor.publish("topKadetts", function() {
     year = new Date().getFullYear();
 
