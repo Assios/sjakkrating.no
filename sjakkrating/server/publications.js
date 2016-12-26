@@ -109,7 +109,7 @@ Meteor.publish("topU", function() {
 
     return Players.find({
         year_of_birth: {
-            $gt: year - 18,
+            $gt: year - 19,
             $lt: year - 11
         },
     }, {
