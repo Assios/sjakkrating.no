@@ -3,9 +3,15 @@
     <div class="container">
       <div class="navbar-header">
         <a class="navbar-brand" href="/"><ul class="glyphicon glyphicon glyphicon-{{random_piece}}"> Sjakkrating.no</ul></a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
       </div>
 
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <div class="collapse navbar-collapse" id="navbar">
         <ul class="nav navbar-nav">
           <li class="{{activeIfTemplateIs 'FrontPage'}}"><a href="{{ pathFor 'frontPage' }}">Liverating</a></li>
           <li class="dropdown {{activeIfTemplateIs 'GirlTop'}} {{activeIfTemplateIs 'AgeTop'}}">
@@ -24,10 +30,9 @@
           <li class="{{activeIfTemplateIs 'About'}}"><a href="{{ pathFor 'about'}}">Om</a></li>
         </ul>
 
-        <span class="info-header unselectable visible-md visible-lg">
+        <span class="info-header unselectable visible-lg">
           <i>Oppdatert {{format_date}}.</i>
         </span>
-        <button type="button" id="btnRespNav" class="btn-navbar navbar-toggle slideout-menu-toggle pull-left" data-toggle="collapse" data-target="#login-navbar-collapse"></button>
       </div>
 
       {{> auto}}
