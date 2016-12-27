@@ -248,3 +248,12 @@ input::-webkit-inner-spin-button {
   -moz-box-shadow:    0px 0px 50px 0px rgba(252, 250, 0, 0.9);
   box-shadow:         0px 0px 50px 0px rgba(252, 250, 0, 0.9);
 }
+
+.margin-lr {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.submit-lichess {
+  margin-left: 5px;
+}
