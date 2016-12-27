@@ -4,9 +4,9 @@
     <div class="row">
         <div class="col-md-3 col-sm-6">
             <div class="panel panel-default">
-                <div class="panel-heading"><b>{{heading_title}}18</b></div>
+                <div class="panel-heading"><b data-toggle="tooltip" title="Født i {{from_year 18}} og {{to_year 17}}">{{heading_title}}18</b></div>
                 <ul class="list-group">
-                    {{#each specific_age 18 100}}
+                    {{#each from_to_age 18 17 100}}
                         <li class="list-group-item toplist"><div class="name">{{place}}.
                             <b data-toggle="tooltip" title="{{title_mappings fide_title}}">{{fide_title}}</b>
                             <a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a></div>
@@ -19,10 +19,10 @@
 
         <div class="col-md-3 col-sm-6">
             <div class="panel panel-default">
-                <div class="panel-heading"><b>{{heading_title}}16</b></div>
+                <div class="panel-heading"><b data-toggle="tooltip" title="Født i {{from_year 16}} og {{to_year 15}}">{{heading_title}}16</b></div>
 
                 <ul class="list-group">
-                    {{#each specific_age 16 100}}
+                    {{#each from_to_age 16 15 100}}
                         <li class="list-group-item toplist"><div class="name">{{place}}.
                             <b data-toggle="tooltip" title="{{title_mappings fide_title}}">{{fide_title}}</b>
                             <a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a></div>
@@ -35,10 +35,10 @@
 
         <div class="col-md-3 col-sm-6">
             <div class="panel panel-default">
-                <div class="panel-heading"><b>{{heading_title}}14</b></div>
+                <div class="panel-heading"><b data-toggle="tooltip" title="Født i {{from_year 14}} og {{to_year 13}}">{{heading_title}}14</b></div>
 
                 <ul class="list-group">
-                    {{#each specific_age 14 100}}
+                    {{#each from_to_age 14 13 100}}
                         <li class="list-group-item toplist"><div class="name">{{place}}.
                             <b data-toggle="tooltip" title="{{title_mappings fide_title}}">{{fide_title}}</b>
                             <a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a></div>
@@ -51,10 +51,10 @@
 
         <div class="col-md-3 col-sm-6">
             <div class="panel panel-default">
-                <div class="panel-heading"><b>{{heading_title}}12</b></div>
+                <div class="panel-heading"><b data-toggle="tooltip" title="Født i {{from_year 12}} og yngre">{{heading_title}}12</b></div>
 
                 <ul class="list-group">
-                    {{#each specific_age 12 100}}
+                    {{#each from_to_age 12 1 100}}
                         <li class="list-group-item toplist"><div class="name">{{place}}.
                             <b data-toggle="tooltip" title="{{title_mappings fide_title}}">{{fide_title}}</b>
                             <a href="{{pathFor 'player' _id=this.nsf_id}}">{{name}}</a></div>

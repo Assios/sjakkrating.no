@@ -19,9 +19,7 @@ Template.player.onRendered(function() {
 Template.player.helpers({
 
     foreign: function() {
-        if ((this.country.length == 3) && !(this.country == "NOR"))
-            return true;
-        return false;
+        return (this.country.length == 3) && !(this.country == "NOR");
     },
 
     playerCount: function() {
@@ -53,22 +51,15 @@ Template.player.helpers({
     },
 
     has_fide_rating: function() {
-        if (this.fide_standard || this.fide_rapid || this.fide_blitz) {
-            return true;
-        } else {
-            return false;
-        }
+        return (this.fide_standard || this.fide_rapid || this.fide_blitz);
     },
 
     norwegian: function() {
-        if (this.country == "NOR" || (this.country.length != 3))
-            return true;
-        else
-            return false;
+        return (this.country == "NOR" || (this.country.length != 3));
     },
 
     class: function() {
-        val = ""
+        val = "";
         year = new Date().getFullYear();
 
         if (this.GP_class == "M") {
@@ -137,10 +128,6 @@ Template.player.helpers({
         img.src = 'http://chess-db.com/public/tmp/' + fide_id + '.jpg';
     },
 
-    lastElement: function(list) {
-        return _.last(list);
-    },
-
     isNegative: function() {
         return this.elo < this.nsf_elo;
     },
@@ -150,9 +137,9 @@ Template.player.helpers({
         var res;
 
         if (difference > 0)
-            res = "(+" + difference + ")"
+            res = "(+" + difference + ")";
         else if (difference < 0)
-            res = "(" + difference + ")"
+            res = "(" + difference + ")";
         else
             res = "";
 
@@ -164,7 +151,7 @@ Template.player.helpers({
         var res;
 
         if (difference > 0)
-            res = "(+" + difference + ")"
+            res = "(+" + difference + ")";
         else
             res = "";
 
@@ -250,7 +237,7 @@ Template.player.helpers({
             "WIM": "Woman International Master",
             "WFM": "Woman FIDE Master",
             "WCM": "Woman Candidate Master",
-        }
+        };
 
         return title_dict[title];
     },
@@ -767,39 +754,26 @@ Template.player.helpers({
 });
 
 Template.player.events({
-   "keyup .lichess-username-input": function (e) {
-        e.preventDefault();
-
-        var username = $("#lichess_username").val();
-
-        if (username.length<2) {
-            return;
-        }
-
-        Meteor.call('getLichess', username, function(err, response) {
-            if (response) {
-                Session.set("l_username", response);
-            } else {
-                Session.set("l_username", false);
-            }
-        });
-   },
-
-
   'click .submit-lichess': function(e) {
-    var response = Session.get("l_username");
+      var username = $("#lichess_username").val();
+      var self = this;
 
-    if (response.id) {
-        Players.update(this._id, {$set: {lichess_username: response.username}}, function(error) {
-          if (error) {
-            alert(error.reason);
+      Meteor.call('getLichess', username, function(err, response) {
+          if (response) {
+              console.log(response);
+              console.log(self._id);
+              Players.update(self._id, {$set: {lichess_username: response.username}}, function(error) {
+                  if (error) {
+                      alert(error.reason);
+                  } else {
+                      alert("La til Lichess-bruker!");
+                  }
+              });
           } else {
-            alert("La til Lichess-bruker!");
-          } 
-        });
-    }
-    else {
-        alert("Fant ikke bruker på Lichess");
-    }
+              alert("Fant ikke brukernavn på Lichess. Sjekk om du har skrevet riktig, og prøv igjen.");
+              console.log('Nope');
+          }
+      });
+
   }
 });

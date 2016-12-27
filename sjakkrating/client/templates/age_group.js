@@ -44,7 +44,17 @@ Template.ageGroup.helpers({
         }
     },
 
-    specific_age: function(age, l) {
+    from_year: function(from) {
+        const year = new Date().getFullYear();
+        return year - from;
+    },
+
+    to_year: function(to) {
+        const year = new Date().getFullYear();
+        return year - to;
+    },
+
+    from_to_age: function(from_age, to_age, l) {
         const year = new Date().getFullYear();
 
         let query;
@@ -61,7 +71,8 @@ Template.ageGroup.helpers({
         return Players.find({
             $or: query,
             year_of_birth: {
-                $eq: year - age,
+                $gte: year - from_age,
+                $lte: year - to_age
             },
         }, {
             sort: {
