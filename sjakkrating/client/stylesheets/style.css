@@ -101,7 +101,7 @@ ul.notifications {
   user-select: none;
 }
 
-.info {
+.info, .about-bottom {
   margin-top: 50px;
 }
 

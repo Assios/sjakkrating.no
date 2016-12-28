@@ -1,6 +1,6 @@
 // Fetch players from API if not found in db
 function getAllPlayers() {
-    var url = "http://assios.no:8888"
+    var url = "http://assios.no:8888";
 
     var result = Meteor.http.get(url, {
         timeout: 15000
@@ -15,7 +15,6 @@ function getAllPlayers() {
         throw new Meteor.Error(result.statusCode, errorJson.error);
     }
 }
-
 
 chess_clubs = [{
     "name": "1911",
@@ -332,35 +331,54 @@ chess_clubs = [{
 }, {
     "name": "Vålerenga",
     "website": ""
-}, ]
+},
+];
 
-/*
-players = _.values(getAllPlayers())[0];
+if (Players.find().count() === 0) {
+    players = _.values(getAllPlayers())[0];
 
-for (i = 0; i < players.length; i++) {
-    var temp_id = players[i].nsf_id;
-    var already_existing_player = Players.findOne({nsf_id: temp_id});
+    for (let i = 0; i < players.length; i++) {
+        var temp_id = players[i].nsf_id;
+        var already_existing_player = Players.findOne({nsf_id: temp_id});
 
-    if (!(already_existing_player)) {
-        Players.insert(players[i]);
-        console.log("added player", players[i].name);
-    }
-    else {
-        Players.update({nsf_id: temp_id}, { $set: { fide_standard: players[i].fide_standard, fide_rapid: players[i].fide_rapid, fide_blitz: players[i].fide_blitz, elo: players[i].elo, number_of_games: players[i].number_of_games, nsf_elo: players[i].nsf_elo, games: players[i].games, nsf_categories: players[i].nsf_categories, blitz_elos: players[i].blitz_elos, rapid_elos: players[i].rapid_elos, fide_elos: players[i].fide_elos, nsf_elos: players[i].nsf_elos, fide_title: players[i].fide_title, club: players[i].club, country: players[i].country }});
-        if (already_existing_player.gamesDiff != -1) {
-            Players.update({nsf_id: temp_id}, { $set: { gamesDiff: players[i].number_of_games - players[i].games[players[i].games.length - 1]}});
+        if (!(already_existing_player)) {
+            Players.insert(players[i]);
+            console.log("added player", players[i].name);
         }
-        if (already_existing_player.diff != -1) {
-            Players.update({nsf_id: temp_id}, { $set: { diff: players[i].elo - players[i].nsf_elo}});            
+        else {
+            Players.update({nsf_id: temp_id}, {
+                $set: {
+                    fide_standard: players[i].fide_standard,
+                    fide_rapid: players[i].fide_rapid,
+                    fide_blitz: players[i].fide_blitz,
+                    elo: players[i].elo,
+                    number_of_games: players[i].number_of_games,
+                    nsf_elo: players[i].nsf_elo,
+                    games: players[i].games,
+                    nsf_categories: players[i].nsf_categories,
+                    blitz_elos: players[i].blitz_elos,
+                    rapid_elos: players[i].rapid_elos,
+                    fide_elos: players[i].fide_elos,
+                    nsf_elos: players[i].nsf_elos,
+                    fide_title: players[i].fide_title,
+                    club: players[i].club,
+                    country: players[i].country
+                }
+            });
+            if (already_existing_player.gamesDiff != -1) {
+                Players.update({nsf_id: temp_id}, {$set: {gamesDiff: players[i].number_of_games - players[i].games[players[i].games.length - 1]}});
+            }
+            if (already_existing_player.diff != -1) {
+                Players.update({nsf_id: temp_id}, {$set: {diff: players[i].elo - players[i].nsf_elo}});
+            }
         }
     }
 }
-*/
 // fide_standard: players[i].fide_standard, fide_rapid: players[i].fide_rapid, fide_blitz: players[i].fide_blitz }
 // elo: players[i].elo, nsf_elo: players[i].nsf_elo, fide_elos: players[i].fide_elos, rapid_elos: players[i].rapid_elos, blitz_elos: players[i].blitz_elos, nsf_elos: players[i].nsf_elos, nsf_categories: players[i].nsf_categories, games: players[i].games
 
 if (Clubs.find().count() === 0) {
-    for (i = 0; i < chess_clubs.length; i++) {
+    for (let i = 0; i < chess_clubs.length; i++) {
         Clubs.insert(chess_clubs[i]);
     }
 }
