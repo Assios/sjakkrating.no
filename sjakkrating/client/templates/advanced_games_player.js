@@ -49,16 +49,6 @@ Template.advancedGamesPlayer.helpers({
             }, ],
             filters: ['generalFilter']
         };
-    },
-
-    surnameArray: function() {
-        return ['WhiteSurname', 'BlackSurname'];
-    },
-
-    firstnameArray: function() {
-        return ['WhiteFirstName', 'BlackFirstName'];
-    },
-
 });
 
 Template.advancedGamesPlayer.events({
